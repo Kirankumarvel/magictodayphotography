@@ -1,4 +1,4 @@
-# 📸 Magic Today Photography ― Bangalore’s Finest Wedding Photography Studio
+# 📸 Magic Today Photography ― Bangalore’s Finest Wedding Photography Company
 
 [![Website Online](https://img.shields.io/badge/live-demo-green?style=for-the-badge&logo=vercel)](https://magictodayphotography.vercel.app)
 [![Deployed with Vercel](https://img.shields.io/badge/deploy-vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
