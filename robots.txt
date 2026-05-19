@@ -11,6 +11,6 @@ Disallow: /*.json$
 # Crawl delay to be polite (adjust if needed)
 Crawl-delay: 1
 
-# Sitemap location
+# Sitemap locations
 Sitemap: https://magictodayphotography.vercel.app/sitemap.xml
 Sitemap: https://magictodayphotography.vercel.app/image_sitemap.xml
