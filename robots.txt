@@ -13,3 +13,4 @@ Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://magictodayphotography.vercel.app/sitemap.xml
+Sitemap: https://magictodayphotography.vercel.app/image_sitemap.xml
