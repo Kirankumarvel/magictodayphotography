@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <url>
+        <loc>https://magictodayphotography.vercel.app/</loc>
+        <lastmod>2026-05-19</lastmod>
+        <priority>1.0</priority>
+
+        <image:image>
+            <image:loc>https://magictodayphotography.vercel.app/Images/logo.jpg</image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://magictodayphotography.vercel.app/Images/Founder-satya.jpg</image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://magictodayphotography.vercel.app/Images/Pre‑Wedding-Cubbon%20Park.jpeg</image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://magictodayphotography.vercel.app/Images/Candid-Wedding.jpeg</image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://magictodayphotography.vercel.app/Images/heroimage.jpg</image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://magictodayphotography.vercel.app/Images/CoupleSession.jpeg</image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://magictodayphotography.vercel.app/Images/Newborn-Session.jpeg</image:loc>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://magictodayphotography.vercel.app/Images/Maternity-Portraits.jpeg</image:loc>
+        </image:image>
+    </url>
+
+</urlset>
