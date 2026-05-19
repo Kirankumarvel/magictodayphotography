@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "dest": "/static/sitemap.xml"
+    },
+    {
+      "src": "/image_sitemap.xml",
+      "dest": "/static/image_sitemap.xml"
+    }
+  ]
+}
