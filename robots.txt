@@ -12,5 +12,5 @@ Disallow: /*.json$
 Crawl-delay: 1
 
 # Sitemap locations
-Sitemap: https://magictodayphotography.vercel.app/sitemap.xml
-Sitemap: https://magictodayphotography.vercel.app/image_sitemap.xml
+Sitemap: https://magictodayphotography.netlify.app/sitemap.xml
+Sitemap: https://magictodayphotography.netlify.app/image_sitemap.xml
