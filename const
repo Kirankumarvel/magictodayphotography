@@ -47,16 +47,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://magictodayphotography.vercel.app/#organization",
+      "name": "Magic Today Photography",
+      "url": "https://magictodayphotography.vercel.app/",
+      "logo": "https://magictodayphotography.vercel.app/Images/logo.jpg",
+      "image": "https://magictodayphotography.vercel.app/Images/wedding-photograpy-intro.jpg",
+      "description": "Bangalore premier event and wedding photographer. Specializing in corporate events, candid weddings, pre-wedding shoots, maternity portraits, and lifestyle photography.",
+      "telephone": "+918095767131",
+      "email": "info.magictoday@gmail.com",
+      "priceRange": "₹8,500 – ₹2,50,000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5th block, 3rd phase, 131, 2nd Cross Rd, Banashankari 3rd Stage",
+        "addressLocality": "Banashankari",
+        "addressRegion": "Karnataka",
+        "postalCode": "560085",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.instagram.com/magictodayphotography/",
+        "https://wa.me/918095767131",
+        "https://www.facebook.com/magictodayphotography"
+      ],
+      "founder": {
+        "@id": "https://magictodayphotography.vercel.app/#founder"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://magictodayphotography.vercel.app/#founder",
+      "name": "Sathya",
+      "jobTitle": "Founder and Lead Photographer",
+      "worksFor": {
+        "@id": "https://magictodayphotography.vercel.app/#organization"
+      },
+      "description": "Founder of Magic Today Photography with over 80 weddings and 150 corporate events covered across Bangalore and India.",
+      "image": "https://magictodayphotography.vercel.app/Images/Founder-satya.jpg",
+      "sameAs": [
+        "https://www.instagram.com/magictodayphotography/"
+      ]
+    },
+    {
       "@type": "LocalBusiness",
       "@id": "https://magictodayphotography.vercel.app/#business",
       "name": "Magic Today Photography",
-      "description": "Bangalore's premier candid wedding and lifestyle photography studio, specializing in wedding, pre-wedding, newborn, maternity, and event photography with a cinematic storytelling approach.",
+      "description": "Bangalore premier event and wedding photographer. Corporate events, candid weddings, pre-wedding shoots, maternity portraits.",
       "url": "https://magictodayphotography.vercel.app/",
-      "logo": "https://magictodayphotography.vercel.app/logo.png",
-      "image": "https://magictodayphotography.vercel.app/og-image.jpg",
       "telephone": "+918095767131",
-      "email": "info.magictoday@gmail.com",
-      "priceRange": "₹25,000 – ₹150,000",
+      "priceRange": "₹8,500 – ₹2,50,000",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "5th block, 3rd phase, 131, 2nd Cross Rd, Banashankari 3rd Stage",
@@ -70,7 +116,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "latitude": 12.9236,
         "longitude": 77.5547
       },
-      "hasMap": "https://maps.app.goo.gl/placeholder",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -85,7 +130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "areaServed": "IN-KA"
       },
       "sameAs": [
-        "https://www.instagram.com/magictodayphotography",
+        "https://www.instagram.com/magictodayphotography/",
         "https://www.facebook.com/magictodayphotography"
       ],
       "aggregateRating": {
@@ -95,98 +140,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "bestRating": "5",
         "worstRating": "1"
       },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Kiran Kumar Vel"
-          },
-          "datePublished": "2021-05-15",
-          "reviewBody": "Magicframes photographers made everything go smoothly and I didn't have to worry especially in this pandemic situation. Thank you so much to my photographers and videographer! All were so professional and made my day look phenomenal!",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "itemReviewed": {
-            "@id": "https://magictodayphotography.vercel.app/#business"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "ASHWIJ A"
-          },
-          "datePublished": "2024-03-10",
-          "reviewBody": "This team deserves much more success, very good photography and videography skills, team please keep it up and continue the same work.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "itemReviewed": {
-            "@id": "https://magictodayphotography.vercel.app/#business"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Sachin N"
-          },
-          "datePublished": "2022-08-20",
-          "reviewBody": "Wonderful!! Photography Best Team!! If you are looking for candid and traditional photography you are on the right page. Do go for it.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "itemReviewed": {
-            "@id": "https://magictodayphotography.vercel.app/#business"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Manjunatha BM"
-          },
-          "datePublished": "2024-01-15",
-          "reviewBody": "Photos and videos come very nice. We all love it. Satya has did awesome job.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "itemReviewed": {
-            "@id": "https://magictodayphotography.vercel.app/#business"
-          }
-        },
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Minu Subramanya"
-          },
-          "datePublished": "2025-03-01",
-          "reviewBody": "Amazing service, photographer was patient and supportive.",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5",
-            "worstRating": "1"
-          },
-          "itemReviewed": {
-            "@id": "https://magictodayphotography.vercel.app/#business"
-          }
-        }
-      ],
       "areaServed": {
         "@type": "City",
         "name": "Bangalore",
@@ -194,37 +147,82 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       },
       "potentialAction": {
         "@type": "ReserveAction",
-        "target": "https://magictodayphotography.vercel.app/contact",
+        "target": "https://magictodayphotography.vercel.app/#contact",
         "name": "Book a consultation"
       }
     },
     {
-      "@type": "Service",
-      "@id": "https://magictodayphotography.vercel.app/#service-wedding",
-      "name": "Wedding Photography",
-      "description": "Full-day candid wedding photography capturing rituals, emotions, and celebrations with cinematic excellence. Includes a dedicated second shooter, 400–800+ edited images, and a cinematic highlight reel.",
-      "provider": { "@id": "https://magictodayphotography.vercel.app/#business" },
-      "areaServed": { "@type": "City", "name": "Bangalore" },
+      "@type": "Product",
+      "@id": "https://magictodayphotography.vercel.app/#product-essential-wedding",
+      "name": "Essential Wedding Photography Package",
+      "description": "8 hours coverage, single photographer, 400 plus edited images, online gallery, highlight teaser.",
+      "image": "https://magictodayphotography.vercel.app/Images/wedding-essential.jpg",
+      "brand": {
+        "@type": "Brand",
+        "name": "Magic Today Photography"
+      },
       "offers": {
         "@type": "Offer",
         "price": "85000",
         "priceCurrency": "INR",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "85000",
-          "priceCurrency": "INR",
-          "valueAddedTaxIncluded": true
-        },
         "availability": "https://schema.org/InStock"
+      },
+      "manufacturer": {
+        "@id": "https://magictodayphotography.vercel.app/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://magictodayphotography.vercel.app/#product-signature-cinematic",
+      "name": "Signature Cinematic Wedding Package",
+      "description": "12 hours, 2 photographers, 700 plus images, highlight film, premium album credit.",
+      "image": "https://magictodayphotography.vercel.app/Images/wedding-cinematic.jpg",
+      "brand": {
+        "@type": "Brand",
+        "name": "Magic Today Photography"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "145000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      },
+      "manufacturer": {
+        "@id": "https://magictodayphotography.vercel.app/#organization"
+      }
+    },
+    {
+      "@type": "Product",
+      "@id": "https://magictodayphotography.vercel.app/#product-corporate-headshot",
+      "name": "Corporate Headshot Package",
+      "description": "On-site professional headshots for teams of 5 to 100 employees. Retouched images delivered within 48 hours.",
+      "image": "https://magictodayphotography.vercel.app/Images/corporate-headshot.jpg",
+      "brand": {
+        "@type": "Brand",
+        "name": "Magic Today Photography"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "15000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      },
+      "manufacturer": {
+        "@id": "https://magictodayphotography.vercel.app/#organization"
       }
     },
     {
       "@type": "Service",
-      "@id": "https://magictodayphotography.vercel.app/#service-pre-wedding",
-      "name": "Pre-Wedding Photography",
-      "description": "2–3 hour couple shoot at scenic Bangalore locations (Cubbon Park, Lalbagh, etc.) starting at ₹25,000. Includes outfit changes and 50+ fully edited images.",
-      "provider": { "@id": "https://magictodayphotography.vercel.app/#business" },
-      "areaServed": { "@type": "City", "name": "Bangalore" },
+      "@id": "https://magictodayphotography.vercel.app/#service-corporate-event",
+      "name": "Corporate Event Photography",
+      "description": "Professional coverage for conferences, product launches, annual galas, town halls, and corporate meetings across Bangalore.",
+      "provider": {
+        "@id": "https://magictodayphotography.vercel.app/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bangalore"
+      },
       "offers": {
         "@type": "Offer",
         "price": "25000",
@@ -234,61 +232,73 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     },
     {
       "@type": "Service",
-      "@id": "https://magictodayphotography.vercel.app/#service-newborn",
-      "name": "Newborn Photography",
-      "description": "Gentle, safe newborn photography sessions at home using natural light and soft props. The baby’s comfort is always the priority.",
-      "provider": { "@id": "https://magictodayphotography.vercel.app/#business" },
-      "areaServed": { "@type": "City", "name": "Bangalore" }
+      "@id": "https://magictodayphotography.vercel.app/#service-wedding",
+      "name": "Wedding Photography",
+      "description": "Full-day candid wedding photography covering rituals, emotions, and celebrations. Includes second shooter and highlight reel.",
+      "provider": {
+        "@id": "https://magictodayphotography.vercel.app/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bangalore"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "85000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://magictodayphotography.vercel.app/#service-pre-wedding",
+      "name": "Pre Wedding Photography",
+      "description": "Two to three hour couple shoot at scenic Bangalore locations like Cubbon Park or Lalbagh. Includes 50 plus edited images.",
+      "provider": {
+        "@id": "https://magictodayphotography.vercel.app/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bangalore"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "25000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
     },
     {
       "@type": "Service",
       "@id": "https://magictodayphotography.vercel.app/#service-maternity",
       "name": "Maternity Photography",
-      "description": "Beautiful maternity photoshoots celebrating motherhood, available as indoor home setups or outdoor golden-hour sessions. The ideal window is 28–34 weeks.",
-      "provider": { "@id": "https://magictodayphotography.vercel.app/#business" },
-      "areaServed": { "@type": "City", "name": "Bangalore" }
+      "description": "Beautiful maternity photoshoots at home or outdoor golden hour locations. Ideal window 28 to 34 weeks.",
+      "provider": {
+        "@id": "https://magictodayphotography.vercel.app/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Bangalore"
+      }
     },
     {
-      "@type": "Service",
-      "@id": "https://magictodayphotography.vercel.app/#service-event",
-      "name": "Event Photography",
-      "description": "Professional event photography for Government events, corporate functions, birthdays, and private celebrations across Bangalore.",
-      "provider": { "@id": "https://magictodayphotography.vercel.app/#business" },
-      "areaServed": { "@type": "City", "name": "Bangalore" }
-    },
-    {
-      "@type": "ImageGallery",
-      "@id": "https://magictodayphotography.vercel.app/#gallery",
-      "name": "Magic Today Photography Portfolio",
-      "description": "A showcase of candid wedding photography, pre-wedding shoots, event coverage, and lifestyle portraits.",
-      "url": "https://magictodayphotography.vercel.app/",
-      "image": [
-        {
-          "@type": "ImageObject",
-          "url": "https://magictodayphotography.vercel.app/images/wedding-sample-1.jpg",
-          "caption": "Candid wedding moment at Taj Bangalore"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://magictodayphotography.vercel.app/images/pre-wedding-sample-1.jpg",
-          "caption": "Pre-wedding shoot at Cubbon Park"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://magictodayphotography.vercel.app/images/newborn-sample-1.jpg",
-          "caption": "Home-based newborn session"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://magictodayphotography.vercel.app/images/maternity-sample-1.jpg",
-          "caption": "Golden-hour maternity shoot"
-        },
-        {
-          "@type": "ImageObject",
-          "url": "https://magictodayphotography.vercel.app/images/event-sample-1.jpg",
-          "caption": "Corporate event coverage at Indiranagar"
-        }
-      ]
+      "@type": "Article",
+      "@id": "https://magictodayphotography.vercel.app/#article",
+      "headline": "Why Magic Today Photography is Bangalore Most Recommended Event and Wedding Photographer",
+      "alternativeHeadline": "Corporate event and candid wedding photography in Bangalore",
+      "description": "Discover why corporate clients and couples trust Magic Today Photography for authentic storytelling and professional event coverage.",
+      "image": "https://magictodayphotography.vercel.app/Images/wedding-photograpy-intro.jpg",
+      "datePublished": "2025-01-15",
+      "dateModified": "2026-05-22",
+      "author": {
+        "@id": "https://magictodayphotography.vercel.app/#founder"
+      },
+      "publisher": {
+        "@id": "https://magictodayphotography.vercel.app/#organization"
+      },
+      "mainEntityOfPage": "https://magictodayphotography.vercel.app/",
+      "articleSection": "Photography Services Bangalore",
+      "keywords": "corporate event photographer bangalore, wedding photographer bangalore, maternity photoshoot bangalore"
     },
     {
       "@type": "FAQPage",
@@ -296,65 +306,129 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How far in advance should I book my wedding photographer?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We recommend booking at least 3–6 months before your wedding date, especially for peak season (Oct–Feb). Popular dates fill up fast — contact us early to check availability." }
+          "name": "How do I know you will deliver high quality photos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We share complete wedding and event galleries before you book. Every client receives a private online gallery within 3 weeks. Our 4.9 star rating from 150 plus clients speaks for itself. You pay only after you see the quality."
+          }
         },
         {
           "@type": "Question",
-          "name": "What is included in the wedding photography package?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Every wedding package includes full-day candid coverage, a dedicated second shooter, 400–800+ edited high-resolution images delivered via private online gallery, and a highlight reel." }
+          "name": "What if I am not happy with the final photos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your satisfaction is guaranteed. We offer one round of free re-edits for any image you are not 100 percent happy with. If the core issue is coverage, we will discuss a partial refund or reshoot. No photographer has ever been perfect, but we always make it right."
+          }
         },
         {
           "@type": "Question",
-          "name": "How long does it take to receive the edited photos?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Sneak peek previews are delivered within 48–72 hours. The full edited gallery is ready within 2–3 weeks of the event. Rush delivery is available on request." }
+          "name": "Do you charge extra for travel within Bangalore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No travel fee within 15 km of Banashankari (Jayanagar, JP Nagar, Basavanagudi, Koramangala). Beyond that – Whitefield, Yelahanka, Electronic City – a small surcharge applies. We tell you the exact amount before you book, no surprises."
+          }
         },
         {
           "@type": "Question",
-          "name": "What is the starting price for a pre-wedding photoshoot in Bangalore?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Pre-wedding sessions start at ₹25,000 and include a 2–3 hour couple shoot at a scenic Bangalore location, outfit changes, and 50+ fully edited images." }
+          "name": "How much deposit do I need to pay and is it refundable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We ask for a 30 percent advance to lock your date (not 50 percent like many studios). It is fully refundable if you cancel within 7 days of booking. After that, it becomes non-refundable – but we always offer a free reschedule once, up to 30 days before your shoot."
+          }
         },
         {
           "@type": "Question",
-          "name": "Can we choose our own location for the pre-wedding shoot?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Absolutely! We shoot at Cubbon Park, Lalbagh, heritage sites, cafes, rooftops, or any location meaningful to you. We also have a curated list of hidden Bangalore gems if you need inspiration." }
+          "name": "Can you handle last minute bookings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes – we keep emergency slots for urgent events (corporate headshots, birthday parties, maternity shoots). Call us directly at +91 80957 67131. If we are free, we will come. If not, we will recommend a trusted colleague."
+          }
         },
         {
           "@type": "Question",
-          "name": "Do you travel outside Bangalore for destination weddings?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes! We love destination shoots. We've covered weddings across Goa, Kerala, Coorg, Rajasthan, and even international locations. Travel and accommodation costs are billed separately." }
+          "name": "What happens if my event runs late or the schedule changes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We build buffer time into every booking. If your event extends, we stay without drama. Overtime is billed at a minimal hourly rate (2500 rupees per hour for events, 3500 rupees per hour for weddings). We never pack up and leave at a strict cutoff."
+          }
         },
         {
           "@type": "Question",
-          "name": "Are your newborn photography sessions safe for the baby?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Safety is our top priority. Our newborn sessions are done at your home, use only natural light and gentle props, and we work at the baby's pace. We never force any pose that looks uncomfortable." }
+          "name": "Do you sign NDAs for corporate events?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We sign non-disclosure agreements for product launches, internal meetings, and any sensitive corporate work. Your trade secrets and guest privacy are safe with us. We also offer watermarked previews before final delivery."
+          }
         },
         {
           "@type": "Question",
-          "name": "When is the best time for a maternity photoshoot?",
-          "acceptedAnswer": { "@type": "Answer", "text": "The ideal window is between 28–34 weeks of pregnancy, when the bump is beautifully visible and you're still comfortable moving around. We offer both studio-style home setups and outdoor golden-hour shoots." }
+          "name": "How quickly do you respond to inquiries?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Within 2 hours during business hours (10 AM to 7 PM). For WhatsApp messages, usually under 30 minutes. We know that waiting for a quote or confirmation is stressful – so we reply fast."
+          }
         },
         {
           "@type": "Question",
-          "name": "Do you provide printed photo albums or only digital files?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We deliver all edited photos as digital high-resolution files. Premium flush-mount or leather-bound wedding albums can be added to any package at an additional cost." }
+          "name": "What equipment do you use and do you carry backups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use professional full-frame cameras (Sony and Canon) with dual card slots. We carry two camera bodies, four lenses, three flashes, and external audio recorders for video. If something fails, we have an identical backup ready. No missed moments."
+          }
         },
         {
           "@type": "Question",
-          "name": "What is your cancellation and rescheduling policy?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We understand that plans change. A 50% advance is required to confirm the booking. Rescheduling is allowed once with 30 days' notice at no extra charge. Cancellations with less than 15 days' notice forfeit the advance." }
+          "name": "Which areas of Bangalore do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All of Bangalore – Banashankari, Indiranagar, Koramangala, Jayanagar, JP Nagar, Whitefield, Electronic City, Hebbal, Yelahanka, and beyond."
+          }
         },
         {
           "@type": "Question",
-          "name": "Can we meet or video call before booking?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes, and we strongly encourage it! A free 20-minute consultation call or in-person meeting at our Banashankari office helps us understand your vision and ensures we're the perfect fit for each other." }
-        },
-        {
-          "@type": "Question",
-          "name": "What areas in Bangalore do you cover?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We serve all of Bangalore including Banashankari, Indiranagar, Koramangala, Jayanagar, JP Nagar, Whitefield, Electronic City, Hebbal, Yelahanka, and beyond." }
+          "name": "What is your cancellation policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 50 percent advance confirms the booking. Rescheduling is allowed once with 30 days notice at no extra charge. Cancellations with less than 15 days notice forfeit the advance."
+          }
         }
       ]
+    },
+    {
+      "@type": "Review",
+      "@id": "https://magictodayphotography.vercel.app/#review1",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Kiran Kumar Vel"
+      },
+      "datePublished": "2021-05-15",
+      "reviewBody": "Magic Today photography made everything go smoothly and I did not have to worry. All were so professional and made my day look phenomenal.",
+      "itemReviewed": {
+        "@id": "https://magictodayphotography.vercel.app/#business"
+      }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://magictodayphotography.vercel.app/#review2",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Manjunatha BM"
+      },
+      "datePublished": "2024-01-15",
+      "reviewBody": "Photos and videos come very nice. We all love it. Satya has did awesome job.",
+      "itemReviewed": {
+        "@id": "https://magictodayphotography.vercel.app/#business"
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -365,24 +439,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "position": 1,
           "name": "Home",
           "item": "https://magictodayphotography.vercel.app/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://magictodayphotography.vercel.app/#services"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Wedding Photography",
-          "item": "https://magictodayphotography.vercel.app/#service-wedding"
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://magictodayphotography.vercel.app/",
+      "url": "https://magictodayphotography.vercel.app/",
+      "name": "Magic Today Photography | Bangalore Premier Event and Wedding Photographer",
+      "description": "Best corporate event and wedding photographer in Bangalore. Candid weddings, maternity shoots, portraits. 150 plus happy clients. 4.9 star rating.",
+      "isPartOf": {
+        "@id": "https://magictodayphotography.vercel.app/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://magictodayphotography.vercel.app/#breadcrumb"
+      },
+      "primaryImageOfPage": "https://magictodayphotography.vercel.app/Images/wedding-photograpy-intro.jpg",
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://magictodayphotography.vercel.app/#website",
+      "url": "https://magictodayphotography.vercel.app/",
+      "name": "Magic Today Photography",
+      "description": "Bangalore premier event and wedding photography studio. Corporate events, candid weddings, pre-wedding, maternity.",
+      "publisher": {
+        "@id": "https://magictodayphotography.vercel.app/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://magictodayphotography.vercel.app/search?q=search_term_string",
+        "query-input": "required name=search_term_string"
+      }
     }
   ]
 }
-</script>
+</script>z
 
 <style>
 
