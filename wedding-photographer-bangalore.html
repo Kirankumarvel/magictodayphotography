@@ -48,8 +48,8 @@ j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
-      "@id": "https://magictodayphotography.vercel.app/#organization",
+      "@type": "ProfessionalService",
+      "@id": "https://magictodayphotography.vercel.app/#professional-service",
       "name": "Magic Today Photography",
       "url": "https://magictodayphotography.vercel.app/",
       "logo": "https://magictodayphotography.vercel.app/Images/logo.jpg",
@@ -138,7 +138,7 @@ j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "availability": "https://schema.org/InStock"
       },
       "manufacturer": {
-        "@id": "https://magictodayphotography.vercel.app/#organization"
+        "@id": "https://magictodayphotography.vercel.app/#professional-service"
       }
     },
     {
@@ -175,7 +175,7 @@ j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "@id": "https://magictodayphotography.vercel.app/#founder"
       },
       "publisher": {
-        "@id": "https://magictodayphotography.vercel.app/#organization"
+        "@id": "https://magictodayphotography.vercel.app/#professional-service"
       },
       "mainEntityOfPage": "https://magictodayphotography.vercel.app/wedding-photographer-bangalore.html",
       "articleSection": "Wedding Photography Tips",
@@ -351,6 +351,38 @@ j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "@type": "SearchAction",
         "target": "https://magictodayphotography.vercel.app/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
+      },
+            {
+        "@type": "ImageGallery",
+        "@id": "https://magictodayphotography.vercel.app/#portfolio-gallery",
+        "name": "Wedding & Candid Photography Portfolio – Bangalore",
+        "description": "A curated collection of real wedding moments captured by Magic Today Photography.",
+        "image": [
+          "https://magictodayphotography.vercel.app/Images/wedding-sample-1.jpg",
+          "https://magictodayphotography.vercel.app/Images/pre-wedding-sample-2.jpg",
+          "https://magictodayphotography.vercel.app/Images/destination-wedding-goa.jpg",
+          "https://magictodayphotography.vercel.app/Images/candid-moment-bangalore.jpg"
+        ],
+        "creator": {
+          "@id": "https://magictodayphotography.vercel.app/#founder"
+        },
+        "copyrightHolder": {
+          "@id": "https://magictodayphotography.vercel.app/#professional-service"
+        },
+            {
+      "@type": "Photograph",
+      "@id": "https://magictodayphotography.vercel.app/#hero-photo",
+      "name": "Candid wedding moment in Bangalore",
+      "description": "A spontaneous, emotional shot from a real wedding – capturing the essence of candid wedding photography.",
+      "image": "https://magictodayphotography.vercel.app/Images/wedding-photograpy-intro.jpg",
+      "creator": {
+        "@id": "https://magictodayphotography.vercel.app/#founder"
+      },
+      "copyrightHolder": {
+        "@id": "https://magictodayphotography.vercel.app/#professional-service"
+      },
+      "keywords": "candid wedding photography, Bangalore wedding photographer, emotional wedding photos"
+    }
       }
     }
   ]
