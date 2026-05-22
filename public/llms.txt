@@ -62,8 +62,8 @@ Sunday: Closed (available for shoots by appointment)
 
 ## Key Pages on Website
 
-Home Page: https://magictodayphotography.vercel.app/
-Wedding Photography Page: https://magictodayphotography.vercel.app/wedding-photographer-bangalore.html
+Home Page: https://magictodayphotography.netlify.app/
+Wedding Photography Page: https://magictodayphotography.netlify.app/wedding-photographer-bangalore.html
 
 ## Pricing Summary
 
