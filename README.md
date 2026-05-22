@@ -8,7 +8,7 @@
 ---
 
 > 👋 **Welcome!**  
-> This is the single‑file, 100% static, SEO‑focused website for Magic Today Photography ―  
+> This is the  SEO‑focused website for Magic Today Photography ―  
 > *Wedding, pre-wedding, event, newborn, and maternity photography specialists in Bangalore, India.*
 
 ---
@@ -23,7 +23,7 @@
 
 Magic Today Photography’s website is:
 
-- **Single page. Fully responsive. Zero build or dependencies.**
+- **Fully responsive. Zero build or dependencies.**
 - Designed for strong Google ranking for top Bangalore photographer & wedding keywords.
 - Features a modern, dark-gold aesthetic, customizable WhatsApp integration, floating chat, local business schema, animations, and more.
 - 🚀 *Perfect for instant deployment on [Vercel](https://vercel.com)!*
