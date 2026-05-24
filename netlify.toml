@@ -21,3 +21,9 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  
+# Redirect old .html pages to clean URLs
+[[redirects]]
+  from = "/wedding-photographer-bangalore.html"
+  to = "/wedding-photographer-bangalore"
+  status = 301
