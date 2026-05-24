@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Magic Today Photography",
+  "name_for_model": "magic_today_photography",
+  "description_for_human": "Book wedding photography in Bangalore.",
+  "description_for_model": "Provides pricing, portfolio, and contact details for a wedding photography business.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://magictodayphotography.netlify.app/openapi.yaml"
+  },
+  "logo_url": "https://magictodayphotography.netlify.app/images/logo.jpg",
+  "contact_email": "info.magictoday@gmail.com",
+  "legal_info_url": "https://magictodayphotography.netlify.app/privacy"
+}
