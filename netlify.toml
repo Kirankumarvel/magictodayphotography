@@ -24,6 +24,7 @@
   status = 200
   headers = {Content-Type = "text/plain"}
   
+  
 
 # Catch-all rule for your SPA (must be last)
 [[redirects]]
@@ -38,3 +39,15 @@
   from = "/wedding-photographer-bangalore.html"
   to = "/wedding-photographer-bangalore"
   status = 301
+
+[[redirects]]
+  from = "/.well-known/ai-plugin.json"
+  to = "/.well-known/ai-plugin.json"
+  status = 200
+  headers = {Content-Type = "application/json"}
+
+[[redirects]]
+  from = "/openapi.yaml"
+  to = "/openapi.yaml"
+  status = 200
+  headers = {Content-Type = "text/yaml"}
