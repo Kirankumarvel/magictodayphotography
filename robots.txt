@@ -14,3 +14,20 @@ Crawl-delay: 1
 # Sitemap locations
 Sitemap: https://magictodayphotography.netlify.app/sitemap.xml
 Sitemap: https://magictodayphotography.netlify.app/image_sitemap.xml
+
+# Allow all standard crawlers
+User-agent: *
+Allow: /
+
+# Specific AI bots
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Sitemap location
+Sitemap: https://magictodayphotography.netlify.app/sitemap.xml
