@@ -1,0 +1,14 @@
+openapi: 3.0.0
+info:
+  title: Magic Today Photography API
+  description: Provides photography pricing and contact info.
+  version: 1.0.0
+servers:
+  - url: https://magictodayphotography.netlify.app
+paths:
+  /:
+    get:
+      summary: Get website info
+      responses:
+        '200':
+          description: OK
