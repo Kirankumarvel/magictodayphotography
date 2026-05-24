@@ -1,8 +1,9 @@
-# Serve robots.txt directly
+# Serve robots.txt and sitemap.xml similarly
 [[redirects]]
   from = "/robots.txt"
   to = "/robots.txt"
   status = 200
+  headers = {Content-Type = "text/plain"}
 
 # Serve sitemap.xml directly
 [[redirects]]
@@ -10,17 +11,27 @@
   to = "/sitemap.xml"
   status = 200
 
-# Serve llms.txt directly
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  headers = {Content-Type = "application/xml"}
+
+# Serve llms.txt as plain text
 [[redirects]]
   from = "/llms.txt"
   to = "/llms.txt"
   status = 200
+  headers = {Content-Type = "text/plain"}
+  
 
 # Catch-all rule for your SPA (must be last)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+  
   
 # Redirect old .html pages to clean URLs
 [[redirects]]
