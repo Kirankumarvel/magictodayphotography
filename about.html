@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Magic Today Photography | Founder Sathya | Bangalore Wedding Photographer</title>
+  <meta name="description" content="Meet Sathya, founder of Magic Today Photography. Discover our 5+ years of cinematic excellence, 150+ weddings captured, and our commitment to authentic storytelling in Bangalore.">
+  <meta name="keywords" content="About Magic Today Photography, Sathya photographer, Bangalore wedding photographer founder, candid photography, cinematic wedding photography">
+  <meta name="author" content="Magic Today Photography">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="About Magic Today Photography | Sathya's Vision">
+  <meta property="og:description" content="Discover the story behind Bangalore's premier wedding photography studio founded by Sathya.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://magictodayphotography.netlify.app/about">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon and Canonical -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='85'>📷</text></svg>">
+  <link rel="canonical" href="https://magictodayphotography.netlify.app/about">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<meta name="google-site-verification" content="ZMTUWN4rBwuVtQTiprMbyWiizYeSOAj3S2h0cnIvQhc" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E874JNHDWR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E874JNHDWR');
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KG36PF89');</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [{
+    "@type": "Organization",
+    "@id": "https://magictodayphotography.netlify.app/#organization",
+    "name": "Magic Today Photography",
+    "url": "https://magictodayphotography.netlify.app/",
+    "logo": "https://magictodayphotography.netlify.app/images/logo.jpg",
+    "description": "Bangalore premier event and wedding photographer.",
+    "telephone": "+918095767131",
+    "email": "info.magictoday@gmail.com",
+    "aggregateRating": {"@type": "AggregateRating","ratingValue": "4.9","reviewCount": "150"}
+  }]
+}</script>
+<style>
+:root {
+  --ink: #0c0a09;
+  --ink-soft: #1a1714;
+  --ink-mid: #2a2520;
+  --gold: #c9a96e;
+  --gold-light: #e8c98a;
+  --gold-pale: #f5e6c8;
+  --cream: #faf7f2;
+  --white: #ffffff;
+  --border: rgba(201,169,110,0.2);
+  --glow: 0 0 40px rgba(201,169,110,0.3);
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  cursor: none;
+}
+.cursor-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; position: fixed; pointer-events: none; z-index: 99999; transform: translate(-50%,-50%); mix-blend-mode: difference; }
+.cursor-ring { width: 36px; height: 36px; border: 1px solid rgba(201,169,110,0.6); border-radius: 50%; position: fixed; pointer-events: none; z-index: 99998; transform: translate(-50%,-50%); transition: 0.12s ease-out; }
+body:has(a:hover) .cursor-ring, body:has(button:hover) .cursor-ring { width: 52px; height: 52px; border-color: var(--gold); }
+@media (max-width: 900px) { .cursor-dot, .cursor-ring { display: none; } body { cursor: auto; } }
+#magicCanvas { position: fixed; inset: 0; pointer-events: none; z-index: 1; opacity: 0.6; }
+.noise { position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 2; opacity: 0.4; }
+header { position: fixed; top: 0; left: 0; width: 100%; z-index: 900; padding: 1.4rem 5%; display: flex; align-items: center; justify-content: space-between; transition: background 0.5s, padding 0.4s; }
+header.scrolled { background: rgba(12,10,9,0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 1rem 5%; }
+.logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; color: var(--cream); font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; }
+.logo-mark { width: 38px; height: 38px; border: 1.5px solid var(--gold); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; color: var(--gold); }
+nav ul { display: flex; gap: 2.5rem; list-style: none; }
+nav a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.3s; position: relative; }
+nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.35s; }
+nav a:hover, nav a.active { color: var(--gold); }
+nav a:hover::after { width: 100%; }
+.hamburger { display: none; background: none; border: none; color: var(--cream); font-size: 1.6rem; cursor: pointer; }
+.btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 2.4rem; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; transition: all 0.4s; position: relative; overflow: hidden; }
+.btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--ink); }
+.btn-ghost { background: transparent; color: var(--cream); border: 1px solid rgba(255,255,255,0.35); }
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold); box-shadow: 0 0 20px rgba(201,169,110,0.15); }
+.hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85') center/cover no-repeat; }
+.hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(12,10,9,0.2) 0%, rgba(12,10,9,0.7) 100%); }
+.hero-content { position: relative; z-index: 10; text-align: center; padding: 0 2rem; max-width: 860px; }
+.hero-eyebrow { font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; opacity: 0; transform: translateY(20px); }
+.hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 8vw, 6rem); font-weight: 300; color: var(--white); margin-bottom: 1.8rem; opacity: 0; }
+.hero h1 em { font-style: italic; color: var(--gold-light); }
+.hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.7); margin-bottom: 2rem; opacity: 0; }
+.hero-cta { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; opacity: 0; transform: translateY(20px); }
+.scroll-hint { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.4); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; z-index: 10; }
+.scroll-line { width: 1px; height: 50px; background: linear-gradient(to bottom, transparent, var(--gold), transparent); animation: scrollPulse 2s ease-in-out infinite; }
+@keyframes scrollPulse { 0%,100% { opacity: 0.3; transform: scaleY(1); } 50% { opacity: 1; transform: scaleY(1.1); } }
+.section-inner { width: 90%; max-width: 1200px; margin: 0 auto; padding: 6rem 0; }
+.section-tag { display: inline-block; font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 300; color: var(--white); margin-bottom: 1.5rem; }
+.section-title em { font-style: italic; color: var(--gold-light); }
+.section-lead { font-size: 1rem; color: rgba(255,255,255,0.55); line-height: 1.8; max-width: 520px; }
+.divider { width: 60px; height: 1px; background: linear-gradient(to right, var(--gold), transparent); margin: 2rem 0; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.about-img-wrap { position: relative; }
+.about-img-wrap img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: 8px; }
+.about-img-frame { position: absolute; top: -16px; left: -16px; right: 16px; bottom: 16px; border: 1px solid var(--border); pointer-events: none; }
+.about-img-label { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(12,10,9,0.95), transparent); padding: 2rem 1.5rem 1rem; font-family: 'Cormorant Garamond', serif; font-style: italic; color: var(--gold-light); }
+.stats-row { display: flex; gap: 3rem; margin-top: 2rem; flex-wrap: wrap; }
+.stat-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 600; color: var(--gold); line-height: 1; }
+.stat-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; margin-top: 3rem; border: 1px solid var(--border); }
+.svc-card { padding: 3rem 2rem; background: var(--ink-soft); transition: background 0.4s; }
+.svc-card:hover { background: var(--ink-mid); }
+.svc-icon { font-size: 1.8rem; color: var(--gold); margin-bottom: 1rem; display: block; }
+.svc-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; margin-bottom: 0.8rem; }
+.svc-desc { font-size: 0.9rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
+.three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 2rem 0; }
+.feature-box { padding: 2rem; background: rgba(255,255,255,0.02); border: 1px solid var(--border); transition: all 0.3s; }
+.feature-box:hover { border-color: rgba(201,169,110,0.5); background: var(--ink-mid); }
+.feature-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold-light); margin-bottom: 1rem; }
+.venue-tags { display: flex; flex-wrap: wrap; gap: 0.7rem; margin: 1.5rem 0; }
+.tag { background: rgba(201,169,110,0.12); border: 1px solid var(--border); padding: 0.4rem 1.2rem; border-radius: 40px; font-size: 0.85rem; color: var(--cream); }
+.guarantee-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 2rem; margin: 2rem 0; }
+.guarantee-item { border-left: 2px solid var(--gold); padding-left: 1.5rem; }
+.guarantee-title { font-weight: 600; color: var(--gold-light); margin-bottom: 0.5rem; font-size: 1rem; letter-spacing: 0.02em; }
+.cta-section { background: linear-gradient(135deg, rgba(201,169,110,0.08), rgba(0,0,0,0.2)); border: 1px solid var(--border); padding: 4rem 3rem; border-radius: 24px; text-align: center; margin: 2rem 0; }
+.cta-buttons { display: flex; gap: 1.2rem; justify-content: center; margin: 2rem 0 1rem; flex-wrap: wrap; }
+@media (max-width: 900px) {
+  nav ul { display: none; }
+  nav ul.open { display: flex; flex-direction: column; position: fixed; inset: 0; top: 70px; background: rgba(12,10,9,0.97); padding: 3rem 5%; gap: 2rem; z-index: 800; }
+  .hamburger { display: block; }
+  .about-grid, .contact-grid, .faq-cols, .three-col, .services-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .cursor-dot, .cursor-ring { display: none; }
+  body { cursor: auto; }
+}
+.reveal { opacity: 0; transform: translateY(30px); transition: all 0.7s ease; }
+.reveal.in-view { opacity: 1; transform: none; }
+.wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 800; }
+.wa-btn { width: 56px; height: 56px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.6rem; cursor: pointer; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: transform 0.3s; }
+.ig-float { position: fixed; bottom: 6.5rem; right: 2rem; width: 50px; height: 50px; background: linear-gradient(45deg, #f09433, #dc2743); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; box-shadow: 0 4px 18px rgba(220,39,67,0.4); z-index: 800; }
+.wa-popup { position: absolute; bottom: 70px; right: 0; width: 280px; background: var(--ink-mid); border: 1px solid var(--border); padding: 1rem; display: none; flex-direction: column; gap: 0.8rem; z-index: 900; }
+.wa-popup.active { display: flex; }
+.wa-send { background: #25D366; border: none; padding: 0.6rem; color: white; font-weight: 600; cursor: pointer; }
+footer { background: var(--ink-soft); border-top: 1px solid var(--border); padding: 4rem 5% 2rem; }
+.footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; max-width: 1200px; margin: auto; }
+.footer-title { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+.social-row { display: flex; gap: 1rem; margin-top: 1.5rem; }
+.social-btn { width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; border-radius: 50%; color: rgba(255,255,255,0.5); text-decoration: none; }
+.social-btn:hover { border-color: var(--gold); color: var(--gold); }
+.footer-bottom { text-align: center; padding-top: 2rem; margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.75rem; }
+.type-cursor { color: var(--gold); animation: blink 1s step-end infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* ── FAQ ── */
+#faq { background: var(--ink-soft); }
+.faq-cols { display: grid; grid-template-columns: 1fr 1.6fr; gap: 6rem; align-items: start; }
+.faq-list { margin-top: 2rem; }
+.faq-item {
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.faq-item.open { border-color: rgba(201,169,110,0.3); }
+.faq-q {
+  width: 100%; background: none; border: none;
+  color: var(--cream);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 1.4rem 0;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.faq-q:hover { color: var(--gold); }
+.faq-item.open .faq-q { color: var(--gold); }
+.faq-icon {
+  width: 28px; height: 28px; flex-shrink: 0;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.7rem;
+  color: var(--gold);
+  transition: background 0.3s, border-color 0.3s, transform 0.4s;
+}
+.faq-item.open .faq-icon {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+  transform: rotate(45deg);
+}
+.faq-a {
+  max-height: 0; overflow: hidden;
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.8;
+  transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1), padding 0.45s;
+}
+.faq-item.open .faq-a { max-height: 200px; padding-bottom: 1.4rem; }
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KG36PF89" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<canvas id="magicCanvas"></canvas>
+<div class="noise"></div>
+
+<header id="header">
+  <a href="#home" class="logo"><img src="/images/logo.jpg" alt="Magic Today Photography" style="width:45px;height:45px;object-fit:contain;border-radius:8px;"> Magic Today Photography</a>
+  <button class="hamburger" id="ham"><i class="fas fa-bars"></i></button>
+  <nav>
+    <ul id="navList">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#founder">Founder</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow" id="heroEye" style="color: rgb(80, 27, 3);"><strong>✦ Bangalore's trusted lens – where every click tells your story and magic meets authenticity</strong></p>
+    <h1 id="heroH1">Bangalore<em>'s Premier Visual Storytellers</em></h1>
+    <p class="hero-sub">Professional <strong>wedding photographer</strong>, <strong>pre-wedding shoots</strong>, newborn & maternity photography — served with artistry and emotion.</p>
+    <p class="hero-sub" id="heroSub"><span id="typeEl"></span><span class="type-cursor">|</span></p>
+    <div class="hero-cta" id="heroCta">
+      <a href="#contact" class="btn btn-gold">Book Your Shoot <i class="fas fa-arrow-right"></i></a>
+      <a href="#gallery" class="btn btn-ghost">View Portfolio</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- INTRO: Bangalore's Premier Visual Storytellers -->
+<section id="story">
+  <div class="section-inner">
+    <div class="reveal"><span class="section-tag">✦ The Magic Today Story</span>
+    <h2 class="section-title">The Story Behind the <em>Magic</em></h2>
+    <p class="section-lead" style="max-width:100%;">We Don't Take Photos. We Craft <strong>Magical Memories</strong>.</p>
+    <p>Founded on the belief that every frame tells the story only you can live, Magic Today Photography brings five years of cinematic excellence to your most important moments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Founder Section (Meet the Founder) -->
+<section id="founder">
+  <div class="section-inner">
+    <div class="reveal"><span class="section-tag">✦ Heart Behind the Lens</span>
+    <h2 class="section-title">Meet the Founder: <em>The Heart Behind the Lens</em></h2>
+    <div class="about-grid">
+      <div><p>Magic Today Photography was born from <strong>Sathya's vision</strong> to move beyond the constraints of traditional poses and studio lighting. After witnessing too many couples settle for stiff, formulaic wedding portraits, Sathya set out to create something different: <strong>unscripted moments with cinematic excellence</strong>.</p>
+      <p>With a deep respect for the emotional moments that define a wedding, Sathya built a team dedicated to capturing the authentic laughter, stolen glances, and genuine joy that make your day uniquely yours.</p>
+      <div class="divider"></div>
+      <p class="section-lead" style="font-style:italic; color:var(--gold-light);">"Every frame tells the story that only you can live."</p>
+      <p>What started as a passion project has evolved into Bangalore's trusted name for candid wedding photography. Today, Sathya leads a team of seasoned photographers and post-processing artists who share a single obsession: crafting wedding galleries that feel like visual poetry.</p>
+      </div>
+      <div class="about-img-wrap"><img src="/Images/Founder-satya.jpg"  alt="Sathya Founder"><div class="about-img-frame"></div><div class="about-img-label">Sathya · Founder & Lead Photographer</div></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- Proven Magic Stats -->
+<section>
+  <div class="section-inner">
+    <div class="reveal"><span class="section-tag">✦ Proven Magic</span>
+    <h2 class="section-title">Five Years of <em>Excellence</em></h2>
+    <p>Our track record speaks for itself. Here's what we've accomplished together:</p>
+    <div class="stats-row" style="justify-content:space-between; margin:3rem 0;">
+      <div><span class="stat-num" data-target="5">0</span><div class="stat-label">Years of Excellence</div></div>
+      <div><span class="stat-num" data-target="150">0</span><div class="stat-label">Weddings & Events</div></div>
+      <div><span class="stat-num" data-target="100">0</span><div class="stat-label">Client Satisfaction (%)</div></div>
+      <div><span class="stat-num" data-target="21">0</span><div class="stat-label">Days Delivery</div></div>
+    </div>
+    <p>Each number represents a promise kept, a moment preserved, and a family's story told with care and artistry. Every couple who trusted us has received their private online gallery within <strong>three weeks</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Philosophy & Style -->
+<section id="philosophy">
+  <div class="section-inner">
+    <div class="reveal"><span class="section-tag">✦ Our Style & Philosophy</span>
+    <h2 class="section-title">Beyond the <em>Shutter</em></h2>
+    <p>At Magic Today Photography, we don't believe in forcing smiles or waiting for the "perfect pose." Instead, we specialize in capturing the authenticity that unfolds naturally—the tears during vows, the laughter during receptions, the intimate exchanges that happen in between the "official" moments.</p>
+    <div class="three-col">
+      <div class="feature-box"><h3>Cinematic Storytelling</h3><p>We approach each wedding as a visual narrative, with careful attention to composition, natural lighting, and emotional depth. Your wedding day isn't a series of isolated photos—it's a cinematic journey.</p></div>
+      <div class="feature-box"><h3>True-to-Life Colors</h3><p>Our post-processing workflow ensures that the colors in your photos reflect the genuine mood and atmosphere of your day, not an oversaturated or artificially filtered version.</p></div>
+      <div class="feature-box"><h3>Cultural Competence</h3><p>We have spent years mastering the intricate details of Indian wedding rituals—from Muhurtham to Sangeet, Haldi to Mehendi. We celebrate your traditions with reverence.</p></div>
+    </div>
+    <h3 class="section-title" style="font-size:1.8rem; margin-top:1.5rem;">Beyond Weddings: A Full Range of Services</h3>
+    <p>While candid wedding photography is our specialty, our expertise extends to romantic pre-wedding shoots at Cubbon Park or Lalbagh, safe home-based newborn photography, and elegant maternity portraits. Every service is delivered with the same commitment to excellence and authenticity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Trust & Reliability -->
+<section>
+  <div class="section-inner">
+    <div class="reveal"><span class="section-tag">✦ Why We Are Trusted</span>
+    <h2 class="section-title">Reliability, Redundancy & <em>Preparation</em></h2>
+    <div class="three-col">
+      <div class="feature-box"><h3>Professional-Grade Equipment</h3><p>Full-frame Sony/Canon with dual card slots for instant data redundancy. Every shot is backed up in real-time.</p></div>
+      <div class="feature-box"><h3>Identical Backup Gear</h3><p>Two camera bodies, multiple lenses, additional flashes. Technical failure simply isn't an option.</p></div>
+      <div class="feature-box"><h3>Experience Under Pressure</h3><p>150+ weddings handled every scenario: power failures, weather challenges, venue changes. We stay calm and keep shooting.</p></div>
+    </div>
+    <p><strong>The 3-Week Promise:</strong> Every client receives their private, password-protected online gallery within 21 days. This isn't a goal—it's a guarantee.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Bangalore Roots & Local Expertise -->
+<section>
+  <div class="section-inner">
+    <div class="reveal"><span class="section-tag">✦ Serving Karnataka</span>
+    <h2 class="section-title">Our <em>Bangalore</em> Roots</h2>
+    <p>Based in our professional office in Banashankari, we are deeply rooted in the Bangalore community. We don't just work here—we live here, celebrate here, and understand the unique character of our city.</p>
+    <h3 style="font-family:'Cormorant Garamond',serif; margin:1.5rem 0 0.8rem;">Neighborhoods We Serve Regularly</h3>
+    <div class="venue-tags"><span class="tag">Jayanagar</span><span class="tag">JP Nagar</span><span class="tag">Basavanagudi</span><span class="tag">Koramangala</span><span class="tag">Indiranagar</span><span class="tag">Whitefield</span><span class="tag">Hebbal</span><span class="tag">Cubbon Park</span><span class="tag">Lalbagh</span></div>
+    <p>Whether your wedding is at a high-end venue like Taj Bangalore, a corporate event in Electronic City, or an intimate ceremony in a home or garden, we understand Bangalore's unique lighting conditions, traffic patterns, and venue logistics. This local expertise—combined with our cinematic approach—means your photos will look and feel authentically Bangalore.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Guarantees Section -->
+<section>
+  <div class="section-inner">
+    <div class="reveal"><span class="section-tag">✦ Our Promise</span>
+    <h2 class="section-title">Satisfaction <em>Guaranteed</em></h2>
+    <div class="guarantee-items">
+      <div class="guarantee-item"><div class="guarantee-title">✓ One Round of Free Re-Edits</div><p>We offer one complimentary round of revisions to ensure you're 100% happy.</p></div>
+      <div class="guarantee-item"><div class="guarantee-title">✓ Transparent, Client-Friendly Pricing</div><p>Only 30% advance deposit to lock your date—well below industry standard.</p></div>
+      <div class="guarantee-item"><div class="guarantee-title">✓ 7-Day Refund Policy</div><p>Full refund within 7 days, no questions asked, for consultation or initial deliverables.</p></div>
+      <div class="guarantee-item"><div class="guarantee-title">✓ Flexibility & Professional Service</div><p>We adapt gracefully to schedule changes, overtime, extra locations. Your comfort is priority.</p></div>
+      <div class="guarantee-item"><div class="guarantee-title">✓ Private, Secure Online Galleries</div><p>Password-protected, encrypted galleries for your privacy.</p></div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action: Let's Create -->
+<section>
+  <div class="section-inner">
+    <div class="reveal cta-section">
+      <h2 class="section-title" style="margin-bottom:1rem;">Let's Create Something <em>Beautiful Together</em></h2>
+      <p>Ready to turn your moments into magic? Whether you're planning a wedding, a pre-shoot, or a special event, we'd love to hear your story and discuss how we can bring your vision to life.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn btn-gold">Book a Free Consultation</a>
+        <a href="#contact" class="btn btn-ghost">Visit Our Office in Banashankari</a>
+      </div>
+      <p style="margin-top:30px; font-size:0.95rem;">Or reach out directly via phone or WhatsApp to discuss your event.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="faq-cols">
+      <div>
+        <p class="section-tag reveal">✦ FAQ</p>
+        <h2 class="section-title reveal" style="animation-delay:0.1s"><em>Frequently</em><br>Asked Questions</h2>
+        <div class="divider reveal" style="animation-delay:0.2s"></div>
+        <p class="section-lead reveal" style="animation-delay:0.25s">Can't find what you're looking for? Just send us a message — we usually reply within a few hours.</p>
+        <div style="margin-top:2.5rem;" class="reveal" style="animation-delay:0.3s">
+          <a href="#contact" class="btn btn-gold">Ask Us Directly <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="faq-list" id="faqList">
+        <!-- FAQ items added here -->
+        <div class="faq-item">
+          <button class="faq-q">
+            Who is the founder of Magic Today Photography, and what makes his approach unique?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-a">
+            Magic Today Photography was founded by <strong>Sathya</strong>, a passionate visual storyteller with over 5 years of experience. Unlike traditional photographers who rely on posed setups, Sathya specializes in <strong>cinematic candid photography</strong> — capturing raw emotions, stolen glances, and unscripted moments. His philosophy is simple: <em>“Every frame tells the story that only you can live.”</em>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            What is the photography style of Magic Today Photography?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-a">
+            We describe our style as <strong>authentic, cinematic, and emotion-driven</strong>. We blend true-to-life colors with artistic composition, avoiding over-filtered or overly edited images. Our focus is on storytelling — from the nervous excitement before the ceremony to the joyful tears during the reception.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            How many weddings has Magic Today Photography covered, and in which locations?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-a">
+            We’ve proudly captured over <strong>150+ weddings and events</strong> across Bangalore, Karnataka, and beyond. From intimate home ceremonies to grand celebrations at venues like Taj Bangalore and palace grounds, we’ve mastered the art of working in diverse lighting, crowd sizes, and cultural rituals.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Does Sathya personally shoot every wedding, or does he have a team?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-a">
+            Yes, <strong>Sathya personally leads every wedding shoot</strong> as the primary photographer. He is supported by a carefully trained second shooter and post‑production team to ensure consistent quality. You get his creative eye and leadership on your big day, plus seamless backup coverage.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            What is the turnaround time for receiving our wedding photos?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-a">
+            We deliver your <strong>private, password-protected online gallery</strong> within <strong>21 days</strong> (3 weeks) from the event date — no delays, no excuses. This is our written promise. You also receive one free round of re-edits if needed.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Does Magic Today Photography only cover weddings, or do you offer other services?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-a">
+            While weddings are our specialty, we also offer <strong>pre-wedding shoots (Cubbon Park, Lalbagh), newborn photography (safe in-home sessions), maternity shoots, corporate events, and portfolio photography</strong>. Every service follows the same candid, cinematic approach.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            How does Magic Today Photography handle technical failures or emergencies on a wedding day?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-a">
+            We come prepared with <strong>dual‑card slot cameras (instant backup), identical backup camera bodies, multiple lenses, and extra flashes</strong>. We’ve handled power cuts, weather changes, and venue shifts across 150+ weddings. Technical failure is simply not an option.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            What is the booking process and payment policy?
+            <span class="faq-icon"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="faq-a">
+            We require only <strong>30% advance deposit</strong> to lock your date — well below industry standard. The remaining balance is due on or before the event day. We also offer a <strong>7‑day refund policy</strong> for consultation or initial deliverables, no questions asked.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:2.5rem 0;">
+  <div style="max-width:1180px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;align-items:stretch;">
+    <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(212,175,55,0.22);border-radius:18px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,0.18);">
+      <div style="padding:1rem 1.1rem 0.9rem;">
+        <div style="display:flex;align-items:center;gap:0.65rem;color:#d4af37;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;font-size:0.82rem;">
+          <i class="fas fa-map-marker-alt"></i>
+          Visit Our Office
+        </div>
+        <p style="margin:0.55rem 0 0;color:rgba(255,255,255,0.82);line-height:1.6;">Banashankari, Bangalore — a professional, welcoming office space where we plan and coordinate weddings, pre-weddings, maternity, newborn, corporate, government events, and portfolio sessions. (All photoshoots are conducted on-location or at client-preferred venues.)</p>
+      </div>
+      <div style="position:relative;padding-top:62%;background:#1a1a1a;">
+        <iframe
+          title="Magic Today Photography location map"
+          src="https://maps.google.com/maps?q=Magic+Today+Photography,+5th+block,+3rd+phase,+131,+2nd+Cross+Rd,+Banashankari+3rd+Stage,+Bengaluru&z=16&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          style="position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(8%) contrast(1.05) saturate(0.9);">
+        </iframe>
+      </div>
+    </div>
+
+    <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" rel="noopener" style="text-decoration:none;align-self:stretch;">
+      <div style="height:100%;background:linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.04));border:1px solid rgba(212,175,55,0.28);border-radius:18px;padding:1.35rem;display:flex;flex-direction:column;justify-content:center;gap:1rem;box-shadow:0 18px 40px rgba(0,0,0,0.18);">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
+          <div>
+            <div style="color:#d4af37;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;font-size:0.82rem;">Google Reviews</div>
+            <div style="color:#fff;font-size:1.25rem;font-weight:700;margin-top:0.35rem;">Rated by happy clients</div>
+          </div>
+          <div style="width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #fff 0%, #f8e8b0 35%, #d4af37 100%);display:grid;place-items:center;color:#111;font-size:1.5rem;box-shadow:0 10px 22px rgba(212,175,55,0.35);">
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:0.4rem;color:#f6d97a;font-size:1.05rem;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p style="margin:0;color:rgba(255,255,255,0.84);line-height:1.6;">View the latest Google review badge and share your experience with Magic Today Photography.</p>
+        <span style="display:inline-flex;align-items:center;gap:0.5rem;color:#111;background:#d4af37;padding:0.85rem 1rem;border-radius:999px;font-weight:700;width:fit-content;">
+          Open Google Review Badge <i class="fas fa-arrow-right"></i>
+        </span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid"><div><img src="/images/logo.jpg" alt="logo" style="width:50px;margin-bottom:1rem;"><p>Magic Today Photography – Best Events photographer in Bangalore.</p><div class="social-row"><a href="#" class="social-btn"><i class="fab fa-instagram"></i></a><a href="#" class="social-btn"><i class="fab fa-whatsapp"></i></a></div></div><div><div class="footer-title">Quick Links</div><ul><li><a href="#story">Story</a></li><li><a href="#founder">Founder</a></li><li><a href="#services">Services</a></li><li><a href="#contact">Book Now</a></li></ul></div><div><div class="footer-title">Services</div><ul><li>Wedding Photography</li><li>Pre-Wedding Shoots</li><li>Event Photography</li></ul></div><div><div class="footer-title">Contact</div><ul><li>info.magictoday@gmail.com</li><li>+91 80957 67131</li><li>Banashankari, Bangalore</li></ul></div></div>
+  <div class="footer-bottom"><span>© 2026 Magic Today Photography. All rights reserved.</span><span>Crafted with ❤ in Bangalore</span></div>
+</footer>
+
+<div class="wa-float"><div class="wa-btn" id="waBtn"><i class="fab fa-whatsapp"></i></div><div class="wa-popup" id="waPopup"><button class="wa-close" id="waClose">✕</button><h5>Chat on WhatsApp</h5><label class="wa-opt"><input type="radio" name="waSvc" value="Wedding Photography"> Wedding</label><label class="wa-opt"><input type="radio" name="waSvc" value="Pre-Wedding Shoot"> Pre-Wedding</label><button class="wa-send" id="waSend">Start Chat</button></div></div>
+<a href="#" class="ig-float"><i class="fab fa-instagram"></i></a>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+// custom cursor, canvas particles (simplified)
+const dot=document.querySelector('.cursor-dot'), ring=document.querySelector('.cursor-ring');
+let mx=0,my=0,cx=0,cy=0;
+window.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px';});
+function animateCursor(){cx+=(mx-cx)*0.12;cy+=(my-cy)*0.12;ring.style.left=cx+'px';ring.style.top=cy+'px';requestAnimationFrame(animateCursor);}
+animateCursor();
+
+// header scroll
+window.addEventListener('scroll',()=>document.getElementById('header').classList.toggle('scrolled',window.scrollY>50));
+
+// reveal observer
+const obs=new IntersectionObserver(e=>e.forEach(entry=>entry.isIntersecting&&entry.target.classList.add('in-view')),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+// stat counters
+const counters=document.querySelectorAll('.stat-num[data-target]');
+const counterObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const el=entry.target;const target=+el.dataset.target;let val=0;const update=()=>{val+=Math.ceil(target/45);if(val>=target){el.innerText=target+(target===100?'%':'+');return;}el.innerText=val;requestAnimationFrame(update);};update();counterObserver.unobserve(el);}});},{threshold:0.6});
+counters.forEach(c=>counterObserver.observe(c));
+
+// typewriter
+const phrases=['Wedding Photography','Pre-Wedding Stories','Newborn Moments','Cinematic Memories'];
+let pi=0,ci=0,deleting=false; const typeEl=document.getElementById('typeEl');
+function typeLoop(){const cur=phrases[pi];if(!deleting){typeEl.textContent=cur.slice(0,ci+1);ci++;if(ci===cur.length){deleting=true;setTimeout(typeLoop,2000);return;}}else{typeEl.textContent=cur.slice(0,ci-1);ci--;if(ci===0){deleting=false;pi=(pi+1)%phrases.length;setTimeout(typeLoop,400);return;}}setTimeout(typeLoop,deleting?55:90);}
+setTimeout(typeLoop,1500);
+gsap.to('#heroEye',{opacity:1,y:0,duration:0.8}); gsap.to('#heroH1',{opacity:1,duration:1,delay:0.2}); gsap.to('#heroSub',{opacity:1,duration:0.6,delay:0.4}); gsap.to('#heroCta',{opacity:1,y:0,duration:0.7,delay:0.6});
+
+// FAQ toggle
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',function(){this.parentElement.classList.toggle('open');}));
+
+// whatsapp
+const waBtn=document.getElementById('waBtn'), waPopup=document.getElementById('waPopup'), waClose=document.getElementById('waClose'), waSend=document.getElementById('waSend');
+waBtn?.addEventListener('click',()=>waPopup.classList.toggle('active'));
+waClose?.addEventListener('click',()=>waPopup.classList.remove('active'));
+waSend?.addEventListener('click',()=>{let sel=document.querySelector('input[name="waSvc"]:checked');if(sel) window.open(`https://wa.me/918095767131?text=${encodeURIComponent(`Hi, I'm interested in ${sel.value}`)}`,'_blank');waPopup.classList.remove('active');});
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth'});}));
+</script>
+</body>
+</html>
