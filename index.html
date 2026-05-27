@@ -1382,7 +1382,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <img src="/images/logo.jpg" alt="Magic Today Photography – best wedding photographer in Bangalore logo" title="Magic Today Photography | Wedding Photographer Bangalore" class="logo" width="70" height="70">
     Magic Today Photography
   </a>
-  <button class="hamburger" id="ham"><i class="fas fa-bars"></i></button>
+  <button class="hamburger" id="ham" aria-label="Menu" ><i class="fas fa-bars" aria-hidden="true" ></i></button>
   <nav>
     <ul id="navList">
       <li><a href="/about">About</a></li>
@@ -1443,7 +1443,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li>✓ <strong>Event photography in Bangalore</strong> — corporate & private</li>
           <li>✓ <strong>Professional portfolio photography</strong> — for models & actors</li>
         </ul>
-        <h4 class="section-title reveal" style="animation-delay:0.15s">We Don't Take Photos.<br>We <em>Craft Memories.</em></h4>
+        <h3 class="section-title reveal" style="animation-delay:0.15s">We Don't Take Photos.<br>We <em>Craft Memories.</em></h3>
        
         <div class="stats-row">
           <div class="stat-item reveal" style="animation-delay:0.35s">
@@ -1626,9 +1626,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="testimonial-nav">
-        <button class="testi-nav-btn" id="testiPrev" aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+        <button class="testi-nav-btn" id="testiPrev" aria-label="Previous testimonial"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
         <div class="testi-dots" id="testiDots"></div>
-        <button class="testi-nav-btn" id="testiNext" aria-label="Next testimonial"><i class="fas fa-arrow-right"></i></button>
+        <button class="testi-nav-btn" id="testiNext" aria-label="Next testimonial"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
       </div>
     </div>
   </div>
@@ -1696,7 +1696,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
         <div class="social-row reveal" style="animation-delay:0.25s">
-          <a href="https://www.instagram.com/magictodayphotography/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/magictodayphotography/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
           <a href="https://wa.me/918095767131" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i></a>
           <a href="https://linkedin.com/company/magic-today-photography" target="_blank" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
         </div>
@@ -1846,7 +1846,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- WhatsApp Float -->
 <div class="wa-float">
   <div class="wa-popup" id="waPopup">
-    <button class="wa-close" id="waClose">✕</button>
+    <button class="wa-close" id="waClose" aria-label="Close WhatsApp popup">✕</button>
     <h5>Chat on WhatsApp</h5>
     <p>Choose your service to get started</p>
     <label class="wa-opt"><input type="radio" name="waSvc" value="Wedding Photography"> 💍Wedding Photography</label>
@@ -2114,7 +2114,7 @@ const faqList=document.getElementById('faqList');
 faqs.forEach(f=>{
   const item=document.createElement('div');
   item.className='faq-item';
-  item.innerHTML=`<button class="faq-q">${f.q}<span class="faq-icon"><i class="fas fa-plus"></i></span></button><div class="faq-a"><p>${f.a}</p></div>`;
+  item.innerHTML=`<button class="faq-q">${f.q}<span class="faq-icon" aria-hidden="true"><i class="fas fa-plus" aria-hidden="true"></i></span></button><div class="faq-a"><p>${f.a}</p></div>`;
   faqList.appendChild(item);
   item.querySelector('.faq-q').addEventListener('click',()=>{
     const isOpen=item.classList.contains('open');
