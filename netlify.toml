@@ -31,7 +31,12 @@
   from = "/*"
   to = "/index.html"
   status = 200
-
+  
+# Netlify Speed Essentials
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Encoding = "br"
   
   
 # Redirect old .html pages to clean URLs
