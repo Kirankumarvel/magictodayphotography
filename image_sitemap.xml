@@ -4,39 +4,80 @@
 
     <url>
         <loc>https://magictodayphotography.netlify.app/</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-29</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
 
+        <!-- Logo -->
         <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/Images/logo.jpg</image:loc>
+            <image:loc>https://magictodayphotography.netlify.app/images/logo.jpg</image:loc>
+            <image:title>Magic Today Photography Logo – Best Wedding Photographer in Bangalore</image:title>
+            <image:caption>Official logo of Magic Today Photography, premier wedding and event photography studio in Banashankari, Bangalore.</image:caption>
+            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
+            <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
         </image:image>
 
+        <!-- Founder -->
         <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/Images/Founder-satya.jpg</image:loc>
+            <image:loc>https://magictodayphotography.netlify.app/images/Founder-satya.jpg</image:loc>
+            <image:title>Sathya – Founder & Lead Wedding Photographer at Magic Today Photography</image:title>
+            <image:caption>Sathya, founder of Magic Today Photography, with over 80 weddings and 150 corporate events captured across India.</image:caption>
+            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
+            <image:geo_location>Bangalore, India</image:geo_location>
         </image:image>
 
+        <!-- Pre-Wedding Cubbon Park -->
         <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/Images/Pre‑Wedding-Cubbon%20Park.jpeg</image:loc>
+            <image:loc>https://magictodayphotography.netlify.app/images/pre-wedding-cubbon-park.jpg</image:loc>
+            <image:title>Pre-Wedding Photoshoot at Cubbon Park, Bangalore</image:title>
+            <image:caption>Couple walking hand-in-hand under ancient rain trees in Cubbon Park during golden hour – ideal for pre-wedding shoots.</image:caption>
+            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
+            <image:geo_location>Cubbon Park, Bangalore, Karnataka, India</image:geo_location>
         </image:image>
 
+        <!-- Candid Wedding -->
         <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/Images/Candid-Wedding.jpeg</image:loc>
+            <image:loc>https://magictodayphotography.netlify.app/images/candid-wedding.jpg</image:loc>
+            <image:title>Candid Wedding Photography in Bangalore – Real Emotions</image:title>
+            <image:caption>Natural, candid shot of a bride and groom laughing during their wedding ceremony, captured by Magic Today Photography.</image:caption>
+            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
+            <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
         </image:image>
 
+        <!-- Hero Image -->
         <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/Images/heroimage.jpg</image:loc>
+            <image:loc>https://magictodayphotography.netlify.app/images/heroimage.jpg</image:loc>
+            <image:title>Hero Image – Wedding Photography Portfolio Magic Today Photography</image:title>
+            <image:caption>Cinematic wedding moment showcasing the studio's signature candid and storytelling style.</image:caption>
+            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
+            <image:geo_location>Bangalore, India</image:geo_location>
         </image:image>
 
+        <!-- Couple Session -->
         <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/Images/CoupleSession.jpeg</image:loc>
+            <image:loc>https://magictodayphotography.netlify.app/images/couple-session.jpg</image:loc>
+            <image:title>Outdoor Couple Pre-Wedding Session – Romantic Sunset Shoot</image:title>
+            <image:caption>Couple embracing during golden hour – perfect for pre-wedding and anniversary photography.</image:caption>
+            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
+            <image:geo_location>Bangalore outskirts, Karnataka</image:geo_location>
         </image:image>
 
+        <!-- Newborn Session -->
         <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/Images/Newborn-Session.jpeg</image:loc>
+            <image:loc>https://magictodayphotography.netlify.app/images/newborn-session.jpg</image:loc>
+            <image:title>Newborn Photography – Safe, Gentle Home Session in Bangalore</image:title>
+            <image:caption>Parents holding their newborn baby in a natural light setup – soft, warm, and intimate.</image:caption>
+            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
+            <image:geo_location>Bangalore, India</image:geo_location>
         </image:image>
 
+        <!-- Maternity Portraits -->
         <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/Images/Maternity-Portraits.jpeg</image:loc>
+            <image:loc>https://magictodayphotography.netlify.app/images/maternity-portraits.jpg</image:loc>
+            <image:title>Maternity Photoshoot Bangalore – Glowing Mother in Floral Crown</image:title>
+            <image:caption>Artistic maternity portrait celebrating motherhood, shot during golden hour at a scenic Bangalore location.</image:caption>
+            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
+            <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
         </image:image>
     </url>
 
