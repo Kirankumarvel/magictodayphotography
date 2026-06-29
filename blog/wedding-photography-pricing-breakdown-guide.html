@@ -200,6 +200,32 @@
   </script>
 
   <style>
+    /* Option A: Limit all images with class "responsive-img" */
+.responsive-img {
+  max-width: 75% !important;  /* forces 75% of container width */
+  width: 650px !important;    /* caps at 650px wide */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
+      
+
+/* Option B: Create a new class for smaller images */
+.img-medium {
+  max-width: 70%;
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+.img-small {
+  max-width: 55%;
+  width: 450px;
+  margin: 0 auto;
+  display: block;
+}
+    
+    
     :root {
       --ink: #0c0a09;
       --ink-soft: #1a1714;
@@ -309,13 +335,7 @@
       text-decoration: underline;
       font-weight: 500;
     }
-    .responsive-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 16px;
-      margin: 1.2rem 0;
-      display: block;
-    }
+
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -466,7 +486,7 @@
         <p>For most couples spending between <strong>₹20,000 to ₹3,00,000</strong> for single-day coverage, with multi-day destination weddings often ranging from <strong>₹3,00,000 to ₹10,00,000+</strong>.</p>
         <p>But here's the thing — these numbers don't tell the full story. <strong>They don't tell you <em>why</em> one photographer charges ₹50,000 and another charges ₹2,50,000.</strong></p>
         <p>Let me show you what's actually behind those numbers.</p>
-        <img src="/images/pricing-chart.jpg" alt="Wedding photography pricing tiers chart" class="responsive-img" loading="lazy" title="Wedding Photography Pricing Tiers">
+        <img src="/images/pricing-chart.jpg" alt="Wedding photography pricing tiers chart" class="responsive-img img-medium" loading="lazy" title="Wedding Photography Pricing Tiers">
       </div>
 
       <div class="reveal">
@@ -495,7 +515,7 @@
         </ul>
         <p><strong>Total equipment investment for a professional wedding photographer: easily ₹5-10 lakhs.</strong></p>
         <p>And here's the kicker — this equipment gets upgraded every 3-5 years. It's not a one-time purchase. It's a continuous investment.</p>
-        <img src="/images/equipment-cost.jpg" alt="Wedding photography equipment cost breakdown" class="responsive-img" loading="lazy" title="Photography Equipment Costs">
+        <img src="/images/equipment-cost.jpg" alt="Wedding photography equipment cost breakdown" class="responsive-img img-medium" loading="lazy" title="Photography Equipment Costs">
 
         <h3>3. The Team (It's Never Just One Person)</h3>
         <p>That "single photographer" package? It's rarely actually one person.</p>
@@ -528,7 +548,7 @@
         <p><strong>Total: 50-80+ hours per wedding.</strong></p>
         <p>When you divide a ₹1,30,000 package by 60 hours of work, you get about ₹2,100 per hour. But that's before expenses, taxes, and equipment costs.</p>
         <p>The average photographer spends <strong>3-4 weeks</strong> working on a single wedding from start to finish. The wedding day is just the beginning.</p>
-        <img src="/images/time-breakdown.jpg" alt="Wedding photography time breakdown" class="responsive-img" loading="lazy" title="Time Breakdown per Wedding">
+        <img src="/images/time-breakdown.jpg" alt="Wedding photography time breakdown" class="responsive-img img-medium" loading="lazy" title="Time Breakdown per Wedding">
 
         <h3>5. The Editing (Where the Magic Actually Happens)</h3>
         <p>This is the part that surprises most couples.</p>
@@ -690,7 +710,7 @@
           <div class="stat-card"><div class="stat-number">85%</div><div class="stat-label">of couples prefer a mix of candid and documentary style over fully posed</div></div>
         </div>
         <p><em>Sources: The Knot 2025 Real Weddings Study, Google Trends 2023–2026, WeddingWire 2026 Couple Survey</em></p>
-        <img src="/images/stats-infographic.jpg" alt="Wedding photography stats infographic" class="responsive-img" loading="lazy" title="Wedding Photography Stats">
+        <img src="/images/stats-infographic.jpg" alt="Wedding photography stats infographic" class="responsive-img img-medium" loading="lazy" title="Wedding Photography Stats">
       </div>
 
       <div class="reveal">
