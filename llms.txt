@@ -1,5 +1,24 @@
 # Magic Today Photography
 
+> Magic Today Photography is a Bangalore-based photography service specializing in weddings, corporate events, pre-wedding shoots, maternity portraits, and event photography. We offer candid coverage, premium albums, and fast response times. With a 4.9‑star rating from 150+ clients and a “pay after you see the quality” promise, we deliver professional results for every occasion.
+
+## Important Pages
+
+- [Home](https://magictodayphotography.netlify.app/)
+- [Wedding Photography](https://magictodayphotography.netlify.app/wedding-photographer-bangalore)
+- [About](https://magictodayphotography.netlify.app/about)
+- [FAQ](https://magictodayphotography.netlify.app/faq)
+- [Privacy Policy](https://magictodayphotography.netlify.app/privacy)
+- [Blog](https://magictodayphotography.netlify.app/blog/)
+
+## Blog Posts
+
+- [Pre‑Wedding Photoshoot Locations in Bangalore – Guide](https://magictodayphotography.netlify.app/blog/pre-wedding-photoshoot-locations-bangalore-guide)
+- [Wedding Day Photography Timeline – Guide](https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline)
+- [What is Candid Wedding Photography?](https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography)
+
+---
+
 ## Business Overview
 
 **Business Name:** Magic Today Photography  
@@ -12,8 +31,8 @@ Full address: 5th block, 3rd phase, 131, 2nd Cross Rd, Banashankari 3rd Stage, B
 - WhatsApp: +91 80957 67131  
 
 **Social Media:**  
-- [Instagram](https://www.instagram.com/magictodayphotography/)  
-- [Facebook](https://www.facebook.com/magictodayphotography)  
+- Instagram: @magictodayphotography (no active link)  
+- Facebook: https://www.facebook.com/magictodayphotography (link may be inaccessible from some networks)  
 
 **Hours of Operation:**  
 - Monday to Saturday: 10:00 AM to 7:00 PM  
@@ -23,20 +42,6 @@ Full address: 5th block, 3rd phase, 131, 2nd Cross Rd, Banashankari 3rd Stage, B
 
 **Established:** 2019  
 **Founder:** Sathya (Founder and Lead Photographer) – over 80 weddings and 150 corporate events covered.
-
----
-
-## Important Pages
-
-- [Home](https://magictodayphotography.netlify.app/)
-- [Wedding Photography](https://magictodayphotography.netlify.app/wedding-photographer-bangalore)
-- [About](https://magictodayphotography.netlify.app/about)
-- [FAQ](https://magictodayphotography.netlify.app/faq)
-- [Blog](https://magictodayphotography.netlify.app/blog/)
-- [Pre‑Wedding Locations Guide](https://magictodayphotography.netlify.app/blog/pre-wedding-photoshoot-locations-bangalore-guide)
-- [Wedding Day Timeline Guide](https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline)
-- [What is Candid Wedding Photography?](https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography)
-- [Privacy Policy](https://magictodayphotography.netlify.app/privacy)
 
 ---
 
