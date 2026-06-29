@@ -15,7 +15,7 @@
 
 ## ✨ Live Demo
 
-**🌐 [magictodayphotography.vercel.app](https://magictodayphotography.vercel.app)**
+**🌐 [magictodayphotography.netlify.app](https://magictodayphotography.netlify.app/)**
 
 ---
 
