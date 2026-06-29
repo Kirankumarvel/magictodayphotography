@@ -1503,7 +1503,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="svc-title">💍Wedding Photography</div>
         
         <p class="svc-desc">Full-day candid wedding photography capturing rituals, emotions, and celebrations with cinematic excellence.</p>
-       <a href="https://magictodayphotography.netlify.app/wedding-photographer-bangalore"> <i class="fas fa-arrow-right svc-arrow"> </i></a>
+
+        <a href="https://magictodayphotography.netlify.app/wedding-photographer-bangalore" aria-label="Learn more about Wedding Photography">
+        <i class="fas fa-arrow-right svc-arrow" aria-hidden="true"></i></a>
+
       </div>
       <div class="svc-card">
         <div class="svc-num">02</div>
@@ -1712,12 +1715,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
         <div class="social-row reveal" style="animation-delay:0.25s">
-          <a href="https://www.instagram.com/magictoday-photography/" target="_blank" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/magictoday-photography/" target="_blank" class="ig-float" aria-label="Follow us on Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>   <span class="sr-only">Follow us on Instagram</span></a>
           <a href="https://wa.me/918095767131" target="_blank" class="social-btn" aria-label="Whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
           <a href="https://linkedin.com/company/magic-today-photography" target="_blank" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
         </div>
       </div>
       <form action="https://formspree.io/f/info.magictoday@gmail.com" method="POST" class="reveal" style="animation-delay:0.1s">
+      <form 
+        action="https://formspree.io/f/info.magictoday@gmail.com" 
+        method="POST" 
+        class="reveal" 
+        style="animation-delay:0.1s"
+        toolname="bookPhotographyService"
+        tooldescription="Submit an inquiry to book wedding, pre-wedding, event, newborn, maternity, or portfolio photography services with Magic Today Photography in Bangalore."
+      >  
+        
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="name">Your Name *</label>
@@ -1879,6 +1892,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <style>
+
+  .sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+  
 .type-cursor {
   color: var(--gold);
   animation: blink 1s step-end infinite;
