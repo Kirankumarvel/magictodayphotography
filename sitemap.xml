@@ -1,67 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-<loc>https://magictodayphotography.netlify.app/</loc>
-<lastmod>2026-05-19</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1.0</priority>
-</url>
-<url>
-<loc>https://magictodayphotography.netlify.app/wedding-photographer-bangalore</loc>
-<lastmod>2026-05-22</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://magictodayphotography.netlify.app/about</loc>
-<lastmod>2026-05-25</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://magictodayphotography.netlify.app/faq</loc>
-<lastmod>2026-05-26</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<url>
-<loc>https://magictodayphotography.netlify.app/blog/</loc>
-<lastmod>2026-05-26</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.9</priority>
-</url>
-<!--  Blog 1: Pre-Wedding Locations Bangalore  -->
-<url>
-<loc>https://magictodayphotography.netlify.app/blog/pre-wedding-photoshoot-locations-bangalore-guide</loc>
-<lastmod>2026-05-26</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<!--  Blog 2: Wedding Day Photography Timeline  -->
-<url>
-<loc>https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline</loc>
-<lastmod>2026-06-12</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<!--  Blog 3: Candid Wedding Photography (Pillar Page)  -->
-<url>
-<loc>https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography</loc>
-<lastmod>2026-06-13</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.9</priority>
-</url>
-<!--  New Blog 4: Wedding Photography Pricing Breakdown Guide  -->
-<url>
-<loc>https://magictodayphotography.netlify.app/blog/wedding-photography-pricing-breakdown-guide</loc>
-<lastmod>2026-06-30</lastmod>
-<changefreq>monthly</changefreq>
-<priority>0.7</priority>
-</url>
-<url>
-<loc>https://magictodayphotography.netlify.app/privacy</loc>
-<lastmod>2026-06-12</lastmod>
-<changefreq>yearly</changefreq>
-<priority>0.3</priority>
-</url>
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-bangalore</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/about</loc>
+    <lastmod>2026-05-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/faq</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog 1: Pre-Wedding Locations Bangalore -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/pre-wedding-photoshoot-locations-bangalore-guide</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog 2: Wedding Day Photography Timeline -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog 3: Candid Wedding Photography (Pillar Page) -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog 4: Wedding Photography Pricing Breakdown Guide -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/wedding-photography-pricing-breakdown-guide</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog 5: 15 Creative Pre-Wedding Photoshoot Ideas at Beaches, Rooftops & Studios -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/creative-pre-wedding-photoshoot-ideas-beach-rooftop-studio</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/privacy</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
