@@ -77,6 +77,21 @@
     <priority>0.7</priority>
   </url>
 
+   <!-- Blog 6: How Much Should You Budget for Wedding Photography? A South Indian Wedding Photographer's Honest Guide -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/wedding-photography-budget-guide</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog 7:The Ultimate Wedding Photography FAQ – 30 Questions Every Couple Asks -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/wedding-photography-faq-30-questions</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Privacy Policy -->
   <url>
     <loc>https://magictodayphotography.netlify.app/privacy</loc>
