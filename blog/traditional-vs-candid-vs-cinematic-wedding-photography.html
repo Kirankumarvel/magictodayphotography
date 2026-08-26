@@ -9,27 +9,21 @@
     <meta name="author" content="Magic Today Photography">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
-
-    <!-- E-E-A-T: Published & Modified Dates -->
     <meta name="date" content="2026-08-25">
     <meta name="pubdate" content="2026-08-25">
     <meta name="last-modified" content="2026-08-25">
 
-    <!-- Security & referrer -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src https://www.googletagmanager.com;">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
-    <!-- Preload Hero Image for LCP -->
     <link rel="preload" as="image" href="/images/hero-wedding-styles.webp" fetchpriority="high">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Traditional vs. Candid vs. Cinematic Wedding Photography – Which One Is Right for You?">
     <meta property="og:description" content="A complete comparison of traditional, candid, and cinematic wedding photography styles with real stories, pricing breakdowns, and honest advice from both sides.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://magictodayphotography.netlify.app/blog/traditional-vs-candid-vs-cinematic-wedding-photography">
     <meta property="og:image" content="/images/hero-wedding-styles.webp">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Traditional vs. Candid vs. Cinematic Wedding Photography – Which One Is Right for You?">
     <meta name="twitter:description" content="A complete comparison of wedding photography styles with real stories, pricing, and honest advice from both sides.">
@@ -46,7 +40,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
     </script>
 
-    <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -59,9 +52,7 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-KG36PF89');
     </script>
-    <!-- End Google Tag Manager -->
 
-    <!-- JSON-LD SCHEMA -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -108,7 +99,7 @@
     </script>
 
     <style>
-        /* ----- SAME STYLES AS PREVIOUS BLOG (KEPT FOR CONSISTENCY) ----- */
+        /* ===== SAME STYLES AS PREVIOUS BLOG (KEPT FOR CONSISTENCY) ===== */
         :root {
             --ink: #0c0a09;
             --ink-soft: #1a1714;
@@ -329,36 +320,6 @@
             margin-bottom: 2rem;
             opacity: 0;
         }
-        .scroll-hint {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 0.7rem;
-            z-index: 10;
-        }
-        .scroll-line {
-            width: 1px;
-            height: 40px;
-            background: linear-gradient(to bottom, transparent, var(--gold), transparent);
-            animation: scrollPulse 2s ease-in-out infinite;
-        }
-        @keyframes scrollPulse {
-            0%,
-            100% {
-                opacity: 0.3;
-                transform: scaleY(1);
-            }
-            50% {
-                opacity: 1;
-                transform: scaleY(1.1);
-            }
-        }
 
         .section-inner {
             width: 90%;
@@ -397,13 +358,6 @@
             background: var(--ink-soft);
             padding: 1rem 0 2rem;
         }
-        .blog-article h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(1.8rem, 6vw, 2.6rem);
-            font-weight: 300;
-            color: var(--white);
-            margin-bottom: 0.5rem;
-        }
         .blog-article h2 {
             font-family: 'Cormorant Garamond', serif;
             font-size: clamp(1.5rem, 5vw, 2rem);
@@ -416,12 +370,6 @@
             font-size: clamp(1.3rem, 4vw, 1.6rem);
             color: var(--cream);
             margin: 1.2rem 0 0.6rem;
-        }
-        .blog-article h4 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(1.1rem, 3vw, 1.3rem);
-            color: var(--gold-light);
-            margin: 1rem 0 0.4rem;
         }
         .blog-article p {
             font-size: clamp(0.9rem, 3vw, 1rem);
@@ -436,14 +384,6 @@
         }
         .blog-article li {
             margin-bottom: 0.4rem;
-            font-size: 0.95rem;
-        }
-        .blog-article blockquote {
-            border-left: 3px solid var(--gold);
-            padding-left: 1rem;
-            font-style: italic;
-            margin: 1rem 0;
-            color: rgba(255, 255, 255, 0.8);
             font-size: 0.95rem;
         }
         .blog-article table {
@@ -879,18 +819,15 @@
             .cursor-dot, .cursor-ring { display: none; }
             body { cursor: auto; }
             .section-inner { padding: 2rem 0 3rem; }
-            .hero-content { padding: 0 1.2rem; }
-            .blog-article h1 { font-size: 1.8rem; }
             .blog-article h2 { font-size: 1.5rem; }
             .blog-article h3 { font-size: 1.3rem; }
-            .blog-article p, .blog-article li, .blog-article blockquote { font-size: 0.9rem; }
+            .blog-article p, .blog-article li { font-size: 0.9rem; }
             .blog-article th, .blog-article td { padding: 0.5rem; font-size: 0.75rem; white-space: nowrap; }
             .pro-tip { padding: 0.8rem; font-size: 0.85rem; }
             .btn { padding: 0.7rem 1.5rem; font-size: 0.7rem; }
             .footer-grid { gap: 1.2rem; text-align: center; justify-items: center; }
             .footer-grid .social-row { justify-content: center; }
             .quick-ref-grid { grid-template-columns: 1fr; padding: 0.8rem 1rem; }
-            .quick-ref-grid .qr-item { font-size: 0.8rem; }
             .form-row { grid-template-columns: 1fr; gap: 0.8rem; }
             .stats-infographic-wrapper img { max-height: 600px; }
             .blog-image { max-height: 350px; }
@@ -898,28 +835,22 @@
         @media (max-width: 768px) {
             .hero { min-height: 60vh; }
             .hero h1 { font-size: clamp(1.8rem, 7vw, 2.8rem); }
-            .hero-sub { font-size: 0.85rem; }
-            .section-title { font-size: clamp(1.6rem, 4vw, 2.2rem); }
             .blog-image { max-height: 280px; }
-            .footer-bottom { font-size: 0.7rem; flex-direction: column; gap: 0.5rem; text-align: center; }
-            .author-box { flex-direction: column; text-align: center; }
             .stats-infographic-wrapper img { max-height: 500px; }
+            .author-box { flex-direction: column; text-align: center; }
+            .footer-bottom { font-size: 0.7rem; flex-direction: column; gap: 0.5rem; text-align: center; }
         }
         @media (max-width: 480px) {
             .logo { font-size: 1.1rem; gap: 0.4rem; }
             .logo img { width: 35px; }
             .hero h1 { font-size: 1.8rem; }
-            .hero-sub { font-size: 0.8rem; margin-bottom: 1.5rem; }
-            .btn { padding: 0.6rem 1.2rem; font-size: 0.65rem; }
             .section-inner { width: 92%; }
-            .blog-article h1 { font-size: 1.6rem; }
             .blog-article h2 { font-size: 1.3rem; }
             .blog-article h3 { font-size: 1.2rem; }
-            .blog-article p, .blog-article li, .blog-article blockquote { font-size: 0.85rem; }
+            .blog-article p, .blog-article li { font-size: 0.85rem; }
             .blog-article th, .blog-article td { font-size: 0.7rem; padding: 0.4rem; }
             .pro-tip { font-size: 0.8rem; }
             .quick-ref-grid .qr-item { font-size: 0.7rem; flex-direction: column; align-items: flex-start; gap: 0.1rem; }
-            .qa-block { padding: 0.4rem 0.8rem 0.4rem 0.8rem; }
             .stats-infographic-wrapper img { max-height: 400px; }
             .blog-image { max-height: 220px; }
         }
@@ -1001,12 +932,12 @@
                     <p>So let’s break this down. No jargon. No pressure. Just three styles, what they really mean, and how to figure out which one is <em>you</em>.</p>
                 </div>
 
-                <!-- PART 1: Traditional -->
+                <!-- ============================================================ -->
+                <!-- IMAGE 1: TRADITIONAL STYLE VISUAL                               -->
+                <!-- ============================================================ -->
                 <div class="reveal">
                     <h2 id="traditional">📸 Traditional Wedding Photography – The Classic</h2>
-                    
                     <img src="/images/traditional-style-visual.webp" alt="Traditional posed family portrait at an Indian wedding with the couple and their relatives arranged formally" class="blog-image" loading="lazy">
-
                     <h3 id="trad-what">What It Really Is</h3>
                     <p>Traditional wedding photography is what your parents and grandparents probably had at their weddings. It’s <strong>posed, structured, and formal</strong>. The photographer directs everything—where you stand, how you hold your hands, where your family members should look. Think of it as a beautifully organized photoshoot that happens to take place on your wedding day.</p>
                     <p>The photographer creates a shot list beforehand. Family portraits with specific groupings. Couple portraits in specific locations. Rituals captured from specific angles. Everything is planned, every detail is controlled.</p>
@@ -1032,13 +963,13 @@
                     </ul>
                 </div>
 
-                <!-- PART 2: Candid -->
+                <!-- ============================================================ -->
+                <!-- IMAGE 2: CANDID STYLE VISUAL                                   -->
+                <!-- ============================================================ -->
                 <div class="reveal">
                     <h2 id="candid">💃 Candid Wedding Photography – The Real Story</h2>
                     <p><em>For a deeper dive into this style, check out our complete guide: <a href="https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography" style="color:white;text-decoration:underline;">What Is Candid Wedding Photography?</a></em></p>
-
                     <img src="/images/candid-style-visual.webp" alt="Candid moment of bride laughing with her bridesmaids in an unguarded, emotional moment" class="blog-image" loading="lazy">
-
                     <h3 id="cand-what">What It Really Is</h3>
                     <p>Candid wedding photography is the opposite of traditional. Instead of directing and posing, the photographer blends into the background and captures moments as they naturally happen—the laughter, the tears, the unguarded glances, the spontaneous dance moves.</p>
                     <p>No “say cheese.” No “look this way.” Just real life, real emotions, real moments.</p>
@@ -1068,12 +999,12 @@
                     </ul>
                 </div>
 
-                <!-- PART 3: Cinematic -->
+                <!-- ============================================================ -->
+                <!-- IMAGE 3: CINEMATIC STYLE VISUAL                                -->
+                <!-- ============================================================ -->
                 <div class="reveal">
                     <h2 id="cinematic">🎬 Cinematic Wedding Photography – The Movie Magic</h2>
-
                     <img src="/images/cinematic-style-visual.webp" alt="Cinematic dramatic silhouette of a couple at golden hour with deep shadows and rich moody colors" class="blog-image" loading="lazy">
-
                     <h3 id="cine-what">What It Really Is</h3>
                     <p>Cinematic wedding photography is what happens when your wedding album starts looking like a film still. Think <strong>dramatic lighting, deep shadows, rich moody colors, sweeping compositions</strong> that feel epic and intentional.</p>
                     <p>To pull off this style, location scouting is key. If you’re planning a cinematic pre-wedding or wedding shoot, you’ll want to check out our <a href="https://magictodayphotography.netlify.app/blog/pre-wedding-photoshoot-locations-bangalore-guide" style="color:white;text-decoration:underline;">Top 10 Pre-Wedding Locations in Bangalore</a> – from palaces to rooftop sunsets, these spots are perfect for dramatic frames.</p>
@@ -1102,7 +1033,9 @@
                     </ul>
                 </div>
 
-                <!-- COMPARISON TABLE -->
+                <!-- ============================================================ -->
+                <!-- IMAGE 4: COMPARISON INFOGRAPHIC (TRIPTYCH)                     -->
+                <!-- ============================================================ -->
                 <div class="reveal">
                     <h2 id="comparison">🔍 Side-by-Side Comparison</h2>
                     <div class="table-wrapper">
@@ -1120,26 +1053,35 @@
                         </table>
                     </div>
                     <p><strong>Most couples today choose a hybrid approach</strong> – around 70% candid and 30% traditional (family formals). Some also sprinkle in a few cinematic portraits during the golden hour. To help you plan the flow of these different segments, we’ve put together a <a href="https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline" style="color:white;text-decoration:underline;">detailed wedding day timeline guide</a> that shows you exactly how to balance each style.</p>
+
+                    <!-- THIS IS THE TRIPTYCH / COMPARISON INFOGRAPHIC (3 COLUMNS) -->
+                    <div class="stats-infographic-wrapper">
+                        <img src="/images/wedding-styles-comparison.webp" alt="Wedding Photography Styles Comparison Infographic – Traditional, Candid, Cinematic side by side with costs, features, and best use cases" width="1200" height="1600" loading="lazy">
+                        <div class="stats-infographic-caption">✦ Which style matches your wedding vision? ✦</div>
+                    </div>
                 </div>
 
-                <!-- THE TRUTH ABOUT BUDGET -->
+                <!-- ============================================================ -->
+                <!-- IMAGE 5: BUDGET & STATS INFOGRAPHIC (CHARTS / DATA)            -->
+                <!-- ============================================================ -->
                 <div class="reveal">
                     <h2 id="budget-truth">💰 The Truth About Budget</h2>
                     <p>Here’s something couples don’t always realize—your photography budget isn’t just about paying for photos. It’s about <em>what kind of photos you want</em>.</p>
                     <p>Traditional photography costs less because it requires less equipment, less time, and less specialized skill. Candid photography costs more because it demands a photographer who can anticipate moments, work in any lighting, and capture magic without direction. Cinematic photography costs the most because it’s essentially art direction—lighting setups, color grading, composition planning, and post-production artistry.</p>
                     <p><strong>Stat:</strong> Couples today are allocating 7-10% of their total wedding budget to photography and videography, up from 3-4% in previous years. Why? Because décor fades, outfits get packed away, but photographs last forever.</p>
                     
-                    <img src="/images/wedding-styles-stats.webp" alt="Wedding photography budget and stats infographic showing 7-10% budget allocation and hybrid popularity" class="blog-image" loading="lazy">
+                    <!-- THIS IS THE STATS INFOGRAPHIC (CHARTS, PERCENTAGES, DATA) -->
+                    <img src="/images/wedding-styles-stats.webp" alt="Wedding photography budget and stats infographic showing 7-10% budget allocation, 70% hybrid popularity, and 45-minute golden hour window" class="blog-image" loading="lazy">
 
                     <div class="pro-tip">💡 For a detailed breakdown of pricing, read our <a href="https://magictodayphotography.netlify.app/blog/wedding-photography-pricing-breakdown-guide" style="color:white;text-decoration:underline;">Wedding Photography Pricing Breakdown Guide</a>. If you're trying to figure out where to cut costs without sacrificing quality, our <a href="https://magictodayphotography.netlify.app/blog/wedding-photography-budget-guide" style="color:white;text-decoration:underline;">Wedding Photography Budget Guide</a> will show you exactly where to save and where to invest.</div>
                 </div>
 
-                <!-- REAL STORIES: GOOD & BAD SIDE -->
+                <!-- ============================================================ -->
+                <!-- IMAGE 6: REAL STORIES DUAL PERSPECTIVE                         -->
+                <!-- ============================================================ -->
                 <div class="reveal">
                     <h2 id="real-stories">💔 The Stories We Don’t Always Tell – From Both Sides</h2>
-
                     <img src="/images/real-stories-dual.webp" alt="Split screen showing photographer's hands holding a camera and a couple's hands counting money with a contract" class="blog-image" loading="lazy">
-
                     <h3 id="photog-side">From the Photographer’s Side</h3>
                     <p>I’ve had clients who tried to bargain down my rates by 50%. “Just click some photos, what’s the big deal?” they’d say. They didn’t understand that my pricing reflects years of experience, expensive equipment, and the fact that I’m responsible for their memories.</p>
                     <p>“Some want us to settle for an amount that is 50-60% of the quoted price,” shares photographer Rahul Saharan. “If it’s too less… I don’t go more than ₹10K up or down while negotiating.”</p>
@@ -1188,12 +1130,6 @@
                         <div class="qr-item"><span class="qr-label">Golden hour</span><span class="qr-value">~45 min before sunset</span></div>
                         <div class="qr-item"><span class="qr-label">Pre-wedding shoot?</span><span class="qr-value">Highly recommended</span></div>
                     </div>
-                </div>
-
-                <!-- COMPARISON INFOGRAPHIC (TABLE REPLACEMENT) -->
-                <div class="reveal stats-infographic-wrapper">
-                    <img src="/images/wedding-styles-comparison.webp" alt="Wedding Photography Styles Comparison Infographic – Traditional, Candid, Cinematic side by side with costs, features, and best use cases" width="1200" height="1600" loading="lazy">
-                    <div class="stats-infographic-caption">✦ Which style matches your wedding vision? ✦</div>
                 </div>
 
                 <!-- FINAL THOUGHTS -->
