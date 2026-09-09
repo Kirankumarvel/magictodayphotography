@@ -20,14 +20,14 @@
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
     <!-- ─── CSP (FIXED: added cdnjs to font-src & style-src) ─── -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.unsplash.com; frame-src https://maps.google.com; connect-src 'self';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.unsplash.com https://raw.githubusercontent.com; frame-src https://maps.google.com; connect-src 'self';" />
 
     <!-- ─── OPEN GRAPH ─── -->
     <meta property="og:title" content="Wedding Photographer Banashankari | Magic Today 4.9★" />
     <meta property="og:description" content="Trusted wedding photographer in Banashankari. Candid, traditional &amp; cinematic coverage. 4.9★ from 150+ couples." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://magictodayphotography.netlify.app/wedding-photographer-banashankari" />
-    <meta property="og:image" content="https://magictodayphotography.netlify.app/images/hero-landingpage.webp" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -35,7 +35,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Wedding Photographer Banashankari | Magic Today 4.9★" />
     <meta name="twitter:description" content="Trusted wedding photographer in Banashankari. Candid, traditional &amp; cinematic coverage. 4.9★ from 150+ couples." />
-    <meta name="twitter:image" content="https://magictodayphotography.netlify.app/images/hero-landingpage.webp" />
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp" />
 
     <!-- ─── GEO TAGS ─── -->
     <meta name="geo.position" content="12.9236;77.5547" />
@@ -348,7 +348,7 @@
             }
         }
 
-        /* ─── Location Hero ─── */
+        /* ─── Location Hero (FIXED: using <picture> with fallback) ─── */
         .location-hero {
             min-height: 60vh;
             display: flex;
@@ -358,19 +358,29 @@
             overflow: hidden;
             margin-top: 80px;
         }
-        .location-hero-bg {
+        .location-hero-img {
             position: absolute;
             inset: 0;
-            background: url('https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp') center/cover no-repeat;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .location-hero-img picture,
+        .location-hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             transform-origin: center;
             will-change: transform;
         }
-        .location-hero-bg::after {
+        .location-hero-img::after {
             content: '';
             position: absolute;
             inset: 0;
             background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(201, 169, 110, 0.12) 0%, transparent 60%),
                 linear-gradient(to bottom, rgba(12, 10, 9, 0.2) 0%, rgba(12, 10, 9, 0.7) 60%, rgba(12, 10, 9, 0.95) 100%);
+            pointer-events: none;
+            z-index: 1;
         }
         .location-hero-content {
             position: relative;
@@ -1291,9 +1301,36 @@
     <!-- ─── MAIN ─── -->
     <main>
 
-        <!-- ═══ HERO ─── -->
+        <!-- ═══ HERO (FIXED: <picture> with fallback) ═══ -->
         <section class="location-hero" aria-labelledby="hero-title">
-            <div class="location-hero-bg" id="heroBg"></div>
+            <!-- Hero Image with Fallback -->
+            <div class="location-hero-img" id="heroImgWrap">
+                <picture>
+                    <!-- WebP (Primary) — Correct Raw GitHub URL -->
+                    <source
+                        srcset="https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp"
+                        type="image/webp"
+                    />
+                    <!-- JPEG Fallback (same image, just in case) -->
+                    <source
+                        srcset="https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.jpg"
+                        type="image/jpeg"
+                    />
+                    <!-- Ultimate Fallback: Unsplash (if GitHub fails) -->
+                    <img
+                        src="https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85"
+                        alt="Wedding photographer in Banashankari – candid couple embracing"
+                        id="heroBgImg"
+                        loading="eager"
+                        fetchpriority="high"
+                        width="1920"
+                        height="1080"
+                        decoding="async"
+                        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85';"
+                    />
+                </picture>
+            </div>
+
             <div class="location-hero-content">
                 <span class="hero-badge">
                     <i class="fas fa-map-marker-alt"></i> Serving Banashankari &amp; Surrounding Areas
@@ -1677,13 +1714,13 @@
         </div>
     </footer>
 
-    <!-- ─── WhatsApp Float (FIXED) ─── -->
+    <!-- ─── WhatsApp Float ─── -->
     <a href="https://wa.me/918095767131" target="_blank" class="wa-btn" id="waBtn" aria-label="Chat on WhatsApp" style="position:fixed; bottom:2rem; right:2rem; z-index:9999; display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:#25D366; border-radius:50%; color:#fff !important; font-size:1.8rem; text-decoration:none !important; box-shadow:0 6px 24px rgba(37,211,102,0.5), 0 0 0 4px rgba(255,255,255,0.08); transition:transform 0.3s, box-shadow 0.3s; border:none; cursor:pointer;">
         <i class="fab fa-whatsapp" aria-hidden="true"></i>
         <span class="sr-only">Chat on WhatsApp</span>
     </a>
 
-    <!-- ─── Instagram Float (FIXED) ─── -->
+    <!-- ─── Instagram Float ─── -->
     <a href="https://www.instagram.com/magictodayphotography/" target="_blank" class="ig-float" aria-label="Follow us on Instagram" style="position:fixed; bottom:7rem; right:2rem; z-index:9999; display:flex; align-items:center; justify-content:center; width:60px; height:60px; background:radial-gradient(circle at 30% 30%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); border-radius:50%; color:#fff !important; font-size:1.8rem; text-decoration:none !important; box-shadow:0 6px 24px rgba(214,41,159,0.5), 0 0 0 4px rgba(255,255,255,0.08); transition:transform 0.3s, box-shadow 0.3s;">
         <i class="fab fa-instagram" aria-hidden="true"></i>
         <span class="sr-only">Follow us on Instagram</span>
@@ -1708,11 +1745,11 @@
             header.classList.toggle('scrolled', window.scrollY > 50);
         });
 
-        // ─── Hero Parallax ───
-        const heroBg = document.querySelector('.location-hero-bg');
-        if (heroBg) {
+        // ─── Hero Parallax (using img now) ───
+        const heroImg = document.getElementById('heroBgImg');
+        if (heroImg) {
             window.addEventListener('scroll', function() {
-                heroBg.style.transform = 'translateY(' + (window.scrollY * 0.4) + 'px)';
+                heroImg.style.transform = 'translateY(' + (window.scrollY * 0.4) + 'px)';
             });
         }
 
