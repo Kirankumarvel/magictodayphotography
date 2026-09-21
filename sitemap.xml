@@ -32,6 +32,101 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- ==================== LOCAL AREA PAGES (BANGALORE NEIGHBOURHOODS) ==================== -->
+  <!-- Primary areas — highest priority -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-banashankari</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-indiranagar</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-koramangala</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-jayanagar</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-jp-nagar</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Secondary areas — high priority -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-whitefield</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-electronic-city</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-hebbal</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-yelahanka</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-basavanagudi</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-marathahalli</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-domlur</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-vijayanagar</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-chikkalasandra</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photographer-hanumagiri</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- ==================== INFORMATIONAL PAGES ==================== -->
   <url>
     <loc>https://magictodayphotography.netlify.app/about</loc>
