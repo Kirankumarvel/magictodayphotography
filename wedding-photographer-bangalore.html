@@ -69,6 +69,24 @@ j=d.createElement(s),dl=l!=='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "postalCode": "560085",
         "addressCountry": "IN"
       },
+      "areaServed": [
+        { "@type": "Place", "name": "Banashankari, Bangalore" },
+        { "@type": "Place", "name": "Indiranagar, Bangalore" },
+        { "@type": "Place", "name": "Koramangala, Bangalore" },
+        { "@type": "Place", "name": "Jayanagar, Bangalore" },
+        { "@type": "Place", "name": "JP Nagar, Bangalore" },
+        { "@type": "Place", "name": "Whitefield, Bangalore" },
+        { "@type": "Place", "name": "Electronic City, Bangalore" },
+        { "@type": "Place", "name": "Hebbal, Bangalore" },
+        { "@type": "Place", "name": "Yelahanka, Bangalore" },
+        { "@type": "Place", "name": "Basavanagudi, Bangalore" },
+        { "@type": "Place", "name": "Marathahalli, Bangalore" },
+        { "@type": "Place", "name": "Domlur, Bangalore" },
+        { "@type": "Place", "name": "Vijayanagar, Bangalore" },
+        { "@type": "Place", "name": "Chikkalasandra, Bangalore" },
+        { "@type": "Place", "name": "Hanumagiri, Bangalore" },
+        { "@type": "Place", "name": "Bangalore, Karnataka, India" }
+      ],
       "sameAs": [
         "https://www.instagram.com/magictodayphotography/",
         "https://wa.me/918095767131",
@@ -445,7 +463,7 @@ nav a:hover{color:var(--gold);} nav a:hover::after{width:100%;}
 .gal-item:hover .gal-overlay{opacity:1;}
 .testimonial-slider-wrap{margin-top:3rem;overflow:hidden;border:1px solid var(--border);background:linear-gradient(160deg,rgba(26,23,20,0.95),rgba(12,10,9,0.95));}
 .testimonial-track{display:flex;transition:transform 0.65s cubic-bezier(0.22,1,0.36,1);}
-.testimonial-slide{min-width:100%;padding:3rem 2re  m;}
+.testimonial-slide{min-width:100%;padding:3rem 2rem;}
 .testi-stars{color:var(--gold);font-size:1rem;margin-bottom:0.8rem;}
 .testi-text{font-size:1.05rem;line-height:1.7;color:rgba(255,255,255,0.8);font-style:italic;}
 .testi-name{margin-top:1rem;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--gold-light);}
@@ -661,7 +679,7 @@ nav a:hover::after { width: 100%; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('/images/hero-landingpage.webp') center/cover no-repeat;
+  background: url('https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp') center/cover no-repeat;
   transform-origin: center;
   will-change: transform;
 }
@@ -1137,6 +1155,44 @@ section { position: relative; overflow: hidden; }
 }
 .faq-item.open .faq-a { max-height: 200px; padding-bottom: 1.4rem; }
 
+/* ── Service Areas (Internal Linking for SEO) ── */
+#areas { background: var(--ink); }
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.area-link {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 1.2rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: border-color 0.3s, background 0.3s, transform 0.3s, color 0.3s;
+}
+.area-link i {
+  color: var(--gold);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+.area-link strong {
+  color: var(--gold-light);
+  font-weight: 500;
+}
+.area-link:hover {
+  border-color: var(--gold);
+  background: rgba(201,169,110,0.08);
+  transform: translateY(-2px);
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
 /* ── Contact ── */
 #contact { background: var(--ink); position: relative; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: start; }
@@ -1181,8 +1237,8 @@ footer {
   padding: 4rem 5% 2rem;
 }
 .footer-grid {
-  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 3rem;
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  gap: 2.5rem;
   max-width: 1200px; margin: 0 auto;
 }
 .footer-title {
@@ -1288,11 +1344,15 @@ footer {
   .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
   .gal-item { grid-column: auto !important; grid-row: auto !important; height: 220px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .areas-grid { grid-template-columns: 1fr 1fr; }
   .stats-row { gap: 2rem; flex-wrap: wrap; }
   .form-row { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; gap: 0.8rem; text-align: center; }
   .cursor-dot, .cursor-ring { display: none; }
   body { cursor: auto; }
+}
+@media (max-width: 560px) {
+  .areas-grid { grid-template-columns: 1fr; }
 }
 
 /* ── Reveal animations ── */
@@ -1326,7 +1386,6 @@ footer {
   100% { box-shadow: 0 0 0 0 rgba(220,39,67,0); }
 }
 
-
 </style>
 </head>
 <body>
@@ -1354,6 +1413,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li><a href="/gallery">Gallery</a></li>
       <li><a href="#testimonials">Clients</a></li>
       <li><a href="/faq">FAQ</a></li>
+      <li><a href="#areas">Areas</a></li>
       <li><a href="#contact">Book Now</a></li>
     </ul>
   </nav>
@@ -1604,6 +1664,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- ── Service Areas (Internal Linking for SEO) ── -->
+<section id="areas">
+  <div class="orb" style="width:400px;height:400px;background:radial-gradient(circle,rgba(201,169,110,0.06),transparent);top:-80px;left:-120px;animation-delay:-2s;"></div>
+  <div class="section-inner">
+    <p class="section-tag reveal" style="text-align:center;">✦ Areas We Serve</p>
+    <h2 class="section-title reveal" style="text-align:center;animation-delay:0.1s">
+      Wedding Photographer <em>Across Bangalore</em>
+    </h2>
+    <p class="section-lead reveal" style="text-align:center;margin:0 auto 3rem;animation-delay:0.15s;max-width:700px;">
+      We cover every corner of Bangalore — from Banashankari to Whitefield, Indiranagar to Electronic City. Find your neighbourhood below for local wedding photography services, pricing, and portfolio.
+    </p>
+
+    <div class="areas-grid reveal" style="animation-delay:0.2s;">
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-banashankari" class="area-link" aria-label="Wedding Photographer in Banashankari Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Banashankari</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-indiranagar" class="area-link" aria-label="Wedding Photographer in Indiranagar Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Indiranagar</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-koramangala" class="area-link" aria-label="Wedding Photographer in Koramangala Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Koramangala</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-jayanagar" class="area-link" aria-label="Wedding Photographer in Jayanagar Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Jayanagar</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-jp-nagar" class="area-link" aria-label="Wedding Photographer in JP Nagar Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>JP Nagar</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-whitefield" class="area-link" aria-label="Wedding Photographer in Whitefield Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Whitefield</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-electronic-city" class="area-link" aria-label="Wedding Photographer in Electronic City Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Electronic City</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-hebbal" class="area-link" aria-label="Wedding Photographer in Hebbal Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Hebbal</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-yelahanka" class="area-link" aria-label="Wedding Photographer in Yelahanka Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Yelahanka</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-basavanagudi" class="area-link" aria-label="Wedding Photographer in Basavanagudi Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Basavanagudi</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-marathahalli" class="area-link" aria-label="Wedding Photographer in Marathahalli Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Marathahalli</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-domlur" class="area-link" aria-label="Wedding Photographer in Domlur Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Domlur</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-vijayanagar" class="area-link" aria-label="Wedding Photographer in Vijayanagar Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Vijayanagar</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-chikkalasandra" class="area-link" aria-label="Wedding Photographer in Chikkalasandra Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Chikkalasandra</strong></span>
+      </a>
+      <a href="https://magictodayphotography.netlify.app/wedding-photographer-hanumagiri" class="area-link" aria-label="Wedding Photographer in Hanumagiri Bangalore">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Wedding Photographer in <strong>Hanumagiri</strong></span>
+      </a>
+    </div>
+  </div>
+</section>
+
 
 <!-- ── Contact ── -->
 <section id="contact">
@@ -1758,6 +1895,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="/gallery">Portfolio</a></li>
         <li><a href="#testimonials">Clients</a></li>
         <li><a href="/faq">FAQ</a></li>
+        <li><a href="#areas">Areas We Serve</a></li>
         <li><a href="#contact">Book Now</a></li>
       </ul>
     </div>
@@ -1770,6 +1908,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="#services">Newborn Sessions</a></li>
         <li><a href="#services">Maternity & Baby Shower</a></li>
         <li><a href="#services">Portfolio Shoots</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-title">Areas We Serve</div>
+      <ul>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-banashankari">Banashankari</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-indiranagar">Indiranagar</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-koramangala">Koramangala</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-jayanagar">Jayanagar</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-jp-nagar">JP Nagar</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-whitefield">Whitefield</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-electronic-city">Electronic City</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-hebbal">Hebbal</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-yelahanka">Yelahanka</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-basavanagudi">Basavanagudi</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-marathahalli">Marathahalli</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-domlur">Domlur</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-vijayanagar">Vijayanagar</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-chikkalasandra">Chikkalasandra</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-hanumagiri">Hanumagiri</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -2092,7 +2250,7 @@ const faqs=[
 
   {q:"How do we secure our wedding date with Magic Today Photography?",a:"Simply fill out the contact form on this page, call us at +91 80957 67131, or WhatsApp us. We will schedule a free consultation (in-person at our Banashankari studio or video call). We’ll send you a detailed proposal, answer all your questions, and once you’re ready – we’ll share a contract and payment link to block your date."},
 
-  {q:"Which areas of Bangalore do you cover?",a:"All of Bangalore — Banashankari, Indiranagar, Koramangala, Jayanagar, JP Nagar, Whitefield, Electronic City, Hebbal, Yelahanka, and beyond."}
+  {q:"Which areas of Bangalore do you cover?",a:"All of Bangalore — Banashankari, Indiranagar, Koramangala, Jayanagar, JP Nagar, Whitefield, Electronic City, Hebbal, Yelahanka, Basavanagudi, Marathahalli, Domlur, Vijayanagar, Chikkalasandra, Hanumagiri, and beyond."}
 ];
 
 
@@ -2154,6 +2312,15 @@ gsap.utils.toArray('.gal-item').forEach((item,i)=>{
     opacity:0, scale:0.94,
     duration:0.7, delay:i*0.06,
     scrollTrigger:{trigger:item, start:'top 90%'}
+  });
+});
+
+// ── GSAP reveal for area links ──
+gsap.utils.toArray('.area-link').forEach((link,i)=>{
+  gsap.from(link,{
+    opacity:0, y:20,
+    duration:0.6, delay:i*0.04,
+    scrollTrigger:{trigger:link, start:'top 92%'}
   });
 });
 </script>
