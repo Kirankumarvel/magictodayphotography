@@ -418,14 +418,8 @@
             --glow: 0 0 40px rgba(201, 169, 110, 0.3);
         }
 
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
-
         body {
             background: var(--ink);
             color: var(--cream);
@@ -435,1326 +429,355 @@
             cursor: none;
         }
 
-        /* Brand badge component */
         .brand-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
+            display: inline-flex; align-items: center; gap: 0.4rem;
             padding: 0.3rem 0.8rem;
             background: rgba(201, 169, 110, 0.08);
             border: 1px solid rgba(201, 169, 110, 0.35);
             border-radius: 999px;
-            font-size: 0.72rem;
-            letter-spacing: 0.1em;
+            font-size: 0.72rem; letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: var(--gold-light);
-            font-weight: 500;
-            line-height: 1;
-            white-space: nowrap;
+            color: var(--gold-light); font-weight: 500;
+            line-height: 1; white-space: nowrap;
             transition: background 0.3s, border-color 0.3s, transform 0.2s;
         }
-        .brand-badge:hover {
-            background: rgba(201, 169, 110, 0.15);
-            border-color: var(--gold);
-            transform: translateY(-1px);
-        }
+        .brand-badge:hover { background: rgba(201, 169, 110, 0.15); border-color: var(--gold); transform: translateY(-1px); }
         .brand-badge i { color: var(--gold); font-size: 0.9rem; }
-        .brand-badge .brand-mark {
-            font-family: 'Jost', sans-serif;
-            font-weight: 700;
-            letter-spacing: 0.15em;
-            color: var(--gold-light);
-        }
-        .brand-badges-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            align-items: center;
-        }
+        .brand-badge .brand-mark { font-family: 'Jost', sans-serif; font-weight: 700; letter-spacing: 0.15em; color: var(--gold-light); }
+        .brand-badges-row { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: center; }
         .brand-badge .camera-icon {
             width: 18px; height: 18px;
             background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            border-radius: 4px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--ink);
-            font-size: 0.6rem;
+            border-radius: 4px; display: inline-flex; align-items: center; justify-content: center;
+            color: var(--ink); font-size: 0.6rem;
         }
 
-        .cursor-dot {
-            width: 8px; height: 8px;
-            background: var(--gold);
-            border-radius: 50%;
-            position: fixed; top: 0; left: 0;
-            pointer-events: none;
-            z-index: 99999;
-            transform: translate(-50%, -50%);
-            transition: width 0.2s, height 0.2s, opacity 0.2s;
-            mix-blend-mode: difference;
-        }
-        .cursor-ring {
-            width: 36px; height: 36px;
-            border: 1px solid rgba(201, 169, 110, 0.6);
-            border-radius: 50%;
-            position: fixed; top: 0; left: 0;
-            pointer-events: none;
-            z-index: 99998;
-            transform: translate(-50%, -50%);
-            transition: transform 0.12s ease-out, width 0.3s, height 0.3s, border-color 0.3s;
-        }
-        body:has(a:hover) .cursor-ring,
-        body:has(button:hover) .cursor-ring {
-            width: 52px; height: 52px;
-            border-color: var(--gold);
-        }
+        .cursor-dot { width: 8px; height: 8px; background: var(--gold); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 99999; transform: translate(-50%, -50%); transition: width 0.2s, height 0.2s, opacity 0.2s; mix-blend-mode: difference; }
+        .cursor-ring { width: 36px; height: 36px; border: 1px solid rgba(201, 169, 110, 0.6); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 99998; transform: translate(-50%, -50%); transition: transform 0.12s ease-out, width 0.3s, height 0.3s, border-color 0.3s; }
+        body:has(a:hover) .cursor-ring, body:has(button:hover) .cursor-ring { width: 52px; height: 52px; border-color: var(--gold); }
 
-        #magicCanvas {
-            position: fixed; inset: 0;
-            pointer-events: none;
-            z-index: 1;
-            opacity: 0.6;
-        }
+        #magicCanvas { position: fixed; inset: 0; pointer-events: none; z-index: 1; opacity: 0.6; }
+        .noise { position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 2; opacity: 0.4; }
 
-        .noise {
-            position: fixed; inset: 0;
-            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-            pointer-events: none;
-            z-index: 2;
-            opacity: 0.4;
-        }
-
-        header {
-            position: fixed; top: 0; left: 0;
-            width: 100%; z-index: 900;
-            padding: 1.4rem 5%;
-            display: flex; align-items: center; justify-content: space-between;
-            transition: background 0.5s, border-color 0.5s, padding 0.4s;
-        }
-        header.scrolled {
-            background: rgba(12, 10, 9, 0.92);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 5%;
-        }
-        .logo {
-            display: flex; align-items: center; gap: 0.7rem;
-            text-decoration: none; color: var(--cream);
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem; font-weight: 600;
-            letter-spacing: 0.02em;
-            z-index: 950;
-            position: relative;
-        }
+        header { position: fixed; top: 0; left: 0; width: 100%; z-index: 900; padding: 1.4rem 5%; display: flex; align-items: center; justify-content: space-between; transition: background 0.5s, border-color 0.5s, padding 0.4s; }
+        header.scrolled { background: rgba(12, 10, 9, 0.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 1rem 5%; }
+        .logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; color: var(--cream); font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; letter-spacing: 0.02em; z-index: 950; position: relative; }
         .logo img { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; }
-        .logo-mark {
-            width: 38px; height: 38px;
-            border: 1.5px solid var(--gold);
-            border-radius: 6px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 0.85rem; font-weight: 700;
-            color: var(--gold);
-            font-family: 'Jost', sans-serif;
-            letter-spacing: 0.05em;
-            position: relative; overflow: hidden;
-        }
-        .logo-mark::after {
-            content: ''; position: absolute; inset: -2px;
-            background: linear-gradient(135deg, transparent 40%, rgba(201, 169, 110, 0.3) 60%, transparent 70%);
-            animation: shimmerLogo 3s infinite;
-        }
-        @keyframes shimmerLogo {
-            0% { transform: translateX(-100%) rotate(0deg); }
-            100% { transform: translateX(100%) rotate(0deg); }
-        }
+        .logo-mark { width: 38px; height: 38px; border: 1.5px solid var(--gold); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: 700; color: var(--gold); font-family: 'Jost', sans-serif; letter-spacing: 0.05em; position: relative; overflow: hidden; }
+        .logo-mark::after { content: ''; position: absolute; inset: -2px; background: linear-gradient(135deg, transparent 40%, rgba(201, 169, 110, 0.3) 60%, transparent 70%); animation: shimmerLogo 3s infinite; }
+        @keyframes shimmerLogo { 0% { transform: translateX(-100%) rotate(0deg); } 100% { transform: translateX(100%) rotate(0deg); } }
 
         nav ul { display: flex; gap: 2.5rem; list-style: none; }
-        nav a {
-            color: rgba(255, 255, 255, 0.75);
-            text-decoration: none;
-            font-family: 'Jost', sans-serif;
-            font-size: 0.85rem; font-weight: 400;
-            letter-spacing: 0.12em; text-transform: uppercase;
-            transition: color 0.3s;
-            position: relative;
-        }
-        nav a::after {
-            content: ''; position: absolute;
-            bottom: -4px; left: 0;
-            width: 0; height: 1px;
-            background: var(--gold);
-            transition: width 0.35s cubic-bezier(0.25, 1, 0.5, 1);
-        }
+        nav a { color: rgba(255, 255, 255, 0.75); text-decoration: none; font-family: 'Jost', sans-serif; font-size: 0.85rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.3s; position: relative; }
+        nav a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.35s cubic-bezier(0.25, 1, 0.5, 1); }
         nav a:hover { color: var(--gold); }
         nav a:hover::after { width: 100%; }
-        .hamburger {
-            display: none; background: none; border: none;
-            color: var(--cream); font-size: 1.6rem; cursor: pointer;
-            z-index: 950;
-            position: relative;
-            padding: 0.4rem;
-        }
+        .hamburger { display: none; background: none; border: none; color: var(--cream); font-size: 1.6rem; cursor: pointer; z-index: 950; position: relative; padding: 0.4rem; }
         .hamburger:hover { color: var(--gold); }
 
-        .btn {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.9rem 2.4rem;
-            font-family: 'Jost', sans-serif;
-            font-size: 0.8rem; font-weight: 500;
-            letter-spacing: 0.15em; text-transform: uppercase;
-            text-decoration: none; border: none; cursor: pointer;
-            position: relative; overflow: hidden;
-            transition: all 0.4s;
-        }
-        .btn-gold {
-            background: linear-gradient(135deg, var(--gold), var(--gold-light));
-            color: var(--ink);
-        }
-        .btn-gold::before {
-            content: ''; position: absolute; inset: 0;
-            background: linear-gradient(135deg, transparent 30%, rgba(255, 255, 255, 0.4) 50%, transparent 70%);
-            transform: translateX(-120%);
-            transition: transform 0.5s;
-        }
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 2.4rem; font-family: 'Jost', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; text-decoration: none; border: none; cursor: pointer; position: relative; overflow: hidden; transition: all 0.4s; }
+        .btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-light)); color: var(--ink); }
+        .btn-gold::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, transparent 30%, rgba(255, 255, 255, 0.4) 50%, transparent 70%); transform: translateX(-120%); transition: transform 0.5s; }
         .btn-gold:hover::before { transform: translateX(120%); }
-        .btn-ghost {
-            background: transparent; color: var(--cream);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-        }
-        .btn-ghost:hover {
-            border-color: var(--gold); color: var(--gold);
-            box-shadow: 0 0 20px rgba(201, 169, 110, 0.15);
-        }
-        .btn-outline-gold {
-            background: transparent; color: var(--gold);
-            border: 1px solid var(--gold);
-        }
-        .btn-outline-gold:hover {
-            background: rgba(201, 169, 110, 0.1);
-            box-shadow: 0 0 20px rgba(201, 169, 110, 0.15);
-        }
+        .btn-ghost { background: transparent; color: var(--cream); border: 1px solid rgba(255, 255, 255, 0.35); }
+        .btn-ghost:hover { border-color: var(--gold); color: var(--gold); box-shadow: 0 0 20px rgba(201, 169, 110, 0.15); }
+        .btn-outline-gold { background: transparent; color: var(--gold); border: 1px solid var(--gold); }
+        .btn-outline-gold:hover { background: rgba(201, 169, 110, 0.1); box-shadow: 0 0 20px rgba(201, 169, 110, 0.15); }
         .btn-sm { padding: 0.6rem 1.4rem; font-size: 0.7rem; }
 
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex; align-items: center; justify-content: center;
-            overflow: hidden;
-        }
+        .hero { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
-        .hero-img-wrap img {
-            width: 100%; height: 100%;
-            object-fit: cover;
-            transform-origin: center;
-            will-change: transform;
-        }
-        .hero-img-wrap::after {
-            content: ''; position: absolute; inset: 0;
-            background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(201, 169, 110, 0.12) 0%, transparent 60%),
-                linear-gradient(to bottom, rgba(12, 10, 9, 0.2) 0%, rgba(12, 10, 9, 0.65) 60%, rgba(12, 10, 9, 0.95) 100%);
-            pointer-events: none;
-        }
-        .hero-content {
-            position: relative; z-index: 10;
-            text-align: center;
-            padding: 0 2rem;
-            max-width: 900px;
-        }
-        .hero-eyebrow {
-            display: inline-block;
-            font-family: 'Jost', sans-serif;
-            font-size: 0.75rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 1.5rem;
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        .hero h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(2.2rem, 5vw, 4rem);
-            font-weight: 300;
-            line-height: 1.15;
-            color: var(--white);
-            margin-bottom: 1.6rem;
-            opacity: 0;
-        }
-        .hero h1 em {
-            font-style: italic;
-            color: var(--gold-light);
-            font-weight: 300;
-        }
-        .hero-sub {
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 1.5rem;
-            letter-spacing: 0.02em;
-            opacity: 0;
-            min-height: 1.5em;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            line-height: 1.7;
-        }
+        .hero-img-wrap img { width: 100%; height: 100%; object-fit: cover; transform-origin: center; will-change: transform; }
+        .hero-img-wrap::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(201, 169, 110, 0.12) 0%, transparent 60%), linear-gradient(to bottom, rgba(12, 10, 9, 0.2) 0%, rgba(12, 10, 9, 0.65) 60%, rgba(12, 10, 9, 0.95) 100%); pointer-events: none; }
+        .hero-content { position: relative; z-index: 10; text-align: center; padding: 0 2rem; max-width: 900px; }
+        .hero-eyebrow { display: inline-block; font-family: 'Jost', sans-serif; font-size: 0.75rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; opacity: 0; transform: translateY(20px); }
+        .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 300; line-height: 1.15; color: var(--white); margin-bottom: 1.6rem; opacity: 0; }
+        .hero h1 em { font-style: italic; color: var(--gold-light); font-weight: 300; }
+        .hero-sub { font-size: 1rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem; letter-spacing: 0.02em; opacity: 0; min-height: 1.5em; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.7; }
         .hero-sub strong { color: var(--gold-light); }
-        .hero-cta {
-            display: flex; gap: 1.2rem; justify-content: center;
-            flex-wrap: wrap; opacity: 0; transform: translateY(20px);
-            margin-top: 1.5rem;
-        }
+        .hero-cta { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; opacity: 0; transform: translateY(20px); margin-top: 1.5rem; }
 
-        .scroll-hint {
-            position: absolute; bottom: 2.5rem; left: 50%;
-            transform: translateX(-50%);
-            display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase;
-            z-index: 10;
-        }
-        .scroll-line {
-            width: 1px; height: 50px;
-            background: linear-gradient(to bottom, transparent, var(--gold), transparent);
-            animation: scrollPulse 2s ease-in-out infinite;
-        }
-        @keyframes scrollPulse {
-            0%, 100% { opacity: 0.3; transform: scaleY(1); }
-            50% { opacity: 1; transform: scaleY(1.1); }
-        }
+        .scroll-hint { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: rgba(255, 255, 255, 0.4); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; z-index: 10; }
+        .scroll-line { width: 1px; height: 50px; background: linear-gradient(to bottom, transparent, var(--gold), transparent); animation: scrollPulse 2s ease-in-out infinite; }
+        @keyframes scrollPulse { 0%, 100% { opacity: 0.3; transform: scaleY(1); } 50% { opacity: 1; transform: scaleY(1.1); } }
 
-        .bts-banner {
-            background: var(--ink-mid);
-            border-bottom: 1px solid var(--border);
-            padding: 2.5rem 0;
-        }
-        .bts-banner-inner {
-            display: flex; flex-wrap: wrap; gap: 2rem;
-            align-items: center; justify-content: space-between;
-        }
+        .bts-banner { background: var(--ink-mid); border-bottom: 1px solid var(--border); padding: 2.5rem 0; }
+        .bts-banner-inner { display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; justify-content: space-between; }
         .bts-banner-inner .bts-text { flex: 2 1 400px; }
-        .bts-banner-inner .bts-text p {
-            color: rgba(255, 255, 255, 0.65);
-            font-size: 0.95rem; line-height: 1.8;
-        }
+        .bts-banner-inner .bts-text p { color: rgba(255, 255, 255, 0.65); font-size: 0.95rem; line-height: 1.8; }
         .bts-banner-inner .bts-text p strong { color: var(--gold-light); }
-        .bts-banner-inner .bts-text .brand-badges-row {
-            margin-top: 0.7rem;
-        }
-        .bts-banner-inner .bts-badge {
-            flex: 0 0 auto;
-            display: flex; gap: 1.5rem; flex-wrap: wrap;
-            align-items: center;
-        }
-        .bts-banner-inner .bts-badge span {
-            background: rgba(201, 169, 110, 0.08);
-            border: 1px solid var(--border);
-            padding: 0.5rem 1.2rem;
-            border-radius: 30px;
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.6);
-            letter-spacing: 0.04em;
-            display: flex; align-items: center; gap: 0.4rem;
-        }
+        .bts-banner-inner .bts-text .brand-badges-row { margin-top: 0.7rem; }
+        .bts-banner-inner .bts-badge { flex: 0 0 auto; display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: center; }
+        .bts-banner-inner .bts-badge span { background: rgba(201, 169, 110, 0.08); border: 1px solid var(--border); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 0.75rem; color: rgba(255, 255, 255, 0.6); letter-spacing: 0.04em; display: flex; align-items: center; gap: 0.4rem; }
         .bts-banner-inner .bts-badge span i { color: var(--gold); }
 
         section { position: relative; overflow: hidden; }
-        .section-inner {
-            width: 90%; max-width: 1200px;
-            margin: 0 auto; padding: 7rem 0;
-        }
-        .section-tag {
-            display: inline-block;
-            font-size: 0.7rem; letter-spacing: 0.3em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 1rem;
-        }
-        .section-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(2.4rem, 5vw, 3.8rem);
-            font-weight: 300; line-height: 1.1;
-            color: var(--white);
-            margin-bottom: 1.5rem;
-        }
+        .section-inner { width: 90%; max-width: 1200px; margin: 0 auto; padding: 7rem 0; }
+        .section-tag { display: inline-block; font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+        .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 300; line-height: 1.1; color: var(--white); margin-bottom: 1.5rem; }
         .section-title em { font-style: italic; color: var(--gold-light); }
-        .section-lead {
-            font-size: 1.05rem;
-            color: rgba(255, 255, 255, 0.55);
-            line-height: 1.8; max-width: 520px;
-        }
-        .divider {
-            width: 60px; height: 1px;
-            background: linear-gradient(to right, var(--gold), transparent);
-            margin: 2rem 0;
-        }
+        .section-lead { font-size: 1.05rem; color: rgba(255, 255, 255, 0.55); line-height: 1.8; max-width: 520px; }
+        .divider { width: 60px; height: 1px; background: linear-gradient(to right, var(--gold), transparent); margin: 2rem 0; }
 
-        .orb {
-            position: absolute; border-radius: 50%;
-            filter: blur(80px); pointer-events: none;
-            animation: orbFloat 8s ease-in-out infinite alternate;
-        }
-        @keyframes orbFloat {
-            from { transform: translate(0, 0) scale(1); }
-            to { transform: translate(20px, -30px) scale(1.1); }
-        }
+        .orb { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; animation: orbFloat 8s ease-in-out infinite alternate; }
+        @keyframes orbFloat { from { transform: translate(0, 0) scale(1); } to { transform: translate(20px, -30px) scale(1.1); } }
 
         #about { background: var(--ink-soft); }
-        .about-grid {
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: 5rem; align-items: center;
-        }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
         .about-img-wrap { position: relative; }
-        .about-img-wrap img {
-            width: 100%; aspect-ratio: 3/4;
-            object-fit: cover; display: block;
-        }
-        .about-img-frame {
-            position: absolute;
-            top: -16px; left: -16px; right: 16px; bottom: 16px;
-            border: 1px solid var(--border);
-            pointer-events: none; z-index: -1;
-        }
-        .about-img-label {
-            position: absolute; bottom: -1px; left: 0; right: 0;
-            background: linear-gradient(to top, rgba(12, 10, 9, 0.95), transparent);
-            padding: 2.5rem 2rem 1.5rem;
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.1rem; font-style: italic;
-            color: var(--gold-light);
-        }
-        .stats-row {
-            display: flex; gap: 3rem; margin-top: 3rem;
-        }
-        .stat-num {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3rem; font-weight: 600;
-            color: var(--gold); line-height: 1;
-            display: block;
-        }
-        .stat-label {
-            font-size: 0.72rem; letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.45);
-            margin-top: 0.3rem;
-        }
-        .gear-strip {
-            margin-top: 2rem;
-            padding: 1rem 1.2rem;
-            background: rgba(201, 169, 110, 0.05);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 0.8rem;
-        }
-        .gear-strip-label {
-            font-size: 0.7rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.55);
-            margin-right: 0.3rem;
-        }
+        .about-img-wrap img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+        .about-img-frame { position: absolute; top: -16px; left: -16px; right: 16px; bottom: 16px; border: 1px solid var(--border); pointer-events: none; z-index: -1; }
+        .about-img-label { position: absolute; bottom: -1px; left: 0; right: 0; background: linear-gradient(to top, rgba(12, 10, 9, 0.95), transparent); padding: 2.5rem 2rem 1.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: var(--gold-light); }
+        .stats-row { display: flex; gap: 3rem; margin-top: 3rem; }
+        .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 600; color: var(--gold); line-height: 1; display: block; }
+        .stat-label { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.45); margin-top: 0.3rem; }
+        .gear-strip { margin-top: 2rem; padding: 1rem 1.2rem; background: rgba(201, 169, 110, 0.05); border: 1px solid var(--border); border-radius: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem; }
+        .gear-strip-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); margin-right: 0.3rem; }
 
         #services { background: var(--ink); }
-        .services-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 1.5px; margin-top: 4rem;
-            border: 1px solid var(--border);
-        }
-        .svc-card {
-            position: relative;
-            padding: 3rem 2.5rem;
-            background: var(--ink-soft);
-            overflow: hidden; cursor: pointer;
-            transition: background 0.4s;
-        }
-        .svc-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0;
-            height: 2px;
-            background: linear-gradient(to right, transparent, var(--gold), transparent);
-            transform: scaleX(0);
-            transition: transform 0.5s;
-        }
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; margin-top: 4rem; border: 1px solid var(--border); }
+        .svc-card { position: relative; padding: 3rem 2.5rem; background: var(--ink-soft); overflow: hidden; cursor: pointer; transition: background 0.4s; }
+        .svc-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(to right, transparent, var(--gold), transparent); transform: scaleX(0); transition: transform 0.5s; }
         .svc-card:hover::before { transform: scaleX(1); }
         .svc-card:hover { background: var(--ink-mid); }
-        .svc-num {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5rem; font-weight: 300;
-            color: rgba(201, 169, 110, 0.12);
-            line-height: 1; margin-bottom: 1rem;
-            transition: color 0.4s;
-        }
+        .svc-num { font-family: 'Cormorant Garamond', serif; font-size: 3.5rem; font-weight: 300; color: rgba(201, 169, 110, 0.12); line-height: 1; margin-bottom: 1rem; transition: color 0.4s; }
         .svc-card:hover .svc-num { color: rgba(201, 169, 110, 0.25); }
-        .svc-icon {
-            font-size: 1.6rem; color: var(--gold);
-            margin-bottom: 1rem; display: block;
-            transition: transform 0.3s;
-        }
+        .svc-icon { font-size: 1.6rem; color: var(--gold); margin-bottom: 1rem; display: block; transition: transform 0.3s; }
         .svc-card:hover .svc-icon { transform: translateY(-4px); }
-        .svc-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem; font-weight: 600;
-            color: var(--white); margin-bottom: 0.8rem;
-        }
-        .svc-desc {
-            font-size: 0.92rem;
-            color: rgba(255, 255, 255, 0.5);
-            line-height: 1.7;
-        }
-        .svc-arrow {
-            position: absolute; bottom: 2rem; right: 2rem;
-            color: var(--gold); opacity: 0;
-            transform: translateX(-8px);
-            transition: opacity 0.3s, transform 0.3s;
-            font-size: 1.1rem;
-        }
-        .svc-card:hover .svc-arrow {
-            opacity: 1; transform: translateX(0);
-        }
+        .svc-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: var(--white); margin-bottom: 0.8rem; }
+        .svc-desc { font-size: 0.92rem; color: rgba(255, 255, 255, 0.5); line-height: 1.7; }
+        .svc-arrow { position: absolute; bottom: 2rem; right: 2rem; color: var(--gold); opacity: 0; transform: translateX(-8px); transition: opacity 0.3s, transform 0.3s; font-size: 1.1rem; }
+        .svc-card:hover .svc-arrow { opacity: 1; transform: translateX(0); }
 
         #gallery { background: var(--ink-soft); }
-        .gallery-header {
-            display: flex; justify-content: space-between;
-            align-items: flex-end; margin-bottom: 3rem;
-        }
-        .gallery-grid {
-            display: grid; grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(2, 280px);
-            gap: 12px;
-        }
-        .gal-item {
-            position: relative; overflow: hidden;
-            background: var(--ink-mid);
-        }
+        .gallery-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(12, 1fr); grid-template-rows: repeat(2, 280px); gap: 12px; }
+        .gal-item { position: relative; overflow: hidden; background: var(--ink-mid); }
         .gal-item:nth-child(1) { grid-column: 1/6; grid-row: 1/2; }
         .gal-item:nth-child(2) { grid-column: 6/9; grid-row: 1/2; }
         .gal-item:nth-child(3) { grid-column: 9/13; grid-row: 1/3; }
         .gal-item:nth-child(4) { grid-column: 1/4; grid-row: 2/3; }
         .gal-item:nth-child(5) { grid-column: 4/6; grid-row: 2/3; }
         .gal-item:nth-child(6) { grid-column: 6/9; grid-row: 2/3; }
-        .gal-item img {
-            width: 100%; height: 100%;
-            object-fit: cover; display: block;
-            transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s;
-            filter: brightness(0.85) saturate(0.9);
-        }
-        .gal-item:hover img {
-            transform: scale(1.07);
-            filter: brightness(1) saturate(1.15);
-        }
-        .gal-overlay {
-            position: absolute; inset: 0;
-            background: linear-gradient(to top, rgba(12, 10, 9, 0.8) 0%, transparent 50%);
-            opacity: 0; transition: opacity 0.4s;
-            display: flex; align-items: flex-end; padding: 1.5rem;
-            color: var(--white);
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.1rem; font-style: italic;
-        }
+        .gal-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s; filter: brightness(0.85) saturate(0.9); }
+        .gal-item:hover img { transform: scale(1.07); filter: brightness(1) saturate(1.15); }
+        .gal-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(12, 10, 9, 0.8) 0%, transparent 50%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 1.5rem; color: var(--white); font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; }
         .gal-item:hover .gal-overlay { opacity: 1; }
-        .gal-item::after {
-            content: ''; position: absolute; inset: 0;
-            border: 1px solid rgba(201, 169, 110, 0);
-            transition: border-color 0.4s;
-            pointer-events: none;
-        }
+        .gal-item::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(201, 169, 110, 0); transition: border-color 0.4s; pointer-events: none; }
         .gal-item:hover::after { border-color: rgba(201, 169, 110, 0.35); }
 
-        #video-showcase {
-            background: var(--ink);
-            border-top: 1px solid var(--border);
-        }
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 3rem;
-        }
-        .video-card {
-            position: relative;
-            aspect-ratio: 16 / 9;
-            background: var(--ink-mid);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            overflow: hidden;
-            cursor: pointer;
-            transition: border-color 0.4s, box-shadow 0.4s, transform 0.3s;
-            will-change: transform;
-        }
-        .video-card:hover {
-            border-color: rgba(201, 169, 110, 0.55);
-            box-shadow: var(--glow);
-            transform: translateY(-4px);
-        }
-        .video-card img {
-            width: 100%; height: 100%;
-            object-fit: cover; display: block;
-            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), filter 0.4s;
-            filter: brightness(0.72) saturate(0.95);
-        }
-        .video-card:hover img {
-            transform: scale(1.05);
-            filter: brightness(0.95) saturate(1.05);
-        }
-        .video-play-btn {
-            position: absolute; inset: 0;
-            display: flex; align-items: center; justify-content: center;
-            background: none; border: none; cursor: pointer;
-            z-index: 2; padding: 0;
-        }
-        .video-play-btn i {
-            width: 68px; height: 68px;
-            background: rgba(201, 169, 110, 0.95);
-            color: var(--ink);
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 1.4rem;
-            padding-left: 5px;
-            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-        }
-        .video-card:hover .video-play-btn i {
-            transform: scale(1.12);
-            background: var(--gold-light);
-            box-shadow: 0 8px 30px rgba(201, 169, 110, 0.5);
-        }
-        .video-label {
-            position: absolute; bottom: 0; left: 0; right: 0;
-            padding: 1.6rem 1.2rem 0.9rem;
-            background: linear-gradient(to top, rgba(12, 10, 9, 0.92), transparent);
-            color: var(--cream);
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.05rem; font-style: italic;
-            z-index: 2; pointer-events: none;
-        }
-        .video-card iframe {
-            position: absolute; inset: 0;
-            width: 100%; height: 100%;
-            border: 0; z-index: 3;
-        }
+        #video-showcase { background: var(--ink); border-top: 1px solid var(--border); }
+        .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+        .video-card { position: relative; aspect-ratio: 16 / 9; background: var(--ink-mid); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; cursor: pointer; transition: border-color 0.4s, box-shadow 0.4s, transform 0.3s; will-change: transform; }
+        .video-card:hover { border-color: rgba(201, 169, 110, 0.55); box-shadow: var(--glow); transform: translateY(-4px); }
+        .video-card img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), filter 0.4s; filter: brightness(0.72) saturate(0.95); }
+        .video-card:hover img { transform: scale(1.05); filter: brightness(0.95) saturate(1.05); }
+        .video-play-btn { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: none; border: none; cursor: pointer; z-index: 2; padding: 0; }
+        .video-play-btn i { width: 68px; height: 68px; background: rgba(201, 169, 110, 0.95); color: var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; padding-left: 5px; transition: transform 0.3s, background 0.3s, box-shadow 0.3s; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); }
+        .video-card:hover .video-play-btn i { transform: scale(1.12); background: var(--gold-light); box-shadow: 0 8px 30px rgba(201, 169, 110, 0.5); }
+        .video-label { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.6rem 1.2rem 0.9rem; background: linear-gradient(to top, rgba(12, 10, 9, 0.92), transparent); color: var(--cream); font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-style: italic; z-index: 2; pointer-events: none; }
+        .video-card iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; z-index: 3; }
 
         #testimonials { background: var(--ink); }
         .single-testimonial { position: relative; overflow: hidden; }
         .testimonial-slider-wrap { margin-top: 2.2rem; position: relative; }
-        .testimonial-viewport {
-            overflow: hidden;
-            border: 1px solid var(--border);
-            background: linear-gradient(160deg, rgba(26, 23, 20, 0.95), rgba(12, 10, 9, 0.95));
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
-        }
-        .testimonial-track {
-            display: flex;
-            transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
-        }
-        .testimonial-slide {
-            min-width: 100%;
-            padding: 3rem 2.6rem;
-            position: relative;
-        }
-        .testi-quote-icon {
-            font-size: 3.6rem; line-height: 0.7;
-            color: var(--gold);
-            font-family: 'Cormorant Garamond', serif;
-            margin-bottom: 1rem;
-        }
-        .single-testi-text {
-            color: rgba(255, 255, 255, 0.78);
-            line-height: 1.85; font-style: italic;
-            max-width: 880px;
-        }
-        .single-testi-name {
-            margin-top: 1.4rem;
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.18rem;
-            color: var(--gold-light); font-weight: 600;
-        }
-        .single-testi-role {
-            margin-top: 0.25rem;
-            font-size: 0.82rem;
-            color: rgba(255, 255, 255, 0.45);
-            letter-spacing: 0.04em;
-        }
-        .testimonial-nav {
-            margin-top: 1.2rem;
-            display: flex; align-items: center; justify-content: center;
-            gap: 0.8rem;
-        }
-        .testi-nav-btn {
-            width: 44px; height: 44px;
-            border-radius: 50%;
-            border: 1px solid var(--border);
-            background: rgba(255, 255, 255, 0.02);
-            color: var(--gold-light);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .testi-nav-btn:hover {
-            border-color: var(--gold);
-            background: rgba(201, 169, 110, 0.12);
-            box-shadow: 0 0 18px rgba(201, 169, 110, 0.25);
-        }
+        .testimonial-viewport { overflow: hidden; border: 1px solid var(--border); background: linear-gradient(160deg, rgba(26, 23, 20, 0.95), rgba(12, 10, 9, 0.95)); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); }
+        .testimonial-track { display: flex; transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1); }
+        .testimonial-slide { min-width: 100%; padding: 3rem 2.6rem; position: relative; }
+        .testi-quote-icon { font-size: 3.6rem; line-height: 0.7; color: var(--gold); font-family: 'Cormorant Garamond', serif; margin-bottom: 1rem; }
+        .single-testi-text { color: rgba(255, 255, 255, 0.78); line-height: 1.85; font-style: italic; max-width: 880px; }
+        .single-testi-name { margin-top: 1.4rem; font-family: 'Cormorant Garamond', serif; font-size: 1.18rem; color: var(--gold-light); font-weight: 600; }
+        .single-testi-role { margin-top: 0.25rem; font-size: 0.82rem; color: rgba(255, 255, 255, 0.45); letter-spacing: 0.04em; }
+        .testimonial-nav { margin-top: 1.2rem; display: flex; align-items: center; justify-content: center; gap: 0.8rem; }
+        .testi-nav-btn { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border); background: rgba(255, 255, 255, 0.02); color: var(--gold-light); cursor: pointer; transition: all 0.3s ease; }
+        .testi-nav-btn:hover { border-color: var(--gold); background: rgba(201, 169, 110, 0.12); box-shadow: 0 0 18px rgba(201, 169, 110, 0.25); }
         .testi-dots { display: flex; align-items: center; gap: 0.45rem; }
-        .testi-dot {
-            width: 8px; height: 8px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.25);
-            border: none; cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .testi-dot.active {
-            width: 22px; border-radius: 999px;
-            background: var(--gold);
-        }
+        .testi-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255, 255, 255, 0.25); border: none; cursor: pointer; transition: all 0.3s ease; }
+        .testi-dot.active { width: 22px; border-radius: 999px; background: var(--gold); }
 
         #faq { background: var(--ink-soft); }
-        .faq-cols {
-            display: grid; grid-template-columns: 1fr 1.6fr;
-            gap: 6rem; align-items: start;
-        }
+        .faq-cols { display: grid; grid-template-columns: 1fr 1.6fr; gap: 6rem; align-items: start; }
         .faq-list { margin-top: 2rem; }
-        .faq-item {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-            overflow: hidden;
-            transition: border-color 0.3s;
-        }
+        .faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.07); overflow: hidden; transition: border-color 0.3s; }
         .faq-item.open { border-color: rgba(201, 169, 110, 0.3); }
-        .faq-q {
-            width: 100%; background: none; border: none;
-            color: var(--cream);
-            font-family: 'Jost', sans-serif;
-            font-size: 0.98rem; font-weight: 400;
-            text-align: left; padding: 1.4rem 0;
-            display: flex; justify-content: space-between; align-items: center;
-            gap: 1rem; cursor: pointer;
-            transition: color 0.3s;
-        }
+        .faq-q { width: 100%; background: none; border: none; color: var(--cream); font-family: 'Jost', sans-serif; font-size: 0.98rem; font-weight: 400; text-align: left; padding: 1.4rem 0; display: flex; justify-content: space-between; align-items: center; gap: 1rem; cursor: pointer; transition: color 0.3s; }
         .faq-q:hover { color: var(--gold); }
         .faq-item.open .faq-q { color: var(--gold); }
-        .faq-icon {
-            width: 28px; height: 28px; flex-shrink: 0;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 0.7rem; color: var(--gold);
-            transition: background 0.3s, border-color 0.3s, transform 0.4s;
-        }
-        .faq-item.open .faq-icon {
-            background: var(--gold); color: var(--ink);
-            border-color: var(--gold);
-            transform: rotate(45deg);
-        }
-        .faq-a {
-            max-height: 0; overflow: hidden;
-            font-size: 0.92rem;
-            color: rgba(255, 255, 255, 0.5);
-            line-height: 1.8;
-            transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), padding 0.45s;
-        }
-        .faq-item.open .faq-a {
-            max-height: 300px;
-            padding-bottom: 1.4rem;
-        }
+        .faq-icon { width: 28px; height: 28px; flex-shrink: 0; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.7rem; color: var(--gold); transition: background 0.3s, border-color 0.3s, transform 0.4s; }
+        .faq-item.open .faq-icon { background: var(--gold); color: var(--ink); border-color: var(--gold); transform: rotate(45deg); }
+        .faq-a { max-height: 0; overflow: hidden; font-size: 0.92rem; color: rgba(255, 255, 255, 0.5); line-height: 1.8; transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), padding 0.45s; }
+        .faq-item.open .faq-a { max-height: 300px; padding-bottom: 1.4rem; }
         .faq-a .brand-badges-row { margin-top: 0.6rem; }
 
         #contact { background: var(--ink); position: relative; }
-        .contact-grid {
-            display: grid; grid-template-columns: 1fr 1.2fr;
-            gap: 5rem; align-items: start;
-        }
-        .contact-info-item {
-            display: flex; gap: 1.2rem;
-            align-items: flex-start; margin-bottom: 2.2rem;
-        }
-        .contact-icon-box {
-            width: 44px; height: 44px; flex-shrink: 0;
-            border: 1px solid var(--border);
-            display: flex; align-items: center; justify-content: center;
-            color: var(--gold); font-size: 1rem;
-        }
-        .contact-info-label {
-            font-size: 0.7rem; letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.55);
-            margin-bottom: 0.3rem;
-        }
-        .contact-info-val {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.88);
-        }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: start; }
+        .contact-info-item { display: flex; gap: 1.2rem; align-items: flex-start; margin-bottom: 2.2rem; }
+        .contact-icon-box { width: 44px; height: 44px; flex-shrink: 0; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1rem; }
+        .contact-info-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); margin-bottom: 0.3rem; }
+        .contact-info-val { font-size: 0.95rem; color: rgba(255, 255, 255, 0.88); }
 
-        .form-row {
-            display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
-        }
-        .form-group {
-            display: flex; flex-direction: column;
-            gap: 0.4rem; margin-bottom: 1rem;
-        }
-        .form-label {
-            font-size: 0.7rem; letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.62);
-        }
-        .form-input, .form-select, .form-textarea {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--cream);
-            padding: 0.9rem 1.2rem;
-            font-family: 'Jost', sans-serif;
-            font-size: 0.95rem;
-            outline: none;
-            transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
-            width: 100%;
-        }
-        .form-input:focus, .form-select:focus, .form-textarea:focus {
-            border-color: var(--gold);
-            background: rgba(201, 169, 110, 0.04);
-            box-shadow: 0 0 20px rgba(201, 169, 110, 0.08);
-        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+        .form-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255, 255, 255, 0.62); }
+        .form-input, .form-select, .form-textarea { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--cream); padding: 0.9rem 1.2rem; font-family: 'Jost', sans-serif; font-size: 0.95rem; outline: none; transition: border-color 0.3s, background 0.3s, box-shadow 0.3s; width: 100%; }
+        .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--gold); background: rgba(201, 169, 110, 0.04); box-shadow: 0 0 20px rgba(201, 169, 110, 0.08); }
         .form-select option { background: var(--ink); }
         .form-textarea { min-height: 120px; resize: vertical; }
 
-        footer {
-            background: var(--ink-soft);
-            border-top: 1px solid var(--border);
-            padding: 4rem 5% 2rem;
-        }
-        .footer-grid {
-            display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
-            gap: 3rem; max-width: 1200px; margin: 0 auto;
-        }
-        .footer-title {
-            font-size: 0.75rem; letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--gold); margin-bottom: 1.2rem;
-        }
-        .footer-col p {
-            font-size: 0.88rem;
-            color: rgba(255, 255, 255, 0.62);
-            line-height: 1.8;
-        }
+        footer { background: var(--ink-soft); border-top: 1px solid var(--border); padding: 4rem 5% 2rem; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto; }
+        .footer-title { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+        .footer-col p { font-size: 0.88rem; color: rgba(255, 255, 255, 0.62); line-height: 1.8; }
         .footer-col .brand-badges-row { margin-top: 1rem; }
         .footer-col ul { list-style: none; }
         .footer-col ul li { margin-bottom: 0.6rem; }
-        .footer-col ul li a {
-            color: rgba(255, 255, 255, 0.68);
-            text-decoration: none; font-size: 0.88rem;
-            transition: color 0.2s;
-        }
+        .footer-col ul li a { color: rgba(255, 255, 255, 0.68); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
         .footer-col ul li a:hover { color: var(--gold); }
-        .social-row {
-            display: flex; gap: 1rem; margin-top: 1.5rem;
-        }
-        .social-btn {
-            width: 38px; height: 38px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            display: flex; align-items: center; justify-content: center;
-            color: rgba(255, 255, 255, 0.5);
-            text-decoration: none; font-size: 0.95rem;
-            transition: border-color 0.3s, color 0.3s, box-shadow 0.3s;
-        }
-        .social-btn:hover {
-            border-color: var(--gold); color: var(--gold);
-            box-shadow: 0 0 15px rgba(201, 169, 110, 0.2);
-        }
-        .footer-bottom {
-            max-width: 1200px; margin: 3rem auto 0;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            display: flex; justify-content: space-between; align-items: center;
-            font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.58);
-        }
+        .social-row { display: flex; gap: 1rem; margin-top: 1.5rem; }
+        .social-btn { width: 38px; height: 38px; border: 1px solid rgba(255, 255, 255, 0.12); display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.5); text-decoration: none; font-size: 0.95rem; transition: border-color 0.3s, color 0.3s, box-shadow 0.3s; }
+        .social-btn:hover { border-color: var(--gold); color: var(--gold); box-shadow: 0 0 15px rgba(201, 169, 110, 0.2); }
+        .footer-bottom { max-width: 1200px; margin: 3rem auto 0; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.06); display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: rgba(255, 255, 255, 0.58); }
 
         /* ============================================================ */
         /* WHATSAPP FLOAT WITH SATHYA AVATAR                             */
         /* ============================================================ */
-        .wa-float {
-            position: fixed; bottom: 2rem; right: 2rem;
-            z-index: 850;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
+        .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 850; transition: opacity 0.3s ease, transform 0.3s ease; }
+        body:has(nav ul.open) .wa-float, body:has(nav ul.open) .ig-float, body:has(nav ul.open) .call-float { opacity: 0; pointer-events: none; transform: translateY(20px); }
 
-        /* Hide WhatsApp float when the mobile nav overlay is open so it does
-           not sit on top of the hamburger dropdown */
-        body:has(nav ul.open) .wa-float,
-        body:has(nav ul.open) .ig-float {
-            opacity: 0;
-            pointer-events: none;
-            transform: translateY(20px);
-        }
+        .wa-btn { position: relative; width: 64px; height: 64px; border-radius: 50%; cursor: pointer; background: #25D366; padding: 3px; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45); animation: waPulse 2.5s infinite; transition: transform 0.3s; overflow: visible; }
+        .wa-btn:hover { transform: scale(1.08); animation: none; }
+        .wa-btn:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 3px; }
+        .wa-btn img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: center top; border: 2.5px solid var(--ink-mid); display: block; }
+        .wa-online-dot { position: absolute; bottom: 2px; right: 2px; width: 15px; height: 15px; background: #25D366; border: 2.5px solid var(--ink); border-radius: 50%; box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); animation: waDotPulse 2s infinite; z-index: 2; }
+        .wa-icon-badge { position: absolute; top: -2px; left: -2px; width: 24px; height: 24px; background: #25D366; border: 2px solid var(--ink); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff; font-size: 0.78rem; z-index: 2; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35); }
 
-        .wa-btn {
-            position: relative;
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            cursor: pointer;
-            background: #25D366;
-            padding: 3px;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
-            animation: waPulse 2.5s infinite;
-            transition: transform 0.3s;
-            overflow: visible;
-        }
-        .wa-btn:hover {
-            transform: scale(1.08);
-            animation: none;
-        }
-        .wa-btn:focus-visible {
-            outline: 2px solid var(--gold-light);
-            outline-offset: 3px;
-        }
-        .wa-btn img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: center top;
-            border: 2.5px solid var(--ink-mid);
-            display: block;
-        }
+        @keyframes waPulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); } 70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+        @keyframes waDotPulse { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+        .wa-btn.offline .wa-online-dot { background: #f5a623; animation: waDotPulseBusy 2s infinite; }
+        @keyframes waDotPulseBusy { 0% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.7); } 70% { box-shadow: 0 0 0 8px rgba(245, 166, 35, 0); } 100% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0); } }
 
-        .wa-online-dot {
-            position: absolute;
-            bottom: 2px;
-            right: 2px;
-            width: 15px;
-            height: 15px;
-            background: #25D366;
-            border: 2.5px solid var(--ink);
-            border-radius: 50%;
-            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
-            animation: waDotPulse 2s infinite;
-            z-index: 2;
-        }
-
-        .wa-icon-badge {
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            width: 24px;
-            height: 24px;
-            background: #25D366;
-            border: 2px solid var(--ink);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            font-size: 0.78rem;
-            z-index: 2;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
-        }
-
-        @keyframes waPulse {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
-            70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-        }
-
-        @keyframes waDotPulse {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            70% { box-shadow: 0 0 0 8px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-        }
-
-        .wa-btn.offline .wa-online-dot {
-            background: #f5a623;
-            animation: waDotPulseBusy 2s infinite;
-        }
-        @keyframes waDotPulseBusy {
-            0% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.7); }
-            70% { box-shadow: 0 0 0 8px rgba(245, 166, 35, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(245, 166, 35, 0); }
-        }
-
-        .wa-popup {
-            position: absolute; bottom: 80px; right: 0;
-            width: 320px;
-            background: var(--ink-mid);
-            border: 1px solid var(--border);
-            padding: 1.4rem;
-            display: none;
-            flex-direction: column;
-            gap: 0.6rem;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), var(--glow);
-            border-radius: 10px;
-        }
+        .wa-popup { position: absolute; bottom: 80px; right: 0; width: 320px; background: var(--ink-mid); border: 1px solid var(--border); padding: 1.4rem; display: none; flex-direction: column; gap: 0.6rem; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), var(--glow); border-radius: 10px; }
         .wa-popup.active { display: flex; }
+        .wa-popup-header { display: flex; align-items: center; gap: 0.7rem; padding-bottom: 0.8rem; border-bottom: 1px solid rgba(255, 255, 255, 0.06); margin-bottom: 0.2rem; }
+        .wa-popup-avatar { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid #25D366; flex-shrink: 0; }
+        .wa-popup-name { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; color: var(--white); font-weight: 600; line-height: 1.1; }
+        .wa-popup-role { font-size: 0.72rem; color: rgba(255, 255, 255, 0.5); margin-top: 0.15rem; }
 
-        .wa-popup-header {
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-            padding-bottom: 0.8rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            margin-bottom: 0.2rem;
-        }
-        .wa-popup-avatar {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: center top;
-            border: 2px solid #25D366;
-            flex-shrink: 0;
-        }
-        .wa-popup-name {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.05rem;
-            color: var(--white);
-            font-weight: 600;
-            line-height: 1.1;
-        }
-        .wa-popup-role {
-            font-size: 0.72rem;
-            color: rgba(255, 255, 255, 0.5);
-            margin-top: 0.15rem;
-        }
+        .wa-status { display: flex; align-items: center; gap: 0.55rem; padding: 0.5rem 0.75rem; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.06); border-radius: 8px; margin-bottom: 0.4rem; font-size: 0.78rem; }
+        .wa-status-dot { width: 8px; height: 8px; border-radius: 50%; background: #25D366; box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); animation: waDotPulse 2s infinite; flex-shrink: 0; }
+        .wa-status.busy .wa-status-dot { background: #f5a623; box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.6); animation: waDotPulseBusy 2s infinite; }
+        .wa-status-text { color: rgba(255, 255, 255, 0.72); line-height: 1.35; }
 
-        .wa-status {
-            display: flex; align-items: center; gap: 0.55rem;
-            padding: 0.5rem 0.75rem;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 8px;
-            margin-bottom: 0.4rem;
-            font-size: 0.78rem;
-        }
-        .wa-status-dot {
-            width: 8px; height: 8px; border-radius: 50%;
-            background: #25D366;
-            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
-            animation: waDotPulse 2s infinite;
-            flex-shrink: 0;
-        }
-        .wa-status.busy .wa-status-dot {
-            background: #f5a623;
-            box-shadow: 0 0 0 0 rgba(245, 166, 35, 0.6);
-            animation: waDotPulseBusy 2s infinite;
-        }
-        .wa-status-text {
-            color: rgba(255, 255, 255, 0.72);
-            line-height: 1.35;
-        }
-
-        .wa-popup p {
-            font-size: 0.82rem;
-            color: rgba(255, 255, 255, 0.5);
-            margin-bottom: 0.3rem;
-            line-height: 1.5;
-        }
-        .wa-opt {
-            display: flex; align-items: center;
-            gap: 0.6rem;
-            padding: 0.55rem 0.8rem;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.07);
-            cursor: pointer;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.72);
-            transition: background 0.2s, border-color 0.2s;
-            border-radius: 6px;
-        }
-        .wa-opt i {
-            color: var(--gold);
-            width: 16px; text-align: center;
-            font-size: 0.9rem;
-        }
-        .wa-opt:hover,
-        .wa-opt:has(input:checked) {
-            background: rgba(201, 169, 110, 0.1);
-            border-color: rgba(201, 169, 110, 0.4);
-            color: var(--gold-light);
-        }
+        .wa-popup p { font-size: 0.82rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 0.3rem; line-height: 1.5; }
+        .wa-opt { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0.8rem; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.07); cursor: pointer; font-size: 0.85rem; color: rgba(255, 255, 255, 0.72); transition: background 0.2s, border-color 0.2s; border-radius: 6px; }
+        .wa-opt i { color: var(--gold); width: 16px; text-align: center; font-size: 0.9rem; }
+        .wa-opt:hover, .wa-opt:has(input:checked) { background: rgba(201, 169, 110, 0.1); border-color: rgba(201, 169, 110, 0.4); color: var(--gold-light); }
         .wa-opt input { accent-color: var(--gold); }
 
-        .wa-name-input {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--cream);
-            padding: 0.6rem 0.85rem;
-            font-family: 'Jost', sans-serif;
-            font-size: 0.85rem;
-            outline: none;
-            border-radius: 6px;
-            width: 100%;
-            margin-top: 0.2rem;
-        }
-        .wa-name-input:focus {
-            border-color: var(--gold);
-            background: rgba(201, 169, 110, 0.04);
-        }
+        .wa-name-input { background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.1); color: var(--cream); padding: 0.6rem 0.85rem; font-family: 'Jost', sans-serif; font-size: 0.85rem; outline: none; border-radius: 6px; width: 100%; margin-top: 0.2rem; }
+        .wa-name-input:focus { border-color: var(--gold); background: rgba(201, 169, 110, 0.04); }
 
-        .wa-send {
-            background: #25D366;
-            color: white; border: none;
-            padding: 0.8rem;
-            font-size: 0.85rem;
-            font-family: 'Jost', sans-serif;
-            font-weight: 500;
-            cursor: pointer;
-            transition: box-shadow 0.3s;
-            border-radius: 6px;
-            margin-top: 0.3rem;
-            letter-spacing: 0.05em;
-        }
-        .wa-send:hover {
-            box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
-        }
-        .wa-close {
-            position: absolute; top: 0.6rem; right: 0.8rem;
-            background: none; border: none;
-            color: rgba(255, 255, 255, 0.35);
-            font-size: 1rem; cursor: pointer;
-            padding: 0.4rem;
-            line-height: 1;
-        }
+        .wa-send { background: #25D366; color: white; border: none; padding: 0.8rem; font-size: 0.85rem; font-family: 'Jost', sans-serif; font-weight: 500; cursor: pointer; transition: box-shadow 0.3s; border-radius: 6px; margin-top: 0.3rem; letter-spacing: 0.05em; }
+        .wa-send:hover { box-shadow: 0 0 20px rgba(37, 211, 102, 0.4); }
+        .wa-close { position: absolute; top: 0.6rem; right: 0.8rem; background: none; border: none; color: rgba(255, 255, 255, 0.35); font-size: 1rem; cursor: pointer; padding: 0.4rem; line-height: 1; }
         .wa-close:hover { color: var(--gold); }
 
-        .ig-float {
+        /* ============================================================ */
+        /* MOBILE-ONLY CALL BUTTON                                       */
+        /* ============================================================ */
+        .call-float {
+            display: none;
             position: fixed;
-            bottom: 6.5rem; right: 2rem;
+            bottom: 2rem;
+            left: 2rem;
             z-index: 850;
-            width: 50px; height: 50px;
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
             border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            color: white; font-size: 1.35rem;
+            align-items: center;
+            justify-content: center;
+            color: var(--ink);
+            font-size: 1.4rem;
             text-decoration: none;
-            box-shadow: 0 4px 18px rgba(220, 39, 67, 0.4);
-            transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
-            animation: igPulse 3s infinite;
+            box-shadow: 0 4px 20px rgba(201, 169, 110, 0.5);
+            animation: callPulse 2.5s infinite;
+            transition: transform 0.3s, opacity 0.3s, background 0.3s;
+            cursor: pointer;
+            border: 2px solid rgba(12, 10, 9, 0.5);
         }
-        .ig-float:hover {
-            transform: scale(1.12);
-            box-shadow: 0 6px 26px rgba(220, 39, 67, 0.6);
-            animation: none; color: white;
+        .call-float:hover,
+        .call-float:focus-visible {
+            transform: scale(1.08);
+            animation: none;
+            color: var(--ink);
+            outline: none;
         }
-        @keyframes igPulse {
-            0% { box-shadow: 0 0 0 0 rgba(220, 39, 67, 0.5); }
-            70% { box-shadow: 0 0 0 12px rgba(220, 39, 67, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(220, 39, 67, 0); }
+        .call-float:active { transform: scale(0.95); }
+        .call-float i { pointer-events: none; }
+
+        @keyframes callPulse {
+            0% { box-shadow: 0 0 0 0 rgba(201, 169, 110, 0.6); }
+            70% { box-shadow: 0 0 0 14px rgba(201, 169, 110, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(201, 169, 110, 0); }
         }
 
-        .cta-banner {
-            background: linear-gradient(135deg, var(--ink-soft) 0%, var(--ink-mid) 100%);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            padding: 3rem 0;
-            position: relative; overflow: hidden;
-        }
-        .cta-banner::before {
-            content: ''; position: absolute; inset: 0;
-            background: radial-gradient(ellipse at 30% 50%, rgba(201, 169, 110, 0.08), transparent 70%);
-            pointer-events: none;
-        }
-        .cta-banner-inner {
-            display: flex; align-items: center; justify-content: space-between;
-            flex-wrap: wrap; gap: 2rem;
-            position: relative; z-index: 2;
-        }
+        .ig-float { position: fixed; bottom: 6.5rem; right: 2rem; z-index: 850; width: 50px; height: 50px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.35rem; text-decoration: none; box-shadow: 0 4px 18px rgba(220, 39, 67, 0.4); transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s; animation: igPulse 3s infinite; }
+        .ig-float:hover { transform: scale(1.12); box-shadow: 0 6px 26px rgba(220, 39, 67, 0.6); animation: none; color: white; }
+        @keyframes igPulse { 0% { box-shadow: 0 0 0 0 rgba(220, 39, 67, 0.5); } 70% { box-shadow: 0 0 0 12px rgba(220, 39, 67, 0); } 100% { box-shadow: 0 0 0 0 rgba(220, 39, 67, 0); } }
+
+        .cta-banner { background: linear-gradient(135deg, var(--ink-soft) 0%, var(--ink-mid) 100%); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 3rem 0; position: relative; overflow: hidden; }
+        .cta-banner::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 50%, rgba(201, 169, 110, 0.08), transparent 70%); pointer-events: none; }
+        .cta-banner-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; position: relative; z-index: 2; }
         .cta-banner-inner .cta-text { flex: 1 1 400px; }
-        .cta-banner-inner .cta-text .cta-stars {
-            color: var(--gold);
-            font-size: 1.2rem;
-            letter-spacing: 0.15em;
-            display: block;
-            margin-bottom: 0.4rem;
-        }
-        .cta-banner-inner .cta-text h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: clamp(1.6rem, 3vw, 2.6rem);
-            font-weight: 300; color: var(--white);
-            line-height: 1.2;
-        }
-        .cta-banner-inner .cta-text h3 em {
-            font-style: italic; color: var(--gold-light);
-        }
-        .cta-banner-inner .cta-text .cta-tags {
-            display: flex; flex-wrap: wrap;
-            gap: 0.6rem 1.2rem; margin-top: 0.6rem;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.5);
-        }
+        .cta-banner-inner .cta-text .cta-stars { color: var(--gold); font-size: 1.2rem; letter-spacing: 0.15em; display: block; margin-bottom: 0.4rem; }
+        .cta-banner-inner .cta-text h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.6rem); font-weight: 300; color: var(--white); line-height: 1.2; }
+        .cta-banner-inner .cta-text h3 em { font-style: italic; color: var(--gold-light); }
+        .cta-banner-inner .cta-text .cta-tags { display: flex; flex-wrap: wrap; gap: 0.6rem 1.2rem; margin-top: 0.6rem; font-size: 0.85rem; color: rgba(255, 255, 255, 0.5); }
         .cta-banner-inner .cta-text .cta-tags span { position: relative; }
-        .cta-banner-inner .cta-text .cta-tags span:not(:last-child)::after {
-            content: '·'; margin-left: 1.2rem;
-            color: var(--gold); opacity: 0.5;
-        }
+        .cta-banner-inner .cta-text .cta-tags span:not(:last-child)::after { content: '·'; margin-left: 1.2rem; color: var(--gold); opacity: 0.5; }
         .cta-banner-inner .cta-btn-wrap { flex-shrink: 0; }
         .cta-banner-inner .cta-btn-wrap .btn { padding: 1rem 3rem; font-size: 0.9rem; }
 
         #all-services { background: var(--ink); }
-        .all-services-grid {
-            display: grid; grid-template-columns: repeat(4, 1fr);
-            gap: 0.8rem; margin-top: 3rem;
-        }
-        .all-service-item {
-            background: var(--ink-soft);
-            padding: 1.2rem 1.2rem 1rem;
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            transition: background 0.3s, border-color 0.3s, transform 0.25s;
-            display: flex; align-items: center; gap: 0.8rem;
-            font-size: 0.88rem;
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-        }
-        .all-service-item:hover {
-            background: var(--ink-mid);
-            border-color: rgba(201, 169, 110, 0.5);
-            transform: translateY(-2px);
-        }
-        .all-service-item i {
-            color: var(--gold); font-size: 1.1rem;
-            width: 1.4rem; text-align: center; flex-shrink: 0;
-        }
+        .all-services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; margin-top: 3rem; }
+        .all-service-item { background: var(--ink-soft); padding: 1.2rem 1.2rem 1rem; border: 1px solid var(--border); border-radius: 4px; transition: background 0.3s, border-color 0.3s, transform 0.25s; display: flex; align-items: center; gap: 0.8rem; font-size: 0.88rem; color: rgba(255, 255, 255, 0.8); text-decoration: none; }
+        .all-service-item:hover { background: var(--ink-mid); border-color: rgba(201, 169, 110, 0.5); transform: translateY(-2px); }
+        .all-service-item i { color: var(--gold); font-size: 1.1rem; width: 1.4rem; text-align: center; flex-shrink: 0; }
         .all-service-item .svc-label { line-height: 1.3; }
-        .all-services-note {
-            margin-top: 2.5rem;
-            text-align: center;
-            font-size: 0.92rem;
-            color: rgba(255, 255, 255, 0.5);
-            border-top: 1px solid var(--border);
-            padding-top: 2rem;
-        }
-        .all-services-note i {
-            color: var(--gold); margin-right: 0.3rem;
-        }
+        .all-services-note { margin-top: 2.5rem; text-align: center; font-size: 0.92rem; color: rgba(255, 255, 255, 0.5); border-top: 1px solid var(--border); padding-top: 2rem; }
+        .all-services-note i { color: var(--gold); margin-right: 0.3rem; }
 
         #tips-guides { background: var(--ink-soft); }
-        .tips-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 2rem; margin-top: 3rem;
-        }
-        .tips-card {
-            background: var(--ink);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            overflow: hidden;
-            transition: border-color 0.4s, box-shadow 0.4s, transform 0.3s;
-        }
-        .tips-card:hover {
-            border-color: rgba(201, 169, 110, 0.5);
-            box-shadow: var(--glow);
-            transform: translateY(-4px);
-        }
+        .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        .tips-card { background: var(--ink); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; transition: border-color 0.4s, box-shadow 0.4s, transform 0.3s; }
+        .tips-card:hover { border-color: rgba(201, 169, 110, 0.5); box-shadow: var(--glow); transform: translateY(-4px); }
         .tips-card .tips-body { padding: 2rem 1.8rem 1.8rem; }
-        .tips-card .tips-body .tips-meta {
-            display: flex; align-items: center; gap: 1rem;
-            font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.4);
-            letter-spacing: 0.04em;
-            margin-bottom: 0.8rem;
-        }
-        .tips-card .tips-body .tips-meta span {
-            display: flex; align-items: center; gap: 0.3rem;
-        }
-        .tips-card .tips-body .tips-meta span i {
-            color: var(--gold); font-size: 0.7rem;
-        }
-        .tips-card .tips-body h4 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.3rem; font-weight: 600;
-            color: var(--white);
-            line-height: 1.25;
-            margin-bottom: 0.6rem;
-        }
-        .tips-card .tips-body h4 i {
-            color: var(--gold); margin-right: 0.5rem;
-            font-size: 1rem;
-        }
-        .tips-card .tips-body p {
-            font-size: 0.92rem;
-            color: rgba(255, 255, 255, 0.55);
-            line-height: 1.7;
-            margin-bottom: 1.2rem;
-        }
-        .tips-card .tips-body .tips-link {
-            color: var(--gold);
-            text-decoration: none;
-            font-size: 0.82rem; font-weight: 500;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            display: inline-flex; align-items: center; gap: 0.4rem;
-            transition: gap 0.3s;
-        }
+        .tips-card .tips-body .tips-meta { display: flex; align-items: center; gap: 1rem; font-size: 0.75rem; color: rgba(255, 255, 255, 0.4); letter-spacing: 0.04em; margin-bottom: 0.8rem; }
+        .tips-card .tips-body .tips-meta span { display: flex; align-items: center; gap: 0.3rem; }
+        .tips-card .tips-body .tips-meta span i { color: var(--gold); font-size: 0.7rem; }
+        .tips-card .tips-body h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--white); line-height: 1.25; margin-bottom: 0.6rem; }
+        .tips-card .tips-body h4 i { color: var(--gold); margin-right: 0.5rem; font-size: 1rem; }
+        .tips-card .tips-body p { font-size: 0.92rem; color: rgba(255, 255, 255, 0.55); line-height: 1.7; margin-bottom: 1.2rem; }
+        .tips-card .tips-body .tips-link { color: var(--gold); text-decoration: none; font-size: 0.82rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.4rem; transition: gap 0.3s; }
         .tips-card .tips-body .tips-link:hover { gap: 0.8rem; }
 
-        .footer-searches {
-            max-width: 1200px;
-            margin: 2.5rem auto 0;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-        }
-        .footer-searches .searches-label {
-            font-size: 0.7rem;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.3);
-            margin-bottom: 1rem;
-            display: block;
-        }
-        .footer-searches .searches-wrap {
-            display: flex; flex-wrap: wrap;
-            gap: 0.5rem 1rem;
-        }
-        .footer-searches .searches-wrap a {
-            font-size: 0.78rem;
-            color: rgba(255, 255, 255, 0.35);
-            text-decoration: none;
-            transition: color 0.2s;
-        }
+        .footer-searches { max-width: 1200px; margin: 2.5rem auto 0; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.06); }
+        .footer-searches .searches-label { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255, 255, 255, 0.3); margin-bottom: 1rem; display: block; }
+        .footer-searches .searches-wrap { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+        .footer-searches .searches-wrap a { font-size: 0.78rem; color: rgba(255, 255, 255, 0.35); text-decoration: none; transition: color 0.2s; }
         .footer-searches .searches-wrap a:hover { color: var(--gold); }
-        .footer-searches .searches-wrap .sep {
-            color: rgba(255, 255, 255, 0.1);
-            font-size: 0.7rem;
-        }
+        .footer-searches .searches-wrap .sep { color: rgba(255, 255, 255, 0.1); font-size: 0.7rem; }
 
-        .venue-guide {
-            background: var(--ink-mid);
-            border-radius: 8px;
-            padding: 2rem 2.5rem;
-            margin: 2rem 0 0;
-            border: 1px solid var(--border);
-        }
-        .venue-guide h4 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.3rem;
-            color: var(--gold-light);
-            margin-bottom: 0.6rem;
-            display: flex; align-items: center; gap: 0.6rem;
-        }
+        .venue-guide { background: var(--ink-mid); border-radius: 8px; padding: 2rem 2.5rem; margin: 2rem 0 0; border: 1px solid var(--border); }
+        .venue-guide h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--gold-light); margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.6rem; }
         .venue-guide h4 i { color: var(--gold); }
-        .venue-guide p {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-        .venue-guide .venue-tags {
-            display: flex; flex-wrap: wrap;
-            gap: 0.6rem; margin-top: 0.8rem;
-        }
-        .venue-guide .venue-tags span {
-            background: rgba(201, 169, 110, 0.08);
-            padding: 0.3rem 1rem;
-            border-radius: 20px;
-            font-size: 0.78rem;
-            color: rgba(255, 255, 255, 0.7);
-            border: 1px solid rgba(201, 169, 110, 0.15);
-            display: inline-flex; align-items: center; gap: 0.4rem;
-        }
-        .venue-guide .venue-tags span i {
-            color: var(--gold); font-size: 0.75rem;
-        }
+        .venue-guide p { color: rgba(255, 255, 255, 0.6); font-size: 0.95rem; line-height: 1.7; }
+        .venue-guide .venue-tags { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.8rem; }
+        .venue-guide .venue-tags span { background: rgba(201, 169, 110, 0.08); padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.78rem; color: rgba(255, 255, 255, 0.7); border: 1px solid rgba(201, 169, 110, 0.15); display: inline-flex; align-items: center; gap: 0.4rem; }
+        .venue-guide .venue-tags span i { color: var(--gold); font-size: 0.75rem; }
 
-        /* ============================================================ */
-        /* RESPONSIVE                                                    */
-        /* ============================================================ */
         @media (max-width: 900px) {
-            /* Mobile nav: bump above WA float and IG float */
             nav ul { display: none; }
             nav ul.open {
                 display: flex; flex-direction: column;
@@ -1769,114 +792,56 @@
             .logo { font-size: 1.2rem; }
             .logo img { width: 40px; height: 40px; }
 
-            .about-grid, .contact-grid, .faq-cols {
-                grid-template-columns: 1fr; gap: 3rem;
-            }
+            .about-grid, .contact-grid, .faq-cols { grid-template-columns: 1fr; gap: 3rem; }
             .services-grid { grid-template-columns: 1fr; }
-            .gallery-grid {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto;
-            }
-            .gal-item {
-                grid-column: auto !important;
-                grid-row: auto !important;
-                height: 220px;
-            }
+            .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+            .gal-item { grid-column: auto !important; grid-row: auto !important; height: 220px; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
             .stats-row { gap: 2rem; flex-wrap: wrap; }
             .form-row { grid-template-columns: 1fr; }
-            .footer-bottom {
-                flex-direction: column; gap: 0.8rem;
-                text-align: center;
-            }
+            .footer-bottom { flex-direction: column; gap: 0.8rem; text-align: center; }
             .cursor-dot, .cursor-ring { display: none; }
             body { cursor: auto; }
             #magicCanvas { display: none !important; }
-            .bts-banner-inner {
-                flex-direction: column; text-align: center;
-            }
+            .bts-banner-inner { flex-direction: column; text-align: center; }
             .bts-banner-inner .bts-badge { justify-content: center; }
             .all-services-grid { grid-template-columns: repeat(2, 1fr); }
             .tips-grid { grid-template-columns: 1fr; }
             .cta-banner-inner { flex-direction: column; text-align: center; }
             .cta-banner-inner .cta-text .cta-tags { justify-content: center; }
-            .cta-banner-inner .cta-text .cta-tags span:not(:last-child)::after {
-                margin-left: 0.6rem;
-            }
+            .cta-banner-inner .cta-text .cta-tags span:not(:last-child)::after { margin-left: 0.6rem; }
             .footer-searches .searches-wrap { gap: 0.4rem 0.8rem; }
             .venue-guide { padding: 1.5rem; }
-            .video-grid {
-                grid-template-columns: 1fr;
-                gap: 1.2rem;
-            }
-            .bts-banner-inner .bts-text .brand-badges-row {
-                justify-content: center;
-            }
+            .video-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .bts-banner-inner .bts-text .brand-badges-row { justify-content: center; }
+
+            /* Show call button only on mobile */
+            .call-float { display: flex; }
         }
 
         @media (max-width: 480px) {
             .all-services-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; }
-            .video-play-btn i {
-                width: 54px;
-                height: 54px;
-                font-size: 1.1rem;
-            }
+            .video-play-btn i { width: 54px; height: 54px; font-size: 1.1rem; }
 
-            /* WhatsApp float: slightly smaller but above 44px tap target */
             .wa-float { bottom: 1.2rem; right: 1rem; }
+            .wa-btn { width: 58px; height: 58px; padding: 2.5px; }
+            .wa-online-dot { width: 13px; height: 13px; bottom: 1px; right: 1px; }
+            .wa-icon-badge { width: 22px; height: 22px; font-size: 0.72rem; }
+            .wa-popup { width: calc(100vw - 2rem); right: 0; bottom: 72px; padding: 1.1rem; }
+
             .ig-float { bottom: 5.5rem; right: 1rem; width: 44px; height: 44px; font-size: 1.15rem; }
-            .wa-btn {
-                width: 58px;
-                height: 58px;
-                padding: 2.5px;
-            }
-            .wa-online-dot {
-                width: 13px;
-                height: 13px;
-                bottom: 1px;
-                right: 1px;
-            }
-            .wa-icon-badge {
-                width: 22px;
-                height: 22px;
-                font-size: 0.72rem;
-            }
-            .wa-popup {
-                width: calc(100vw - 2rem);
-                right: 0;
-                bottom: 72px;
-                padding: 1.1rem;
-            }
+            .call-float { bottom: 1.2rem; left: 1rem; width: 58px; height: 58px; font-size: 1.35rem; }
         }
 
-        .reveal {
-            opacity: 0; transform: translateY(40px);
-        }
-        .reveal.in-view {
-            animation: revealIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-        }
-        @keyframes revealIn {
-            to { opacity: 1; transform: none; }
-        }
+        .reveal { opacity: 0; transform: translateY(40px); }
+        .reveal.in-view { animation: revealIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+        @keyframes revealIn { to { opacity: 1; transform: none; } }
 
-        .type-cursor {
-            color: var(--gold);
-            animation: blink 1s step-end infinite;
-        }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
+        .type-cursor { color: var(--gold); animation: blink 1s step-end infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
-        .sr-only {
-            position: absolute !important;
-            width: 1px !important; height: 1px !important;
-            padding: 0 !important; margin: -1px !important;
-            overflow: hidden !important;
-            clip: rect(0, 0, 0, 0) !important;
-            border: 0 !important;
-        }
+        .sr-only { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; border: 0 !important; }
     </style>
 </head>
 
@@ -1896,14 +861,14 @@
         <button class="hamburger" id="ham" aria-label="Menu" aria-expanded="false"><i class="fas fa-bars" aria-hidden="true"></i></button>
         <nav>
             <ul id="navList">
-                <li><a href="/about" data-gtm="about">About</a></li>
-                <li><a href="#services" data-gtm="services">Services</a></li>
-                <li><a href="/gallery" data-gtm="gallery">Gallery</a></li>
-                <li><a href="#video-showcase" data-gtm="videos">Films</a></li>
-                <li><a href="#testimonials" data-gtm="about">Clients</a></li>
-                <li><a href="/blog/" data-gtm="blog">Blog</a></li>
-                <li><a href="/faq" data-gtm="faq">FAQ</a></li>
-                <li><a href="#contact" data-gtm="consultation">Book Now</a></li>
+                <li><a href="/about" data-gtm="nav-about">About</a></li>
+                <li><a href="#services" data-gtm="nav-services">Services</a></li>
+                <li><a href="/gallery" data-gtm="nav-gallery">Gallery</a></li>
+                <li><a href="#video-showcase" data-gtm="nav-films">Films</a></li>
+                <li><a href="#testimonials" data-gtm="nav-clients">Clients</a></li>
+                <li><a href="/blog/" data-gtm="nav-blog">Blog</a></li>
+                <li><a href="/faq" data-gtm="nav-faq">FAQ</a></li>
+                <li><a href="#contact" data-gtm="nav-book">Book Now</a></li>
             </ul>
         </nav>
     </header>
@@ -1921,8 +886,8 @@
                 <p class="hero-sub">From a quiet moment at Cubbon Park to the last dance at Whitefield, we document your day the way it actually felt. No stiff poses. No forced smiles. Just you, your people, and the story you are living.</p>
                 <p class="hero-sub" id="heroSub"><span id="typeEl"></span><span class="type-cursor">|</span></p>
                 <div class="hero-cta" id="heroCta">
-                    <a href="#contact" class="btn btn-gold" data-gtm="consultation">Book Your Shoot <i class="fas fa-arrow-right"></i></a>
-                    <a href="#video-showcase" class="btn btn-ghost" data-gtm="portfolio">Watch Our Films</a>
+                    <a href="#contact" class="btn btn-gold" data-gtm="hero-book">Book Your Shoot <i class="fas fa-arrow-right"></i></a>
+                    <a href="#video-showcase" class="btn btn-ghost" data-gtm="hero-watch-films">Watch Our Films</a>
                 </div>
                 <h2 style="font-size:1.1rem; font-weight:300; color:rgba(255,255,255,0.45); margin-top:1.2rem;">Capturing memories that last a lifetime.</h2>
             </div>
@@ -2020,7 +985,7 @@
                             </div>
                         </div>
                         <div class="reveal" style="animation-delay:0.5s;margin-top:2.5rem;">
-                            <a href="#contact" class="btn btn-gold" data-gtm="consultation">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn btn-gold" data-gtm="about-consult">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -2146,46 +1111,46 @@
                     <p class="section-lead" style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">From candid wedding photography to newborn sessions, we offer full-spectrum photography services tailored to your needs. Explore our <strong>wedding photography packages Bangalore</strong> and find the perfect fit.</p>
                 </div>
                 <div class="services-grid reveal" style="animation-delay:0.2s">
-                    <div class="svc-card" data-gtm="wedding">
+                    <div class="svc-card" data-gtm="svc-wedding">
                         <div class="svc-num">01</div>
                         <i class="fas fa-ring svc-icon"></i>
                         <div class="svc-title">Wedding Photography</div>
                         <p class="svc-desc">Full-day candid wedding photography covering rituals, emotions, and celebrations with cinematic excellence.</p>
-                        <a href="/wedding-photographer-bangalore" aria-label="Explore our candid wedding photography packages in Bangalore" data-gtm="wedding-photography">
+                        <a href="/wedding-photographer-bangalore" aria-label="Explore our candid wedding photography packages in Bangalore" data-gtm="svc-wedding-link">
                             <i class="fas fa-arrow-right svc-arrow" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <div class="svc-card" data-gtm="pre-wedding">
+                    <div class="svc-card" data-gtm="svc-pre-wedding">
                         <div class="svc-num">02</div>
                         <i class="fas fa-heart svc-icon"></i>
                         <div class="svc-title">Pre-Wedding Shoots</div>
                         <p class="svc-desc">Pre-wedding photoshoots at Cubbon Park, Lalbagh, or your favourite locations capturing your love story.</p>
-                        <a href="/pre-wedding-shoots" aria-label="Explore pre-wedding photography in Bangalore" data-gtm="pre-wedding-photography">
+                        <a href="/pre-wedding-shoots" aria-label="Explore pre-wedding photography in Bangalore" data-gtm="svc-pre-wedding-link">
                             <i class="fas fa-arrow-right svc-arrow" aria-hidden="true"></i>
                         </a>
                     </div>
-                    <div class="svc-card" data-gtm="event-photography">
+                    <div class="svc-card" data-gtm="svc-event">
                         <div class="svc-num">03</div>
                         <i class="fas fa-calendar-check svc-icon"></i>
                         <div class="svc-title">Event Photography</div>
                         <p class="svc-desc">Professional event photographer in Bangalore for government events, corporate events, birthdays, and private celebrations.</p>
                         <i class="fas fa-arrow-right svc-arrow"></i>
                     </div>
-                    <div class="svc-card" data-gtm="housewarming-photography">
+                    <div class="svc-card" data-gtm="svc-housewarming">
                         <div class="svc-num">04</div>
                         <i class="fas fa-home svc-icon"></i>
                         <div class="svc-title">Housewarming Photography</div>
                         <p class="svc-desc">Warm, candid housewarming photography sessions capturing guests, decor, and joyful memories in your new home.</p>
                         <i class="fas fa-arrow-right svc-arrow"></i>
                     </div>
-                    <div class="svc-card" data-gtm="maternity">
+                    <div class="svc-card" data-gtm="svc-maternity">
                         <div class="svc-num">05</div>
                         <i class="fas fa-female svc-icon"></i>
                         <div class="svc-title">Maternity and Baby Shower</div>
                         <p class="svc-desc">Celebrate motherhood with beautiful maternity photoshoots indoors or at golden-hour outdoor locations.</p>
                         <i class="fas fa-arrow-right svc-arrow"></i>
                     </div>
-                    <div class="svc-card" data-gtm="portfolio-photography">
+                    <div class="svc-card" data-gtm="svc-portfolio">
                         <div class="svc-num">06</div>
                         <i class="fas fa-id-card svc-icon"></i>
                         <div class="svc-title">Portfolio Photography</div>
@@ -2212,7 +1177,7 @@
                         </div>
                     </div>
                     <div class="cta-btn-wrap reveal" style="animation-delay:0.15s;">
-                        <a href="https://wa.me/918095767131" class="btn btn-gold" data-gtm="consultation">Book Now <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://wa.me/918095767131" class="btn btn-gold" data-gtm="cta-banner-whatsapp">Book Now <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -2226,54 +1191,54 @@
                 <p class="section-lead reveal" style="text-align:center; max-width:620px; margin:0 auto 2rem; font-size:0.98rem;">From weddings to product shoots, every service you need under one roof.</p>
 
                 <div class="all-services-grid reveal" style="animation-delay:0.15s;">
-                    <a href="/wedding-photographer-bangalore" class="all-service-item"><i class="fas fa-ring"></i><span class="svc-label">Wedding Photographers</span></a>
-                    <a href="/pre-wedding-shoots" class="all-service-item"><i class="fas fa-heart"></i><span class="svc-label">Pre Wedding Photoshoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-child"></i><span class="svc-label">Maternity and Pregnancy Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-baby"></i><span class="svc-label">Baby Shower Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-calendar-check"></i><span class="svc-label">Event Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-id-badge"></i><span class="svc-label">Portfolio Shoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-box"></i><span class="svc-label">Product E-Commerce Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-birthday-cake"></i><span class="svc-label">Birthday Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-baby-carriage"></i><span class="svc-label">Newborn Photography</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-hand-holding-heart"></i><span class="svc-label">Engagement Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-users"></i><span class="svc-label">Family Shoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-home"></i><span class="svc-label">House Warming Ceremony Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-undo-alt"></i><span class="svc-label">Photo Restoration Service</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-camera-retro"></i><span class="svc-label">Post Wedding Photoshoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-font"></i><span class="svc-label">Naming Ceremony Photography</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-yin-yang"></i><span class="svc-label">Upanayana Photography</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-star"></i><span class="svc-label">Shastipurthi Photography</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-image"></i><span class="svc-label">Photo Frames</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-book"></i><span class="svc-label">Album Designers and Printers</span></a>
-                    <a href="/wedding-photographer-bangalore" class="all-service-item"><i class="fas fa-camera"></i><span class="svc-label">Candid Wedding Photography</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-video"></i><span class="svc-label">Candid Videographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-film"></i><span class="svc-label">Professional Videography</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-building"></i><span class="svc-label">Corporate Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-cross"></i><span class="svc-label">Christian Wedding Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-mosque"></i><span class="svc-label">Muslim Wedding Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-store"></i><span class="svc-label">Digital Photo Studio Near Me</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-female"></i><span class="svc-label">Puberty Function Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-user-tie"></i><span class="svc-label">Portrait Photography</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-address-book"></i><span class="svc-label">Karizma Album Printing</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-plane"></i><span class="svc-label">Drone Photography</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-child"></i><span class="svc-label">Baby Photoshoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-search-location"></i><span class="svc-label">Photographers Near Me</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-baby"></i><span class="svc-label">Cradle Ceremony Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-cut"></i><span class="svc-label">Video Editing Services</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-play"></i><span class="svc-label">Corporate Video Production</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-user-astronaut"></i><span class="svc-label">Freelance Photographers</span></a>
-                    <a href="/pre-wedding-shoots" class="all-service-item"><i class="fas fa-umbrella-beach"></i><span class="svc-label">Elements Resort Prewedding Shoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-camera"></i><span class="svc-label">Baby Photoshoot Places</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-camera"></i><span class="svc-label">Maternity Photoshoot Places</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-heart"></i><span class="svc-label">Anniversary Photoshoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-church"></i><span class="svc-label">Holy Communion Baptism Photoshoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-home"></i><span class="svc-label">Indoor Maternity Photoshoot</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-tshirt"></i><span class="svc-label">Fashion Photographers</span></a>
-                    <a href="#services" class="all-service-item"><i class="fas fa-baby"></i><span class="svc-label">Baby Backyard Studio</span></a>
+                    <a href="/wedding-photographer-bangalore" class="all-service-item" data-gtm="all-svc-wedding"><i class="fas fa-ring"></i><span class="svc-label">Wedding Photographers</span></a>
+                    <a href="/pre-wedding-shoots" class="all-service-item" data-gtm="all-svc-pre-wedding"><i class="fas fa-heart"></i><span class="svc-label">Pre Wedding Photoshoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-maternity"><i class="fas fa-child"></i><span class="svc-label">Maternity and Pregnancy Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-baby-shower"><i class="fas fa-baby"></i><span class="svc-label">Baby Shower Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-event"><i class="fas fa-calendar-check"></i><span class="svc-label">Event Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-portfolio"><i class="fas fa-id-badge"></i><span class="svc-label">Portfolio Shoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-product"><i class="fas fa-box"></i><span class="svc-label">Product E-Commerce Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-birthday"><i class="fas fa-birthday-cake"></i><span class="svc-label">Birthday Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-newborn"><i class="fas fa-baby-carriage"></i><span class="svc-label">Newborn Photography</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-engagement"><i class="fas fa-hand-holding-heart"></i><span class="svc-label">Engagement Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-family"><i class="fas fa-users"></i><span class="svc-label">Family Shoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-housewarming"><i class="fas fa-home"></i><span class="svc-label">House Warming Ceremony Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-restoration"><i class="fas fa-undo-alt"></i><span class="svc-label">Photo Restoration Service</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-post-wedding"><i class="fas fa-camera-retro"></i><span class="svc-label">Post Wedding Photoshoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-naming"><i class="fas fa-font"></i><span class="svc-label">Naming Ceremony Photography</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-upanayana"><i class="fas fa-yin-yang"></i><span class="svc-label">Upanayana Photography</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-shastipurthi"><i class="fas fa-star"></i><span class="svc-label">Shastipurthi Photography</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-frames"><i class="fas fa-image"></i><span class="svc-label">Photo Frames</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-album"><i class="fas fa-book"></i><span class="svc-label">Album Designers and Printers</span></a>
+                    <a href="/wedding-photographer-bangalore" class="all-service-item" data-gtm="all-svc-candid-wedding"><i class="fas fa-camera"></i><span class="svc-label">Candid Wedding Photography</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-candid-video"><i class="fas fa-video"></i><span class="svc-label">Candid Videographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-videography"><i class="fas fa-film"></i><span class="svc-label">Professional Videography</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-corporate"><i class="fas fa-building"></i><span class="svc-label">Corporate Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-christian"><i class="fas fa-cross"></i><span class="svc-label">Christian Wedding Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-muslim"><i class="fas fa-mosque"></i><span class="svc-label">Muslim Wedding Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-studio"><i class="fas fa-store"></i><span class="svc-label">Digital Photo Studio Near Me</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-puberty"><i class="fas fa-female"></i><span class="svc-label">Puberty Function Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-portrait"><i class="fas fa-user-tie"></i><span class="svc-label">Portrait Photography</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-karizma"><i class="fas fa-address-book"></i><span class="svc-label">Karizma Album Printing</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-drone"><i class="fas fa-plane"></i><span class="svc-label">Drone Photography</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-baby"><i class="fas fa-child"></i><span class="svc-label">Baby Photoshoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-near-me"><i class="fas fa-search-location"></i><span class="svc-label">Photographers Near Me</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-cradle"><i class="fas fa-baby"></i><span class="svc-label">Cradle Ceremony Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-video-editing"><i class="fas fa-cut"></i><span class="svc-label">Video Editing Services</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-corp-video"><i class="fas fa-play"></i><span class="svc-label">Corporate Video Production</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-freelance"><i class="fas fa-user-astronaut"></i><span class="svc-label">Freelance Photographers</span></a>
+                    <a href="/pre-wedding-shoots" class="all-service-item" data-gtm="all-svc-elements"><i class="fas fa-umbrella-beach"></i><span class="svc-label">Elements Resort Prewedding Shoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-baby-places"><i class="fas fa-camera"></i><span class="svc-label">Baby Photoshoot Places</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-maternity-places"><i class="fas fa-camera"></i><span class="svc-label">Maternity Photoshoot Places</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-anniversary"><i class="fas fa-heart"></i><span class="svc-label">Anniversary Photoshoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-baptism"><i class="fas fa-church"></i><span class="svc-label">Holy Communion Baptism Photoshoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-indoor-maternity"><i class="fas fa-home"></i><span class="svc-label">Indoor Maternity Photoshoot</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-fashion"><i class="fas fa-tshirt"></i><span class="svc-label">Fashion Photographers</span></a>
+                    <a href="#services" class="all-service-item" data-gtm="all-svc-baby-backyard"><i class="fas fa-baby"></i><span class="svc-label">Baby Backyard Studio</span></a>
                 </div>
 
                 <div class="all-services-note reveal" style="animation-delay:0.25s;">
-                    <i class="fas fa-hand-pointer"></i> Click any service to learn more, or <a href="#contact" style="color:var(--gold); text-decoration:underline;">contact us</a> for a custom quote.
+                    <i class="fas fa-hand-pointer"></i> Click any service to learn more, or <a href="#contact" style="color:var(--gold); text-decoration:underline;" data-gtm="all-svc-contact">contact us</a> for a custom quote.
                 </div>
             </div>
         </section>
@@ -2287,30 +1252,30 @@
                         <h2 id="finest-moment" class="section-title reveal" style="animation-delay:0.1s">Our Finest <em>Moments</em></h2>
                         <p>Explore our portfolio of candid wedding photography, pre-wedding shoots, and event coverage.</p>
                     </div>
-                    <a href="/gallery" class="btn btn-ghost reveal" style="animation-delay:0.15s" data-gtm="portfolio">See Full Gallery</a>
+                    <a href="/gallery" class="btn btn-ghost reveal" style="animation-delay:0.15s" data-gtm="gallery-see-all">See Full Gallery</a>
                 </div>
                 <div class="gallery-grid reveal" style="animation-delay:0.2s">
-                    <div class="gal-item" data-gtm="pre-wedding">
+                    <div class="gal-item" data-gtm="gal-pre-wedding">
                         <img src="images/gallery/blazer-gown-lake-pre-wedding-photoshoot.jpg" loading="lazy" alt="Blazer and gown pre-wedding photoshoot at a Bangalore lake at sunset" title="Pre-wedding photography" width="600" height="400">
                         <div class="gal-overlay">Pre-Wedding</div>
                     </div>
-                    <div class="gal-item" data-gtm="candit-wedding">
+                    <div class="gal-item" data-gtm="gal-candid">
                         <img src="images/gallery/kerala-onam-saree-portrait-angle1.jpg" loading="lazy" alt="Kerala Onam saree portrait captured in natural light" title="Natural candid photography" width="600" height="400">
                         <div class="gal-overlay">Candid</div>
                     </div>
-                    <div class="gal-item" data-gtm="cinematic-coverage">
+                    <div class="gal-item" data-gtm="gal-cinematic">
                         <img src="images/gallery/romantic-lift-pre-wedding-photography.jpg" loading="lazy" alt="Cinematic wedding film production by Magic Today Photography" title="Cinematic wedding coverage" width="600" height="800">
                         <div class="gal-overlay">Cinematic Coverage</div>
                     </div>
-                    <div class="gal-item" data-gtm="couple-session">
+                    <div class="gal-item" data-gtm="gal-couple">
                         <img src="images/gallery/ring-ceremony-intimate-wedding-photo.jpg" loading="lazy" alt="Outdoor couple pre-wedding photoshoot in Bangalore" title="Couple pre-wedding session" width="600" height="400">
                         <div class="gal-overlay">Couple Session</div>
                     </div>
-                    <div class="gal-item" data-gtm="newborn-session">
+                    <div class="gal-item" data-gtm="gal-newborn">
                         <img src="images/gallery/baby-krishna-avatar-traditional-costume-photography.jpg" loading="lazy" alt="Parents holding newborn baby, newborn photography in Bangalore" title="Newborn family photoshoot" width="600" height="400">
                         <div class="gal-overlay">Newborn Session</div>
                     </div>
-                    <div class="gal-item" data-gtm="maternity">
+                    <div class="gal-item" data-gtm="gal-maternity">
                         <img src="images/gallery/baby-shower-saree-maternity-photography.jpg" loading="lazy" alt="Maternity photoshoot in Bangalore of expecting mother with flower crown" title="Artistic maternity photography" width="600" height="400">
                         <div class="gal-overlay">Maternity Portraits</div>
                     </div>
@@ -2409,7 +1374,7 @@
                                         <span style="color:var(--gold); font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                         <span style="font-weight:600; color:var(--white); font-size:1rem;">4.9</span>
                                         <span style="color:rgba(255,255,255,0.4); font-size:0.85rem;">(150 plus reviews)</span>
-                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;">View on Google</a>
+                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;" data-gtm="testimonial-google-review">View on Google</a>
                                     </div>
                                 </div>
                                 <p class="single-testi-text">Magic Today Photography turned our wedding into an everlasting story. The candid shots, emotions, and attention to detail were beyond expectations. Our family loved every frame.</p>
@@ -2424,7 +1389,7 @@
                                         <span style="color:var(--gold); font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                         <span style="font-weight:600; color:var(--white); font-size:1rem;">4.9</span>
                                         <span style="color:rgba(255,255,255,0.4); font-size:0.85rem;">(150 plus reviews)</span>
-                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;">View on Google</a>
+                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;" data-gtm="testimonial-google-review">View on Google</a>
                                     </div>
                                 </div>
                                 <p class="single-testi-text">Amazing service. The photographer was patient and supportive throughout.</p>
@@ -2439,7 +1404,7 @@
                                         <span style="color:var(--gold); font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                         <span style="font-weight:600; color:var(--white); font-size:1rem;">4.9</span>
                                         <span style="color:rgba(255,255,255,0.4); font-size:0.85rem;">(150 plus reviews)</span>
-                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;">View on Google</a>
+                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;" data-gtm="testimonial-google-review">View on Google</a>
                                     </div>
                                 </div>
                                 <p class="single-testi-text">Photos and videos came out very nice. We all love it. Satya did an awesome job.</p>
@@ -2454,7 +1419,7 @@
                                         <span style="color:var(--gold); font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                         <span style="font-weight:600; color:var(--white); font-size:1rem;">4.9</span>
                                         <span style="color:rgba(255,255,255,0.4); font-size:0.85rem;">(150 plus reviews)</span>
-                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;">View on Google</a>
+                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;" data-gtm="testimonial-google-review">View on Google</a>
                                     </div>
                                 </div>
                                 <p class="single-testi-text">Wonderful. Photography best team. If you are looking for candid and traditional photography, you are on the right page. Do go for it.</p>
@@ -2469,7 +1434,7 @@
                                         <span style="color:var(--gold); font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                         <span style="font-weight:600; color:var(--white); font-size:1rem;">4.9</span>
                                         <span style="color:rgba(255,255,255,0.4); font-size:0.85rem;">(150 plus reviews)</span>
-                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;">View on Google</a>
+                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;" data-gtm="testimonial-google-review">View on Google</a>
                                     </div>
                                 </div>
                                 <p class="single-testi-text">The team made everything go smoothly and I did not have to worry, especially during the pandemic. Thank you to my photographers and videographer. All were so professional and made my day look phenomenal. I would highly recommend them.</p>
@@ -2484,7 +1449,7 @@
                                         <span style="color:var(--gold); font-size:0.9rem;"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                                         <span style="font-weight:600; color:var(--white); font-size:1rem;">4.9</span>
                                         <span style="color:rgba(255,255,255,0.4); font-size:0.85rem;">(150 plus reviews)</span>
-                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;">View on Google</a>
+                                        <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" class="btn btn-gold" style="padding:0.3rem 1rem; font-size:0.65rem; border-radius:999px; background:var(--gold); color:#0b0b0b; font-weight:600; text-decoration:none; transition:all 0.3s ease;" data-gtm="testimonial-google-review">View on Google</a>
                                     </div>
                                 </div>
                                 <p class="single-testi-text">This team deserves much more success. Very good photography and videography skills. Keep it up and continue the same work.</p>
@@ -2495,9 +1460,9 @@
                         </div>
                     </div>
                     <div class="testimonial-nav">
-                        <button class="testi-nav-btn" id="testiPrev" aria-label="Previous testimonial"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+                        <button class="testi-nav-btn" id="testiPrev" aria-label="Previous testimonial" data-gtm="testimonial-prev"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
                         <div class="testi-dots" id="testiDots"></div>
-                        <button class="testi-nav-btn" id="testiNext" aria-label="Next testimonial"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+                        <button class="testi-nav-btn" id="testiNext" aria-label="Next testimonial" data-gtm="testimonial-next"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -2520,7 +1485,7 @@
                             </div>
                             <h4><i class="fas fa-camera"></i>15 Creative Pre-Wedding Photoshoot Ideas at Beaches, Rooftops, and Studios</h4>
                             <p>From golden hour beach walks to urban rooftop dances, this guide covers 15 real, workable ideas for every couple, plus expert timing and outfit advice.</p>
-                            <a href="https://magictodayphotography.netlify.app/blog/creative-pre-wedding-photoshoot-ideas-beach-rooftop-studio" class="tips-link">Read the Guide <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://magictodayphotography.netlify.app/blog/creative-pre-wedding-photoshoot-ideas-beach-rooftop-studio" class="tips-link" data-gtm="blog-pre-wedding-ideas">Read the Guide <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
                     <article class="tips-card">
@@ -2531,7 +1496,7 @@
                             </div>
                             <h4><i class="fas fa-calendar-check"></i>Wedding Day Timeline: Hour by Hour Guide for 2026</h4>
                             <p>Plan your photography timeline from getting ready to last dance. Real samples for 6, 8, 10, and 12 plus hour packages, including golden hour planning and buffer time.</p>
-                            <a href="https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline" class="tips-link">Read Full Guide <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline" class="tips-link" data-gtm="blog-wedding-timeline">Read Full Guide <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
                     <article class="tips-card">
@@ -2542,7 +1507,7 @@
                             </div>
                             <h4><i class="fas fa-camera-retro"></i>Why Candid Wedding Photography Is Taking Over</h4>
                             <p>What is candid wedding photography? It is the flower girl sitting in the aisle mid-ceremony. It is the groom's stolen glance. Read the full guide plus 10 real love story examples.</p>
-                            <a href="https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography" class="tips-link">Read Full Blog <i class="fas fa-arrow-right"></i></a>
+                            <a href="https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography" class="tips-link" data-gtm="blog-candid-wedding">Read Full Blog <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </article>
                 </div>
@@ -2559,7 +1524,7 @@
                         <div class="divider reveal" style="animation-delay:0.2s"></div>
                         <p class="section-lead reveal" style="animation-delay:0.25s">Cannot find what you are looking for? Send us a message and we usually reply within a few hours.</p>
                         <div style="margin-top:2.5rem;" class="reveal">
-                            <a href="#contact" class="btn btn-gold" data-gtm="consultation">Ask Us Directly <i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="btn btn-gold" data-gtm="faq-ask">Ask Us Directly <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="faq-list" id="faqList"></div>
@@ -2590,14 +1555,14 @@
                             <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
                             <div>
                                 <div class="contact-info-label">Email</div>
-                                <div class="contact-info-val">info.magictoday@gmail.com</div>
+                                <div class="contact-info-val"><a href="mailto:info.magictoday@gmail.com" style="color:inherit; text-decoration:none;" data-gtm="contact-email">info.magictoday@gmail.com</a></div>
                             </div>
                         </div>
                         <div class="contact-info-item reveal" style="animation-delay:0.15s">
                             <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
                             <div>
                                 <div class="contact-info-label">Phone and WhatsApp</div>
-                                <div class="contact-info-val">+91 80957 67131</div>
+                                <div class="contact-info-val"><a href="tel:+918095767131" style="color:inherit; text-decoration:none;" data-gtm="contact-phone">+91 80957 67131</a></div>
                             </div>
                         </div>
                         <div class="contact-info-item reveal" style="animation-delay:0.2s">
@@ -2608,12 +1573,12 @@
                             </div>
                         </div>
                         <div class="social-row reveal" style="animation-delay:0.25s">
-                            <a href="https://www.instagram.com/magictodayphotography/" target="_blank" class="social-btn" aria-label="Follow us on Instagram" data-gtm="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                            <a href="https://wa.me/918095767131" target="_blank" class="social-btn" aria-label="Chat on WhatsApp" data-gtm="whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                            <a href="https://linkedin.com/company/magic-today-photography" target="_blank" class="social-btn" aria-label="Connect on LinkedIn" data-gtm="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/magictodayphotography/" target="_blank" class="social-btn" aria-label="Follow us on Instagram" data-gtm="contact-instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://wa.me/918095767131" target="_blank" class="social-btn" aria-label="Chat on WhatsApp" data-gtm="contact-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                            <a href="https://linkedin.com/company/magic-today-photography" target="_blank" class="social-btn" aria-label="Connect on LinkedIn" data-gtm="contact-linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <form action="https://formspree.io/f/info.magictoday@gmail.com" method="POST" class="reveal" style="animation-delay:0.1s" toolname="bookPhotographyService" tooldescription="Submit an inquiry to book wedding, pre-wedding, event, newborn, maternity, or portfolio photography services with Magic Today Photography in Bangalore.">
+                    <form action="https://formspree.io/f/info.magictoday@gmail.com" method="POST" class="reveal" id="contactForm" style="animation-delay:0.1s" toolname="bookPhotographyService" tooldescription="Submit an inquiry to book wedding, pre-wedding, event, newborn, maternity, or portfolio photography services with Magic Today Photography in Bangalore.">
 
                         <div class="form-row">
                             <div class="form-group">
@@ -2646,7 +1611,7 @@
                             <label class="form-label" for="message">Tell Us About Your Shoot</label>
                             <textarea class="form-textarea" id="message" name="message" placeholder="Share your date, location, vision, or any questions..." toolparamdescription="Additional details about the event, date, location, and specific requirements"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Send Inquiry <i class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;" data-gtm="form-submit">Send Inquiry <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -2668,7 +1633,7 @@
                     </div>
                 </div>
 
-                <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" rel="noopener" style="text-decoration:none;align-self:stretch;" data-gtm="google-maps">
+                <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" rel="noopener" style="text-decoration:none;align-self:stretch;" data-gtm="google-review-badge">
                     <div style="height:100%;background:linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.04));border:1px solid rgba(212,175,55,0.28);border-radius:18px;padding:1.35rem;display:flex;flex-direction:column;justify-content:center;gap:1rem;box-shadow:0 18px 40px rgba(0,0,0,0.18);">
                         <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;">
                             <div>
@@ -2710,42 +1675,42 @@
                     </span>
                 </div>
                 <div class="social-row">
-                    <a aria-label="Follow us on Instagram" class="social-btn" data-gtm="instagram" href="https://www.instagram.com/magictodayphotography/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                    <a href="https://wa.me/918095767131" target="_blank" class="social-btn" aria-label="Chat on WhatsApp" data-gtm="whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-                    <a href="https://linkedin.com/company/magic-today-photography" target="_blank" class="social-btn" aria-label="Connect on LinkedIn" data-gtm="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a aria-label="Follow us on Instagram" class="social-btn" data-gtm="footer-instagram" href="https://www.instagram.com/magictodayphotography/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://wa.me/918095767131" target="_blank" class="social-btn" aria-label="Chat on WhatsApp" data-gtm="footer-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/company/magic-today-photography" target="_blank" class="social-btn" aria-label="Connect on LinkedIn" data-gtm="footer-linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                 </div>
             </div>
 
             <div class="footer-col">
                 <div class="footer-title">Quick Links</div>
                 <ul>
-                    <li><a href="/about" data-gtm="about">About Us</a></li>
-                    <li><a href="#services" data-gtm="services">Services</a></li>
-                    <li><a href="/gallery" data-gtm="gallery">Portfolio</a></li>
-                    <li><a href="#video-showcase" data-gtm="videos">Films</a></li>
-                    <li><a href="#testimonials" data-gtm="testimonials">Clients</a></li>
-                    <li><a href="/faq" data-gtm="faq">FAQ</a></li>
-                    <li><a href="#contact" data-gtm="consultation">Contact</a></li>
-                    <li><a href="/blog/" data-gtm="blog">Blog</a></li>
+                    <li><a href="/about" data-gtm="footer-about">About Us</a></li>
+                    <li><a href="#services" data-gtm="footer-services">Services</a></li>
+                    <li><a href="/gallery" data-gtm="footer-gallery">Portfolio</a></li>
+                    <li><a href="#video-showcase" data-gtm="footer-films">Films</a></li>
+                    <li><a href="#testimonials" data-gtm="footer-testimonials">Clients</a></li>
+                    <li><a href="/faq" data-gtm="footer-faq">FAQ</a></li>
+                    <li><a href="#contact" data-gtm="footer-contact">Contact</a></li>
+                    <li><a href="/blog/" data-gtm="footer-blog">Blog</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <div class="footer-title">Services</div>
                 <ul>
-                    <li><a href="/wedding-photographer-bangalore" data-gtm="wedding-photography">Wedding Photography</a></li>
-                    <li><a href="/pre-wedding-shoots" data-gtm="pre-wedding-photography">Pre-Wedding Shoots</a></li>
-                    <li><a href="#services" data-gtm="event-photography">Event Photography</a></li>
-                    <li><a href="#services" data-gtm="maternity">Maternity and Baby Shower</a></li>
-                    <li><a href="#services" data-gtm="portfolio-shoots">Portfolio Shoots</a></li>
+                    <li><a href="/wedding-photographer-bangalore" data-gtm="footer-wedding-photography">Wedding Photography</a></li>
+                    <li><a href="/pre-wedding-shoots" data-gtm="footer-pre-wedding-photography">Pre-Wedding Shoots</a></li>
+                    <li><a href="#services" data-gtm="footer-event-photography">Event Photography</a></li>
+                    <li><a href="#services" data-gtm="footer-maternity">Maternity and Baby Shower</a></li>
+                    <li><a href="#services" data-gtm="footer-portfolio-shoots">Portfolio Shoots</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <div class="footer-title">Contact</div>
                 <ul>
-                    <li><a href="mailto:info.magictoday@gmail.com" data-gtm="email">info.magictoday@gmail.com</a></li>
-                    <li><a href="tel:+918095767131" data-gtm="phone">+91 80957 67131</a></li>
+                    <li><a href="mailto:info.magictoday@gmail.com" data-gtm="footer-email">info.magictoday@gmail.com</a></li>
+                    <li><a href="tel:+918095767131" data-gtm="footer-phone">+91 80957 67131</a></li>
                     <li style="color:rgba(255,255,255,0.68); font-size:0.88rem; line-height:1.6;">5th block, 3rd phase, 131, 2nd Cross Rd, Banashankari 3rd Stage, Bengaluru 560085</li>
                 </ul>
             </div>
@@ -2754,35 +1719,35 @@
         <div class="footer-searches">
             <span class="searches-label">Top Searches</span>
             <div class="searches-wrap">
-                <a href="#services">Photographers Near me</a><span class="sep">·</span>
-                <a href="#services">Professional Photographer Near me</a><span class="sep">·</span>
-                <a href="#services">Photographers in Bangalore</a><span class="sep">·</span>
-                <a href="#contact">Hire Photographer in Bangalore</a><span class="sep">·</span>
-                <a href="#services">Baby Photoshoot in Bangalore</a><span class="sep">·</span>
-                <a href="#services">Maternity Photoshoot in Bangalore</a><span class="sep">·</span>
-                <a href="/wedding-photographer-bangalore">Wedding Photographers in Bangalore</a><span class="sep">·</span>
-                <a href="/wedding-photographer-bangalore">Candid Photographers in Bangalore</a><span class="sep">·</span>
-                <a href="#services">Photographer for Birthday Party</a><span class="sep">·</span>
-                <a href="#services">Photo Studio Near Me Bangalore</a><span class="sep">·</span>
-                <a href="/pre-wedding-shoots">Pre Wedding Shoot</a><span class="sep">·</span>
-                <a href="#services">Newborn Photography</a><span class="sep">·</span>
-                <a href="#services">Event Photography</a><span class="sep">·</span>
-                <a href="#services">Album Designers</a><span class="sep">·</span>
-                <a href="#services">Drone Photography</a>
+                <a href="#services" data-gtm="search-near-me">Photographers Near me</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-professional">Professional Photographer Near me</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-bangalore">Photographers in Bangalore</a><span class="sep">·</span>
+                <a href="#contact" data-gtm="search-hire">Hire Photographer in Bangalore</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-baby">Baby Photoshoot in Bangalore</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-maternity">Maternity Photoshoot in Bangalore</a><span class="sep">·</span>
+                <a href="/wedding-photographer-bangalore" data-gtm="search-wedding">Wedding Photographers in Bangalore</a><span class="sep">·</span>
+                <a href="/wedding-photographer-bangalore" data-gtm="search-candid">Candid Photographers in Bangalore</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-birthday">Photographer for Birthday Party</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-studio">Photo Studio Near Me Bangalore</a><span class="sep">·</span>
+                <a href="/pre-wedding-shoots" data-gtm="search-pre-wedding">Pre Wedding Shoot</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-newborn">Newborn Photography</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-event">Event Photography</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-album">Album Designers</a><span class="sep">·</span>
+                <a href="#services" data-gtm="search-drone">Drone Photography</a>
             </div>
         </div>
 
         <div class="footer-bottom">
             <span>© 2026 Magic Today Photography. All rights reserved.</span>
             <p style="color: white;">
-                <a href="/privacy" class="credit-link" style="color:#ffd27a; text-decoration: underline;">Privacy Policy</a> |
-                <a href="#contact" class="credit-link" style="color:#ffd27a; text-decoration: underline;" data-gtm="contact">Contact</a>
+                <a href="/privacy" class="credit-link" style="color:#ffd27a; text-decoration: underline;" data-gtm="footer-privacy">Privacy Policy</a> |
+                <a href="#contact" class="credit-link" style="color:#ffd27a; text-decoration: underline;" data-gtm="footer-contact-bottom">Contact</a>
             </p>
-            <span>Crafted with <i class="fas fa-heart" style="color:#ffd27a;"></i> in Bangalore by <a href="https://kirinkumarvel.github.io/" target="_blank" rel="noopener noreferrer" class="credit-link" style="color:#ffd27a; text-decoration: underline;">Kiran (Kronix Systems)</a></span>
+            <span>Crafted with <i class="fas fa-heart" style="color:#ffd27a;"></i> in Bangalore by <a href="https://kirinkumarvel.github.io/" target="_blank" rel="noopener noreferrer" class="credit-link" style="color:#ffd27a; text-decoration: underline;" data-gtm="footer-credit">Kiran (Kronix Systems)</a></span>
         </div>
     </footer>
 
-    <a href="https://www.instagram.com/magictodayphotography/" target="_blank" class="ig-float" aria-label="Follow us on Instagram" data-gtm="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/magictodayphotography/" target="_blank" class="ig-float" aria-label="Follow us on Instagram" data-gtm="instagram-float"><i class="fab fa-instagram" aria-hidden="true"></i></a>
 
     <!-- WhatsApp Float with Sathya avatar -->
     <div class="wa-float" id="waFloat">
@@ -2807,14 +1772,19 @@
             <label class="wa-opt"><input type="radio" name="waSvc" value="Portfolio"> <i class="fas fa-id-card"></i> Portfolio Shoot</label>
             <label class="wa-opt"><input type="radio" name="waSvc" value="Other Inquiry"> <i class="fas fa-question-circle"></i> Other Inquiry</label>
             <input type="text" id="waName" class="wa-name-input" placeholder="Your name (optional)">
-            <button class="wa-send" id="waSend">Start Chat <i class="fab fa-whatsapp"></i></button>
+            <button class="wa-send" id="waSend" data-gtm="whatsapp-send">Start Chat <i class="fab fa-whatsapp"></i></button>
         </div>
-        <div class="wa-btn" id="waBtn" data-gtm="whatsapp" role="button" tabindex="0" aria-label="Open WhatsApp chat with Sathya, founder of Magic Today Photography">
+        <div class="wa-btn" id="waBtn" data-gtm="whatsapp-float" role="button" tabindex="0" aria-label="Open WhatsApp chat with Sathya, founder of Magic Today Photography">
             <img src="/images/sathya-avatar.jpg" alt="Sathya, founder of Magic Today Photography" width="64" height="64" loading="lazy" decoding="async">
             <span class="wa-online-dot" aria-hidden="true"></span>
             <span class="wa-icon-badge" aria-hidden="true"><i class="fab fa-whatsapp"></i></span>
         </div>
     </div>
+
+    <!-- Mobile-only call button -->
+    <a href="tel:+918095767131" class="call-float" id="callFloat" data-gtm="call-float" aria-label="Call Sathya at Magic Today Photography">
+        <i class="fas fa-phone" aria-hidden="true"></i>
+    </a>
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
@@ -3054,7 +2024,7 @@
         ];
 
         const faqList = document.getElementById('faqList');
-        faqs.forEach(f => {
+        faqs.forEach((f, idx) => {
             const item = document.createElement('div');
             item.className = 'faq-item';
             let brandsHtml = '';
@@ -3063,7 +2033,7 @@
                     `<span class="brand-badge"><span class="camera-icon"><i class="fas fa-camera"></i></span><span class="brand-mark">${b}</span></span>`
                 ).join('') + '</div>';
             }
-            item.innerHTML = `<button class="faq-q">${f.q}<span class="faq-icon" aria-hidden="true"><i class="fas fa-plus" aria-hidden="true"></i></span></button><div class="faq-a"><p>${f.a}</p>${brandsHtml}</div>`;
+            item.innerHTML = `<button class="faq-q" data-gtm="faq-q-${idx}">${f.q}<span class="faq-icon" aria-hidden="true"><i class="fas fa-plus" aria-hidden="true"></i></span></button><div class="faq-a"><p>${f.a}</p>${brandsHtml}</div>`;
             faqList.appendChild(item);
             item.querySelector('.faq-q').addEventListener('click', () => {
                 const isOpen = item.classList.contains('open');
@@ -3072,15 +2042,12 @@
             });
         });
 
-        // ============================================================ -->
-        // MOBILE NAV (hamburger)                                        -->
-        // ============================================================ -->
+        // Mobile nav
         const ham = document.getElementById('ham');
         const navList = document.getElementById('navList');
         ham.addEventListener('click', () => {
             const isOpen = navList.classList.toggle('open');
             ham.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-            // Swap hamburger icon to X when open
             const icon = ham.querySelector('i');
             if (icon) {
                 icon.classList.toggle('fa-bars', !isOpen);
@@ -3091,12 +2058,8 @@
             navList.classList.remove('open');
             ham.setAttribute('aria-expanded', 'false');
             const icon = ham.querySelector('i');
-            if (icon) {
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-times');
-            }
+            if (icon) { icon.classList.add('fa-bars'); icon.classList.remove('fa-times'); }
         }));
-        // Close mobile nav on Escape
         document.addEventListener('keydown', e => {
             if (e.key === 'Escape' && navList.classList.contains('open')) {
                 navList.classList.remove('open');
@@ -3106,9 +2069,7 @@
             }
         });
 
-        // ============================================================ -->
-        // WHATSAPP FLOAT WITH SATHYA AVATAR                             -->
-        // ============================================================ -->
+        // WhatsApp float
         const waBtn = document.getElementById('waBtn');
         const waPopup = document.getElementById('waPopup');
         const waClose = document.getElementById('waClose');
@@ -3156,7 +2117,6 @@
 
         waBtn.addEventListener('click', e => {
             e.stopPropagation();
-            // If mobile nav is open, close it first so the popup is fully visible
             if (navList.classList.contains('open')) {
                 navList.classList.remove('open');
                 ham.setAttribute('aria-expanded', 'false');
@@ -3210,7 +2170,7 @@
             });
         });
 
-        // Video showcase: click to load YouTube iframe
+        // Video showcase
         document.querySelectorAll('.video-card').forEach(card => {
             const loadVideo = () => {
                 const id = card.dataset.videoId;
@@ -3253,6 +2213,178 @@
 
         setInterval(updateWaStatus, 300000);
         updateWaStatus();
+
+        // ============================================================ -->
+        // GTM EVENT TRACKING                                            -->
+        // Unified dataLayer push for all interactive elements          -->
+        // ============================================================ -->
+        window.dataLayer = window.dataLayer || [];
+
+        function pushGTMEvent(eventName, category, action, label, value) {
+            window.dataLayer.push({
+                event: eventName || 'gtm_interaction',
+                gtm_category: category || 'General',
+                gtm_action: action || 'Click',
+                gtm_label: label || '',
+                gtm_value: value || null,
+                gtm_page_title: document.title,
+                gtm_page_url: window.location.href,
+                gtm_timestamp: new Date().toISOString()
+            });
+        }
+
+        // Auto-track every element carrying a data-gtm attribute
+        document.addEventListener('click', function(e) {
+            const target = e.target.closest('[data-gtm]');
+            if (!target) return;
+
+            const gtmValue = target.getAttribute('data-gtm');
+            let category = 'Interaction';
+            let action = 'Click';
+            let label = gtmValue;
+
+            if (target.closest('nav')) category = 'Navigation';
+            else if (target.closest('footer')) category = 'Footer';
+            else if (target.closest('#contact')) category = 'Contact';
+            else if (target.closest('#testimonials')) category = 'Testimonials';
+            else if (target.closest('.svc-card')) category = 'Service Card';
+            else if (target.closest('#all-services')) category = 'All Services';
+            else if (target.closest('.video-card')) category = 'Video';
+            else if (target.closest('.wa-popup')) category = 'WhatsApp';
+            else if (target.closest('.hero')) category = 'Hero';
+            else if (target.closest('.cta-banner')) category = 'CTA Banner';
+            else if (target.closest('#gallery')) category = 'Gallery';
+            else if (target.closest('.tips-card')) category = 'Blog';
+            else if (target.closest('.footer-searches')) category = 'Footer Search';
+            else if (target.closest('#faq')) category = 'FAQ';
+            else if (target.closest('.brand-badge')) category = 'Brand Badge';
+
+            const tag = target.tagName.toLowerCase();
+            if (tag === 'a') {
+                const href = target.getAttribute('href') || '';
+                if (href.startsWith('tel:')) { action = 'Call'; label = 'Phone ' + href.replace('tel:', ''); }
+                else if (href.startsWith('mailto:')) { action = 'Email'; label = 'Email ' + href.replace('mailto:', ''); }
+                else if (href.includes('wa.me') || href.includes('whatsapp')) { action = 'WhatsApp'; }
+                else if (href.includes('instagram')) { action = 'Instagram'; }
+                else if (href.includes('linkedin')) { action = 'LinkedIn'; }
+                else if (href.includes('share.google') || href.includes('maps.google')) { action = 'Google Business'; }
+                else if (href.includes('youtube')) { action = 'YouTube'; }
+                else if (href.startsWith('#')) { action = 'Scroll'; }
+                else { action = 'Link Click'; }
+            } else if (tag === 'button') {
+                action = 'Button Click';
+            }
+
+            pushGTMEvent('gtm_interaction', category, action, label, null);
+        });
+
+        // Specific WhatsApp triggers
+        const waBtnGTM = document.getElementById('waBtn');
+        if (waBtnGTM) {
+            waBtnGTM.addEventListener('click', function() {
+                pushGTMEvent('gtm_whatsapp_open', 'WhatsApp', 'Open Popup', 'Float Button', null);
+            });
+        }
+
+        const waSendGTM = document.getElementById('waSend');
+        if (waSendGTM) {
+            waSendGTM.addEventListener('click', function() {
+                const sel = document.querySelector('input[name="waSvc"]:checked');
+                const service = sel ? sel.value : 'None';
+                pushGTMEvent('gtm_whatsapp_send', 'WhatsApp', 'Send Message', service, null);
+            });
+        }
+
+        // Call float button
+        const callFloat = document.getElementById('callFloat');
+        if (callFloat) {
+            callFloat.addEventListener('click', function() {
+                pushGTMEvent('gtm_call_click', 'Call Button', 'Click', 'Mobile Float Button', null);
+            });
+        }
+
+        // Contact form submission and field engagement
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function() {
+                const nameVal = document.getElementById('name')?.value || '';
+                const serviceVal = document.getElementById('service')?.value || 'Not Selected';
+                pushGTMEvent('gtm_form_submit', 'Contact Form', 'Submit', serviceVal, null);
+            });
+
+            contactForm.querySelectorAll('input, select, textarea').forEach(field => {
+                field.addEventListener('focus', function() {
+                    pushGTMEvent('gtm_form_field_focus', 'Contact Form', 'Field Focus', field.name || field.id || 'unknown', null);
+                }, { once: true });
+            });
+        }
+
+        // Video play tracking
+        document.querySelectorAll('.video-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const videoId = card.dataset.videoId;
+                const label = card.querySelector('.video-label')?.textContent || videoId;
+                pushGTMEvent('gtm_video_play', 'Video', 'Play', label, null);
+            });
+        });
+
+        // FAQ open tracking
+        document.querySelectorAll('.faq-q').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const question = btn.textContent.trim().replace(/\s+/g, ' ');
+                pushGTMEvent('gtm_faq_open', 'FAQ', 'Open', question.substring(0, 80), null);
+            });
+        });
+
+        // Testimonial navigation
+        const testiPrevGTM = document.getElementById('testiPrev');
+        const testiNextGTM = document.getElementById('testiNext');
+        if (testiPrevGTM) testiPrevGTM.addEventListener('click', () => pushGTMEvent('gtm_testimonial_nav', 'Testimonials', 'Previous', 'Carousel', null));
+        if (testiNextGTM) testiNextGTM.addEventListener('click', () => pushGTMEvent('gtm_testimonial_nav', 'Testimonials', 'Next', 'Carousel', null));
+
+        // Section scroll depth tracking
+        const trackedSections = ['about', 'services', 'all-services', 'gallery', 'video-showcase', 'coverage', 'testimonials', 'tips-guides', 'faq', 'contact'];
+        const viewedSections = new Set();
+        const sectionObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !viewedSections.has(entry.target.id)) {
+                    viewedSections.add(entry.target.id);
+                    pushGTMEvent('gtm_section_view', 'Scroll Depth', 'Section View', entry.target.id, null);
+                }
+            });
+        }, { threshold: 0.25 });
+
+        trackedSections.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) sectionObserver.observe(el);
+        });
+
+        // 25, 50, 75, 100 percent scroll depth
+        let scrollFlags = { 25: false, 50: false, 75: false, 100: false };
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPct = Math.round((scrollTop / docHeight) * 100);
+
+            [25, 50, 75, 100].forEach(threshold => {
+                if (scrollPct >= threshold && !scrollFlags[threshold]) {
+                    scrollFlags[threshold] = true;
+                    pushGTMEvent('gtm_scroll_depth', 'Engagement', 'Scroll Depth', threshold + ' percent', threshold);
+                }
+            });
+        });
+
+        // Time on page (fires once at 60 seconds)
+        setTimeout(() => {
+            pushGTMEvent('gtm_time_on_page', 'Engagement', 'Time on Page', '60 seconds', 60);
+        }, 60000);
+
+        // WhatsApp service selection
+        document.querySelectorAll('input[name="waSvc"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                pushGTMEvent('gtm_whatsapp_service_select', 'WhatsApp', 'Select Service', this.value, null);
+            });
+        });
     </script>
     <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
 </body>
