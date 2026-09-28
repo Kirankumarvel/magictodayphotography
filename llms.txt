@@ -1,31 +1,4 @@
-## Analysis: Issues Found & Fixes
 
-| # | Issue | Fix |
-|---|-------|-----|
-| 1 | Instagram says “no active link”; full file has active URL | Replaced with `https://www.instagram.com/magictodayphotography/` |
-| 2 | Facebook hedge: “link may be inaccessible from some networks” | Removed; listed as canonical same-as |
-| 3 | Missing LinkedIn + WhatsApp link (present in full file) | Added both |
-| 4 | Pricing conflicts with `llms-full.txt` (wedding ₹85K–₹2.5L vs ₹85K/₹1.45L/₹2.2L tiers) | Reconciled: tiered packages from this file kept, ranges from full file merged, conflict flagged for verification |
-| 5 | Maternity price says ₹8,500+ here, ₹12,000–₹25,000 in full file | Added both with a “verify” note |
-| 6 | Response time conflicts: “under 30 min WhatsApp / 2 hours business” vs full file “2–4 hours WhatsApp / 4–8 hours email” | Canonicalized: WhatsApp <30 min business hours, email 4–8 hours |
-| 7 | Missing 11 blog posts added in full file | All 8 blog posts + 3 core blog links added |
-| 8 | Missing 15 location landing pages | All 15 added |
-| 9 | Missing service pages: `/pre-wedding-shoots`, `/gallery` | Added |
-| 10 | “Pay after you see the quality” claim unguarded | Added AI guardrail: do not state as unconditional guarantee |
-| 11 | “Last Updated: 2026-06-29” — stale | Updated to 2026-09-28 with review date |
-| 12 | Missing founder credentials (award, featured-in, certification) | Added |
-| 13 | Missing tagline, canonical entity ID, preferred citation | Added in header |
-| 14 | No schema/structured data section | Added recommended Schema.org types |
-| 15 | No AI usage guidelines | Added DO/DON’T guardrails |
-| 16 | No correction log | Added |
-| 17 | Phone/WhatsApp formatting inconsistent | Standardized to `+91 80957 67131` |
-| 18 | Missing “Newborn” service (in full file) | Added |
-| 19 | Missing Portrait + Portfolio services | Added |
-| 20 | Missing “no travel fee within 15 km” scope list | Kept and expanded |
-
----
-
-```txt
 # Magic Today Photography — llms.txt
 
 > Magic Today Photography is a Bangalore-based photography studio specializing in weddings, corporate events, pre-wedding shoots, maternity and newborn portraits, and event photography. We offer candid coverage, premium albums, fast response times, and a 4.9-star rating from 150+ clients. Founded 2019 by Sathya.
