@@ -1,36 +1,47 @@
-# Allow all crawlers
+# =========================================================
+# Global rules: allow all standard crawlers
+# =========================================================
 User-agent: *
 Allow: /
 
-# Block access to admin, private, or system paths (if any)
+# Block admin, private, or system paths (if they exist)
 Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
 Disallow: /*.json$
 
-# Crawl delay to be polite (adjust if needed)
+# Polite crawl delay (mainly for Bing/Yandex; Google ignores this)
 Crawl-delay: 1
 
-# Sitemap locations
+# Sitemaps (absolute URLs; one line per file is enough)
 Sitemap: https://magictodayphotography.netlify.app/sitemap.xml
 Sitemap: https://magictodayphotography.netlify.app/image_sitemap.xml
 
-# Specific AI bots
+# =========================================================
+# AI crawlers – explicitly allowed for search & citations
+# =========================================================
+
+# OpenAI (ChatGPT)
 User-agent: GPTBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
-# OpenAI Search bot (required for ChatGPT Search citations)
-User-agent: OAI-SearchBot
+# Perplexity AI
+User-agent: PerplexityBot
 Allow: /
 
-# Sitemap location (repeated for clarity; one is enough)
-Sitemap: https://magictodayphotography.netlify.app/sitemap.xml
+# Google AI / training (optional but commonly allowed)
+User-agent: Google-Extended
+Allow: /
