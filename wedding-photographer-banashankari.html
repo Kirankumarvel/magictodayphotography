@@ -6,7 +6,7 @@
 
     <title>Wedding Photographer Banashankari | Magic Today 4.9★</title>
 
-    <meta name="description" content="Trusted wedding photographer in Banashankari. Candid, traditional &amp; cinematic coverage. 4.9★ from 150+ couples. Book your free consultation today!" />
+    <meta name="description" content="Trusted wedding photographer in Banashankari. Candid, traditional and cinematic coverage. 4.9★ from 150+ couples. Book your free consultation today!" />
 
     <meta name="keywords" content="wedding photographer banashankari, banashankari wedding photography, candid wedding photographer banashankari, pre wedding shoot banashankari, event photographer banashankari" />
 
@@ -21,13 +21,12 @@
     <meta name="llms-txt" content="/llms.txt" />
     <meta name="llms-full-txt" content="/llms-full.txt" />
 
-
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.unsplash.com https://raw.githubusercontent.com; frame-src https://maps.google.com; connect-src 'self';" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.unsplash.com https://raw.githubusercontent.com https://magictodayphotography.netlify.app; frame-src https://maps.google.com; connect-src 'self';" />
 
     <meta property="og:title" content="Wedding Photographer Banashankari | Magic Today 4.9★" />
-    <meta property="og:description" content="Trusted wedding photographer in Banashankari. Candid, traditional &amp; cinematic coverage. 4.9★ from 150+ couples." />
+    <meta property="og:description" content="Trusted wedding photographer in Banashankari. Candid, traditional and cinematic coverage. 4.9★ from 150+ couples." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://magictodayphotography.netlify.app/wedding-photographer-banashankari" />
     <meta property="og:image" content="https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp" />
@@ -37,7 +36,7 @@
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Wedding Photographer Banashankari | Magic Today 4.9★" />
-    <meta name="twitter:description" content="Trusted wedding photographer in Banashankari. Candid, traditional &amp; cinematic coverage. 4.9★ from 150+ couples." />
+    <meta name="twitter:description" content="Trusted wedding photographer in Banashankari. Candid, traditional and cinematic coverage. 4.9★ from 150+ couples." />
     <meta name="twitter:image" content="https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp" />
     <meta name="twitter:image:alt" content="Wedding photographer in Banashankari – candid couple embracing at golden hour" />
 
@@ -609,6 +608,63 @@
             line-height: 1.7;
         }
 
+        /* GALLERY */
+        #gallery-location {
+            background: var(--ink-soft);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+            margin-top: 2.5rem;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: border-color 0.4s, box-shadow 0.4s, transform 0.3s;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            background: var(--ink-mid);
+        }
+        .gallery-item:hover {
+            border-color: rgba(201, 169, 110, 0.5);
+            box-shadow: var(--glow);
+            transform: translateY(-4px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+            display: block;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+        .gallery-caption {
+            position: absolute;
+            inset: auto 0 0 0;
+            padding: 1.8rem 1.2rem 1rem;
+            background: linear-gradient(to top, rgba(12, 10, 9, 0.95) 0%, rgba(12, 10, 9, 0.6) 60%, transparent 100%);
+        }
+        .gallery-caption h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem;
+            color: var(--white);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+        .gallery-caption span {
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: block;
+            margin-top: 0.3rem;
+        }
+
         #testimonials-location {
             background: var(--ink-soft);
         }
@@ -652,15 +708,10 @@
             margin-top: 0.2rem;
         }
 
-        /* ═══════════════════════════════════════════════
-           AUTO-SCROLLING REVIEWS CAROUSEL (NEW)
-           Seamless infinite loop • Pause on hover
-           ═══════════════════════════════════════════════ */
         .reviews-carousel-wrap {
             margin-top: 3rem;
             position: relative;
             overflow: hidden;
-            /* Fade edges for premium feel */
             -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
             mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
         }
@@ -723,7 +774,6 @@
             margin-top: 0.2rem;
         }
 
-        /* Reduced motion: disable auto-scroll for accessibility */
         @media (prefers-reduced-motion: reduce) {
             .reviews-track {
                 animation: none;
@@ -1100,7 +1150,8 @@
                 display: block;
             }
             .highlights-grid,
-            .services-location-grid {
+            .services-location-grid,
+            .gallery-grid {
                 grid-template-columns: 1fr 1fr;
             }
             .contact-grid {
@@ -1130,7 +1181,8 @@
 
         @media (max-width: 600px) {
             .highlights-grid,
-            .services-location-grid {
+            .services-location-grid,
+            .gallery-grid {
                 grid-template-columns: 1fr;
             }
             .footer-grid {
@@ -1186,9 +1238,6 @@
         }
     </style>
 
-    <!-- ═══════════════════════════════════════════════════════════════
-         JSON-LD SCHEMA — FIXED "Magicframes" → "Magic Today"
-    ═══════════════════════════════════════════════════════════════ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -1198,7 +1247,7 @@
           "@id": "https://magictodayphotography.netlify.app/#website",
           "url": "https://magictodayphotography.netlify.app/",
           "name": "Magic Today Photography",
-          "description": "Bangalore's premier wedding and event photography studio. Candid weddings, pre-wedding shoots, maternity portraits, and corporate events.",
+          "description": "Bangalore's trusted wedding and event photography studio. Candid weddings, pre-wedding shoots, maternity portraits, and corporate events.",
           "publisher": { "@id": "https://magictodayphotography.netlify.app/#organization" },
           "inLanguage": "en-IN",
           "potentialAction": {
@@ -1215,7 +1264,7 @@
           "@id": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari#webpage",
           "url": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari",
           "name": "Wedding Photographer Banashankari | Magic Today 4.9★",
-          "description": "Trusted wedding photographer in Banashankari. Candid, traditional & cinematic coverage. 4.9★ from 150+ couples. Book your free consultation today!",
+          "description": "Trusted wedding photographer in Banashankari. Candid, traditional and cinematic coverage. 4.9★ from 150+ couples. Book your free consultation today!",
           "isPartOf": { "@id": "https://magictodayphotography.netlify.app/#website" },
           "about": { "@id": "https://magictodayphotography.netlify.app/#localbusiness" },
           "primaryImageOfPage": { "@id": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari#hero-image" },
@@ -1233,9 +1282,9 @@
           "@id": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari#hero-image",
           "url": "https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp",
           "contentUrl": "https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp",
-          "name": "Wedding Photographer in Banashankari — Candid Couple Hero Image",
-          "description": "Candid wedding photography in Banashankari, Bangalore — a couple embracing at golden hour, captured by Magic Today Photography.",
-          "caption": "Wedding photographer in Banashankari — candid couple embracing at golden hour",
+          "name": "Wedding Photographer in Banashankari - Candid Couple Hero Image",
+          "description": "Candid wedding photography in Banashankari, Bangalore - a couple embracing at golden hour, captured by Magic Today Photography.",
+          "caption": "Wedding photographer in Banashankari - candid couple embracing at golden hour",
           "width": { "@type": "QuantitativeValue", "value": 1920, "unitCode": "E37" },
           "height": { "@type": "QuantitativeValue", "value": 1080, "unitCode": "E37" },
           "encodingFormat": "image/webp",
@@ -1249,13 +1298,69 @@
           "@id": "https://magictodayphotography.netlify.app/#logo-image",
           "url": "https://magictodayphotography.netlify.app/images/logo.jpg",
           "contentUrl": "https://magictodayphotography.netlify.app/images/logo.jpg",
-          "name": "Magic Today Photography — Official Logo",
-          "description": "Magic Today Photography logo — Bangalore's premier wedding and event photography studio.",
+          "name": "Magic Today Photography - Official Logo",
+          "description": "Magic Today Photography logo - Bangalore's trusted wedding and event photography studio.",
           "caption": "Magic Today Photography official logo",
           "width": { "@type": "QuantitativeValue", "value": 512, "unitCode": "E37" },
           "height": { "@type": "QuantitativeValue", "value": 512, "unitCode": "E37" },
           "encodingFormat": "image/jpeg",
           "creator": { "@id": "https://magictodayphotography.netlify.app/#organization" }
+        },
+        {
+          "@type": "ImageGallery",
+          "@id": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari#gallery",
+          "name": "Wedding Photography Gallery - Banashankari",
+          "description": "Recent wedding photography work by Magic Today Photography in Banashankari, Bangalore. Karnataka style weddings, ring ceremonies, temple shoots, and reception moments.",
+          "image": [
+            {
+              "@type": "ImageObject",
+              "url": "https://magictodayphotography.netlify.app/images/gallery/karnataka-style-wedding-stage-couple.jpg",
+              "name": "Karnataka Style Wedding Stage Celebration",
+              "description": "Karnataka style wedding stage celebration with couple in traditional attire, captured in Banashankari, Bangalore.",
+              "width": { "@type": "QuantitativeValue", "value": 1200, "unitCode": "E37" },
+              "height": { "@type": "QuantitativeValue", "value": 800, "unitCode": "E37" }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://magictodayphotography.netlify.app/images/gallery/sacred-pinky-finger-wedding-couple-ceremony.jpg",
+              "name": "Sacred Promise - Wedding Photography",
+              "description": "Sacred pinky finger wedding ceremony moment captured by Banashankari wedding photographer.",
+              "width": { "@type": "QuantitativeValue", "value": 1200, "unitCode": "E37" },
+              "height": { "@type": "QuantitativeValue", "value": 800, "unitCode": "E37" }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://magictodayphotography.netlify.app/images/gallery/ring-ceremony-intimate-wedding-photo.jpg",
+              "name": "Ring Ceremony Moments - Wedding Photoshoot",
+              "description": "Ring ceremony intimate wedding photo in Banashankari, Bangalore.",
+              "width": { "@type": "QuantitativeValue", "value": 1200, "unitCode": "E37" },
+              "height": { "@type": "QuantitativeValue", "value": 800, "unitCode": "E37" }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://magictodayphotography.netlify.app/images/gallery/traditional-saree-wedding-portrait.jpg",
+              "name": "Traditional Saree Wedding Portrait",
+              "description": "Traditional saree wedding portrait by Magic Today Photography, Banashankari.",
+              "width": { "@type": "QuantitativeValue", "value": 1200, "unitCode": "E37" },
+              "height": { "@type": "QuantitativeValue", "value": 800, "unitCode": "E37" }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://magictodayphotography.netlify.app/images/gallery/temple-pillars-sunrise-wedding-couple.jpg",
+              "name": "Temple Pillars Sunrise Wedding Photography",
+              "description": "Temple pillars sunrise wedding couple photography in Banashankari.",
+              "width": { "@type": "QuantitativeValue", "value": 1200, "unitCode": "E37" },
+              "height": { "@type": "QuantitativeValue", "value": 800, "unitCode": "E37" }
+            },
+            {
+              "@type": "ImageObject",
+              "url": "https://magictodayphotography.netlify.app/images/gallery/wedding-reception-parents.jpg",
+              "name": "Reception - Joy with Parents",
+              "description": "Wedding reception joy with parents captured in Banashankari, Bangalore.",
+              "width": { "@type": "QuantitativeValue", "value": 1200, "unitCode": "E37" },
+              "height": { "@type": "QuantitativeValue", "value": 800, "unitCode": "E37" }
+            }
+          ]
         },
         {
           "@type": "LocalBusiness",
@@ -1266,7 +1371,7 @@
           "url": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari",
           "telephone": "+918095767131",
           "email": "info.magictoday@gmail.com",
-          "priceRange": "₹85,000 – ₹2,50,000",
+          "priceRange": "₹85,000 - ₹2,50,000",
           "currenciesAccepted": "INR",
           "paymentAccepted": "Cash, UPI, Bank Transfer",
           "image": { "@id": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari#hero-image" },
@@ -1376,7 +1481,7 @@
           "url": "https://magictodayphotography.netlify.app/",
           "logo": { "@id": "https://magictodayphotography.netlify.app/#logo-image" },
           "image": { "@id": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari#hero-image" },
-          "description": "Bangalore's premier wedding and event photography studio. Specializing in candid weddings, pre-wedding shoots, maternity portraits, and corporate events.",
+          "description": "Bangalore's trusted wedding and event photography studio. Specializing in candid weddings, pre-wedding shoots, maternity portraits, and corporate events.",
           "founder": { "@id": "https://magictodayphotography.netlify.app/#founder" },
           "foundingDate": "2019",
           "sameAs": [
@@ -1416,7 +1521,7 @@
         {
           "@type": "Product",
           "@id": "https://magictodayphotography.netlify.app/#product-essential-wedding",
-          "name": "Essential Wedding Photography Package — Banashankari",
+          "name": "Essential Wedding Photography Package - Banashankari",
           "description": "8 hours of wedding coverage, single photographer, 400+ edited images, online gallery, and highlight teaser.",
           "image": "https://magictodayphotography.netlify.app/images/wedding-photograpy.jpg",
           "brand": { "@type": "Brand", "name": "Magic Today Photography" },
@@ -1432,7 +1537,7 @@
         {
           "@type": "Product",
           "@id": "https://magictodayphotography.netlify.app/#product-signature-wedding",
-          "name": "Signature Wedding Photography Package — Banashankari",
+          "name": "Signature Wedding Photography Package - Banashankari",
           "description": "10 hours of wedding coverage, 2 photographers, 600+ edited images, highlight film, and album credit.",
           "image": "https://magictodayphotography.netlify.app/images/wedding-photograpy.jpg",
           "brand": { "@type": "Brand", "name": "Magic Today Photography" },
@@ -1448,7 +1553,7 @@
         {
           "@type": "Product",
           "@id": "https://magictodayphotography.netlify.app/#product-cinematic-wedding",
-          "name": "Signature Cinematic Wedding Package — Banashankari",
+          "name": "Signature Cinematic Wedding Package - Banashankari",
           "description": "12 hours of coverage, 2 photographers + assistant, 700+ images, highlight film, and premium album credit.",
           "image": "https://magictodayphotography.netlify.app/images/wedding-photograpy.jpg",
           "brand": { "@type": "Brand", "name": "Magic Today Photography" },
@@ -1464,7 +1569,7 @@
         {
           "@type": "Product",
           "@id": "https://magictodayphotography.netlify.app/#product-pre-wedding",
-          "name": "Pre-Wedding Photography Package — Banashankari",
+          "name": "Pre-Wedding Photography Package - Banashankari",
           "description": "3 hours of pre-wedding shoot coverage, 1 photographer, 50+ edited images, and online gallery.",
           "image": "https://magictodayphotography.netlify.app/images/wedding-photograpy.jpg",
           "brand": { "@type": "Brand", "name": "Magic Today Photography" },
@@ -1476,6 +1581,81 @@
             "url": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari"
           },
           "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "150" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://magictodayphotography.netlify.app/#service-wedding-banashankari",
+          "name": "Wedding Photography in Banashankari",
+          "serviceType": "Wedding Photography",
+          "provider": { "@id": "https://magictodayphotography.netlify.app/#localbusiness" },
+          "areaServed": {
+            "@type": "Place",
+            "name": "Banashankari, Bangalore",
+            "geo": {
+              "@type": "GeoShape",
+              "circle": {
+                "@type": "Circle",
+                "radius": 15000,
+                "center": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 12.9236,
+                  "longitude": 77.5547
+                }
+              }
+            }
+          },
+          "description": "Full-day candid wedding photography capturing rituals, emotions, and celebrations in Banashankari and across Bangalore. Packages start at ₹85,000.",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "INR",
+            "price": "85000",
+            "priceValidUntil": "2026-12-31",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://magictodayphotography.netlify.app/wedding-photographer-banashankari#howto-booking",
+          "name": "How to Book a Wedding Photographer in Banashankari",
+          "description": "Simple steps to book Magic Today Photography for your wedding in Banashankari.",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Inquire",
+              "text": "Fill out the contact form or WhatsApp us with your wedding date and venue."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Consultation",
+              "text": "We discuss your requirements, share our portfolio, and recommend the right package."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Book Your Date",
+              "text": "Lock your date with a 30% advance. We send a simple agreement and you are all set."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "Pre-Wedding Planning",
+              "text": "We coordinate with your venue and family to plan the shoot schedule and key moments."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "The Big Day",
+              "text": "Our team arrives early, captures every moment, and backs up all images on the spot."
+            },
+            {
+              "@type": "HowToStep",
+              "position": 6,
+              "name": "Delivery",
+              "text": "Receive a teaser within 48 hours and the full edited gallery within 3 weeks."
+            }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -1494,7 +1674,7 @@
               "name": "Do you charge extra for travel to Banashankari?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No travel fee within 15 km of our Banashankari office. Since we're based in Banashankari itself, most local venues are within our free travel zone. For venues further out, a small surcharge applies — we quote the exact amount before booking."
+                "text": "No travel fee within 15 km of our Banashankari office. Since we're based in Banashankari itself, most local venues are within our free travel zone. For venues further out, a small surcharge applies - we quote the exact amount before booking."
               }
             },
             {
@@ -1518,7 +1698,7 @@
               "name": "Do you offer candid wedding photography in Banashankari?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Absolutely! Candid wedding photography is our specialty. We focus on capturing unscripted, authentic moments — the laughter, the tears, the stolen glances. Your story, told naturally."
+                "text": "Absolutely! Candid wedding photography is our specialty. We focus on capturing unscripted, authentic moments - the laughter, the tears, the stolen glances. Your story, told naturally."
               }
             },
             {
@@ -1526,7 +1706,7 @@
               "name": "Can I book a wedding photographer for a small intimate wedding?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, we cover weddings of all sizes — from intimate gatherings of 50 guests to grand celebrations of 1,000+. We offer flexible packages tailored to your guest count and coverage hours."
+                "text": "Yes, we cover weddings of all sizes - from intimate gatherings of 50 guests to grand celebrations of 1,000+. We offer flexible packages tailored to your guest count and coverage hours."
               }
             }
           ]
@@ -1553,7 +1733,7 @@
 
     <header id="header">
         <a href="/" class="logo">
-            <img src="/images/logo.jpg" alt="Magic Today Photography header logo – wedding photographer in Banashankari Bangalore" width="70" height="70" fetchpriority="high" />
+            <img src="/images/logo.jpg" alt="Magic Today Photography header logo - wedding photographer in Banashankari Bangalore" width="70" height="70" fetchpriority="high" />
             Magic Today Photography
         </a>
         <button class="hamburger" id="ham" aria-label="Menu"><i class="fas fa-bars"></i></button>
@@ -1577,7 +1757,7 @@
                 <picture>
                     <source srcset="https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.webp" type="image/webp" />
                     <source srcset="https://raw.githubusercontent.com/Kirankumarvel/magictodayphotography/main/images/hero-landingpage.jpg" type="image/jpeg" />
-                    <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85" alt="Candid wedding photography in Banashankari Bangalore – couple embracing at golden hour" id="heroBgImg" loading="eager" fetchpriority="high" width="1920" height="1080" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85';" />
+                    <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85" alt="Candid wedding photography in Banashankari Bangalore - couple embracing at golden hour" id="heroBgImg" loading="eager" fetchpriority="high" width="1920" height="1080" decoding="async" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1529636798458-92182e662485?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=85';" />
                 </picture>
             </div>
 
@@ -1621,35 +1801,35 @@
         <section id="location-highlights" aria-labelledby="why-title">
             <div class="orb" style="width:400px;height:400px;background:radial-gradient(circle,rgba(201,169,110,0.06),transparent);top:-100px;right:-100px;"></div>
             <div class="section-inner">
-                <p class="section-tag reveal">✦ Why Banashankari Couples Choose Us</p>
+                <p class="section-tag reveal">Why Banashankari Couples Choose Us</p>
                 <h2 id="why-title" class="section-title reveal" style="animation-delay:0.1s;">
                     The <em>Trusted</em> Wedding Photographer in Banashankari
                 </h2>
                 <div class="divider reveal" style="animation-delay:0.2s;"></div>
                 <p class="section-lead reveal" style="animation-delay:0.25s;">
-                    We've captured love stories at Banashankari's finest venues — from intimate home ceremonies to grand celebrations. Here's why local couples trust us.
+                    We've captured love stories at Banashankari's finest venues, from intimate home ceremonies to grand celebrations. Here's why local couples trust us.
                 </p>
 
                 <div class="highlights-grid">
                     <div class="highlight-card reveal" style="animation-delay:0.3s;">
                         <span class="icon"><i class="fas fa-location-dot"></i></span>
                         <h3>Local Expertise</h3>
-                        <p>We know Banashankari's best spots — from serene parks to photogenic temples and banquet halls. We arrive early, scope the lighting, and ensure every frame is perfect.</p>
+                        <p>We know Banashankari's best spots, from serene parks to photogenic temples and banquet halls. We arrive early, scope the lighting, and ensure every frame is perfect.</p>
                     </div>
                     <div class="highlight-card reveal" style="animation-delay:0.35s;">
                         <span class="icon"><i class="fas fa-clock"></i></span>
-                        <h3>2‑Hour Response Time</h3>
+                        <h3>2-Hour Response Time</h3>
                         <p>Need a last-minute wedding photographer in Banashankari? We respond within 2 hours during business hours. WhatsApp replies usually under 30 minutes.</p>
                     </div>
                     <div class="highlight-card reveal" style="animation-delay:0.4s;">
                         <span class="icon"><i class="fas fa-coins"></i></span>
                         <h3>30% Deposit Only</h3>
-                        <p>Lock your date with just 30% advance — fully refundable within 7 days. Transparent pricing with no hidden fees. We earn your trust, not lock you in.</p>
+                        <p>Lock your date with just 30% advance, fully refundable within 7 days. Transparent pricing with no hidden fees. We earn your trust, not lock you in.</p>
                     </div>
                     <div class="highlight-card reveal" style="animation-delay:0.45s;">
                         <span class="icon"><i class="fas fa-camera"></i></span>
-                        <h3>Dual Full‑Frame Cameras</h3>
-                        <p>We shoot with professional Sony &amp; Canon full-frame cameras with dual card slots. Every image is instantly backed up. No missed moments.</p>
+                        <h3>Dual Full-Frame Cameras</h3>
+                        <p>We shoot with professional Sony and Canon full-frame cameras with dual card slots. Every image is instantly backed up. No missed moments.</p>
                     </div>
                     <div class="highlight-card reveal" style="animation-delay:0.5s;">
                         <span class="icon"><i class="fas fa-rotate"></i></span>
@@ -1668,19 +1848,23 @@
         <section style="background:var(--ink-soft); border-bottom:1px solid var(--border);" aria-labelledby="venue-title">
             <div class="section-inner" style="padding:3rem 0;">
                 <div class="venue-guide reveal">
-                    <h4 id="venue-title"><i class="fas fa-map-pin"></i> Banashankari Venue Guide – Where We Shoot</h4>
+                    <h4 id="venue-title"><i class="fas fa-map-pin"></i> Banashankari Venue Guide: Where We Shoot</h4>
                     <p>
                         From intimate home weddings to grand celebrations at Banashankari's finest venues, we've covered it all. Our photographers know the lighting, layout, and best spots at:
                     </p>
                     <div class="venue-tags">
                         <span><i class="fas fa-landmark"></i> Banashankari Temple</span>
-                        <span><i class="fas fa-hotel"></i> Hotel Silk Palace</span>
-                        <span><i class="fas fa-hotel"></i> Ramanashree California Resort</span>
+                        <span><i class="fas fa-hotel"></i> The Krishna Grand</span>
+                        <span><i class="fas fa-hotel"></i> Sri Panchamukhi Kalyana Mantapa</span>
+                        <span><i class="fas fa-hotel"></i> Sri Venkatadri Kalyana Mantapa</span>
+                        <span><i class="fas fa-hotel"></i> Kanaka Bhavana Convention Center</span>
+                        <span><i class="fas fa-hotel"></i> RNM Party Hall</span>
+                        <span><i class="fas fa-hotel"></i> Thamboola Banquet Hall</span>
+                        <span><i class="fas fa-hotel"></i> Prakruthi Hall</span>
+                        <span><i class="fas fa-hotel"></i> Aadhi Sankalp Banquet Hall</span>
+                        <span><i class="fas fa-hotel"></i> V Legacy Convention Center</span>
                         <span><i class="fas fa-tree"></i> Banashankari Park</span>
-                        <span><i class="fas fa-hotel"></i> The Lalit Ashok</span>
-                        <span><i class="fas fa-hotel"></i> Taj Bangalore</span>
                         <span><i class="fas fa-home"></i> Private Farmhouses</span>
-                        <span><i class="fas fa-hotel"></i> JP Nagar Banquet Halls</span>
                     </div>
                     <p style="margin-top:0.8rem; font-size:0.85rem; color:rgba(255,255,255,0.4);">
                         <i class="fas fa-check-circle" style="color:var(--gold);"></i> We also shoot at farmhouses, temples, convention halls, and your own backyard. No venue is too big or too small.
@@ -1693,7 +1877,7 @@
             <div class="orb" style="width:500px;height:500px;background:radial-gradient(circle,rgba(201,169,110,0.06),transparent);bottom:-150px;left:-100px;"></div>
             <div class="section-inner">
                 <div style="text-align:center;">
-                    <p class="section-tag reveal">✦ What We Offer in Banashankari</p>
+                    <p class="section-tag reveal">What We Offer in Banashankari</p>
                     <h2 id="services-title" class="section-title reveal" style="animation-delay:0.1s;">
                         Photography Services in <em>Banashankari</em>
                     </h2>
@@ -1737,6 +1921,65 @@
             </div>
         </section>
 
+        <section id="gallery-location" aria-labelledby="gallery-title">
+            <div class="section-inner">
+                <div style="text-align:center;">
+                    <p class="section-tag reveal">Recent Work</p>
+                    <h2 id="gallery-title" class="section-title reveal" style="animation-delay:0.1s;">
+                        Wedding Photography <em>Gallery</em>
+                    </h2>
+                    <p class="section-lead" style="text-align:center; max-width:650px; margin:0 auto 2.5rem;">
+                        A glimpse into the weddings we have photographed across Banashankari and Bangalore. Every frame tells a story.
+                    </p>
+                </div>
+
+                <div class="gallery-grid reveal" style="animation-delay:0.15s;">
+                    <figure class="gallery-item">
+                        <img src="https://magictodayphotography.netlify.app/images/gallery/karnataka-style-wedding-stage-couple.jpg" alt="Karnataka style wedding stage celebration with couple in traditional attire - wedding photographer in Banashankari" loading="lazy" width="800" height="600" />
+                        <figcaption class="gallery-caption">
+                            <h4>Karnataka Style Wedding Stage Celebration</h4>
+                            <span>Wedding</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://magictodayphotography.netlify.app/images/gallery/sacred-pinky-finger-wedding-couple-ceremony.jpg" alt="Sacred pinky finger wedding ceremony moment - Banashankari wedding photographer" loading="lazy" width="800" height="600" />
+                        <figcaption class="gallery-caption">
+                            <h4>Sacred Promise | Wedding Photography</h4>
+                            <span>Wedding</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://magictodayphotography.netlify.app/images/gallery/ring-ceremony-intimate-wedding-photo.jpg" alt="Ring ceremony intimate wedding photo in Banashankari, Bangalore" loading="lazy" width="800" height="600" />
+                        <figcaption class="gallery-caption">
+                            <h4>Ring Ceremony Moments | Wedding Photoshoot</h4>
+                            <span>Wedding</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://magictodayphotography.netlify.app/images/gallery/traditional-saree-wedding-portrait.jpg" alt="Traditional saree wedding portrait by Magic Today Photography, Banashankari" loading="lazy" width="800" height="600" />
+                        <figcaption class="gallery-caption">
+                            <h4>Traditional Saree Wedding Portrait</h4>
+                            <span>Wedding</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://magictodayphotography.netlify.app/images/gallery/temple-pillars-sunrise-wedding-couple.jpg" alt="Temple pillars sunrise wedding couple photography in Banashankari" loading="lazy" width="800" height="600" />
+                        <figcaption class="gallery-caption">
+                            <h4>Temple Pillars Sunrise Wedding Photography</h4>
+                            <span>Wedding</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://magictodayphotography.netlify.app/images/gallery/wedding-reception-parents.jpg" alt="Wedding reception joy with parents captured in Banashankari, Bangalore" loading="lazy" width="800" height="600" />
+                        <figcaption class="gallery-caption">
+                            <h4>Reception - Joy with Parents</h4>
+                            <span>Wedding</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
         <section class="cta-banner">
             <div class="section-inner" style="padding:0.5rem 0;">
                 <div class="cta-banner-inner">
@@ -1757,11 +2000,10 @@
             </div>
         </section>
 
-        <!-- ═══ TESTIMONIALS WITH AUTO-SCROLL CAROUSEL ═══ -->
         <section id="testimonials-location" aria-labelledby="testi-title">
             <div class="orb" style="width:450px;height:450px;background:radial-gradient(circle,rgba(201,169,110,0.06),transparent);top:0;right:-80px;"></div>
             <div class="section-inner" style="padding:4rem 0;">
-                <p class="section-tag reveal" style="text-align:center;">✦ Client Love</p>
+                <p class="section-tag reveal" style="text-align:center;">Client Love</p>
                 <h2 id="testi-title" class="section-title reveal" style="text-align:center; animation-delay:0.1s;">
                     What Our <em>Banashankari</em> Clients Say
                 </h2>
@@ -1775,10 +2017,8 @@
                     <div class="testi-role">Wedding · Banashankari</div>
                 </div>
 
-                <!-- AUTO-SCROLLING REVIEWS CAROUSEL -->
                 <div class="reviews-carousel-wrap reveal" style="animation-delay:0.2s;" aria-label="Client reviews from Google">
                     <div class="reviews-track" id="reviewsTrack">
-                        <!-- Review 1 -->
                         <div class="review-card">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1787,7 +2027,6 @@
                             <div class="review-author">Kiran Kumar Vel</div>
                             <div class="review-meta">Local Guide · 5 years ago</div>
                         </div>
-                        <!-- Review 2 -->
                         <div class="review-card">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1796,7 +2035,6 @@
                             <div class="review-author">ASHWIJ A</div>
                             <div class="review-meta">Local Guide · 2 years ago</div>
                         </div>
-                        <!-- Review 3 -->
                         <div class="review-card">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1805,7 +2043,6 @@
                             <div class="review-author">Sachin N</div>
                             <div class="review-meta">4 years ago</div>
                         </div>
-                        <!-- Review 4 -->
                         <div class="review-card">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1814,7 +2051,6 @@
                             <div class="review-author">Manjunatha BM</div>
                             <div class="review-meta">2 years ago</div>
                         </div>
-                        <!-- Review 5 -->
                         <div class="review-card">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1824,8 +2060,6 @@
                             <div class="review-meta">a year ago</div>
                         </div>
 
-                        <!-- DUPLICATED SET FOR SEAMLESS INFINITE LOOP -->
-                        <!-- Review 1 (Duplicate) -->
                         <div class="review-card" aria-hidden="true">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1834,7 +2068,6 @@
                             <div class="review-author">Kiran Kumar Vel</div>
                             <div class="review-meta">Local Guide · 5 years ago</div>
                         </div>
-                        <!-- Review 2 (Duplicate) -->
                         <div class="review-card" aria-hidden="true">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1843,7 +2076,6 @@
                             <div class="review-author">ASHWIJ A</div>
                             <div class="review-meta">Local Guide · 2 years ago</div>
                         </div>
-                        <!-- Review 3 (Duplicate) -->
                         <div class="review-card" aria-hidden="true">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1852,7 +2084,6 @@
                             <div class="review-author">Sachin N</div>
                             <div class="review-meta">4 years ago</div>
                         </div>
-                        <!-- Review 4 (Duplicate) -->
                         <div class="review-card" aria-hidden="true">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1861,7 +2092,6 @@
                             <div class="review-author">Manjunatha BM</div>
                             <div class="review-meta">2 years ago</div>
                         </div>
-                        <!-- Review 5 (Duplicate) -->
                         <div class="review-card" aria-hidden="true">
                             <div class="review-stars">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -1878,7 +2108,7 @@
         <section id="faq-location" aria-labelledby="faq-title">
             <div class="section-inner">
                 <div style="text-align:center;">
-                    <p class="section-tag reveal">✦ FAQ</p>
+                    <p class="section-tag reveal">FAQ</p>
                     <h2 id="faq-title" class="section-title reveal" style="animation-delay:0.1s;">
                         Frequently Asked Questions About <em>Banashankari</em> Photography
                     </h2>
@@ -1895,12 +2125,12 @@
             <div class="orb" style="width:500px;height:500px;background:radial-gradient(circle,rgba(201,169,110,0.07),transparent);bottom:-100px;left:-150px;animation-delay:-4s;"></div>
             <div class="section-inner">
                 <div style="text-align:center;margin-bottom:3rem;">
-                    <p class="section-tag reveal">✦ Get In Touch</p>
+                    <p class="section-tag reveal">Get In Touch</p>
                     <h2 id="contact-title" class="section-title reveal" style="animation-delay:0.1s;">
                         Book Your <em>Banashankari</em> Wedding Photographer Today
                     </h2>
                     <p class="section-lead" style="text-align:center; max-width:600px; margin:0 auto;">
-                        Ready to capture your love story? Fill out the form below or call us directly. We usually respond within 2–4 hours.
+                        Ready to capture your love story? Fill out the form below or call us directly. We usually respond within 2 to 4 hours.
                     </p>
                 </div>
 
@@ -1911,29 +2141,29 @@
                         <div class="contact-info-item reveal">
                             <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
                             <div>
-                                <div class="contact-info-label">📍 Office Location</div>
-                                <div class="contact-info-val">Banashankari, Bangalore, Karnataka</div>
+                                <div class="contact-info-label">Office Location</div>
+                                <div class="contact-info-val">5th block, 3rd phase, 131, 2nd Cross Rd, Banashankari 3rd Stage, Banashankari, Bengaluru, Karnataka 560085</div>
                             </div>
                         </div>
                         <div class="contact-info-item reveal" style="animation-delay:0.1s;">
                             <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
                             <div>
-                                <div class="contact-info-label">📧 Email</div>
+                                <div class="contact-info-label">Email</div>
                                 <div class="contact-info-val">info.magictoday@gmail.com</div>
                             </div>
                         </div>
                         <div class="contact-info-item reveal" style="animation-delay:0.15s;">
                             <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
                             <div>
-                                <div class="contact-info-label">📱 Phone / WhatsApp</div>
+                                <div class="contact-info-label">Phone / WhatsApp</div>
                                 <div class="contact-info-val">+91 80957 67131</div>
                             </div>
                         </div>
                         <div class="contact-info-item reveal" style="animation-delay:0.2s;">
                             <div class="contact-icon-box"><i class="fas fa-clock"></i></div>
                             <div>
-                                <div class="contact-info-label">⏱️ Response Time</div>
-                                <div class="contact-info-val">Usually within 2–4 hours</div>
+                                <div class="contact-info-label">Response Time</div>
+                                <div class="contact-info-val">Usually within 2 to 4 hours</div>
                             </div>
                         </div>
                         <div class="social-row reveal" style="animation-delay:0.25s;">
@@ -1981,14 +2211,13 @@
             </div>
         </section>
 
-    
     </main>
 
     <footer>
         <div class="footer-grid">
             <div class="footer-col">
-                <img src="/images/logo.jpg" loading="lazy" alt="Magic Today Photography footer logo – Bangalore wedding photographer branding" width="70" height="70" style="border-radius:6px;margin-bottom:1rem;" />
-                <p>Magic Today Photography – Best wedding photographer in Banashankari, specializing in candid wedding photography, pre‑wedding shoots, corporate events, and newborn &amp; maternity sessions. Serving couples across Bangalore since 2019.</p>
+                <img src="/images/logo.jpg" loading="lazy" alt="Magic Today Photography footer logo - Bangalore wedding photographer branding" width="70" height="70" style="border-radius:6px;margin-bottom:1rem;" />
+                <p>Magic Today Photography - Trusted wedding photographer in Banashankari, specializing in candid wedding photography, pre-wedding shoots, corporate events, and newborn and maternity sessions. Serving couples across Bangalore since 2019.</p>
                 <div class="social-row">
                     <a aria-label="Follow us on Instagram" class="social-btn" href="https://www.instagram.com/magictodayphotography/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://wa.me/918095767131" target="_blank" class="social-btn" aria-label="Chat with us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -2025,7 +2254,7 @@
                 <ul>
                     <li><a href="mailto:info.magictoday@gmail.com">info.magictoday@gmail.com</a></li>
                     <li><a href="tel:+918095767131">+91 80957 67131</a></li>
-                    <li><a href="#">Banashankari, Bangalore</a></li>
+                    <li><a href="#">5th block, 3rd phase, 131, 2nd Cross Rd, Banashankari 3rd Stage, Banashankari, Bengaluru, Karnataka 560085</a></li>
                 </ul>
             </div>
         </div>
@@ -2036,7 +2265,7 @@
                 <a href="/privacy" class="credit-link">Privacy Policy</a> |
                 <a href="#contact-location" class="credit-link">Contact</a>
             </p>
-            <span>Crafted with ❤ Love &amp; ✦ Magic in Bangalore <a href="https://kirankumarvel.github.io/" target="_blank" rel="noopener" class="credit-link">Kiran (Kronix Systems)</a></span>
+            <span>Crafted with love in Bangalore <a href="https://kirankumarvel.github.io/" target="_blank" rel="noopener" class="credit-link">Kiran (Kronix Systems)</a></span>
         </div>
     </footer>
 
@@ -2083,7 +2312,7 @@
             a: "Our wedding photography packages in Banashankari start at ₹85,000 for 8 hours of coverage. We offer transparent pricing with no hidden charges. Contact us for a custom quote based on your specific requirements."
         }, {
             q: "Do you charge extra for travel to Banashankari?",
-            a: "No travel fee within 15 km of our Banashankari office. Since we're based in Banashankari itself, most local venues are within our free travel zone. For venues further out, a small surcharge applies — we quote the exact amount before booking."
+            a: "No travel fee within 15 km of our Banashankari office. Since we're based in Banashankari itself, most local venues are within our free travel zone. For venues further out, a small surcharge applies - we quote the exact amount before booking."
         }, {
             q: "How quickly can I get my wedding photos?",
             a: "We deliver a highlight teaser within 48 hours and the complete online gallery within 3 weeks. All images are professionally edited and ready for sharing with your family and friends."
@@ -2092,10 +2321,10 @@
             a: "Popular pre-wedding shoot locations near Banashankari include Cubbon Park, Lalbagh Botanical Garden, and the serene lakes in Electronic City. We also shoot at private farmhouses and resorts around Bangalore."
         }, {
             q: "Do you offer candid wedding photography in Banashankari?",
-            a: "Absolutely! Candid wedding photography is our specialty. We focus on capturing unscripted, authentic moments — the laughter, the tears, the stolen glances. Your story, told naturally."
+            a: "Absolutely! Candid wedding photography is our specialty. We focus on capturing unscripted, authentic moments - the laughter, the tears, the stolen glances. Your story, told naturally."
         }, {
             q: "Can I book a wedding photographer for a small intimate wedding?",
-            a: "Yes, we cover weddings of all sizes — from intimate gatherings of 50 guests to grand celebrations of 1,000+. We offer flexible packages tailored to your guest count and coverage hours."
+            a: "Yes, we cover weddings of all sizes - from intimate gatherings of 50 guests to grand celebrations of 1,000+. We offer flexible packages tailored to your guest count and coverage hours."
         }];
 
         const faqList = document.getElementById('faqList');
@@ -2120,13 +2349,9 @@
             });
         });
 
-        // ─── Auto-scroll reviews with touch/drag support on mobile ───
         (function() {
             var track = document.getElementById('reviewsTrack');
             if (!track) return;
-            // Ensure the animation always loops seamlessly
-            // (reviews are already duplicated in HTML)
-            // On mobile, allow horizontal swipe to scroll without disabling animation permanently
             var carousel = track.parentElement;
             if (!carousel) return;
             carousel.addEventListener('mouseenter', function() {
