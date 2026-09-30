@@ -7,27 +7,21 @@
   <!-- ==================== HOMEPAGE ==================== -->
   <url>
     <loc>https://magictodayphotography.netlify.app/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- ==================== CORE SERVICE PAGES ==================== -->
   <url>
-    <loc>https://magictodayphotography.netlify.app/wedding-photographer-bangalore</loc>
-    <lastmod>2026-09-09</lastmod>
+    <loc>https://magictodayphotography.netlify.app/pre-wedding-shoots</loc>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://magictodayphotography.netlify.app/pre-wedding-shoots</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://magictodayphotography.netlify.app/gallery</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -36,7 +30,7 @@
   <!-- Primary areas — highest priority -->
   <url>
     <loc>https://magictodayphotography.netlify.app/wedding-photographer-banashankari</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -92,7 +86,7 @@
   </url>
   <url>
     <loc>https://magictodayphotography.netlify.app/wedding-photographer-basavanagudi</loc>
-    <lastmod>2026-09-21</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -130,7 +124,7 @@
   <!-- ==================== INFORMATIONAL PAGES ==================== -->
   <url>
     <loc>https://magictodayphotography.netlify.app/about</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -140,17 +134,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://magictodayphotography.netlify.app/privacy</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
 
   <!-- ==================== BLOG INDEX ==================== -->
   <url>
     <loc>https://magictodayphotography.netlify.app/blog/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -158,21 +146,27 @@
   <!-- ==================== BLOG POSTS (PILLAR / HIGH VALUE) ==================== -->
   <url>
     <loc>https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magictodayphotography.netlify.app/blog/traditional-vs-candid-vs-cinematic-wedding-photography</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- ==================== BLOG POSTS (TOPICAL / SUPPORTING) ==================== -->
   <url>
     <loc>https://magictodayphotography.netlify.app/blog/creative-pre-wedding-photoshoot-ideas-beach-rooftop-studio</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -196,27 +190,27 @@
   </url>
   <url>
     <loc>https://magictodayphotography.netlify.app/blog/pre-wedding-photoshoot-locations-bangalore-guide</loc>
-    <lastmod>2026-05-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://magictodayphotography.netlify.app/blog/traditional-vs-candid-vs-cinematic-wedding-photography</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- ==================== AI / LLM FILES (OPTIONAL BUT VALID) ==================== -->
+  <!-- ==================== AI / LLM FILES + SITEMAP SELF ==================== -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/sitemap.xml</loc>
+    <lastmod>2026-09-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
   <url>
     <loc>https://magictodayphotography.netlify.app/llms.txt</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://magictodayphotography.netlify.app/llms-full.txt</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
