@@ -1,13 +1,14 @@
 # =========================================================
-# Global rules: allow all standard crawlers
+# Magic Today Photography - Robots Configuration
+# Deployed on Netlify
 # =========================================================
+
+# Global rules: allow all standard crawlers
 User-agent: *
 Allow: /
-
-# Block admin, private, or system paths (if they exist)
 Disallow: /admin/
 Disallow: /api/
-Disallow: /_next/
+Disallow: /assets/documents/
 Disallow: /*.json$
 
 # Polite crawl delay (mainly for Bing/Yandex; Google ignores this)
@@ -18,7 +19,7 @@ Sitemap: https://magictodayphotography.netlify.app/sitemap.xml
 Sitemap: https://magictodayphotography.netlify.app/image_sitemap.xml
 
 # =========================================================
-# AI crawlers – explicitly allowed for search & citations
+# AI crawlers - explicitly allowed for search & citations
 # =========================================================
 
 # OpenAI (ChatGPT)
@@ -45,3 +46,82 @@ Allow: /
 # Google AI / training (optional but commonly allowed)
 User-agent: Google-Extended
 Allow: /
+
+# =========================================================
+# Additional AI crawlers for AEO / GEO visibility
+# =========================================================
+
+# Microsoft Bing AI / Copilot
+User-agent: Bingbot
+Allow: /
+
+# Apple Intelligence / Siri
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Amazon AI
+User-agent: Amazonbot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckAssistBot
+Allow: /
+
+# Common Crawl (used for AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# =========================================================
+# Block scrapers, spam bots, and SEO tools
+# =========================================================
+
+# Ahrefs, Semrush, MJ12 (SEO tools - save bandwidth)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Aggressive scrapers
+User-agent: DotBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# =========================================================
+# Notes
+# =========================================================
+# - All AI crawlers are allowed so Magic Today Photography
+#   can be cited in AI search results (ChatGPT, Claude,
+#   Perplexity, Google AI Overviews, Copilot, etc.) for
+#   queries like:
+#   "wedding photographer near me", "best portrait studio",
+#   "event photography pricing", "pre-wedding shoot ideas",
+#   "newborn photography in [city]", etc.
+# - Admin, API, JSON, and document paths are blocked.
+# - Sitemap URLs use absolute paths on the Netlify domain.
+# - Image sitemap is included so portfolio photos can be
+#   indexed in Google Images and AI multimodal search.
+# - Update this file if new AI crawlers are added to the market.
