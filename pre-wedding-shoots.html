@@ -2,10 +2,14 @@
 <html lang="en-IN">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0c0a09" />
+<meta name="format-detection" content="telephone=yes" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Pre-Wedding Shoot in Bangalore | Candid & Cinematic Photographer</title>
-<meta name="description" content="Candid and cinematic pre-wedding shoots in Bangalore. 25+ locations, 150+ couple shoots, packages from Rs 25,000. Cubbon Park, Nandi Hills, Lalbagh and more." />
+<title>Pre-Wedding Shoot in Bangalore | Candid &amp; Cinematic</title>
+<meta name="description" content="Candid, cinematic pre-wedding shoots in Bangalore. 25+ locations, 150+ couple shoots, packages from ₹25,000. Cubbon Park, Nandi Hills, Lalbagh." />
 <meta name="keywords" content="pre wedding shoot bangalore, pre wedding photographer bangalore, candid pre wedding shoot, best pre wedding photographers bangalore, pre wedding photography packages bangalore, couple photoshoot bangalore, outdoor pre wedding shoot, creative pre wedding photography" />
 <meta name="author" content="Magic Today Photography" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -21,26 +25,32 @@
 <!-- Open Graph -->
 <meta property="og:site_name" content="Magic Today Photography" />
 <meta property="og:locale" content="en_IN" />
-<meta property="og:title" content="Pre-Wedding Shoot in Bangalore | Candid & Cinematic Photographer" />
-<meta property="og:description" content="Candid and cinematic pre-wedding shoots across Bangalore. 25+ locations, 150+ couple shoots, packages from Rs 25,000." />
+<meta property="og:title" content="Pre-Wedding Shoot in Bangalore | Candid &amp; Cinematic" />
+<meta property="og:description" content="Candid and cinematic pre-wedding shoots across Bangalore. 25+ locations, 150+ couple shoots, packages from ₹25,000." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://magictodayphotography.netlify.app/pre-wedding-shoots" />
 <meta property="og:image" content="https://magictodayphotography.netlify.app/images/hero-pre-wedding-couple.webp" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="800" />
+<meta property="og:image:type" content="image/webp" />
+<meta property="og:image:secure_url" content="https://magictodayphotography.netlify.app/images/hero-pre-wedding-couple.webp" />
 <meta property="og:image:alt" content="Couple photographed during a pre-wedding shoot in Bangalore at golden hour" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Pre-Wedding Shoot in Bangalore | Candid & Cinematic Photographer" />
-<meta name="twitter:description" content="Candid and cinematic pre-wedding shoots across Bangalore. Packages from Rs 25,000." />
+<meta name="twitter:title" content="Pre-Wedding Shoot in Bangalore | Candid &amp; Cinematic" />
+<meta name="twitter:description" content="Candid and cinematic pre-wedding shoots across Bangalore. Packages from ₹25,000." />
 <meta name="twitter:image" content="https://magictodayphotography.netlify.app/images/hero-pre-wedding-couple.webp" />
+<meta name="twitter:image:alt" content="Couple photographed during a pre-wedding shoot in Bangalore at golden hour" />
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0a09'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' fill='%23c9a96e' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="/images/logo.jpg" />
 <link rel="canonical" href="https://magictodayphotography.netlify.app/pre-wedding-shoots" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+<link rel="preload" as="image" href="/images/hero-pre-wedding-couple.webp" fetchpriority="high" type="image/webp" />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -77,28 +87,50 @@ body{
   font-family:'Jost',sans-serif;
   font-weight:300;
   overflow-x:hidden;
-  cursor:none;
   -webkit-font-smoothing:antialiased;
 }
 img{max-width:100%;}
 a{color:inherit;}
 
-/* Custom cursor */
+/* Screen reader only */
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+
+/* Skip link */
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:100000;
+  background:var(--gold);color:var(--ink);
+  padding:.8rem 1.4rem;font-size:.85rem;font-weight:500;
+  text-decoration:none;
+}
+.skip-link:focus{left:1rem;top:1rem;}
+
+/* Custom cursor — only on precise pointers */
 .cursor-dot{
   width:8px;height:8px;background:var(--gold);border-radius:50%;
   position:fixed;top:0;left:0;pointer-events:none;z-index:99999;
   transform:translate(-50%,-50%);
   transition:width .2s,height .2s,opacity .2s;
-  mix-blend-mode:difference;
+  mix-blend-mode:difference;display:none;
 }
 .cursor-ring{
   width:36px;height:36px;border:1px solid rgba(201,169,110,.6);border-radius:50%;
   position:fixed;top:0;left:0;pointer-events:none;z-index:99998;
   transform:translate(-50%,-50%);
   transition:transform .12s ease-out,width .3s,height .3s,border-color .3s;
+  display:none;
 }
-body:has(a:hover) .cursor-ring,
-body:has(button:hover) .cursor-ring{width:52px;height:52px;border-color:var(--gold);}
+@media (pointer:fine) and (hover:hover){
+  body{cursor:none;}
+  .cursor-dot,.cursor-ring{display:block;}
+}
+@media (pointer:coarse),(hover:none){
+  .cursor-dot,.cursor-ring{display:none;}
+  body{cursor:auto;}
+}
+body.cursor-grow .cursor-ring{width:52px;height:52px;border-color:var(--gold);}
 
 #magicCanvas{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.6;}
 
@@ -177,8 +209,8 @@ nav a:hover::after{width:100%;}
 .btn-ghost:hover{border-color:var(--gold);color:var(--gold);box-shadow:0 0 20px rgba(201,169,110,.15);}
 
 /* Hero */
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;will-change:transform;background:url('/images/hero-pre-wedding-couple.webp') center/cover no-repeat;}
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;background:url('/images/hero-pre-wedding-couple.webp') center/cover no-repeat;}
 .hero-bg::after{
   content:'';position:absolute;inset:0;
   background:
@@ -241,6 +273,8 @@ section{position:relative;overflow:hidden;}
 }
 .section-title em{font-style:italic;color:var(--gold-light);}
 .section-lead{font-size:1.02rem;color:rgba(255,255,255,.58);line-height:1.85;max-width:560px;}
+.section-lead a{color:var(--gold-light);text-decoration:underline;text-underline-offset:3px;}
+.section-lead a:hover{color:var(--gold);}
 .divider{width:60px;height:1px;background:linear-gradient(to right,var(--gold),transparent);margin:2rem 0;}
 
 .orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;animation:orbFloat 8s ease-in-out infinite alternate;}
@@ -370,7 +404,7 @@ section{position:relative;overflow:hidden;}
   margin-top:1.4rem;font-family:'Cormorant Garamond',serif;
   font-size:1.15rem;color:var(--gold-light);font-weight:600;
 }
-.single-testi-role{margin-top:.25rem;font-size:.82rem;color:rgba(255,255,255,.45);letter-spacing:.04em;}
+.single-testi-role{margin-top:.25rem;font-size:.82rem;color:rgba(255,255,255,.58);letter-spacing:.04em;}
 .testimonial-nav{margin-top:1.2rem;display:flex;align-items:center;justify-content:center;gap:.8rem;}
 .testi-nav-btn{
   width:44px;height:44px;border-radius:50%;
@@ -383,10 +417,11 @@ section{position:relative;overflow:hidden;}
 }
 .testi-dots{display:flex;align-items:center;gap:.45rem;}
 .testi-dot{
-  width:8px;height:8px;border-radius:50%;
+  width:12px;height:12px;border-radius:50%;
   background:rgba(255,255,255,.25);border:none;cursor:pointer;
-  transition:all .3s ease;padding:0;
+  transition:all .3s ease;padding:0;position:relative;
 }
+.testi-dot::after{content:'';position:absolute;inset:-16px;}
 .testi-dot.active{width:22px;border-radius:999px;background:var(--gold);}
 
 /* FAQ */
@@ -414,11 +449,22 @@ section{position:relative;overflow:hidden;}
   border-color:var(--gold);transform:rotate(45deg);
 }
 .faq-a{
-  max-height:0;overflow:hidden;
-  font-size:.92rem;color:rgba(255,255,255,.55);line-height:1.85;
-  transition:max-height .45s cubic-bezier(.4,0,.2,1),padding .45s;
+  display:grid;
+  grid-template-rows:0fr;
+  transition:grid-template-rows .45s cubic-bezier(.4,0,.2,1),padding .45s;
+  padding-bottom:0;
 }
-.faq-item.open .faq-a{max-height:320px;padding-bottom:1.4rem;}
+.faq-a > p{
+  overflow:hidden;
+  margin:0;
+  font-size:.92rem;
+  color:rgba(255,255,255,.55);
+  line-height:1.85;
+}
+.faq-item.open .faq-a{
+  grid-template-rows:1fr;
+  padding-bottom:1.4rem;
+}
 
 /* Contact */
 #contact{background:var(--ink);position:relative;}
@@ -516,7 +562,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 .footer-logo{width:70px;height:70px;object-fit:contain;margin-bottom:1rem;display:block;}
 .social-row{display:flex;gap:1rem;margin-top:1.5rem;}
 .social-btn{
-  width:38px;height:38px;border:1px solid rgba(255,255,255,.12);
+  width:44px;height:44px;border:1px solid rgba(255,255,255,.12);
   display:flex;align-items:center;justify-content:center;
   color:rgba(255,255,255,.5);text-decoration:none;font-size:.95rem;
   transition:border-color .3s,color .3s,box-shadow .3s;
@@ -531,7 +577,12 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 .footer-bottom a{color:#ffd27a;text-decoration:underline;}
 
 /* Floats */
-.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:800;}
+.wa-float{
+  position:fixed;
+  bottom:calc(2rem + env(safe-area-inset-bottom));
+  right:calc(2rem + env(safe-area-inset-right));
+  z-index:800;
+}
 .wa-btn{
   width:56px;height:56px;background:#25D366;border-radius:50%;
   display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.6rem;
@@ -576,7 +627,10 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 }
 
 .ig-float{
-  position:fixed;bottom:6.5rem;right:2rem;z-index:800;
+  position:fixed;
+  bottom:calc(6.5rem + env(safe-area-inset-bottom));
+  right:calc(2rem + env(safe-area-inset-right));
+  z-index:800;
   width:50px;height:50px;
   background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
   border-radius:50%;display:flex;align-items:center;justify-content:center;
@@ -601,33 +655,53 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 @media (max-width:900px){
   nav ul{display:none;}
   nav ul.open{
-    display:flex;flex-direction:column;position:fixed;inset:0;top:70px;
-    background:rgba(12,10,9,.97);padding:3rem 5%;gap:2rem;z-index:800;
+    display:flex;flex-direction:column;
+    position:fixed;inset:0;
+    background:rgba(12,10,9,.98);
+    padding:110px 5% 3rem;
+    gap:2rem;z-index:800;
+    height:100dvh;overflow-y:auto;
   }
   nav ul.open a{font-size:1.35rem;}
   .hamburger{display:block;}
   .about-grid,.contact-grid,.faq-cols{grid-template-columns:1fr;gap:3rem;}
   .services-grid{grid-template-columns:1fr;}
-  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
-  .gal-item{grid-column:auto !important;grid-row:auto !important;height:220px;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px;grid-template-rows:none;}
+  .gal-item{grid-column:auto !important;grid-row:auto !important;height:auto;}
   .footer-grid{grid-template-columns:1fr 1fr;}
   .form-row{grid-template-columns:1fr;}
   .footer-bottom{flex-direction:column;gap:.8rem;text-align:center;}
-  .cursor-dot,.cursor-ring{display:none;}
-  body{cursor:auto;}
   .logo{font-size:1.1rem;}
   .logo-img{width:50px;height:50px;flex:0 0 50px;}
 }
-@media (pointer:coarse){
-  .cursor-dot,.cursor-ring{display:none;}
-  body{cursor:auto;}
-}
 @media (max-width:560px){
-  .gallery-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;}
   .footer-grid{grid-template-columns:1fr;}
   .stats-row{gap:2rem;}
   .testimonial-slide{padding:2.2rem 1.5rem;}
   .svc-card{padding:2.4rem 1.6rem;}
+  .wa-float{
+    bottom:calc(1.25rem + env(safe-area-inset-bottom));
+    right:calc(1.25rem + env(safe-area-inset-right));
+  }
+  .ig-float{
+    bottom:calc(5.25rem + env(safe-area-inset-bottom));
+    right:calc(1.25rem + env(safe-area-inset-right));
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+    scroll-behavior:auto !important;
+  }
+  html{scroll-behavior:auto;}
+  .reveal{opacity:1 !important;transform:none !important;}
+  .hero-eyebrow,.hero h1,.hero-sub,.hero-cta{opacity:1 !important;transform:none !important;}
+  .scroll-hint{display:none;}
 }
 </style>
 
@@ -645,6 +719,9 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       "url": "https://magictodayphotography.netlify.app/",
       "telephone": "+91-80957-67131",
       "email": "info.magictoday@gmail.com",
+      "slogan": "Your story starts before the wedding.",
+      "foundingDate": "2019",
+      "knowsLanguage": ["en", "hi", "kn"],
       "priceRange": "₹25,000 - ₹75,000",
       "currenciesAccepted": "INR",
       "paymentAccepted": "UPI, Bank Transfer, Cash",
@@ -656,6 +733,16 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         "@type": "ImageObject",
         "url": "https://magictodayphotography.netlify.app/images/logo.jpg"
       },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91-80957-67131",
+          "contactType": "customer service",
+          "email": "info.magictoday@gmail.com",
+          "areaServed": "IN",
+          "availableLanguage": ["en", "hi", "kn"]
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "131, 2nd Cross Road, 5th Block, 3rd Phase, Banashankari 3rd Stage",
@@ -754,6 +841,18 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
             "price": "25000",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "25000",
+              "priceCurrency": "INR",
+              "valueAddedTaxIncluded": false
+            },
+            "eligibleRegion": {
+              "@type": "GeoCircle",
+              "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 12.9255, "longitude": 77.5468 },
+              "geoRadius": "60000"
+            },
+            "seller": { "@id": "https://magictodayphotography.netlify.app/#business" },
             "url": "https://magictodayphotography.netlify.app/pre-wedding-shoots#packages"
           },
           {
@@ -763,6 +862,18 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
             "price": "45000",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "45000",
+              "priceCurrency": "INR",
+              "valueAddedTaxIncluded": false
+            },
+            "eligibleRegion": {
+              "@type": "GeoCircle",
+              "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 12.9255, "longitude": 77.5468 },
+              "geoRadius": "60000"
+            },
+            "seller": { "@id": "https://magictodayphotography.netlify.app/#business" },
             "url": "https://magictodayphotography.netlify.app/pre-wedding-shoots#packages"
           },
           {
@@ -772,6 +883,18 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
             "price": "75000",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "75000",
+              "priceCurrency": "INR",
+              "valueAddedTaxIncluded": false
+            },
+            "eligibleRegion": {
+              "@type": "GeoCircle",
+              "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 12.9255, "longitude": 77.5468 },
+              "geoRadius": "60000"
+            },
+            "seller": { "@id": "https://magictodayphotography.netlify.app/#business" },
             "url": "https://magictodayphotography.netlify.app/pre-wedding-shoots#packages"
           }
         ]
@@ -790,10 +913,13 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       "@id": "https://magictodayphotography.netlify.app/pre-wedding-shoots#webpage",
       "url": "https://magictodayphotography.netlify.app/pre-wedding-shoots",
       "name": "Pre-Wedding Shoot in Bangalore | Candid & Cinematic Photographer",
-      "description": "Candid and cinematic pre-wedding shoots in Bangalore. 25+ locations, 150+ couple shoots, packages from Rs 25,000.",
+      "description": "Candid and cinematic pre-wedding shoots in Bangalore. 25+ locations, 150+ couple shoots, packages from ₹25,000.",
       "isPartOf": { "@id": "https://magictodayphotography.netlify.app/#website" },
       "about": { "@id": "https://magictodayphotography.netlify.app/#business" },
       "inLanguage": "en-IN",
+      "datePublished": "2024-06-01",
+      "dateModified": "2026-01-15",
+      "keywords": "pre wedding shoot bangalore, pre wedding photographer bangalore, candid pre wedding shoot, couple photoshoot bangalore",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://magictodayphotography.netlify.app/images/hero-pre-wedding-couple.webp",
@@ -835,6 +961,11 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         { "@type": "City", "name": "Bengaluru" },
         { "@type": "AdministrativeArea", "name": "Karnataka" }
       ],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 12.9255, "longitude": 77.5468 },
+        "geoRadius": "60000"
+      },
       "audience": {
         "@type": "Audience",
         "audienceType": "Engaged couples, same-sex couples, couples celebrating anniversaries"
@@ -849,6 +980,191 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       }
     },
     {
+      "@type": "Person",
+      "@id": "https://magictodayphotography.netlify.app/#lead-photographer",
+      "name": "REPLACE WITH PHOTOGRAPHER NAME",
+      "jobTitle": "Founder and Lead Photographer",
+      "worksFor": { "@id": "https://magictodayphotography.netlify.app/#business" },
+      "knowsAbout": [
+        "Pre-wedding photography",
+        "Candid wedding photography",
+        "Cinematic couple films",
+        "Natural light portraiture"
+      ],
+      "image": "https://magictodayphotography.netlify.app/images/logo.jpg",
+      "sameAs": ["https://www.instagram.com/magictoday-photography/"]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://magictodayphotography.netlify.app/pre-wedding-shoots#howto",
+      "name": "How to book a pre-wedding shoot in Bangalore",
+      "description": "The six steps from first enquiry to final gallery with Magic Today Photography.",
+      "totalTime": "P14D",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "INR",
+        "minValue": 25000,
+        "maxValue": 75000
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Send your date and location",
+          "text": "Fill the enquiry form or message us on WhatsApp with your preferred date, the location you have in mind, and how many outfits you want to change into. We reply within two to four hours on most days.",
+          "url": "https://magictodayphotography.netlify.app/pre-wedding-shoots#contact"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Pick a package and lock the date",
+          "text": "Choose Essential at ₹25,000, Signature at ₹45,000, or Cinematic Story at ₹75,000. A booking advance holds your slot. October to February fills up fastest.",
+          "url": "https://magictodayphotography.netlify.app/pre-wedding-shoots#packages"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Get your style guide",
+          "text": "Once the booking is confirmed we send a short guide on what to wear, what to avoid, and how to plan hair and makeup around the shoot time."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Shoot day",
+          "text": "We meet at the location at the agreed time. Two hours for Essential, four for Signature, six for Cinematic Story. Direction is light. You walk, talk and laugh, and we shoot."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Preview within 48 hours",
+          "text": "A handful of edited previews lands in your inbox within two days so you can share them while the day is still fresh."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 6,
+          "name": "Full gallery in seven to ten days",
+          "text": "The complete hand-edited gallery arrives as an online album you can share with family. Cinematic Story also includes a two-minute film."
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://magictodayphotography.netlify.app/pre-wedding-shoots#locations",
+      "name": "Pre-wedding shoot locations in and around Bangalore",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Place",
+            "name": "Cubbon Park",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 12.9763, "longitude": 77.5929 },
+            "containedInPlace": { "@type": "City", "name": "Bengaluru" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Place",
+            "name": "Lalbagh Botanical Garden",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 12.9507, "longitude": 77.5848 },
+            "containedInPlace": { "@type": "City", "name": "Bengaluru" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Place",
+            "name": "Bangalore Palace",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 12.9987, "longitude": 77.5921 },
+            "containedInPlace": { "@type": "City", "name": "Bengaluru" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Place",
+            "name": "Nandi Hills",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Chikkaballapur",
+              "addressRegion": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 13.3702, "longitude": 77.6835 }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Place",
+            "name": "Basavanagudi",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 12.9422, "longitude": 77.5738 },
+            "containedInPlace": { "@type": "City", "name": "Bengaluru" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Place",
+            "name": "Malleshwaram",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "geo": { "@type": "GeoCoordinates", "latitude": 13.0035, "longitude": 77.5647 },
+            "containedInPlace": { "@type": "City", "name": "Bengaluru" }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://magictodayphotography.netlify.app/images/hero-pre-wedding-couple.webp#image",
+      "contentUrl": "https://magictodayphotography.netlify.app/images/hero-pre-wedding-couple.webp",
+      "url": "https://magictodayphotography.netlify.app/images/hero-pre-wedding-couple.webp",
+      "name": "Pre-wedding shoot in Bangalore at golden hour",
+      "caption": "Couple photographed during a pre-wedding shoot in Bangalore at golden hour",
+      "width": 1200,
+      "height": 800,
+      "encodingFormat": "image/webp",
+      "creator": { "@id": "https://magictodayphotography.netlify.app/#business" },
+      "copyrightNotice": "Magic Today Photography",
+      "representativeOfPage": true
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://magictodayphotography.netlify.app/pre-wedding-shoots#faq",
       "mainEntity": [
@@ -857,7 +1173,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
           "name": "What does a pre-wedding shoot in Bangalore cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our packages start at Rs 25,000 for a two-hour shoot at one location with 50 or more edited photos. The Signature package is Rs 45,000 for four hours across two locations, and the Cinematic Story package is Rs 75,000 for a full-day shoot that includes a short film. GST is charged separately."
+            "text": "Our packages start at ₹25,000 for a two-hour shoot at one location with 50 or more edited photos. The Signature package is ₹45,000 for four hours across two locations, and the Cinematic Story package is ₹75,000 for a full-day shoot that includes a short film. GST is charged separately."
           }
         },
         {
@@ -986,8 +1302,10 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 
 <body>
 
-<div class="cursor-dot" id="cd"></div>
-<div class="cursor-ring" id="cr"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="cursor-dot" id="cd" aria-hidden="true"></div>
+<div class="cursor-ring" id="cr" aria-hidden="true"></div>
 <canvas id="magicCanvas" aria-hidden="true"></canvas>
 <div class="noise" aria-hidden="true"></div>
 
@@ -1020,13 +1338,18 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   </nav>
 </header>
 
+<main id="main">
+
 <!-- Hero -->
 <section id="home" class="hero">
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-content">
     <p class="hero-eyebrow" id="heroEye">Pre-Wedding Photography in Bangalore</p>
     <h1 id="heroH1">Pre-Wedding Shoots in Bangalore - <em>Candid, Cinematic, Yours</em></h1>
-    <p class="hero-sub" id="heroSub"><span id="typeEl"></span><span class="type-cursor" aria-hidden="true">|</span></p>
+    <p class="hero-sub" id="heroSub">
+      <span class="sr-only">Candid and cinematic pre-wedding photography in Bangalore.</span>
+      <span id="typeEl" aria-hidden="true"></span><span class="type-cursor" aria-hidden="true">|</span>
+    </p>
     <p class="hero-line">Cubbon Park. Nandi Hills. Lalbagh. Bangalore Palace. Twenty-five locations across the city, and a team that knows how the light falls in each one of them.</p>
     <div class="hero-cta" id="heroCta">
       <a href="#packages" class="btn btn-gold">See Packages <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -1157,21 +1480,21 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         <i class="fas fa-heart svc-icon" aria-hidden="true"></i>
         <h3 class="svc-title">Essential Pre-Wedding</h3>
         <p class="svc-desc">Two hours at one location, one outfit change, and 50 or more edited photographs. A good fit if you want a small, focused set without a full-day commitment.</p>
-        <p class="svc-price">Rs 25,000 + GST</p>
+        <p class="svc-price">₹25,000 + GST</p>
       </article>
 
       <article class="svc-card">
         <i class="fas fa-camera svc-icon" aria-hidden="true"></i>
         <h3 class="svc-title">Signature Candid</h3>
         <p class="svc-desc">Four hours across two locations, two outfit changes, 100 or more edited photographs, and a short cinematic teaser. Our most booked package.</p>
-        <p class="svc-price">Rs 45,000 + GST</p>
+        <p class="svc-price">₹45,000 + GST</p>
       </article>
 
       <article class="svc-card">
         <i class="fas fa-film svc-icon" aria-hidden="true"></i>
         <h3 class="svc-title">Cinematic Story</h3>
         <p class="svc-desc">A full day of shooting, multiple locations, three outfit changes, 200 or more edited photographs, and a two-minute film cut from the day.</p>
-        <p class="svc-price">Rs 75,000 + GST</p>
+        <p class="svc-price">₹75,000 + GST</p>
       </article>
     </div>
 
@@ -1186,7 +1509,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   <div class="section-inner">
     <p class="section-tag">Recent Work</p>
     <h2 class="section-title">Pre-Wedding Photos Shot in <em>Bangalore</em></h2>
-    <p class="section-lead">A few frames from the last few months. Locations, dates and full galleries are available on request.</p>
+    <p class="section-lead">A few frames from the last few months. Locations, dates and full galleries are available on request. We also shoot <a href="https://magictodayphotography.netlify.app/wedding-photographer-bangalore">weddings across Bangalore</a>.</p>
 
     <div class="gallery-grid">
       <figure class="gal-item">
@@ -1333,7 +1656,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         <div class="contact-info-item reveal">
           <div class="contact-icon-box"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
           <div>
-            <div class="contact-info-label">Office </div>
+            <div class="contact-info-label">Office</div>
             <div class="contact-info-val">131, 2nd Cross Road, 5th Block, 3rd Phase,<br />Banashankari 3rd Stage, Bengaluru 560085</div>
           </div>
         </div>
@@ -1369,7 +1692,11 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         </div>
       </div>
 
-      <form action="https://formspree.io/f/info.magictoday@gmail.com" method="POST" class="reveal" style="animation-delay:.1s;">
+      <form name="pre-wedding-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="reveal" style="animation-delay:.1s;">
+        <input type="hidden" name="form-name" value="pre-wedding-enquiry" />
+        <p class="sr-only">
+          <label>Leave this empty <input name="bot-field" /></label>
+        </p>
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="name">Your name *</label>
@@ -1451,11 +1778,13 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   </div>
 </section>
 
+</main>
+
 <!-- Footer -->
 <footer>
   <div class="footer-grid">
     <div class="footer-col">
-      <img src="/images/logo.jpg" alt="Magic Today Photography logo" title="Magic Today Photography - pre wedding photographer Bangalore" class="footer-logo" width="70" height="70" />
+      <img src="/images/logo.jpg" alt="Magic Today Photography logo" title="Magic Today Photography - pre wedding photographer Bangalore" class="footer-logo" width="70" height="70" loading="lazy" decoding="async" />
       <p>Pre-wedding and wedding photographers based in Banashankari, Bangalore. Candid and cinematic coverage for couples across Karnataka since 2019.</p>
       <div class="social-row">
         <a href="https://www.instagram.com/magictoday-photography/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
@@ -1513,7 +1842,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 
 <!-- WhatsApp float -->
 <div class="wa-float">
-  <div class="wa-popup" id="waPopup" role="dialog" aria-label="Start a WhatsApp chat">
+  <div class="wa-popup" id="waPopup" role="dialog" aria-modal="false" aria-label="Start a WhatsApp chat">
     <button class="wa-close" id="waClose" aria-label="Close chat popup">&times;</button>
     <h5>Chat on WhatsApp</h5>
     <p>Pick what you are planning and we will open the chat with your message ready.</p>
@@ -1525,15 +1854,14 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
     <label class="wa-opt"><input type="radio" name="waSvc" value="something else" /> Something Else</label>
     <button class="wa-send" id="waSend">Start Chat <i class="fab fa-whatsapp" aria-hidden="true"></i></button>
   </div>
-  <button class="wa-btn" id="waBtn" aria-label="Open WhatsApp chat options"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+  <button class="wa-btn" id="waBtn" aria-label="Open WhatsApp chat options" aria-expanded="false" aria-controls="waPopup"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
 </div>
 
 <script>
 (function () {
   'use strict';
 
-  var hasGsap = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
-  if (hasGsap) { gsap.registerPlugin(ScrollTrigger); }
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- Custom cursor ---------- */
   var cd = document.getElementById('cd');
@@ -1553,19 +1881,28 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       cr.style.top = cy + 'px';
       requestAnimationFrame(tickCursor);
     })();
+
+    document.addEventListener('mouseover', function (e) {
+      var hit = e.target.closest('a,button,input,select,textarea');
+      document.body.classList.toggle('cursor-grow', !!hit);
+    });
   }
 
   /* ---------- Ambient canvas ---------- */
   var canvas = document.getElementById('magicCanvas');
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (canvas && !reduceMotion) {
     var ctx = canvas.getContext('2d');
-    var W, H;
+    var W, H, dpr = Math.min(window.devicePixelRatio || 1, 1.5);
 
     function resizeCanvas() {
-      W = canvas.width = window.innerWidth;
-      H = canvas.height = window.innerHeight;
+      W = Math.floor(window.innerWidth);
+      H = Math.floor(window.innerHeight);
+      canvas.width = Math.floor(W * dpr);
+      canvas.height = Math.floor(H * dpr);
+      canvas.style.width = W + 'px';
+      canvas.style.height = H + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     }
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
@@ -1581,7 +1918,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       this.alphaTarget = Math.random() * 0.35 + 0.05;
       this.twinkleSpeed = Math.random() * 0.02 + 0.005;
       this.twinklePhase = Math.random() * Math.PI * 2;
-      this.color = Math.random() < 0.7 ? [201, 169, 110] : [255, 255, 255];
+      this.color = Math.random() < 0.7 ? '201,169,110' : '255,255,255';
     };
     Bokeh.prototype.update = function () {
       this.twinklePhase += this.twinkleSpeed;
@@ -1591,14 +1928,14 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       if (this.y < -10) this.reset(false);
     };
     Bokeh.prototype.draw = function () {
-      ctx.save();
+      var rad = this.r * 3;
+      var g = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, rad);
+      g.addColorStop(0, 'rgba(' + this.color + ',' + this.alpha + ')');
+      g.addColorStop(1, 'rgba(' + this.color + ',0)');
+      ctx.fillStyle = g;
       ctx.beginPath();
-      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(' + this.color[0] + ',' + this.color[1] + ',' + this.color[2] + ',' + this.alpha + ')';
-      ctx.shadowColor = 'rgba(' + this.color[0] + ',' + this.color[1] + ',' + this.color[2] + ',0.5)';
-      ctx.shadowBlur = this.r * 4;
+      ctx.arc(this.x, this.y, rad, 0, Math.PI * 2);
       ctx.fill();
-      ctx.restore();
     };
 
     function Sparkle(x, y) {
@@ -1614,18 +1951,15 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       this.vy -= 0.05;
     };
     Sparkle.prototype.draw = function () {
-      ctx.save();
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
       ctx.fillStyle = 'rgba(201,169,110,' + (this.life * 0.7) + ')';
-      ctx.shadowColor = 'rgba(201,169,110,0.8)';
-      ctx.shadowBlur = 6;
       ctx.fill();
-      ctx.restore();
     };
 
     var bokehArr = [];
-    for (var i = 0; i < 90; i++) bokehArr.push(new Bokeh());
+    var count = W < 768 ? 55 : 90;
+    for (var i = 0; i < count; i++) bokehArr.push(new Bokeh());
     var sparkleArr = [];
 
     window.addEventListener('click', function (e) {
@@ -1652,7 +1986,11 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
     var sy = window.scrollY;
     header.classList.toggle('scrolled', sy > 50);
     if (heroBg && !reduceMotion && sy < window.innerHeight) {
+      heroBg.style.willChange = 'transform';
       heroBg.style.transform = 'translateY(' + (sy * 0.4) + 'px)';
+    } else if (heroBg) {
+      heroBg.style.willChange = 'auto';
+      heroBg.style.transform = '';
     }
   }, { passive: true });
 
@@ -1665,15 +2003,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   }
 
   window.addEventListener('load', function () {
-    if (hasGsap && !reduceMotion) {
-      gsap.timeline()
-        .to('#heroEye', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' })
-        .to('#heroH1', { opacity: 1, duration: 1, ease: 'power3.out' }, '-=0.4')
-        .to('#heroSub', { opacity: 1, duration: 0.6 }, '-=0.4')
-        .to('#heroCta', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, '-=0.3');
-    } else {
-      showHero();
-    }
+    showHero();
 
     var el = document.getElementById('typeEl');
     if (!el) return;
@@ -1755,7 +2085,12 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
     var index = 0;
     var autoTimer = null;
 
-    slides.forEach(function (_, i) {
+    slides.forEach(function (slide, i) {
+      slide.setAttribute('role', 'group');
+      slide.setAttribute('aria-roledescription', 'slide');
+      slide.setAttribute('aria-label', (i + 1) + ' of ' + slides.length);
+      slide.setAttribute('aria-hidden', i === 0 ? 'false' : 'true');
+
       var dot = document.createElement('button');
       dot.type = 'button';
       dot.className = 'testi-dot' + (i === 0 ? ' active' : '');
@@ -1767,6 +2102,9 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
     function updateDots() {
       Array.prototype.forEach.call(dotsWrap.children, function (dot, i) {
         dot.classList.toggle('active', i === index);
+      });
+      slides.forEach(function (slide, i) {
+        slide.setAttribute('aria-hidden', i === index ? 'false' : 'true');
       });
     }
 
@@ -1796,7 +2134,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   var faqs = [
     {
       q: 'What does a pre-wedding shoot in Bangalore cost?',
-      a: 'Our packages start at Rs 25,000 for a two-hour shoot at one location with 50 or more edited photos. The Signature package is Rs 45,000 for four hours across two locations, and the Cinematic Story package is Rs 75,000 for a full-day shoot that includes a short film. GST is charged separately.'
+      a: 'Our packages start at ₹25,000 for a two-hour shoot at one location with 50 or more edited photos. The Signature package is ₹45,000 for four hours across two locations, and the Cinematic Story package is ₹75,000 for a full-day shoot that includes a short film. GST is charged separately.'
     },
     {
       q: 'How long does a pre-wedding shoot take?',
@@ -1911,12 +2249,29 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   if (waBtn && waPopup) {
     waBtn.addEventListener('click', function (e) {
       e.stopPropagation();
-      waPopup.classList.toggle('active');
+      var open = waPopup.classList.toggle('active');
+      waBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open) {
+        var first = waPopup.querySelector('input,button');
+        if (first) first.focus();
+      }
     });
-    waClose.addEventListener('click', function () { waPopup.classList.remove('active'); });
+    waClose.addEventListener('click', function () {
+      waPopup.classList.remove('active');
+      waBtn.setAttribute('aria-expanded', 'false');
+      waBtn.focus();
+    });
     document.addEventListener('click', function (e) {
       if (!waPopup.contains(e.target) && e.target !== waBtn && !waBtn.contains(e.target)) {
         waPopup.classList.remove('active');
+        waBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && waPopup.classList.contains('active')) {
+        waPopup.classList.remove('active');
+        waBtn.setAttribute('aria-expanded', 'false');
+        waBtn.focus();
       }
     });
     waSend.addEventListener('click', function () {
@@ -1925,6 +2280,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       var msg = encodeURIComponent('Hi Magic Today Photography, I am interested in ' + service + '. Could you share the details?');
       window.open('https://wa.me/918095767131?text=' + msg, '_blank', 'noopener');
       waPopup.classList.remove('active');
+      waBtn.setAttribute('aria-expanded', 'false');
     });
   }
 
@@ -1940,23 +2296,6 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       }
     });
   });
-
-  /* ---------- GSAP scroll animations ---------- */
-  if (hasGsap && !reduceMotion) {
-    gsap.utils.toArray('.svc-card').forEach(function (card, i) {
-      gsap.from(card, {
-        opacity: 0, y: 45, duration: 0.75, delay: i * 0.06, ease: 'power2.out',
-        scrollTrigger: { trigger: card, start: 'top 90%' }
-      });
-    });
-
-    gsap.utils.toArray('.gal-item').forEach(function (item, i) {
-      gsap.from(item, {
-        opacity: 0, scale: 0.95, duration: 0.7, delay: i * 0.05, ease: 'power2.out',
-        scrollTrigger: { trigger: item, start: 'top 92%' }
-      });
-    });
-  }
 
   /* ---------- Footer year ---------- */
   var yearEl = document.getElementById('year');
