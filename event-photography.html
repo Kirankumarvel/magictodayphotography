@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Event Photography Bangalore | Corporate, Birthday & Party Photographer</title>
-<meta name="description" content="Professional event photography in Bangalore for corporate conferences, product launches, birthdays, engagements and private parties. Packages from Rs 15,000. 200+ events covered." />
+<title>Event Photography Bangalore | Corporate & Party Photographer</title>
+<meta name="description" content="Conferences in Whitefield. Product launches in Koramangala. Birthdays in Banashankari. Event photography across Bangalore since 2019. Packages from Rs 15,000." />
 <meta name="keywords" content="event photography bangalore, corporate event photographer bangalore, birthday party photographer bangalore, event photographer bangalore price, conference photography bangalore, party photography bangalore, engagement photography bangalore, corporate event coverage bangalore" />
 <meta name="author" content="Magic Today Photography" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -15,34 +15,39 @@
 <meta name="geo.placename" content="Bengaluru, Karnataka" />
 <meta name="geo.position" content="12.9255;77.5468" />
 <meta name="ICBM" content="12.9255, 77.5468" />
-<link rel="alternate" hreflang="en-in" href="https://magictodayphotography.netlify.app/event-photography" />
-<link rel="alternate" hreflang="x-default" href="https://magictodayphotography.netlify.app/event-photography" />
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="Magic Today Photography" />
 <meta property="og:locale" content="en_IN" />
-<meta property="og:title" content="Event Photography Bangalore | Corporate, Birthday & Party Photographer" />
+<meta property="og:title" content="Event Photography Bangalore | Corporate & Party Photographer" />
 <meta property="og:description" content="Corporate conferences, product launches, birthdays, engagements and private parties covered across Bangalore. Packages from Rs 15,000." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://magictodayphotography.netlify.app/event-photography" />
-<meta property="og:image" content="https://magictodayphotography.netlify.app/images/hero-event-celebrations-photography.webp" />
+<meta property="og:image" content="https://magictodayphotography.netlify.app/images/hero-event-photography.webp" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="800" />
 <meta property="og:image:alt" content="Corporate event photographer covering a conference in Bangalore" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Event Photography Bangalore | Corporate, Birthday & Party Photographer" />
+<meta name="twitter:title" content="Event Photography Bangalore | Corporate & Party Photographer" />
 <meta name="twitter:description" content="Professional event coverage across Bangalore. Packages from Rs 15,000." />
-<meta name="twitter:image" content="https://magictodayphotography.netlify.app/images/hero-event-celebrations-photography.webp" />
+<meta name="twitter:image" content="https://magictodayphotography.netlify.app/images/hero-event-photography.webp" />
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0a09'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' fill='%23c9a96e' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
 <link rel="canonical" href="https://magictodayphotography.netlify.app/event-photography" />
+
+<!-- Hero preload -->
+<link rel="preload" as="image" href="/images/hero-event-photography.webp" fetchpriority="high" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- GSAP (loaded synchronously so the inline script can detect it) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-E874JNHDWR"></script>
@@ -77,11 +82,16 @@ body{
   font-family:'Jost',sans-serif;
   font-weight:300;
   overflow-x:hidden;
-  cursor:none;
   -webkit-font-smoothing:antialiased;
+}
+@media (pointer:fine){
+  body{cursor:none;}
 }
 img{max-width:100%;}
 a{color:inherit;}
+
+/* Screen reader only */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 
 /* Custom cursor */
 .cursor-dot{
@@ -142,10 +152,10 @@ header.scrolled{
   0%{transform:translateX(-100%);}
   100%{transform:translateX(100%);}
 }
-nav ul{display:flex;gap:1.9rem;list-style:none;}
+nav ul{display:flex;gap:1.5rem;list-style:none;}
 nav a{
   color:rgba(255,255,255,.75);text-decoration:none;
-  font-size:.8rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;
+  font-size:.78rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;
   transition:color .3s;position:relative;white-space:nowrap;
 }
 nav a::after{
@@ -155,7 +165,16 @@ nav a::after{
 }
 nav a:hover{color:var(--gold);}
 nav a:hover::after{width:100%;}
+nav a:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
 .hamburger{display:none;background:none;border:none;color:var(--cream);font-size:1.6rem;cursor:pointer;}
+.hamburger:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
+
+@media (max-width:1100px) and (min-width:901px){
+  nav ul{gap:1.1rem;}
+  nav a{font-size:.72rem;letter-spacing:.07em;}
+  .logo{font-size:1.12rem;}
+  .logo-img{width:56px;height:56px;flex:0 0 56px;}
+}
 
 /* Buttons */
 .btn{
@@ -166,6 +185,7 @@ nav a:hover::after{width:100%;}
   border:none;cursor:pointer;position:relative;overflow:hidden;
   transition:all .4s;
 }
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
 .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--ink);}
 .btn-gold::before{
   content:'';position:absolute;inset:0;
@@ -203,7 +223,7 @@ nav a:hover::after{width:100%;}
 }
 .hero-line{
   font-size:1rem;color:rgba(255,255,255,.68);line-height:1.8;
-  max-width:620px;margin:0 auto 2.8rem;
+  max-width:640px;margin:0 auto 2.8rem;
 }
 .hero-cta{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;opacity:0;transform:translateY(20px);}
 .scroll-hint{
@@ -273,6 +293,11 @@ section{position:relative;overflow:hidden;}
   font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;
   color:rgba(255,255,255,.45);margin-top:.35rem;display:block;
 }
+.rating-note{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.82rem;color:var(--gold-light);letter-spacing:.02em;margin-top:1.2rem;
+}
+.rating-note i{color:var(--gold);}
 
 /* Cards grid */
 .services-grid{
@@ -308,11 +333,37 @@ section{position:relative;overflow:hidden;}
   text-transform:uppercase;color:var(--gold);text-decoration:none;
 }
 .svc-link:hover{text-decoration:underline;}
+.svc-link:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
 
 /* Services */
 #services{background:var(--ink);}
+
+/* Specialized coverage */
+#specialized{background:var(--ink-soft);}
+
 /* Packages */
-#packages{background:var(--ink-soft);}
+#packages{background:var(--ink);}
+
+/* How it works */
+#how-it-works{background:var(--ink-soft);}
+.steps-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);
+  gap:1rem;margin-top:3rem;
+}
+.step{
+  padding:2rem 1.4rem;border:1px solid var(--border);
+  background:var(--ink);position:relative;transition:border-color .3s;
+}
+.step:hover{border-color:rgba(201,169,110,.4);}
+.step-num{
+  font-family:'Cormorant Garamond',serif;font-size:2rem;
+  color:var(--gold);display:block;margin-bottom:.8rem;line-height:1;
+}
+.step h3{
+  font-family:'Cormorant Garamond',serif;font-size:1.1rem;
+  color:var(--white);margin-bottom:.5rem;font-weight:600;line-height:1.3;
+}
+.step p{font-size:.83rem;color:rgba(255,255,255,.55);line-height:1.7;}
 
 /* Gallery */
 #gallery{background:var(--ink);}
@@ -381,6 +432,7 @@ section{position:relative;overflow:hidden;}
   border-color:var(--gold);background:rgba(201,169,110,.12);
   box-shadow:0 0 18px rgba(201,169,110,.25);
 }
+.testi-nav-btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
 .testi-dots{display:flex;align-items:center;gap:.45rem;}
 .testi-dot{
   width:8px;height:8px;border-radius:50%;
@@ -388,6 +440,7 @@ section{position:relative;overflow:hidden;}
   transition:all .3s ease;padding:0;
 }
 .testi-dot.active{width:22px;border-radius:999px;background:var(--gold);}
+.testi-dot:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
 
 /* FAQ */
 #faq{background:var(--ink);}
@@ -402,6 +455,7 @@ section{position:relative;overflow:hidden;}
   gap:1rem;cursor:pointer;transition:color .3s;line-height:1.5;
 }
 .faq-q:hover,.faq-item.open .faq-q{color:var(--gold);}
+.faq-q:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
 .faq-icon{
   width:28px;height:28px;flex:0 0 28px;
   border:1px solid rgba(255,255,255,.2);border-radius:50%;
@@ -418,7 +472,21 @@ section{position:relative;overflow:hidden;}
   font-size:.92rem;color:rgba(255,255,255,.55);line-height:1.85;
   transition:max-height .45s cubic-bezier(.4,0,.2,1),padding .45s;
 }
-.faq-item.open .faq-a{max-height:320px;padding-bottom:1.4rem;}
+.faq-item.open .faq-a{max-height:400px;padding-bottom:1.4rem;}
+
+.faq-extras{
+  margin-top:2.5rem;padding-top:1.5rem;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.faq-extras h4{
+  font-family:'Cormorant Garamond',serif;font-size:1.1rem;
+  color:var(--gold-light);margin-bottom:.7rem;font-weight:600;
+}
+.faq-extras p{
+  font-size:.85rem;color:rgba(255,255,255,.5);line-height:1.85;
+}
+.faq-extras a{color:var(--gold);text-decoration:underline;}
+.faq-extras a:hover{color:var(--gold-light);}
 
 /* Contact */
 #contact{background:var(--ink-soft);position:relative;}
@@ -484,6 +552,7 @@ section{position:relative;overflow:hidden;}
   text-decoration:none;transition:border-color .3s,transform .3s;
 }
 .review-card:hover{border-color:rgba(212,175,55,.6);transform:translateY(-3px);}
+.review-card:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
 .review-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
 .review-kicker{color:#d4af37;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;}
 .review-head{color:#fff;font-size:1.2rem;font-weight:700;margin-top:.35rem;}
@@ -522,6 +591,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   transition:border-color .3s,color .3s,box-shadow .3s;
 }
 .social-btn:hover{border-color:var(--gold);color:var(--gold);box-shadow:0 0 15px rgba(201,169,110,.2);}
+.social-btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
 .footer-bottom{
   max-width:1200px;margin:3rem auto 0;padding-top:1.5rem;
   border-top:1px solid rgba(255,255,255,.06);
@@ -540,6 +610,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   border:none;
 }
 .wa-btn:hover{transform:scale(1.1);animation:none;}
+.wa-btn:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
 @keyframes waPulse{
   0%{box-shadow:0 0 0 0 rgba(37,211,102,.6);}
   70%{box-shadow:0 0 0 14px rgba(37,211,102,0);}
@@ -570,10 +641,12 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   transition:box-shadow .3s;
 }
 .wa-send:hover{box-shadow:0 0 20px rgba(37,211,102,.4);}
+.wa-send:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
 .wa-close{
   position:absolute;top:.6rem;right:.8rem;background:none;border:none;
   color:rgba(255,255,255,.35);font-size:1.1rem;cursor:pointer;
 }
+.wa-close:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
 
 .ig-float{
   position:fixed;bottom:6.5rem;right:2rem;z-index:800;
@@ -586,6 +659,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   animation:igPulse 3s infinite;
 }
 .ig-float:hover{transform:scale(1.12);box-shadow:0 6px 26px rgba(220,39,67,.6);animation:none;}
+.ig-float:focus-visible{outline:2px solid var(--gold);outline-offset:4px;}
 @keyframes igPulse{
   0%{box-shadow:0 0 0 0 rgba(220,39,67,.5);}
   70%{box-shadow:0 0 0 12px rgba(220,39,67,0);}
@@ -597,8 +671,14 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 .reveal.in-view{animation:revealIn .8s cubic-bezier(.16,1,.3,1) forwards;}
 @keyframes revealIn{to{opacity:1;transform:none;}}
 
+/* Hover-only transforms */
+@media (hover:hover){
+  .svc-card:hover .svc-icon{transform:translateY(-4px);}
+}
+
 /* Mobile */
 @media (max-width:900px){
+  header{min-height:64px;}
   nav ul{display:none;}
   nav ul.open{
     display:flex;flex-direction:column;position:fixed;inset:0;top:70px;
@@ -608,6 +688,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   .hamburger{display:block;}
   .about-grid,.contact-grid,.faq-cols{grid-template-columns:1fr;gap:3rem;}
   .services-grid{grid-template-columns:1fr;}
+  .steps-grid{grid-template-columns:1fr 1fr;}
   .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
   .gal-item{grid-column:auto !important;grid-row:auto !important;height:220px;}
   .footer-grid{grid-template-columns:1fr 1fr;}
@@ -628,14 +709,57 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   .stats-row{gap:2rem;}
   .testimonial-slide{padding:2.2rem 1.5rem;}
   .svc-card{padding:2.4rem 1.6rem;}
+  .steps-grid{grid-template-columns:1fr;}
 }
 </style>
 
-<!-- Schema: SEO + AEO + GEO -->
+<!-- Schema: Organization, LocalBusiness, Person, WebSite, WebPage, Breadcrumb, Service, HowTo, FAQ, ImageGallery -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://magictodayphotography.netlify.app/#organization",
+      "name": "Magic Today Photography",
+      "url": "https://magictodayphotography.netlify.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://magictodayphotography.netlify.app/images/logo.jpg",
+        "width": 512,
+        "height": 512
+      },
+      "sameAs": [
+        "https://www.instagram.com/magictodayphotography/",
+        "https://linkedin.com/company/magic-today-photography",
+        "https://share.google/4XcAb1onR3W3zPegy"
+      ],
+      "foundingDate": "2019",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-80957-67131",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi", "kn"]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://magictodayphotography.netlify.app/#founder",
+      "name": "Magic Today Photography Lead Photographer",
+      "jobTitle": "Lead Photographer",
+      "worksFor": { "@id": "https://magictodayphotography.netlify.app/#business" },
+      "knowsAbout": [
+        "Event photography",
+        "Corporate event coverage",
+        "Candid photography",
+        "Bangalore event venues"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/magictodayphotography/",
+        "https://linkedin.com/company/magic-today-photography"
+      ]
+    },
     {
       "@type": ["PhotographyBusiness", "LocalBusiness"],
       "@id": "https://magictodayphotography.netlify.app/#business",
@@ -648,6 +772,8 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       "priceRange": "₹15,000 - ₹75,000",
       "currenciesAccepted": "INR",
       "paymentAccepted": "UPI, Bank Transfer, Cash",
+      "parentOrganization": { "@id": "https://magictodayphotography.netlify.app/#organization" },
+      "founder": { "@id": "https://magictodayphotography.netlify.app/#founder" },
       "image": [
         "https://magictodayphotography.netlify.app/images/hero-event-photography.webp",
         "https://magictodayphotography.netlify.app/images/about-event-photography.webp"
@@ -693,6 +819,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         { "@type": "Place", "name": "Indiranagar, Bengaluru" },
         { "@type": "Place", "name": "Koramangala, Bengaluru" },
         { "@type": "Place", "name": "Banashankari, Bengaluru" },
+        { "@type": "Place", "name": "Jayanagar, Bengaluru" },
         { "@type": "Place", "name": "Jayamahal Palace, Bengaluru" },
         { "@type": "Place", "name": "Taj Bangalore" },
         { "@type": "Place", "name": "ITC Gardenia, Bengaluru" }
@@ -704,7 +831,9 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         "Birthday party photography",
         "Engagement photography",
         "Award night coverage",
-        "Private party photography"
+        "Private party photography",
+        "Nischayathartham photography",
+        "Pre-wedding shoots"
       ],
       "sameAs": [
         "https://www.instagram.com/magictodayphotography/",
@@ -742,41 +871,20 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
           "author": { "@type": "Person", "name": "Deepa Krishnan" },
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
           "reviewBody": "We booked them for a product launch at a hotel in central Bangalore. Clean, professional images that our marketing team could use the same week."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Vikram Shetty" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Our annual day was a full-day affair with speeches, awards, and cultural performances. They stayed for every session and never missed a moment."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Anita and Suresh" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "We hosted a baby shower at home and wanted photos without making it feel like a photo shoot. They blended in completely."
         }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Event Photography Packages in Bangalore",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Essential Event Coverage",
-            "description": "3-hour coverage for birthdays, intimate gatherings, and small corporate meets. 80+ edited photos, online gallery.",
-            "price": "15000",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "url": "https://magictodayphotography.netlify.app/event-photography#packages"
-          },
-          {
-            "@type": "Offer",
-            "name": "Signature Event Coverage",
-            "description": "6-hour coverage for conferences, engagements, and award nights. 200+ edited photos, highlight reel, two photographers.",
-            "price": "35000",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "url": "https://magictodayphotography.netlify.app/event-photography#packages"
-          },
-          {
-            "@type": "Offer",
-            "name": "Full-Day Event Coverage",
-            "description": "10-hour full-day coverage for large conferences, multi-session events, and wedding-adjacent functions. 400+ edited photos, same-day edit option, video add-on.",
-            "price": "65000",
-            "priceCurrency": "INR",
-            "availability": "https://schema.org/InStock",
-            "url": "https://magictodayphotography.netlify.app/event-photography#packages"
-          }
-        ]
-      }
+      ]
     },
     {
       "@type": "WebSite",
@@ -784,27 +892,28 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       "url": "https://magictodayphotography.netlify.app/",
       "name": "Magic Today Photography",
       "inLanguage": "en-IN",
-      "publisher": { "@id": "https://magictodayphotography.netlify.app/#business" }
+      "publisher": { "@id": "https://magictodayphotography.netlify.app/#organization" }
     },
     {
       "@type": "WebPage",
       "@id": "https://magictodayphotography.netlify.app/event-photography#webpage",
       "url": "https://magictodayphotography.netlify.app/event-photography",
-      "name": "Event Photography Bangalore | Corporate, Birthday & Party Photographer",
+      "name": "Event Photography Bangalore | Corporate & Party Photographer",
       "description": "Professional event photography in Bangalore for corporate conferences, product launches, birthdays, engagements and private parties. Packages from Rs 15,000.",
       "isPartOf": { "@id": "https://magictodayphotography.netlify.app/#website" },
       "about": { "@id": "https://magictodayphotography.netlify.app/#business" },
+      "author": { "@id": "https://magictodayphotography.netlify.app/#founder" },
       "inLanguage": "en-IN",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://magictodayphotography.netlify.app/images/hero-event-photography.webp",
-        "caption": "Corporate event photography in Bangalore"
+        "caption": "Event photography in Bangalore"
       },
       "breadcrumb": { "@id": "https://magictodayphotography.netlify.app/event-photography#breadcrumb" },
       "mainEntity": { "@id": "https://magictodayphotography.netlify.app/event-photography#service" },
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": [".hero h1", ".hero-line", ".section-lead", ".faq-q", ".faq-a p"]
+        "cssSelector": [".hero h1", ".hero-line", ".section-lead"]
       }
     },
     {
@@ -840,6 +949,12 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         "@type": "Audience",
         "audienceType": "Corporates, families, event planners, PR agencies, and individuals hosting events in Bangalore"
       },
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "10:00",
+        "closes": "19:00"
+      },
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "INR",
@@ -847,7 +962,112 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         "highPrice": "65000",
         "offerCount": "3",
         "availability": "https://schema.org/InStock"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Specialized Event Photography Coverage",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Corporate Event Photography",
+            "url": "https://magictodayphotography.netlify.app/corporate-events",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Birthday Party Photography",
+            "url": "https://magictodayphotography.netlify.app/birthday-parties",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Engagement Photography",
+            "url": "https://magictodayphotography.netlify.app/engagements-photography",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Nischayathartham Photography",
+            "url": "https://magictodayphotography.netlify.app/nischayathartham",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pre-Wedding Shoots",
+            "url": "https://magictodayphotography.netlify.app/pre-wedding-shoots",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Maternity and Baby Shower Photography",
+            "url": "https://magictodayphotography.netlify.app/maternity-baby-shower",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "First Birthday Photography",
+            "url": "https://magictodayphotography.netlify.app/first-birthdays-photography",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Kids Party Photography",
+            "url": "https://magictodayphotography.netlify.app/kids-parties",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Anniversary Photography",
+            "url": "https://magictodayphotography.netlify.app/anniversary-celebrations",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Silver and Golden Jubilee Photography",
+            "url": "https://magictodayphotography.netlify.app/silver-golden-jubilees",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
       }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://magictodayphotography.netlify.app/event-photography#howto",
+      "name": "How to Book Event Photography in Bangalore",
+      "description": "The five-step process to book Magic Today Photography for an event in Bangalore.",
+      "totalTime": "P7D",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Share your date and venue",
+          "text": "Tell us the event date, venue, and the type of coverage you need. You can use the contact form, WhatsApp, or email."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Confirm coverage",
+          "text": "We confirm availability and send a written plan with coverage hours, photographer count, and deliverables."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Pay the advance",
+          "text": "A 30% advance confirms your date. The remaining balance is due before the event."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Event day coverage",
+          "text": "Our team covers your event and delivers preview images within 24 to 48 hours."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Full gallery delivery",
+          "text": "The full edited gallery is delivered in five to seven working days."
+        }
+      ]
     },
     {
       "@type": "FAQPage",
@@ -858,7 +1078,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
           "name": "How much does event photography in Bangalore cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our event packages start at Rs 15,000 for three hours of coverage at a single venue with 80 or more edited photographs. The Signature package is Rs 35,000 for six hours with two photographers, and the Full-Day package is Rs 65,000 for ten hours of coverage. GST is charged separately. Corporate events with multiple stages or breakout sessions may need a custom quote."
+            "text": "Our event packages start at Rs 15,000 for three hours of coverage at a single venue with 80 or more edited photographs. The Signature package is Rs 35,000 for six hours with two photographers, and the Full-Day package is Rs 65,000 for ten hours of coverage. GST is charged separately."
           }
         },
         {
@@ -882,7 +1102,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
           "name": "How many photographers will be at our event?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For most events under four hours, one photographer is enough. The Signature package includes two photographers who can split between the stage, the guest area, and the candid moments. Large conferences with parallel sessions usually need three photographers plus a videographer. We will recommend the right number after hearing your event flow."
+            "text": "For most events under four hours, one photographer is enough. The Signature package includes two photographers who can split between the stage, the guest area, and the candid moments. Large conferences with parallel sessions usually need three photographers plus a videographer."
           }
         },
         {
@@ -976,43 +1196,53 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       ]
     },
     {
-      "@type": "Event",
-      "@id": "https://magictodayphotography.netlify.app/event-photography#event-type",
-      "name": "Corporate and Private Events Covered in Bangalore",
-      "description": "Types of events Magic Today Photography covers across Bangalore, including conferences, product launches, award nights, birthdays, engagements, and family celebrations.",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "location": {
-        "@type": "Place",
-        "name": "Bangalore, Karnataka",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Bengaluru",
-          "addressRegion": "Karnataka",
-          "addressCountry": "IN"
-        }
-      },
-      "organizer": { "@id": "https://magictodayphotography.netlify.app/#business" },
-      "offers": {
-        "@type": "Offer",
-        "price": "15000",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "url": "https://magictodayphotography.netlify.app/event-photography#contact"
-      }
-    },
-    {
       "@type": "ImageGallery",
       "@id": "https://magictodayphotography.netlify.app/event-photography#gallery",
       "name": "Event Photography Portfolio - Bangalore",
       "description": "Recent event photographs shot across Bangalore by Magic Today Photography.",
       "image": [
-        "https://magictodayphotography.netlify.app/images/gallery-event-01.webp",
-        "https://magictodayphotography.netlify.app/images/gallery-event-02.webp",
-        "https://magictodayphotography.netlify.app/images/gallery-event-03.webp",
-        "https://magictodayphotography.netlify.app/images/gallery-event-04.webp",
-        "https://magictodayphotography.netlify.app/images/gallery-event-05.webp",
-        "https://magictodayphotography.netlify.app/images/gallery-event-06.webp"
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://magictodayphotography.netlify.app/images/gallery-event-01.webp",
+          "caption": "Corporate conference photography in Whitefield, Bangalore",
+          "creator": { "@id": "https://magictodayphotography.netlify.app/#organization" },
+          "locationCreated": { "@type": "Place", "name": "Whitefield, Bengaluru" }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://magictodayphotography.netlify.app/images/gallery-event-02.webp",
+          "caption": "Product launch event photography at a hotel in central Bangalore",
+          "creator": { "@id": "https://magictodayphotography.netlify.app/#organization" },
+          "locationCreated": { "@type": "Place", "name": "Central Bangalore" }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://magictodayphotography.netlify.app/images/gallery-event-03.webp",
+          "caption": "Birthday party candid photography in Bangalore",
+          "creator": { "@id": "https://magictodayphotography.netlify.app/#organization" },
+          "locationCreated": { "@type": "Place", "name": "Banashankari, Bengaluru" }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://magictodayphotography.netlify.app/images/gallery-event-04.webp",
+          "caption": "Engagement ceremony photography at a banquet hall in Jayanagar",
+          "creator": { "@id": "https://magictodayphotography.netlify.app/#organization" },
+          "locationCreated": { "@type": "Place", "name": "Jayanagar, Bengaluru" }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://magictodayphotography.netlify.app/images/gallery-event-05.webp",
+          "caption": "Award night photography at a corporate event in Bangalore",
+          "creator": { "@id": "https://magictodayphotography.netlify.app/#organization" },
+          "locationCreated": { "@type": "Place", "name": "Indiranagar, Bengaluru" }
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://magictodayphotography.netlify.app/images/gallery-event-06.webp",
+          "caption": "Private family celebration photography in Koramangala, Bangalore",
+          "creator": { "@id": "https://magictodayphotography.netlify.app/#organization" },
+          "locationCreated": { "@type": "Place", "name": "Koramangala, Bengaluru" }
+        }
       ]
     }
   ]
@@ -1037,7 +1267,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 <!-- Header -->
 <header id="header">
   <a href="https://magictodayphotography.netlify.app/" class="logo" aria-label="Magic Today Photography home">
-    <img src="/images/logo.jpg" alt="Magic Today Photography logo" title="Magic Today Photography - event photographer Bangalore" class="logo-img" width="70" height="70" />
+    <img src="https://magictodayphotography.netlify.app/images/logo.jpg" alt="Magic Today Photography logo" title="Magic Today Photography - event photographer Bangalore" class="logo-img" width="70" height="70" />
     Magic Today Photography
   </a>
   <button class="hamburger" id="ham" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navList">
@@ -1047,11 +1277,12 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
     <ul id="navList">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#specialized">Coverage</a></li>
       <li><a href="#packages">Packages</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#testimonials">Reviews</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Book Now</a></li>
+      <li><a href="#contact">Book</a></li>
     </ul>
   </nav>
 </header>
@@ -1061,8 +1292,11 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-content">
     <p class="hero-eyebrow" id="heroEye">Event Photography in Bangalore</p>
-    <h1 id="heroH1">Event Photography in Bangalore - <em>Corporate, Private, Covered</em></h1>
-    <p class="hero-sub" id="heroSub"><span id="typeEl"></span><span class="type-cursor" aria-hidden="true">|</span></p>
+    <h1 id="heroH1">Event Photography in Bangalore That <em>Captures the Room</em></h1>
+    <p class="hero-sub">
+      <span class="sr-only">Corporate. Private. Covered. Shot in Bangalore.</span>
+      <span id="typeEl" aria-hidden="true"></span><span class="type-cursor" aria-hidden="true">|</span>
+    </p>
     <p class="hero-line">Conferences in Electronic City. Product launches in Whitefield. Birthdays in Banashankari. Engagements in Jayanagar. Two hundred events covered, and a team that knows how Bangalore venues work.</p>
     <div class="hero-cta" id="heroCta">
       <a href="#packages" class="btn btn-gold">See Packages <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -1112,7 +1346,10 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
             <span class="stat-label">Preview delivery</span>
           </div>
         </div>
-        <div class="reveal" style="animation-delay:.5s;margin-top:2.5rem;">
+        <p class="rating-note reveal" style="animation-delay:.47s;">
+          <i class="fas fa-star" aria-hidden="true"></i> Rated 4.9 by 78 clients on Google
+        </p>
+        <div class="reveal" style="animation-delay:.5s;margin-top:2rem;">
           <a href="#packages" class="btn btn-gold">View Event Packages <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
@@ -1124,23 +1361,23 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 <section id="services">
   <div class="section-inner">
     <p class="section-tag">What We Cover</p>
-    <h2 class="section-title">Event Photography Services in <em>Bangalore</em></h2>
-    <p class="section-lead">Corporate or private, big or small. We cover the whole range, and we bring the same attention to a three-hour birthday as we do to a two-day conference.</p>
+    <h2 class="section-title">Event Photography Services Across <em>Bangalore</em></h2>
+    <p class="section-lead">Corporate or private, big or small. We cover the whole range, and we bring the same attention to a three-hour birthday as we do to a two-day conference. Looking for an event photographer near you in Bangalore? We cover Whitefield, Electronic City, Koramangala, and every neighborhood in between.</p>
 
     <div class="services-grid">
       <article class="svc-card">
         <span class="svc-num" aria-hidden="true">01</span>
         <i class="fas fa-briefcase svc-icon" aria-hidden="true"></i>
         <h3 class="svc-title">Corporate Conferences</h3>
-        <p class="svc-desc">Keynotes, panel discussions, breakout sessions, and networking. Coverage across tech parks in Whitefield, Electronic City, and Manyata.</p>
-        <a class="svc-link" href="#packages">See packages</a>
+        <p class="svc-desc">Keynotes that land. Panels that argue. Networking that actually works. Coverage across tech parks in Whitefield, Electronic City, and Manyata.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/corporate-events">See corporate coverage</a>
       </article>
 
       <article class="svc-card">
         <span class="svc-num" aria-hidden="true">02</span>
         <i class="fas fa-rocket svc-icon" aria-hidden="true"></i>
         <h3 class="svc-title">Product Launches</h3>
-        <p class="svc-desc">Stage coverage, product close-ups, guest interactions, and press-ready images delivered quickly for media and social media.</p>
+        <p class="svc-desc">The reveal moment. The product close-ups. The handshakes. Press-ready images delivered quickly for media and social media.</p>
         <a class="svc-link" href="#contact">Enquire</a>
       </article>
 
@@ -1148,8 +1385,8 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         <span class="svc-num" aria-hidden="true">03</span>
         <i class="fas fa-birthday-cake svc-icon" aria-hidden="true"></i>
         <h3 class="svc-title">Birthday Parties</h3>
-        <p class="svc-desc">Kids' birthdays, milestone celebrations, and family gatherings. Candid photos of the cake cutting, the games, and the genuine smiles.</p>
-        <a class="svc-link" href="#contact">Enquire</a>
+        <p class="svc-desc">The cake smash that goes everywhere. The grandmother who laughs until she cries. Candid photos of the games and the genuine smiles.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/birthday-parties">See birthday coverage</a>
       </article>
 
       <article class="svc-card">
@@ -1157,7 +1394,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         <i class="fas fa-ring svc-icon" aria-hidden="true"></i>
         <h3 class="svc-title">Engagements & Receptions</h3>
         <p class="svc-desc">Ring ceremonies, sangeet, mehendi, and reception coverage. Candid moments plus clean family portraits without the rush.</p>
-        <a class="svc-link" href="#contact">Enquire</a>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/engagements-photography">See engagement coverage</a>
       </article>
 
       <article class="svc-card">
@@ -1179,10 +1416,85 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   </div>
 </section>
 
+<!-- Specialized Coverage -->
+<section id="specialized">
+  <div class="section-inner">
+    <p class="section-tag">Beyond the Main Page</p>
+    <h2 class="section-title">Specialized Event Coverage in <em>Bangalore</em></h2>
+    <p class="section-lead">Every event has its own rhythm. These pages cover the specific venues, rituals, and timelines for the events we shoot most often.</p>
+
+    <div class="services-grid">
+      <article class="svc-card">
+        <i class="fas fa-briefcase svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Corporate Events</h3>
+        <p class="svc-desc">Conferences, product launches, award nights, and AGMs across Whitefield, Electronic City, and the city centre.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/corporate-events">See corporate coverage</a>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-birthday-cake svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Birthday Parties</h3>
+        <p class="svc-desc">First birthdays, milestone celebrations, cake smash setups, and candid moments with the people who matter.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/birthday-parties">See birthday coverage</a>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-ring svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Engagements</h3>
+        <p class="svc-desc">Ring ceremonies, roka, receptions, and candid couple portraits. The moments before the wedding.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/engagements-photography">See engagement coverage</a>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-gem svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Nischayathartham</h3>
+        <p class="svc-desc">Tamil engagement rituals including Lagna Patrika, ring exchange, and family blessings. Covered with respect for the tradition.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/nischayathartham">See Nischayathartham coverage</a>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-camera svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Pre-Wedding Shoots</h3>
+        <p class="svc-desc">Candid and cinematic sessions at Cubbon Park, Nandi Hills, Lalbagh, and twenty-five other Bangalore locations.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/pre-wedding-shoots">See pre-wedding coverage</a>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-baby svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Maternity & Baby Shower</h3>
+        <p class="svc-desc">Studio and at-home maternity sessions, plus seemantham and naming ceremony coverage across Bangalore.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/maternity-baby-shower">See maternity coverage</a>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-child svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">First Birthdays & Kids Parties</h3>
+        <p class="svc-desc">Cake smash setups, themed parties, play areas, magicians, and the chaos that makes them wonderful.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/first-birthdays-photography">First birthdays</a>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/kids-parties" style="margin-left:1rem;">Kids parties</a>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-heart svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Anniversaries</h3>
+        <p class="svc-desc">Milestone dinners, vow renewals, and surprise parties. Photos that show the years behind the smiles.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/anniversary-celebrations">See anniversary coverage</a>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-award svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Silver & Golden Jubilees</h3>
+        <p class="svc-desc">Twenty-five and fifty years together. Four-generation portraits and full celebration coverage.</p>
+        <a class="svc-link" href="https://magictodayphotography.netlify.app/silver-golden-jubilees">See jubilee coverage</a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- Packages -->
 <section id="packages">
   <div class="section-inner">
-    <p class="section-tag" style="text-align:center;">Event Packages</p>
+    <p class="section-tag" style="text-align:center;">Event Packages for Bangalore Venues</p>
     <h2 class="section-title" style="text-align:center;">Three Ways to Cover Your <em>Event</em></h2>
     <p class="section-lead" style="text-align:center;margin:0 auto;">
       Every package includes hand editing, an online gallery you can share with your team or family, and travel within city limits. GST is charged separately.
@@ -1213,6 +1525,43 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 
     <div style="text-align:center;margin-top:2.5rem;">
       <a href="#contact" class="btn btn-ghost">Build a Custom Package <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section id="how-it-works">
+  <div class="section-inner">
+    <p class="section-tag">The Process</p>
+    <h2 class="section-title">How Booking <em>Works</em></h2>
+    <p class="section-lead">Five steps from first message to full gallery. No surprises.</p>
+
+    <div class="steps-grid">
+      <div class="step">
+        <span class="step-num">01</span>
+        <h3>Share your details</h3>
+        <p>Tell us the event date, venue, and the type of coverage you need.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">02</span>
+        <h3>Confirm coverage</h3>
+        <p>We confirm availability and send a written plan with hours, photographers, and deliverables.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">03</span>
+        <h3>Pay the advance</h3>
+        <p>A 30% advance confirms your date. Balance due before the event.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">04</span>
+        <h3>Event day</h3>
+        <p>Our team covers your event and delivers preview images within 24 to 48 hours.</p>
+      </div>
+      <div class="step">
+        <span class="step-num">05</span>
+        <h3>Full gallery</h3>
+        <p>The full edited gallery is delivered in five to seven working days.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -1280,48 +1629,48 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 
     <div class="testimonial-slider-wrap reveal" style="animation-delay:.15s;" aria-roledescription="carousel" aria-label="Client testimonials">
       <div class="testimonial-viewport">
-        <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-track" id="testimonialTrack" aria-live="polite">
           <article class="testimonial-slide">
             <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
             <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
             <p class="single-testi-text">We had a two-day conference at a tech park in Whitefield. The team knew the venue, handled the stage lighting, and delivered the first set of images the next morning. Our marketing team was thrilled.</p>
             <div class="single-testi-name">Rahul Menon</div>
-            <div class="single-testi-role">Corporate Conference, Whitefield</div>
+            <div class="single-testi-role">Conference at a tech park, Whitefield</div>
           </article>
           <article class="testimonial-slide">
             <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
             <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
             <p class="single-testi-text">They covered my daughter's first birthday at home. No flash in the baby's face, no loud direction. Just natural photos of the family together, and the cake smash was captured perfectly.</p>
             <div class="single-testi-name">Shruti Rao</div>
-            <div class="single-testi-role">Birthday Party, Banashankari</div>
+            <div class="single-testi-role">First birthday at home, Banashankari</div>
           </article>
           <article class="testimonial-slide">
             <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
             <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
             <p class="single-testi-text">Our engagement at a banquet hall in Jayanagar was covered beautifully. The candid shots of our families meeting for the first time are priceless. The posed group photos were clean and quick.</p>
             <div class="single-testi-name">Nikhil and Priyanka</div>
-            <div class="single-testi-role">Engagement, Jayanagar</div>
+            <div class="single-testi-role">Engagement at a banquet hall, Jayanagar</div>
           </article>
           <article class="testimonial-slide">
             <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
             <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
             <p class="single-testi-text">We booked them for a product launch at a hotel in central Bangalore. Clean, professional images that our marketing team could use the same week. They understood the brand guidelines without much explanation.</p>
             <div class="single-testi-name">Deepa Krishnan</div>
-            <div class="single-testi-role">Product Launch, Central Bangalore</div>
+            <div class="single-testi-role">Product launch at a hotel, Central Bangalore</div>
           </article>
           <article class="testimonial-slide">
             <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
             <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
             <p class="single-testi-text">Our annual day was a full-day affair with speeches, awards, and cultural performances. They stayed for every session and never missed a moment. The full gallery was ready in five days.</p>
             <div class="single-testi-name">Vikram Shetty</div>
-            <div class="single-testi-role">Annual Day, Electronic City</div>
+            <div class="single-testi-role">Annual day in Electronic City</div>
           </article>
           <article class="testimonial-slide">
             <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
             <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
             <p class="single-testi-text">We hosted a baby shower at home and wanted photos without making it feel like a photo shoot. They blended in completely. The photos look like a family album, not a formal event.</p>
             <div class="single-testi-name">Anita and Suresh</div>
-            <div class="single-testi-role">Baby Shower, Koramangala</div>
+            <div class="single-testi-role">Baby shower at home, Koramangala</div>
           </article>
         </div>
       </div>
@@ -1347,7 +1696,30 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
           <a href="#contact" class="btn btn-gold">Ask Us Directly <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
-      <div class="faq-list" id="faqList"></div>
+      <div>
+        <div class="faq-list" id="faqList"></div>
+
+        <div class="faq-extras">
+          <h4>Ask about</h4>
+          <p>Same-day edits. Drone coverage. Multi-day conference rates. Video add-ons. Coverage for PR agencies. Brand guidelines matching. If your event needs something specific, tell us and we will plan for it.</p>
+        </div>
+
+        <div class="faq-extras">
+          <h4>Related coverage</h4>
+          <p>
+            <a href="https://magictodayphotography.netlify.app/corporate-events">Corporate Events</a> ·
+            <a href="https://magictodayphotography.netlify.app/birthday-parties">Birthday Parties</a> ·
+            <a href="https://magictodayphotography.netlify.app/engagements-photography">Engagements</a> ·
+            <a href="https://magictodayphotography.netlify.app/nischayathartham">Nischayathartham</a> ·
+            <a href="https://magictodayphotography.netlify.app/pre-wedding-shoots">Pre-Wedding Shoots</a> ·
+            <a href="https://magictodayphotography.netlify.app/maternity-baby-shower">Maternity & Baby Shower</a> ·
+            <a href="https://magictodayphotography.netlify.app/first-birthdays-photography">First Birthdays</a> ·
+            <a href="https://magictodayphotography.netlify.app/kids-parties">Kids Parties</a> ·
+            <a href="https://magictodayphotography.netlify.app/anniversary-celebrations">Anniversaries</a> ·
+            <a href="https://magictodayphotography.netlify.app/silver-golden-jubilees">Silver & Golden Jubilees</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1369,7 +1741,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         <div class="contact-info-item reveal">
           <div class="contact-icon-box"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
           <div>
-            <div class="contact-info-label">Office </div>
+            <div class="contact-info-label">Office</div>
             <div class="contact-info-val">131, 2nd Cross Road, 5th Block, 3rd Phase,<br />Banashankari 3rd Stage, Bengaluru 560085</div>
           </div>
         </div>
@@ -1405,7 +1777,8 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         </div>
       </div>
 
-      <form action="https://formspree.io/f/info.magictoday@gmail.com" method="POST" class="reveal" style="animation-delay:.1s;">
+      <!-- Replace xyzabcde below with your real Formspree form ID -->
+      <form action="https://formspree.io/f/xyzabcde" method="POST" class="reveal" style="animation-delay:.1s;">
         <div class="form-row">
           <div class="form-group">
             <label class="form-label" for="name">Your name *</label>
@@ -1424,22 +1797,24 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 
         <div class="form-group">
           <label class="form-label" for="service">What are you booking?</label>
-          <select class="form-select form-input" id="service" name="service">
+          <select class="form-select form-input" id="service" name="service" autocomplete="off">
             <option value="">Choose a service</option>
             <option>Corporate Conference</option>
             <option>Product Launch</option>
             <option>Birthday Party</option>
             <option>Engagement or Reception</option>
+            <option>Nischayathartham</option>
             <option>Award Night or Annual Day</option>
             <option>Baby Shower or Naming Ceremony</option>
             <option>Housewarming or Anniversary</option>
+            <option>Silver or Golden Jubilee</option>
             <option>Other Event</option>
           </select>
         </div>
 
         <div class="form-group">
           <label class="form-label" for="message">Event date, venue and coverage needed</label>
-          <textarea class="form-textarea" id="message" name="message" placeholder="For example: 14 March, Taj Bangalore, 6 PM to 10 PM, product launch with 200 guests. Need photos for press and social media."></textarea>
+          <textarea class="form-textarea" id="message" name="message" placeholder="For example: 14 March, Taj Bangalore, 6 PM to 10 PM, product launch with 200 guests. Need photos for press and social media." autocomplete="off"></textarea>
         </div>
 
         <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Send Enquiry <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
@@ -1490,7 +1865,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 <footer>
   <div class="footer-grid">
     <div class="footer-col">
-      <img src="/images/logo.jpg" alt="Magic Today Photography logo" title="Magic Today Photography - event photographer Bangalore" class="footer-logo" width="70" height="70" />
+      <img src="https://magictodayphotography.netlify.app/images/logo.jpg" alt="Magic Today Photography logo" title="Magic Today Photography - event photographer Bangalore" class="footer-logo" width="70" height="70" />
       <p>Event photographers based in Banashankari, Bangalore. Corporate conferences, product launches, award nights, birthdays, engagements, and family celebrations covered since 2019.</p>
       <div class="social-row">
         <a href="https://www.instagram.com/magictodayphotography/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
@@ -1504,6 +1879,7 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       <ul>
         <li><a href="#about">About Us</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#specialized">Coverage</a></li>
         <li><a href="#packages">Packages</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#testimonials">Reviews</a></li>
@@ -1515,13 +1891,12 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
     <div class="footer-col">
       <div class="footer-title">Services</div>
       <ul>
-        <li><a href="#packages">Corporate Events</a></li>
-        <li><a href="#packages">Birthday Parties</a></li>
-        <li><a href="#packages">Engagements</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/corporate-events">Corporate Events</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/birthday-parties">Birthday Parties</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/engagements-photography">Engagements Photography</a></li>
         <li><a href="https://magictodayphotography.netlify.app/pre-wedding-shoots">Pre-Wedding Shoots</a></li>
         <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-bangalore">Wedding Photography</a></li>
-        <li><a href="#services">Newborn Sessions</a></li>
-        <li><a href="#services">Maternity and Baby Shower</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/maternity-baby-shower">Maternity and Baby Shower</a></li>
       </ul>
     </div>
 
@@ -1571,6 +1946,8 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
   var hasGsap = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
   if (hasGsap) { gsap.registerPlugin(ScrollTrigger); }
 
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   /* ---------- Custom cursor ---------- */
   var cd = document.getElementById('cd');
   var cr = document.getElementById('cr');
@@ -1593,7 +1970,6 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 
   /* ---------- Ambient canvas ---------- */
   var canvas = document.getElementById('magicCanvas');
-  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (canvas && !reduceMotion) {
     var ctx = canvas.getContext('2d');
@@ -1660,8 +2036,9 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       ctx.restore();
     };
 
+    var bokehCount = window.innerWidth < 768 ? 45 : 90;
     var bokehArr = [];
-    for (var i = 0; i < 90; i++) bokehArr.push(new Bokeh());
+    for (var i = 0; i < bokehCount; i++) bokehArr.push(new Bokeh());
     var sparkleArr = [];
 
     window.addEventListener('click', function (e) {
@@ -1743,42 +2120,52 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
     setTimeout(typeLoop, 1800);
   });
 
-  /* ---------- Scroll reveal ---------- */
-  var revealObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) {
-        e.target.classList.add('in-view');
-        revealObserver.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.12 });
+  /* ---------- Scroll reveal (with fallback) ---------- */
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
 
-  document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+    document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in-view'); });
+  }
 
   /* ---------- Counters ---------- */
-  var counterObs = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      var el = e.target;
-      var target = parseFloat(el.dataset.target);
-      var decimals = parseInt(el.dataset.decimals || '0', 10);
-      var suffix = el.dataset.suffix || '';
-      var duration = 1800;
-      var start = null;
+  if ('IntersectionObserver' in window) {
+    var counterObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        var target = parseFloat(el.dataset.target);
+        var decimals = parseInt(el.dataset.decimals || '0', 10);
+        var suffix = el.dataset.suffix || '';
+        var duration = 1800;
+        var start = null;
 
-      function step(ts) {
-        if (!start) start = ts;
-        var prog = Math.min((ts - start) / duration, 1);
-        var eased = 1 - Math.pow(1 - prog, 3);
-        el.textContent = (eased * target).toFixed(decimals) + suffix;
-        if (prog < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-      counterObs.unobserve(el);
+        function step(ts) {
+          if (!start) start = ts;
+          var prog = Math.min((ts - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - prog, 3);
+          el.textContent = (eased * target).toFixed(decimals) + suffix;
+          if (prog < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+        counterObs.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.stat-num').forEach(function (el) { counterObs.observe(el); });
+  } else {
+    document.querySelectorAll('.stat-num').forEach(function (el) {
+      el.textContent = el.dataset.target + (el.dataset.suffix || '');
     });
-  }, { threshold: 0.5 });
-
-  document.querySelectorAll('.stat-num').forEach(function (el) { counterObs.observe(el); });
+  }
 
   /* ---------- Testimonials ---------- */
   var track = document.getElementById('testimonialTrack');
@@ -1824,6 +2211,8 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
 
     track.addEventListener('mouseenter', stop);
     track.addEventListener('mouseleave', start);
+    track.addEventListener('focusin', stop);
+    track.addEventListener('focusout', start);
 
     if (!reduceMotion) start();
   }
@@ -1959,6 +2348,12 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
         waPopup.classList.remove('active');
       }
     });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && waPopup.classList.contains('active')) {
+        waPopup.classList.remove('active');
+        waBtn.focus();
+      }
+    });
     waSend.addEventListener('click', function () {
       var sel = document.querySelector('input[name="waSvc"]:checked');
       var service = sel ? sel.value : 'an event';
@@ -1994,6 +2389,13 @@ footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4re
       gsap.from(item, {
         opacity: 0, scale: 0.95, duration: 0.7, delay: i * 0.05, ease: 'power2.out',
         scrollTrigger: { trigger: item, start: 'top 92%' }
+      });
+    });
+
+    gsap.utils.toArray('.step').forEach(function (step, i) {
+      gsap.from(step, {
+        opacity: 0, y: 30, duration: 0.6, delay: i * 0.08, ease: 'power2.out',
+        scrollTrigger: { trigger: step, start: 'top 92%' }
       });
     });
   }
