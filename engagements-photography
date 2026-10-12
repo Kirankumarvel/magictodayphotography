@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Engagement Photography Bangalore | Ring Ceremony, Roka & Nischayathartham</title>
+<meta name="description" content="Engagement photography in Bangalore for ring ceremonies, roka, nischayathartham and reception coverage. Candid couple portraits and family moments. Packages from Rs 18,000. 200+ engagements covered." />
+<meta name="keywords" content="engagement photography bangalore, ring ceremony photographer bangalore, roka photography bangalore, nischayathartham photography bangalore, engagement photoshoot bangalore, candid engagement photographer bangalore, engagement photographer price bangalore, engagement reception photography" />
+<meta name="author" content="Magic Today Photography" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<!-- GEO signals -->
+<meta name="geo.region" content="IN-KA" />
+<meta name="geo.placename" content="Bengaluru, Karnataka" />
+<meta name="geo.position" content="12.9255;77.5468" />
+<meta name="ICBM" content="12.9255, 77.5468" />
+<link rel="alternate" hreflang="en-in" href="https://magictodayphotography.netlify.app/engagements-photography" />
+<link rel="alternate" hreflang="x-default" href="https://magictodayphotography.netlify.app/engagements-photography" />
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Magic Today Photography" />
+<meta property="og:locale" content="en_IN" />
+<meta property="og:title" content="Engagement Photography Bangalore | Ring Ceremony, Roka & Nischayathartham" />
+<meta property="og:description" content="Engagement photography across Bangalore for ring ceremonies, roka, nischayathartham and reception coverage. Packages from Rs 18,000." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://magictodayphotography.netlify.app/engagements-photography" />
+<meta property="og:image" content="https://magictodayphotography.netlify.app/images/hero-engagements.webp" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:alt" content="Engagement photographer covering a ring ceremony in Bangalore" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Engagement Photography Bangalore | Ring Ceremony, Roka & Nischayathartham" />
+<meta name="twitter:description" content="Engagement photography across Bangalore. Packages from Rs 18,000." />
+<meta name="twitter:image" content="https://magictodayphotography.netlify.app/images/hero-engagements.webp" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c0a09'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' fill='%23c9a96e' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+<link rel="canonical" href="https://magictodayphotography.netlify.app/engagements-photography" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E874JNHDWR"></script>
+<script>
+  globalThis.dataLayer = globalThis.dataLayer || [];
+  function gtag(){ globalThis.dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-E874JNHDWR');
+</script>
+
+<style>
+:root{
+  --ink:#0c0a09;
+  --ink-soft:#1a1714;
+  --ink-mid:#2a2520;
+  --gold:#c9a96e;
+  --gold-light:#e8c98a;
+  --gold-pale:#f5e6c8;
+  --cream:#faf7f2;
+  --white:#ffffff;
+  --muted:rgba(255,255,255,.5);
+  --muted2:rgba(255,255,255,.25);
+  --border:rgba(201,169,110,.2);
+  --glow:0 0 40px rgba(201,169,110,.3);
+}
+
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:90px;}
+body{
+  background:var(--ink);
+  color:var(--cream);
+  font-family:'Jost',sans-serif;
+  font-weight:300;
+  overflow-x:hidden;
+  cursor:none;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;}
+a{color:inherit;}
+
+/* Custom cursor */
+.cursor-dot{
+  width:8px;height:8px;background:var(--gold);border-radius:50%;
+  position:fixed;top:0;left:0;pointer-events:none;z-index:99999;
+  transform:translate(-50%,-50%);
+  transition:width .2s,height .2s,opacity .2s;
+  mix-blend-mode:difference;
+}
+.cursor-ring{
+  width:36px;height:36px;border:1px solid rgba(201,169,110,.6);border-radius:50%;
+  position:fixed;top:0;left:0;pointer-events:none;z-index:99998;
+  transform:translate(-50%,-50%);
+  transition:transform .12s ease-out,width .3s,height .3s,border-color .3s;
+}
+body:has(a:hover) .cursor-ring,
+body:has(button:hover) .cursor-ring{width:52px;height:52px;border-color:var(--gold);}
+
+#magicCanvas{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.6;}
+
+.noise{
+  position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.4;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Header */
+header{
+  position:fixed;top:0;left:0;width:100%;z-index:900;
+  padding:1.4rem 5%;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:background .5s,border-color .5s,padding .4s;
+}
+header.scrolled{
+  background:rgba(12,10,9,.92);
+  -webkit-backdrop-filter:blur(20px);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  padding:1rem 5%;
+}
+.logo{
+  display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--cream);
+  font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;letter-spacing:.02em;
+}
+.logo-img{width:70px;height:70px;object-fit:contain;border-radius:4px;flex:0 0 70px;}
+.logo-mark{
+  width:38px;height:38px;flex:0 0 38px;border:1.5px solid var(--gold);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.8rem;font-weight:700;color:var(--gold);
+  font-family:'Jost',sans-serif;letter-spacing:.05em;
+  position:relative;overflow:hidden;
+}
+.logo-mark::after{
+  content:'';position:absolute;inset:-2px;
+  background:linear-gradient(135deg,transparent 40%,rgba(201,169,110,.3) 60%,transparent 70%);
+  animation:shimmerLogo 3s infinite;
+}
+@keyframes shimmerLogo{
+  0%{transform:translateX(-100%);}
+  100%{transform:translateX(100%);}
+}
+nav ul{display:flex;gap:1.9rem;list-style:none;}
+nav a{
+  color:rgba(255,255,255,.75);text-decoration:none;
+  font-size:.8rem;font-weight:400;letter-spacing:.1em;text-transform:uppercase;
+  transition:color .3s;position:relative;white-space:nowrap;
+}
+nav a::after{
+  content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;
+  background:var(--gold);
+  transition:width .35s cubic-bezier(.25,1,.5,1);
+}
+nav a:hover{color:var(--gold);}
+nav a:hover::after{width:100%;}
+.hamburger{display:none;background:none;border:none;color:var(--cream);font-size:1.6rem;cursor:pointer;}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:.5rem;
+  padding:.9rem 2.4rem;
+  font-family:'Jost',sans-serif;font-size:.8rem;font-weight:500;
+  letter-spacing:.15em;text-transform:uppercase;text-decoration:none;
+  border:none;cursor:pointer;position:relative;overflow:hidden;
+  transition:all .4s;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--ink);}
+.btn-gold::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,transparent 30%,rgba(255,255,255,.4) 50%,transparent 70%);
+  transform:translateX(-120%);transition:transform .5s;
+}
+.btn-gold:hover::before{transform:translateX(120%);}
+.btn-ghost{background:transparent;color:var(--cream);border:1px solid rgba(255,255,255,.35);}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold);box-shadow:0 0 20px rgba(201,169,110,.15);}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.hero-bg{position:absolute;inset:0;will-change:transform;background:url('/images/hero-engagements.webp') center/cover no-repeat;}
+.hero-bg::after{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 100%,rgba(201,169,110,.12) 0%,transparent 60%),
+    linear-gradient(to bottom,rgba(12,10,9,.25) 0%,rgba(12,10,9,.65) 60%,rgba(12,10,9,.96) 100%);
+}
+.hero-content{position:relative;z-index:10;text-align:center;padding:7rem 2rem 4rem;max-width:880px;}
+.hero-eyebrow{
+  display:inline-block;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.5rem;opacity:0;transform:translateY(20px);
+}
+.hero h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.5rem,6.4vw,5.2rem);
+  font-weight:300;line-height:1.06;color:var(--white);
+  margin-bottom:1.6rem;opacity:0;
+}
+.hero h1 em{font-style:italic;color:var(--gold-light);font-weight:300;}
+.hero-sub{
+  font-size:1.15rem;color:var(--gold-light);
+  margin-bottom:1rem;letter-spacing:.02em;opacity:0;min-height:1.6em;
+}
+.hero-line{
+  font-size:1rem;color:rgba(255,255,255,.68);line-height:1.8;
+  max-width:620px;margin:0 auto 2.8rem;
+}
+.hero-cta{display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;opacity:0;transform:translateY(20px);}
+.scroll-hint{
+  position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:.5rem;
+  color:rgba(255,255,255,.4);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;z-index:10;
+}
+.scroll-line{
+  width:1px;height:46px;
+  background:linear-gradient(to bottom,transparent,var(--gold),transparent);
+  animation:scrollPulse 2s ease-in-out infinite;
+}
+@keyframes scrollPulse{
+  0%,100%{opacity:.3;transform:scaleY(1);}
+  50%{opacity:1;transform:scaleY(1.1);}
+}
+.type-cursor{color:var(--gold);animation:blink 1s step-end infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+
+/* Sections */
+section{position:relative;overflow:hidden;}
+.section-inner{width:90%;max-width:1200px;margin:0 auto;padding:7rem 0;}
+.section-tag{
+  display:inline-block;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1rem;
+}
+.section-tag::before{
+  content:'';display:inline-block;width:22px;height:1px;
+  background:var(--gold);margin-right:.7rem;vertical-align:middle;
+}
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.2rem,4.6vw,3.6rem);
+  font-weight:300;line-height:1.12;color:var(--white);margin-bottom:1.5rem;
+}
+.section-title em{font-style:italic;color:var(--gold-light);}
+.section-lead{font-size:1.02rem;color:rgba(255,255,255,.58);line-height:1.85;max-width:560px;}
+.divider{width:60px;height:1px;background:linear-gradient(to right,var(--gold),transparent);margin:2rem 0;}
+
+.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;animation:orbFloat 8s ease-in-out infinite alternate;}
+@keyframes orbFloat{
+  from{transform:translate(0,0) scale(1);}
+  to{transform:translate(20px,-30px) scale(1.1);}
+}
+
+/* About */
+#about{background:var(--ink-soft);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.about-img-wrap{position:relative;}
+.about-img-wrap img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;}
+.about-img-frame{
+  position:absolute;top:-16px;left:-16px;right:16px;bottom:16px;
+  border:1px solid var(--border);pointer-events:none;z-index:-1;
+}
+.about-img-label{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(12,10,9,.95),transparent);
+  padding:2.5rem 2rem 1.5rem;
+  font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:var(--gold-light);
+}
+.stats-row{display:flex;gap:3rem;margin-top:3rem;flex-wrap:wrap;}
+.stat-num{
+  font-family:'Cormorant Garamond',serif;font-size:2.9rem;font-weight:600;
+  color:var(--gold);line-height:1;display:block;
+}
+.stat-label{
+  font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(255,255,255,.45);margin-top:.35rem;display:block;
+}
+
+/* Cards grid */
+.services-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.5px;margin-top:4rem;border:1px solid var(--border);
+}
+.svc-card{
+  position:relative;padding:3rem 2.5rem;background:var(--ink-soft);
+  overflow:hidden;transition:background .4s;
+}
+.svc-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(to right,transparent,var(--gold),transparent);
+  transform:scaleX(0);transition:transform .5s;
+}
+.svc-card:hover::before{transform:scaleX(1);}
+.svc-card:hover{background:var(--ink-mid);}
+.svc-num{
+  font-family:'Cormorant Garamond',serif;font-size:3.2rem;font-weight:300;
+  color:rgba(201,169,110,.12);line-height:1;margin-bottom:1rem;transition:color .4s;
+}
+.svc-card:hover .svc-num{color:rgba(201,169,110,.25);}
+.svc-icon{font-size:1.5rem;color:var(--gold);margin-bottom:1rem;display:block;transition:transform .3s;}
+.svc-card:hover .svc-icon{transform:translateY(-4px);}
+.svc-title{
+  font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600;
+  color:var(--white);margin-bottom:.8rem;
+}
+.svc-desc{font-size:.92rem;color:rgba(255,255,255,.52);line-height:1.75;}
+.svc-price{color:var(--gold);margin:1rem 0 0;font-weight:600;font-size:.95rem;}
+.svc-link{
+  display:inline-block;margin-top:1.2rem;font-size:.72rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold);text-decoration:none;
+}
+.svc-link:hover{text-decoration:underline;}
+
+/* Services */
+#services{background:var(--ink);}
+/* Packages */
+#packages{background:var(--ink-soft);}
+
+/* Gallery */
+#gallery{background:var(--ink);}
+.gallery-grid{
+  display:grid;grid-template-columns:repeat(12,1fr);
+  grid-template-rows:repeat(2,270px);gap:12px;margin-top:3rem;
+}
+.gal-item{position:relative;overflow:hidden;background:var(--ink-mid);}
+.gal-item:nth-child(1){grid-column:1/6;grid-row:1/2;}
+.gal-item:nth-child(2){grid-column:6/9;grid-row:1/2;}
+.gal-item:nth-child(3){grid-column:9/13;grid-row:1/3;}
+.gal-item:nth-child(4){grid-column:1/4;grid-row:2/3;}
+.gal-item:nth-child(5){grid-column:4/6;grid-row:2/3;}
+.gal-item:nth-child(6){grid-column:6/9;grid-row:2/3;}
+.gal-item img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .7s cubic-bezier(.25,1,.5,1),filter .5s;
+  filter:brightness(.85) saturate(.9);
+}
+.gal-item:hover img{transform:scale(1.07);filter:brightness(1) saturate(1.15);}
+.gal-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(12,10,9,.85) 0%,transparent 55%);
+  opacity:0;transition:opacity .4s;
+  display:flex;align-items:flex-end;padding:1.4rem;
+  color:var(--white);font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;
+}
+.gal-item:hover .gal-overlay{opacity:1;}
+.gal-item::after{
+  content:'';position:absolute;inset:0;
+  border:1px solid rgba(201,169,110,0);transition:border-color .4s;pointer-events:none;
+}
+.gal-item:hover::after{border-color:rgba(201,169,110,.35);}
+
+/* Testimonials */
+#testimonials{background:var(--ink-soft);}
+.testimonial-slider-wrap{margin-top:2.5rem;position:relative;}
+.testimonial-viewport{
+  overflow:hidden;border:1px solid var(--border);
+  background:linear-gradient(160deg,rgba(26,23,20,.95),rgba(12,10,9,.95));
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
+.testimonial-track{
+  display:flex;
+  transition:transform .65s cubic-bezier(.22,1,.36,1);
+}
+.testimonial-slide{min-width:100%;padding:3rem 2.6rem;position:relative;}
+.testi-quote-icon{
+  font-size:3.4rem;line-height:.7;color:var(--gold);
+  font-family:'Cormorant Garamond',serif;margin-bottom:1rem;
+}
+.single-testimonial-stars{color:var(--gold);font-size:.9rem;letter-spacing:.12em;margin-bottom:1rem;}
+.single-testi-text{color:rgba(255,255,255,.78);line-height:1.85;font-style:italic;max-width:880px;}
+.single-testi-name{
+  margin-top:1.4rem;font-family:'Cormorant Garamond',serif;
+  font-size:1.15rem;color:var(--gold-light);font-weight:600;
+}
+.single-testi-role{margin-top:.25rem;font-size:.82rem;color:rgba(255,255,255,.45);letter-spacing:.04em;}
+.testimonial-nav{margin-top:1.2rem;display:flex;align-items:center;justify-content:center;gap:.8rem;}
+.testi-nav-btn{
+  width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--border);background:rgba(255,255,255,.02);
+  color:var(--gold-light);cursor:pointer;transition:all .3s ease;
+}
+.testi-nav-btn:hover{
+  border-color:var(--gold);background:rgba(201,169,110,.12);
+  box-shadow:0 0 18px rgba(201,169,110,.25);
+}
+.testi-dots{display:flex;align-items:center;gap:.45rem;}
+.testi-dot{
+  width:8px;height:8px;border-radius:50%;
+  background:rgba(255,255,255,.25);border:none;cursor:pointer;
+  transition:all .3s ease;padding:0;
+}
+.testi-dot.active{width:22px;border-radius:999px;background:var(--gold);}
+
+/* FAQ */
+#faq{background:var(--ink);}
+.faq-cols{display:grid;grid-template-columns:1fr 1.6fr;gap:6rem;align-items:start;}
+.faq-list{margin-top:2rem;}
+.faq-item{border-bottom:1px solid rgba(255,255,255,.07);overflow:hidden;transition:border-color .3s;}
+.faq-item.open{border-color:rgba(201,169,110,.3);}
+.faq-q{
+  width:100%;background:none;border:none;color:var(--cream);
+  font-family:'Jost',sans-serif;font-size:.98rem;font-weight:400;text-align:left;
+  padding:1.4rem 0;display:flex;justify-content:space-between;align-items:center;
+  gap:1rem;cursor:pointer;transition:color .3s;line-height:1.5;
+}
+.faq-q:hover,.faq-item.open .faq-q{color:var(--gold);}
+.faq-icon{
+  width:28px;height:28px;flex:0 0 28px;
+  border:1px solid rgba(255,255,255,.2);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.7rem;color:var(--gold);
+  transition:background .3s,border-color .3s,transform .4s;
+}
+.faq-item.open .faq-icon{
+  background:var(--gold);color:var(--ink);
+  border-color:var(--gold);transform:rotate(45deg);
+}
+.faq-a{
+  max-height:0;overflow:hidden;
+  font-size:.92rem;color:rgba(255,255,255,.55);line-height:1.85;
+  transition:max-height .45s cubic-bezier(.4,0,.2,1),padding .45s;
+}
+.faq-item.open .faq-a{max-height:400px;padding-bottom:1.4rem;}
+
+/* Contact */
+#contact{background:var(--ink-soft);position:relative;}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;align-items:start;}
+.contact-info-item{display:flex;gap:1.2rem;align-items:flex-start;margin-bottom:2rem;}
+.contact-icon-box{
+  width:44px;height:44px;flex:0 0 44px;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1rem;
+}
+.contact-info-label{
+  font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(255,255,255,.55);margin-bottom:.3rem;
+}
+.contact-info-val{font-size:.95rem;color:rgba(255,255,255,.88);line-height:1.6;}
+.contact-info-val a{color:inherit;text-decoration:none;}
+.contact-info-val a:hover{color:var(--gold);text-decoration:underline;}
+
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.form-group{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem;}
+.form-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.62);}
+.form-input,.form-select,.form-textarea{
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  color:var(--cream);padding:.9rem 1.2rem;
+  font-family:'Jost',sans-serif;font-size:.95rem;outline:none;
+  transition:border-color .3s,background .3s,box-shadow .3s;width:100%;
+}
+.form-input:focus,.form-select:focus,.form-textarea:focus{
+  border-color:var(--gold);background:rgba(201,169,110,.04);
+  box-shadow:0 0 20px rgba(201,169,110,.08);
+}
+.form-select option{background:var(--ink);color:var(--cream);}
+.form-textarea{min-height:120px;resize:vertical;}
+
+/* Map + reviews */
+.map-reviews{padding:2.5rem 0;}
+.map-reviews-inner{
+  max-width:1180px;margin:0 auto;padding:0 1.5rem;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1.25rem;align-items:stretch;
+}
+.map-card{
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(212,175,55,.22);
+  border-radius:18px;overflow:hidden;
+  box-shadow:0 18px 40px rgba(0,0,0,.18);
+}
+.map-card-head{padding:1rem 1.1rem .9rem;}
+.map-card-title{
+  display:flex;align-items:center;gap:.65rem;color:#d4af37;
+  font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:.8rem;
+}
+.map-card-head p{margin:.55rem 0 0;color:rgba(255,255,255,.8);line-height:1.65;font-size:.9rem;}
+.map-embed{position:relative;padding-top:62%;background:#1a1a1a;}
+.map-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(8%) contrast(1.05) saturate(.9);}
+
+.review-card{
+  height:100%;
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.04));
+  border:1px solid rgba(212,175,55,.28);border-radius:18px;
+  padding:1.35rem;display:flex;flex-direction:column;justify-content:center;
+  gap:1rem;box-shadow:0 18px 40px rgba(0,0,0,.18);
+  text-decoration:none;transition:border-color .3s,transform .3s;
+}
+.review-card:hover{border-color:rgba(212,175,55,.6);transform:translateY(-3px);}
+.review-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.review-kicker{color:#d4af37;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.8rem;}
+.review-head{color:#fff;font-size:1.2rem;font-weight:700;margin-top:.35rem;}
+.review-badge{
+  width:58px;height:58px;flex:0 0 58px;border-radius:50%;
+  background:radial-gradient(circle at 30% 30%,#fff 0%,#f8e8b0 35%,#d4af37 100%);
+  display:grid;place-items:center;color:#111;font-size:1.4rem;
+  box-shadow:0 10px 22px rgba(212,175,55,.35);
+}
+.review-stars{display:flex;align-items:center;gap:.4rem;color:#f6d97a;font-size:1rem;}
+.review-card p{margin:0;color:rgba(255,255,255,.84);line-height:1.65;font-size:.92rem;}
+.review-cta{
+  display:inline-flex;align-items:center;gap:.5rem;
+  color:#111;background:#d4af37;padding:.85rem 1rem;
+  border-radius:999px;font-weight:700;width:fit-content;font-size:.85rem;
+}
+
+/* Footer */
+footer{background:var(--ink-soft);border-top:1px solid var(--border);padding:4rem 5% 2rem;}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;max-width:1200px;margin:0 auto;}
+.footer-title{
+  font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1.2rem;
+}
+.footer-col p{font-size:.88rem;color:rgba(255,255,255,.6);line-height:1.85;}
+.footer-col ul{list-style:none;}
+.footer-col ul li{margin-bottom:.6rem;}
+.footer-col ul li a{color:rgba(255,255,255,.68);text-decoration:none;font-size:.88rem;transition:color .2s;}
+.footer-col ul li a:hover{color:var(--gold);}
+.footer-logo{width:70px;height:70px;object-fit:contain;margin-bottom:1rem;display:block;}
+.social-row{display:flex;gap:1rem;margin-top:1.5rem;}
+.social-btn{
+  width:38px;height:38px;border:1px solid rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.5);text-decoration:none;font-size:.95rem;
+  transition:border-color .3s,color .3s,box-shadow .3s;
+}
+.social-btn:hover{border-color:var(--gold);color:var(--gold);box-shadow:0 0 15px rgba(201,169,110,.2);}
+.footer-bottom{
+  max-width:1200px;margin:3rem auto 0;padding-top:1.5rem;
+  border-top:1px solid rgba(255,255,255,.06);
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  font-size:.8rem;color:rgba(255,255,255,.55);flex-wrap:wrap;
+}
+.footer-bottom a{color:#ffd27a;text-decoration:underline;}
+
+/* Floats */
+.wa-float{position:fixed;bottom:2rem;right:2rem;z-index:800;}
+.wa-btn{
+  width:56px;height:56px;background:#25D366;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.6rem;
+  cursor:pointer;box-shadow:0 4px 20px rgba(37,211,102,.4);
+  animation:waPulse 2.5s infinite;transition:transform .3s;
+  border:none;
+}
+.wa-btn:hover{transform:scale(1.1);animation:none;}
+@keyframes waPulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.6);}
+  70%{box-shadow:0 0 0 14px rgba(37,211,102,0);}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+}
+.wa-popup{
+  position:absolute;bottom:68px;right:0;width:300px;
+  background:var(--ink-mid);border:1px solid var(--border);padding:1.6rem;
+  display:none;flex-direction:column;gap:.8rem;
+  box-shadow:0 20px 50px rgba(0,0,0,.5),var(--glow);
+}
+.wa-popup.active{display:flex;}
+.wa-popup h5{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:var(--white);margin-bottom:.2rem;}
+.wa-popup p{font-size:.82rem;color:rgba(255,255,255,.45);margin-bottom:.4rem;}
+.wa-opt{
+  display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);
+  cursor:pointer;font-size:.85rem;color:rgba(255,255,255,.72);
+  transition:background .2s,border-color .2s;
+}
+.wa-opt:hover,.wa-opt:has(input:checked){
+  background:rgba(201,169,110,.1);border-color:rgba(201,169,110,.4);color:var(--gold-light);
+}
+.wa-opt input{accent-color:var(--gold);}
+.wa-send{
+  background:#25D366;color:#fff;border:none;padding:.75rem;
+  font-size:.85rem;font-family:'Jost',sans-serif;font-weight:500;cursor:pointer;
+  transition:box-shadow .3s;
+}
+.wa-send:hover{box-shadow:0 0 20px rgba(37,211,102,.4);}
+.wa-close{
+  position:absolute;top:.6rem;right:.8rem;background:none;border:none;
+  color:rgba(255,255,255,.35);font-size:1.1rem;cursor:pointer;
+}
+
+.ig-float{
+  position:fixed;bottom:6.5rem;right:2rem;z-index:800;
+  width:50px;height:50px;
+  background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  color:#fff;font-size:1.35rem;text-decoration:none;
+  box-shadow:0 4px 18px rgba(220,39,67,.4);
+  transition:transform .3s,box-shadow .3s;
+  animation:igPulse 3s infinite;
+}
+.ig-float:hover{transform:scale(1.12);box-shadow:0 6px 26px rgba(220,39,67,.6);animation:none;}
+@keyframes igPulse{
+  0%{box-shadow:0 0 0 0 rgba(220,39,67,.5);}
+  70%{box-shadow:0 0 0 12px rgba(220,39,67,0);}
+  100%{box-shadow:0 0 0 0 rgba(220,39,67,0);}
+}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(40px);}
+.reveal.in-view{animation:revealIn .8s cubic-bezier(.16,1,.3,1) forwards;}
+@keyframes revealIn{to{opacity:1;transform:none;}}
+
+/* Mobile */
+@media (max-width:900px){
+  nav ul{display:none;}
+  nav ul.open{
+    display:flex;flex-direction:column;position:fixed;inset:0;top:70px;
+    background:rgba(12,10,9,.97);padding:3rem 5%;gap:2rem;z-index:800;
+  }
+  nav ul.open a{font-size:1.35rem;}
+  .hamburger{display:block;}
+  .about-grid,.contact-grid,.faq-cols{grid-template-columns:1fr;gap:3rem;}
+  .services-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+  .gal-item{grid-column:auto !important;grid-row:auto !important;height:220px;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .form-row{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;gap:.8rem;text-align:center;}
+  .cursor-dot,.cursor-ring{display:none;}
+  body{cursor:auto;}
+  .logo{font-size:1.1rem;}
+  .logo-img{width:50px;height:50px;flex:0 0 50px;}
+}
+@media (pointer:coarse){
+  .cursor-dot,.cursor-ring{display:none;}
+  body{cursor:auto;}
+}
+@media (max-width:560px){
+  .gallery-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .stats-row{gap:2rem;}
+  .testimonial-slide{padding:2.2rem 1.5rem;}
+  .svc-card{padding:2.4rem 1.6rem;}
+}
+</style>
+
+<!-- Schema: SEO + AEO + GEO + AI Search -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["PhotographyBusiness", "LocalBusiness"],
+      "@id": "https://magictodayphotography.netlify.app/#business",
+      "name": "Magic Today Photography",
+      "alternateName": "Magic Today",
+      "description": "Engagement photography company in Bangalore covering ring ceremonies, roka, nischayathartham, and engagement receptions across the city since 2019.",
+      "url": "https://magictodayphotography.netlify.app/",
+      "telephone": "+91-80957-67131",
+      "email": "info.magictoday@gmail.com",
+      "priceRange": "₹18,000 - ₹75,000",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "UPI, Bank Transfer, Cash",
+      "image": [
+        "https://magictodayphotography.netlify.app/images/hero-engagements.webp",
+        "https://magictodayphotography.netlify.app/images/about-engagements.webp"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://magictodayphotography.netlify.app/images/logo.jpg"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "131, 2nd Cross Road, 5th Block, 3rd Phase, Banashankari 3rd Stage",
+        "addressLocality": "Bengaluru",
+        "addressRegion": "Karnataka",
+        "postalCode": "560085",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.9255,
+        "longitude": 77.5468
+      },
+      "hasMap": "https://maps.google.com/maps?q=Magic+Today+Photography,+5th+block,+3rd+phase,+131,+2nd+Cross+Rd,+Banashankari+3rd+Stage,+Bengaluru",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "17:00"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Bengaluru" },
+        { "@type": "AdministrativeArea", "name": "Karnataka" },
+        { "@type": "Place", "name": "Jayanagar, Bengaluru" },
+        { "@type": "Place", "name": "Indiranagar, Bengaluru" },
+        { "@type": "Place", "name": "Koramangala, Bengaluru" },
+        { "@type": "Place", "name": "Whitefield, Bengaluru" },
+        { "@type": "Place", "name": "Rajajinagar, Bengaluru" },
+        { "@type": "Place", "name": "Malleshwaram, Bengaluru" },
+        { "@type": "Place", "name": "Banashankari, Bengaluru" },
+        { "@type": "Place", "name": "Electronic City, Bengaluru" },
+        { "@type": "Place", "name": "Hebbal, Bengaluru" }
+      ],
+      "knowsAbout": [
+        "Engagement photography",
+        "Ring ceremony photography",
+        "Roka photography",
+        "Nischayathartham photography",
+        "Candid couple portraits",
+        "Engagement reception coverage",
+        "Family group photography at engagements"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/magictodayphotography/",
+        "https://linkedin.com/company/magic-today-photography",
+        "https://share.google/4XcAb1onR3W3zPegy"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "96"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Nikhil and Priyanka" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Our engagement at a banquet hall in Jayanagar was covered beautifully. The candid shots of our families meeting for the first time are priceless. The posed group photos were clean and quick."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Ananya and Arjun" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "We wanted candid, not posed. That is exactly what we got at our ring ceremony in Indiranagar. The team knew the light and the timing, and the photos feel like us."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Shruti and Karthik" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "The nischayathartham coverage was exactly what we hoped for. Every ritual, every family member, every laugh. The gallery arrived in nine days and we were not chasing anyone."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Meera and Surya" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "We booked a combined engagement and pre-wedding package. Same photographer for both, and the storytelling across the two shoots feels seamless. Worth every rupee."
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Engagement Photography Packages in Bangalore",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Essential Engagement Coverage",
+            "description": "3-hour coverage for intimate ring ceremonies, roka, and nischayathartham at home or a small venue. 80+ edited photos, online gallery.",
+            "price": "18000",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://magictodayphotography.netlify.app/engagements-photography#packages"
+          },
+          {
+            "@type": "Offer",
+            "name": "Signature Engagement Coverage",
+            "description": "5-hour coverage for engagement ceremonies at banquet halls and hotels. 150+ edited photos, two photographers, candid couple portraits, family groups.",
+            "price": "32000",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://magictodayphotography.netlify.app/engagements-photography#packages"
+          },
+          {
+            "@type": "Offer",
+            "name": "Engagement + Reception Coverage",
+            "description": "8-hour full-day coverage for engagement ceremony and reception. 300+ edited photos, two photographers, highlight reel, same-day edit option.",
+            "price": "55000",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://magictodayphotography.netlify.app/engagements-photography#packages"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://magictodayphotography.netlify.app/#website",
+      "url": "https://magictodayphotography.netlify.app/",
+      "name": "Magic Today Photography",
+      "inLanguage": "en-IN",
+      "publisher": { "@id": "https://magictodayphotography.netlify.app/#business" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://magictodayphotography.netlify.app/engagements-photography#webpage",
+      "url": "https://magictodayphotography.netlify.app/engagements-photography",
+      "name": "Engagement Photography Bangalore | Ring Ceremony, Roka & Nischayathartham",
+      "description": "Engagement photography in Bangalore for ring ceremonies, roka, nischayathartham and reception coverage. Candid couple portraits and family moments. Packages from Rs 18,000.",
+      "isPartOf": { "@id": "https://magictodayphotography.netlify.app/#website" },
+      "about": { "@id": "https://magictodayphotography.netlify.app/#business" },
+      "inLanguage": "en-IN",
+      "datePublished": "2024-01-15",
+      "dateModified": "2026-10-12",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://magictodayphotography.netlify.app/images/hero-engagements.webp",
+        "caption": "Engagement photographer covering a ring ceremony in Bangalore"
+      },
+      "breadcrumb": { "@id": "https://magictodayphotography.netlify.app/engagements-photography#breadcrumb" },
+      "mainEntity": { "@id": "https://magictodayphotography.netlify.app/engagements-photography#service" },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero h1", ".hero-line", ".section-lead", ".faq-q", ".faq-a p"]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://magictodayphotography.netlify.app/engagements-photography#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://magictodayphotography.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Engagement Photography in Bangalore",
+          "item": "https://magictodayphotography.netlify.app/engagements-photography"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://magictodayphotography.netlify.app/engagements-photography#service",
+      "name": "Engagement Photography in Bangalore",
+      "serviceType": "Engagement photography",
+      "description": "Engagement photography across Bangalore. Ring ceremonies, roka, nischayathartham, and engagement receptions covered with candid and traditional photography.",
+      "provider": { "@id": "https://magictodayphotography.netlify.app/#business" },
+      "areaServed": [
+        { "@type": "City", "name": "Bengaluru" },
+        { "@type": "AdministrativeArea", "name": "Karnataka" }
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Couples and families planning engagement ceremonies in Bangalore"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "INR",
+        "lowPrice": "18000",
+        "highPrice": "55000",
+        "offerCount": "3",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://magictodayphotography.netlify.app/engagements-photography#howto-booking",
+      "name": "How to Book Engagement Photography in Bangalore",
+      "description": "Simple steps to book engagement ceremony coverage with Magic Today Photography in Bangalore.",
+      "totalTime": "P3D",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Share your ceremony date and venue",
+          "text": "Call or WhatsApp +91 80957 67131 with your engagement date, venue, and approximate guest count. We will suggest the right coverage."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Review packages and sample galleries",
+          "text": "We share complete engagement galleries so you can see how we handle rituals, family moments, and candid couple portraits."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Confirm with a 30% advance",
+          "text": "A 30% advance locks your date. The balance is due before the ceremony."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Plan the ceremony timeline",
+          "text": "We coordinate with your family on the ring exchange timing, the rituals, and the family group photos so nothing is missed."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://magictodayphotography.netlify.app/engagements-photography#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does engagement photography in Bangalore cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our engagement packages start at Rs 18,000 for three hours of coverage at a home or small venue with 80 or more edited photographs. The Signature package is Rs 32,000 for five hours with two photographers, and the Engagement + Reception package is Rs 55,000 for eight hours of coverage. GST is charged separately. Custom quotes are available for destination engagements and multi-day celebrations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between engagement photography and pre-wedding photography?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Engagement photography covers the actual ceremony — the ring exchange, roka, nischayathartham, and the family gathering around it. Pre-wedding photography is a separate couple shoot, usually done a few months before the wedding, focused on portraits and storytelling. We offer both, and many couples book them together."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cover roka and nischayathartham ceremonies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We cover roka, nischayathartham, and all regional engagement variations. We photograph the rituals, the family interactions, the ring exchange, and the candid moments around the ceremony. If there are specific rituals you want covered, share the sequence with us beforehand."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should we book an engagement photographer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One to two months is comfortable. Auspicious dates cluster during certain months, so if you have a specific muhurtham, tell us early. If your date is close, still message us. We sometimes have last-minute openings on weekday evenings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many photographers will be at our engagement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For small ring ceremonies at home, one photographer is usually enough. The Signature package includes two photographers who can split between the ceremony and the family moments. Larger engagements with multiple rituals and over 100 guests usually need two or three photographers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you cover the engagement at our home?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Home engagements are common in Bangalore and we shoot them often. We work around the space, use window light where possible, and keep a small setup so the room does not feel crowded."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you photograph family groups at engagements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Family group photos are a big part of engagement coverage. We work from a list you share beforehand so the groups move quickly and no one is waiting around. Most family photo sessions finish in 20 to 30 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you shoot video along with photos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We have a separate video team for engagement highlight films, ring exchange close-ups, and family messages. You can book photo-only, video-only, or a combined package. Combined bookings usually get a better rate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How soon do we receive the engagement photos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You get a set of preview images within 48 hours. The full edited gallery is delivered in seven to ten working days. If you need images for a save-the-date announcement or social media, tell us in advance and we will plan for it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we do a couple portrait session along with the engagement ceremony?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many couples want a short portrait session on the same day or the day after, while the outfits and styling are fresh. We can add a one-hour portrait session to any engagement package, either at the venue or at a nearby location."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should we wear for the engagement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Traditional wear photographs beautifully, especially at ceremony settings. For the couple portrait session, many couples choose one traditional outfit and one contemporary outfit. We send a short style guide with reference images once you book."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer combined engagement and wedding packages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Booking engagement and wedding coverage together gets you a better rate and the same photographer across both events. Many couples also add a pre-wedding shoot to the package."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you charge extra for travel within Bangalore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Travel within city limits is included in all packages. For engagements outside Bangalore, we charge actual travel and stay costs, which we will quote upfront."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should we prepare before the photographer arrives?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Have the ring exchange timing confirmed, let us know when the decor is fully set, and share the list of family groups you want photographed. If there are specific rituals or moments you want covered, tell us two days ahead. We will work around your schedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you photograph interfaith and same-sex engagements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We photograph all couples with the same care and the same approach. Tell us about your ceremony and we will plan the coverage around it."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Event",
+      "@id": "https://magictodayphotography.netlify.app/engagements-photography#event-type",
+      "name": "Engagement Ceremonies Covered in Bangalore",
+      "description": "Types of engagement ceremonies Magic Today Photography covers across Bangalore, including ring ceremonies, roka, nischayathartham, and engagement receptions.",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": "Bangalore, Karnataka",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bengaluru",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        }
+      },
+      "organizer": { "@id": "https://magictodayphotography.netlify.app/#business" },
+      "offers": {
+        "@type": "Offer",
+        "price": "18000",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://magictodayphotography.netlify.app/engagements-photography#contact"
+      }
+    },
+    {
+      "@type": "ImageGallery",
+      "@id": "https://magictodayphotography.netlify.app/engagements-photography#gallery",
+      "name": "Engagement Photography Portfolio - Bangalore",
+      "description": "Recent engagement photographs shot across Bangalore by Magic Today Photography.",
+      "image": [
+        "https://magictodayphotography.netlify.app/images/gallery-engagement-01.webp",
+        "https://magictodayphotography.netlify.app/images/gallery-engagement-02.webp",
+        "https://magictodayphotography.netlify.app/images/gallery-engagement-03.webp",
+        "https://magictodayphotography.netlify.app/images/gallery-engagement-04.webp",
+        "https://magictodayphotography.netlify.app/images/gallery-engagement-05.webp",
+        "https://magictodayphotography.netlify.app/images/gallery-engagement-06.webp"
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+
+<div class="cursor-dot" id="cd"></div>
+<div class="cursor-ring" id="cr"></div>
+<canvas id="magicCanvas" aria-hidden="true"></canvas>
+<div class="noise" aria-hidden="true"></div>
+
+<noscript>
+  <style>
+    .reveal{opacity:1 !important;transform:none !important;}
+    .hero-eyebrow,.hero h1,.hero-sub,.hero-cta{opacity:1 !important;transform:none !important;}
+  </style>
+</noscript>
+
+<!-- Header -->
+<header id="header">
+  <a href="https://magictodayphotography.netlify.app/" class="logo" aria-label="Magic Today Photography home">
+    <img src="/images/logo.jpg" alt="Magic Today Photography logo" title="Magic Today Photography - engagement photographer Bangalore" class="logo-img" width="70" height="70" />
+    Magic Today Photography
+  </a>
+  <button class="hamburger" id="ham" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navList">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </button>
+  <nav aria-label="Main navigation">
+    <ul id="navList">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Book Now</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow" id="heroEye">Engagement Photography in Bangalore</p>
+    <h1 id="heroH1">Engagement Photography in Bangalore - <em>Ring Ceremony, Roka, Nischayathartham</em></h1>
+    <p class="hero-sub" id="heroSub"><span id="typeEl"></span><span class="type-cursor" aria-hidden="true">|</span></p>
+    <p class="hero-line">The ring sliding onto a finger. A grandmother's eyes filling up. The first time both families sit together and laugh. These moments happen once. We are there to hold them still.</p>
+    <div class="hero-cta" id="heroCta">
+      <a href="#packages" class="btn btn-gold">See Packages <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      <a href="#contact" class="btn btn-ghost">Book Your Engagement</a>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="orb" style="width:400px;height:400px;background:radial-gradient(circle,rgba(201,169,110,.08),transparent);top:-100px;right:-100px;animation-delay:-3s;" aria-hidden="true"></div>
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="/images/about-engagements.webp"
+             alt="Engagement photographer covering a ring ceremony in Bangalore"
+             title="Engagement photography at a ring ceremony in Bangalore"
+             width="1000" height="1333" loading="lazy" decoding="async" />
+        <div class="about-img-frame" aria-hidden="true"></div>
+        <div class="about-img-label">"An engagement is the first time two families become one. We photograph it like it matters."</div>
+      </div>
+      <div>
+        <p class="section-tag reveal" style="animation-delay:.1s">Why Couples Book Us</p>
+        <h2 class="section-title reveal" style="animation-delay:.15s">Your Engagement Deserves <br /><em>More Than Snapshots</em></h2>
+        <div class="divider reveal" style="animation-delay:.2s"></div>
+        <p class="section-lead reveal" style="animation-delay:.25s">
+          An engagement photographer has one job: to be in the right place at the right time without becoming part of the ceremony. That means knowing when the ring exchange begins, where the light falls in a banquet hall, and how to photograph a family meeting without disrupting the moment. It is less about gear and more about reading a room.
+        </p>
+        <p class="section-lead reveal" style="animation-delay:.3s;margin-top:.8rem;">
+          Since 2019 we have covered more than 200 engagement ceremonies across Bangalore. Ring ceremonies at homes in Jayanagar. Roka functions in banquet halls in Indiranagar. Nischayathartham in Koramangala. Receptions in Whitefield. Every ceremony has its own rhythm, and we have learned to move with it.
+        </p>
+        <div class="stats-row">
+          <div class="stat-item reveal" style="animation-delay:.35s">
+            <span class="stat-num" data-target="200" data-suffix="+">0</span>
+            <span class="stat-label">Engagements covered</span>
+          </div>
+          <div class="stat-item reveal" style="animation-delay:.4s">
+            <span class="stat-num" data-target="4.9" data-decimals="1">0</span>
+            <span class="stat-label">Google rating</span>
+          </div>
+          <div class="stat-item reveal" style="animation-delay:.45s">
+            <span class="stat-num" data-target="48" data-suffix="hrs">0</span>
+            <span class="stat-label">Preview delivery</span>
+          </div>
+        </div>
+        <div class="reveal" style="animation-delay:.5s;margin-top:2.5rem;">
+          <a href="#packages" class="btn btn-gold">View Engagement Packages <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="section-inner">
+    <p class="section-tag">What We Cover</p>
+    <h2 class="section-title">Engagement Photography Services in <em>Bangalore</em></h2>
+    <p class="section-lead">From a small ring ceremony at home to a 200-guest engagement reception. We cover the whole range, and we bring the same attention to every ritual.</p>
+
+    <div class="services-grid">
+      <article class="svc-card">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <i class="fas fa-ring svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Ring Ceremonies</h3>
+        <p class="svc-desc">The ring exchange, the family blessings, the first photos of the couple together. Covered with care and zero disruption to the ceremony.</p>
+        <a class="svc-link" href="#packages">See packages</a>
+      </article>
+
+      <article class="svc-card">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <i class="fas fa-hand-holding-heart svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Roka & Nischayathartham</h3>
+        <p class="svc-desc">Regional engagement rituals covered in full. Roka, nischayathartham, and all the family traditions around them.</p>
+        <a class="svc-link" href="#contact">Enquire</a>
+      </article>
+
+      <article class="svc-card">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <i class="fas fa-camera svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Candid Couple Portraits</h3>
+        <p class="svc-desc">A short portrait session on the day of the engagement, at the venue or a nearby location. Natural, unposed, and full of the two of you.</p>
+        <a class="svc-link" href="#contact">Enquire</a>
+      </article>
+
+      <article class="svc-card">
+        <span class="svc-num" aria-hidden="true">04</span>
+        <i class="fas fa-users svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Family Group Photos</h3>
+        <p class="svc-desc">Clean, well-lit family portraits with both families together. We work from your list so groups move quickly and no one is waiting.</p>
+        <a class="svc-link" href="#contact">Enquire</a>
+      </article>
+
+      <article class="svc-card">
+        <span class="svc-num" aria-hidden="true">05</span>
+        <i class="fas fa-glass-cheers svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Engagement Receptions</h3>
+        <p class="svc-desc">Evening receptions, toasts, and celebration coverage. Candid guest moments plus clean stage and decor photos.</p>
+        <a class="svc-link" href="#contact">Enquire</a>
+      </article>
+
+      <article class="svc-card">
+        <span class="svc-num" aria-hidden="true">06</span>
+        <i class="fas fa-film svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Engagement Films</h3>
+        <p class="svc-desc">Short highlight films of the ceremony, the ring exchange, and the family messages. Photo and video booked together for a better rate.</p>
+        <a class="svc-link" href="#contact">Enquire</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section id="packages">
+  <div class="section-inner">
+    <p class="section-tag" style="text-align:center;">Engagement Packages</p>
+    <h2 class="section-title" style="text-align:center;">Three Ways to Cover Your <em>Engagement</em></h2>
+    <p class="section-lead" style="text-align:center;margin:0 auto;">
+      Every package includes hand editing, an online gallery you can share with family, and travel within city limits. GST is charged separately.
+    </p>
+
+    <div class="services-grid" style="margin-top:3rem;">
+      <article class="svc-card">
+        <i class="fas fa-heart svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Essential Engagement</h3>
+        <p class="svc-desc">Three hours at one venue, one photographer, and 80 or more edited photographs. A good fit for intimate ring ceremonies at home or a small function room.</p>
+        <p class="svc-price">Rs 18,000 + GST</p>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-camera svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Signature Engagement</h3>
+        <p class="svc-desc">Five hours of coverage, two photographers, 150 or more edited photographs, and a short couple portrait session. Our most booked package for banquet hall engagements.</p>
+        <p class="svc-price">Rs 32,000 + GST</p>
+      </article>
+
+      <article class="svc-card">
+        <i class="fas fa-film svc-icon" aria-hidden="true"></i>
+        <h3 class="svc-title">Engagement + Reception</h3>
+        <p class="svc-desc">Eight hours of coverage across ceremony and reception, two photographers, 300 or more edited photographs, and a highlight reel. Same-day edit available.</p>
+        <p class="svc-price">Rs 55,000 + GST</p>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="#contact" class="btn btn-ghost">Build a Custom Package <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section id="gallery">
+  <div class="section-inner">
+    <p class="section-tag">Recent Work</p>
+    <h2 class="section-title">Engagements Covered Across <em>Bangalore</em></h2>
+    <p class="section-lead">A few frames from recent ceremonies. Venue names, dates, and full galleries available on request.</p>
+
+    <div class="gallery-grid">
+      <figure class="gal-item">
+        <img src="/images/gallery-engagement-01.webp"
+             alt="Ring ceremony photography in Jayanagar, Bangalore"
+             title="Ring ceremony photography in Jayanagar"
+             width="1200" height="800" loading="lazy" decoding="async" />
+        <figcaption class="gal-overlay">Jayanagar, Ring Ceremony</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="/images/gallery-engagement-02.webp"
+             alt="Candid engagement couple portrait in Indiranagar, Bangalore"
+             title="Candid engagement portrait in Indiranagar"
+             width="900" height="1200" loading="lazy" decoding="async" />
+        <figcaption class="gal-overlay">Indiranagar, Candid Portrait</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="/images/gallery-engagement-03.webp"
+             alt="Nischayathartham ceremony photography in Koramangala, Bangalore"
+             title="Nischayathartham photography in Koramangala"
+             width="900" height="1400" loading="lazy" decoding="async" />
+        <figcaption class="gal-overlay">Koramangala, Nischayathartham</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="/images/gallery-engagement-04.webp"
+             alt="Family group photo at an engagement in Whitefield, Bangalore"
+             title="Family group photography at an engagement in Whitefield"
+             width="900" height="800" loading="lazy" decoding="async" />
+        <figcaption class="gal-overlay">Whitefield, Family Groups</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="/images/gallery-engagement-05.webp"
+             alt="Engagement reception photography in Rajajinagar, Bangalore"
+             title="Engagement reception photography in Rajajinagar"
+             width="900" height="800" loading="lazy" decoding="async" />
+        <figcaption class="gal-overlay">Rajajinagar, Reception</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <img src="/images/gallery-engagement-06.webp"
+             alt="Roka ceremony photography in Malleshwaram, Bangalore"
+             title="Roka ceremony photography in Malleshwaram"
+             width="900" height="800" loading="lazy" decoding="async" />
+        <figcaption class="gal-overlay">Malleshwaram, Roka</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="orb" style="width:450px;height:450px;background:radial-gradient(circle,rgba(201,169,110,.06),transparent);top:0;right:-80px;" aria-hidden="true"></div>
+  <div class="section-inner" style="padding:5rem 0;">
+    <p class="section-tag reveal" style="text-align:center;display:block;">Couples We Have Covered</p>
+    <h2 class="section-title reveal" style="text-align:center;animation-delay:.1s">What Couples Say After <em>the Ceremony</em></h2>
+
+    <div class="testimonial-slider-wrap reveal" style="animation-delay:.15s;" aria-roledescription="carousel" aria-label="Client testimonials">
+      <div class="testimonial-viewport">
+        <div class="testimonial-track" id="testimonialTrack">
+          <article class="testimonial-slide">
+            <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
+            <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <p class="single-testi-text">Our engagement at a banquet hall in Jayanagar was covered beautifully. The candid shots of our families meeting for the first time are priceless. The posed group photos were clean and quick.</p>
+            <div class="single-testi-name">Nikhil and Priyanka</div>
+            <div class="single-testi-role">Engagement, Jayanagar</div>
+          </article>
+          <article class="testimonial-slide">
+            <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
+            <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <p class="single-testi-text">We wanted candid, not posed. That is exactly what we got at our ring ceremony in Indiranagar. The team knew the light and the timing, and the photos feel like us.</p>
+            <div class="single-testi-name">Ananya and Arjun</div>
+            <div class="single-testi-role">Ring Ceremony, Indiranagar</div>
+          </article>
+          <article class="testimonial-slide">
+            <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
+            <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <p class="single-testi-text">The nischayathartham coverage was exactly what we hoped for. Every ritual, every family member, every laugh. The gallery arrived in nine days and we were not chasing anyone.</p>
+            <div class="single-testi-name">Shruti and Karthik</div>
+            <div class="single-testi-role">Nischayathartham, Koramangala</div>
+          </article>
+          <article class="testimonial-slide">
+            <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
+            <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <p class="single-testi-text">We booked a combined engagement and pre-wedding package. Same photographer for both, and the storytelling across the two shoots feels seamless. Worth every rupee.</p>
+            <div class="single-testi-name">Meera and Surya</div>
+            <div class="single-testi-role">Engagement + Pre-Wedding, Whitefield</div>
+          </article>
+          <article class="testimonial-slide">
+            <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
+            <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <p class="single-testi-text">The ring exchange happened so fast and I was worried no one caught it. They caught it from three angles and the photos are stunning. My mother cried looking at them.</p>
+            <div class="single-testi-name">Divya and Rohan</div>
+            <div class="single-testi-role">Ring Ceremony, Rajajinagar</div>
+          </article>
+          <article class="testimonial-slide">
+            <div class="testi-quote-icon" aria-hidden="true">&ldquo;</div>
+            <div class="single-testimonial-stars" aria-label="Rated 5 out of 5">★★★★★</div>
+            <p class="single-testi-text">Our roka was a small family gathering at home. They made it feel like an event. The photos of my grandparents blessing us are the ones I will keep forever.</p>
+            <div class="single-testi-name">Sneha and Adithya</div>
+            <div class="single-testi-role">Roka, Malleshwaram</div>
+          </article>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <button class="testi-nav-btn" id="testiPrev" aria-label="Previous testimonial"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-nav-btn" id="testiNext" aria-label="Next testimonial"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="section-inner">
+    <div class="faq-cols">
+      <div>
+        <p class="section-tag reveal">Before You Book</p>
+        <h2 class="section-title reveal" style="animation-delay:.1s">Engagement Photography <em>Questions</em></h2>
+        <div class="divider reveal" style="animation-delay:.2s"></div>
+        <p class="section-lead reveal" style="animation-delay:.25s">Short answers to what couples and families ask us most often. If your question is not here, send it over and we will reply the same day.</p>
+        <div class="reveal" style="animation-delay:.3s;margin-top:2.5rem;">
+          <a href="#contact" class="btn btn-gold">Ask Us Directly <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="orb" style="width:500px;height:500px;background:radial-gradient(circle,rgba(201,169,110,.07),transparent);bottom:-100px;left:-150px;animation-delay:-4s;" aria-hidden="true"></div>
+  <div class="section-inner">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <p class="section-tag reveal" style="display:block;">Book a Ceremony</p>
+      <h2 class="section-title reveal" style="animation-delay:.1s">Tell Us About <br /><em>Your Engagement</em></h2>
+      <p class="section-lead reveal" style="animation-delay:.15s;margin:0 auto;">Share your date, venue, and the rituals you want covered. We reply within two to four hours on most days.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <div class="logo-mark" style="margin-bottom:1.5rem;" aria-hidden="true">MTP</div>
+
+        <div class="contact-info-item reveal">
+          <div class="contact-icon-box"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+          <div>
+            <div class="contact-info-label">Office </div>
+            <div class="contact-info-val">131, 2nd Cross Road, 5th Block, 3rd Phase,<br />Banashankari 3rd Stage, Bengaluru 560085</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal" style="animation-delay:.1s">
+          <div class="contact-icon-box"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-val"><a href="mailto:info.magictoday@gmail.com">info.magictoday@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal" style="animation-delay:.15s">
+          <div class="contact-icon-box"><i class="fas fa-phone" aria-hidden="true"></i></div>
+          <div>
+            <div class="contact-info-label">Phone and WhatsApp</div>
+            <div class="contact-info-val"><a href="tel:+918095767131">+91 80957 67131</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal" style="animation-delay:.2s">
+          <div class="contact-icon-box"><i class="fas fa-clock" aria-hidden="true"></i></div>
+          <div>
+            <div class="contact-info-label">Reply Time</div>
+            <div class="contact-info-val">Usually within 2 to 4 hours</div>
+          </div>
+        </div>
+
+        <div class="social-row reveal" style="animation-delay:.25s">
+          <a href="https://www.instagram.com/magictodayphotography/" target="_blank" rel="noopener" class="social-btn" aria-label="Magic Today Photography on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://wa.me/918095767131" target="_blank" rel="noopener" class="social-btn" aria-label="Chat with Magic Today Photography on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          <a href="https://linkedin.com/company/magic-today-photography" target="_blank" rel="noopener" class="social-btn" aria-label="Magic Today Photography on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <form action="https://formspree.io/f/info.magictoday@gmail.com" method="POST" class="reveal" style="animation-delay:.1s;">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="name">Your name *</label>
+            <input class="form-input" id="name" type="text" name="name" placeholder="Priya Sharma" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone number</label>
+            <input class="form-input" id="phone" type="tel" name="phone" placeholder="+91 98765 43210" autocomplete="tel" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email address *</label>
+          <input class="form-input" id="email" type="email" name="email" placeholder="priya@email.com" required autocomplete="email" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="service">What are you booking?</label>
+          <select class="form-select form-input" id="service" name="service">
+            <option value="">Choose a service</option>
+            <option>Ring Ceremony - Essential</option>
+            <option>Ring Ceremony - Signature</option>
+            <option>Engagement + Reception</option>
+            <option>Roka Coverage</option>
+            <option>Nischayathartham Coverage</option>
+            <option>Candid Couple Portrait</option>
+            <option>Family Group Photos</option>
+            <option>Engagement Film</option>
+            <option>Something else</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">Ceremony date, venue and anything else</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="For example: 14 March, Taj Bangalore, 5 PM to 9 PM, ring exchange at 6 PM. Would like family groups with both sides."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width:100%;justify-content:center;">Send Enquiry <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Map and reviews -->
+<section class="map-reviews" aria-label="Office location and Google reviews">
+  <div class="map-reviews-inner">
+    <div class="map-card">
+      <div class="map-card-head">
+        <div class="map-card-title"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Visit the Office</div>
+        <p>We are based in Banashankari, Bangalore. Couples and families usually drop in to discuss coverage, look at sample galleries, and plan the ceremony timeline.</p>
+      </div>
+      <div class="map-embed">
+        <iframe
+          title="Map showing Magic Today Photography Office in Banashankari, Bengaluru"
+          src="https://maps.google.com/maps?q=Magic+Today+Photography,+5th+block,+3rd+phase,+131,+2nd+Cross+Rd,+Banashankari+3rd+Stage,+Bengaluru&z=16&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <a href="https://share.google/4XcAb1onR3W3zPegy" target="_blank" rel="noopener" class="review-card" aria-label="Read Google reviews for Magic Today Photography">
+      <div class="review-top">
+        <div>
+          <div class="review-kicker">Google Reviews</div>
+          <div class="review-head">Rated 4.9 by couples</div>
+        </div>
+        <div class="review-badge" aria-hidden="true"><i class="fas fa-star"></i></div>
+      </div>
+      <div class="review-stars" aria-label="Rated 4.9 out of 5">
+        <i class="fas fa-star" aria-hidden="true"></i>
+        <i class="fas fa-star" aria-hidden="true"></i>
+        <i class="fas fa-star" aria-hidden="true"></i>
+        <i class="fas fa-star" aria-hidden="true"></i>
+        <i class="fas fa-star" aria-hidden="true"></i>
+        <span style="color:rgba(255,255,255,.7);font-size:.85rem;margin-left:.35rem;">4.9 / 5</span>
+      </div>
+      <p>Read what couples and families have written about their engagement coverage, or leave a review of your own.</p>
+      <span class="review-cta">Open Google Reviews <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <img src="/images/logo.jpg" alt="Magic Today Photography logo" title="Magic Today Photography - engagement photographer Bangalore" class="footer-logo" width="70" height="70" />
+      <p>Engagement photographers based in Banashankari, Bangalore. Ring ceremonies, roka, nischayathartham, and engagement receptions covered since 2019.</p>
+      <div class="social-row">
+        <a href="https://www.instagram.com/magictodayphotography/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://wa.me/918095767131" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com/company/magic-today-photography" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-title">Explore</div>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Book Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-title">Services</div>
+      <ul>
+        <li><a href="#packages">Ring Ceremonies</a></li>
+        <li><a href="#packages">Roka & Nischayathartham</a></li>
+        <li><a href="#packages">Engagement Receptions</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/birthday-parties">Birthday Parties</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/corporate-events">Corporate Events</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/maternity-baby-shower">Maternity & Baby Shower</a></li>
+        <li><a href="https://magictodayphotography.netlify.app/wedding-photographer-bangalore">Wedding Photography</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <div class="footer-title">Contact</div>
+      <ul>
+        <li><a href="mailto:info.magictoday@gmail.com">info.magictoday@gmail.com</a></li>
+        <li><a href="tel:+918095767131">+91 80957 67131</a></li>
+        <li><a href="https://maps.google.com/maps?q=Magic+Today+Photography,+Banashankari+3rd+Stage,+Bengaluru" target="_blank" rel="noopener">Banashankari, Bengaluru 560085</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>&copy; <span id="year">2026</span> Magic Today Photography. All rights reserved.</span>
+    <p><a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="#contact">Contact</a></p>
+    <span>Site by <a href="https://kirankumarvel.github.io/" target="_blank" rel="noopener noreferrer">Kiran (Kronix Systems)</a></span>
+  </div>
+</footer>
+
+<!-- Instagram float -->
+<a href="https://www.instagram.com/magictodayphotography/" target="_blank" rel="noopener" class="ig-float" aria-label="Follow Magic Today Photography on Instagram">
+  <i class="fab fa-instagram" aria-hidden="true"></i>
+</a>
+
+<!-- WhatsApp float -->
+<div class="wa-float">
+  <div class="wa-popup" id="waPopup" role="dialog" aria-label="Start a WhatsApp chat">
+    <button class="wa-close" id="waClose" aria-label="Close chat popup">&times;</button>
+    <h5>Chat on WhatsApp</h5>
+    <p>Pick your ceremony type and we will open the chat with your message ready.</p>
+    <label class="wa-opt"><input type="radio" name="waSvc" value="a Ring Ceremony" checked /> Ring Ceremony</label>
+    <label class="wa-opt"><input type="radio" name="waSvc" value="a Roka Ceremony" /> Roka Ceremony</label>
+    <label class="wa-opt"><input type="radio" name="waSvc" value="a Nischayathartham" /> Nischayathartham</label>
+    <label class="wa-opt"><input type="radio" name="waSvc" value="an Engagement Reception" /> Engagement Reception</label>
+    <label class="wa-opt"><input type="radio" name="waSvc" value="a Candid Couple Portrait" /> Candid Couple Portrait</label>
+    <label class="wa-opt"><input type="radio" name="waSvc" value="something else" /> Something Else</label>
+    <button class="wa-send" id="waSend">Start Chat <i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+  </div>
+  <button class="wa-btn" id="waBtn" aria-label="Open WhatsApp chat options"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var hasGsap = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
+  if (hasGsap) { gsap.registerPlugin(ScrollTrigger); }
+
+  /* ---------- Custom cursor ---------- */
+  var cd = document.getElementById('cd');
+  var cr = document.getElementById('cr');
+  var mx = 0, my = 0, cx = 0, cy = 0;
+
+  if (cd && cr && window.matchMedia('(pointer: fine)').matches) {
+    window.addEventListener('mousemove', function (e) {
+      mx = e.clientX; my = e.clientY;
+      cd.style.left = mx + 'px';
+      cd.style.top = my + 'px';
+    });
+    (function tickCursor() {
+      cx += (mx - cx) * 0.12;
+      cy += (my - cy) * 0.12;
+      cr.style.left = cx + 'px';
+      cr.style.top = cy + 'px';
+      requestAnimationFrame(tickCursor);
+    })();
+  }
+
+  /* ---------- Ambient canvas ---------- */
+  var canvas = document.getElementById('magicCanvas');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (canvas && !reduceMotion) {
+    var ctx = canvas.getContext('2d');
+    var W, H;
+
+    function resizeCanvas() {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    function Bokeh() { this.reset(true); }
+    Bokeh.prototype.reset = function (init) {
+      this.x = Math.random() * W;
+      this.y = init ? Math.random() * H : H + 20;
+      this.r = Math.random() * 3 + 0.5;
+      this.vy = -(Math.random() * 0.4 + 0.1);
+      this.vx = (Math.random() - 0.5) * 0.2;
+      this.alpha = 0;
+      this.alphaTarget = Math.random() * 0.35 + 0.05;
+      this.twinkleSpeed = Math.random() * 0.02 + 0.005;
+      this.twinklePhase = Math.random() * Math.PI * 2;
+      this.color = Math.random() < 0.7 ? [201, 169, 110] : [255, 255, 255];
+    };
+    Bokeh.prototype.update = function () {
+      this.twinklePhase += this.twinkleSpeed;
+      this.alpha = this.alphaTarget * (0.6 + 0.4 * Math.sin(this.twinklePhase));
+      this.x += this.vx;
+      this.y += this.vy;
+      if (this.y < -10) this.reset(false);
+    };
+    Bokeh.prototype.draw = function () {
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(' + this.color[0] + ',' + this.color[1] + ',' + this.color[2] + ',' + this.alpha + ')';
+      ctx.shadowColor = 'rgba(' + this.color[0] + ',' + this.color[1] + ',' + this.color[2] + ',0.5)';
+      ctx.shadowBlur = this.r * 4;
+      ctx.fill();
+      ctx.restore();
+    };
+
+    function Sparkle(x, y) {
+      this.x = x; this.y = y; this.life = 1;
+      this.vx = (Math.random() - 0.5) * 3;
+      this.vy = (Math.random() - 0.5) * 3;
+      this.r = Math.random() * 2 + 1;
+    }
+    Sparkle.prototype.update = function () {
+      this.life -= 0.04;
+      this.x += this.vx;
+      this.y += this.vy;
+      this.vy -= 0.05;
+    };
+    Sparkle.prototype.draw = function () {
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(201,169,110,' + (this.life * 0.7) + ')';
+      ctx.shadowColor = 'rgba(201,169,110,0.8)';
+      ctx.shadowBlur = 6;
+      ctx.fill();
+      ctx.restore();
+    };
+
+    var bokehArr = [];
+    for (var i = 0; i < 90; i++) bokehArr.push(new Bokeh());
+    var sparkleArr = [];
+
+    window.addEventListener('click', function (e) {
+      for (var k = 0; k < 16; k++) sparkleArr.push(new Sparkle(e.clientX, e.clientY));
+    });
+
+    (function tick() {
+      ctx.clearRect(0, 0, W, H);
+      for (var a = 0; a < bokehArr.length; a++) { bokehArr[a].update(); bokehArr[a].draw(); }
+      for (var b = sparkleArr.length - 1; b >= 0; b--) {
+        sparkleArr[b].update();
+        sparkleArr[b].draw();
+        if (sparkleArr[b].life <= 0) sparkleArr.splice(b, 1);
+      }
+      requestAnimationFrame(tick);
+    })();
+  }
+
+  /* ---------- Header + hero parallax ---------- */
+  var header = document.getElementById('header');
+  var heroBg = document.getElementById('heroBg');
+
+  window.addEventListener('scroll', function () {
+    var sy = window.scrollY;
+    header.classList.toggle('scrolled', sy > 50);
+    if (heroBg && !reduceMotion && sy < window.innerHeight) {
+      heroBg.style.transform = 'translateY(' + (sy * 0.4) + 'px)';
+    }
+  }, { passive: true });
+
+  /* ---------- Hero entrance + typing ---------- */
+  function showHero() {
+    ['heroEye', 'heroH1', 'heroSub', 'heroCta'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) { el.style.opacity = '1'; el.style.transform = 'none'; }
+    });
+  }
+
+  window.addEventListener('load', function () {
+    if (hasGsap && !reduceMotion) {
+      gsap.timeline()
+        .to('#heroEye', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' })
+        .to('#heroH1', { opacity: 1, duration: 1, ease: 'power3.out' }, '-=0.4')
+        .to('#heroSub', { opacity: 1, duration: 0.6 }, '-=0.4')
+        .to('#heroCta', { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, '-=0.3');
+    } else {
+      showHero();
+    }
+
+    var el = document.getElementById('typeEl');
+    if (!el) return;
+
+    if (reduceMotion) {
+      el.textContent = 'Ring Ceremony. Roka. Nischayathartham.';
+      return;
+    }
+
+    var phrases = [
+      'Ring Ceremony.',
+      'Roka.',
+      'Nischayathartham.',
+      'Shot in Bangalore.'
+    ];
+    var pi = 0, ci = 0, deleting = false;
+
+    function typeLoop() {
+      var current = phrases[pi];
+      if (!deleting) {
+        el.textContent = current.slice(0, ci + 1);
+        ci++;
+        if (ci === current.length) { deleting = true; setTimeout(typeLoop, 1800); return; }
+      } else {
+        el.textContent = current.slice(0, ci - 1);
+        ci--;
+        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(typeLoop, 350); return; }
+      }
+      setTimeout(typeLoop, deleting ? 45 : 85);
+    }
+    setTimeout(typeLoop, 1800);
+  });
+
+  /* ---------- Scroll reveal ---------- */
+  var revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+
+  /* ---------- Counters ---------- */
+  var counterObs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var el = e.target;
+      var target = parseFloat(el.dataset.target);
+      var decimals = parseInt(el.dataset.decimals || '0', 10);
+      var suffix = el.dataset.suffix || '';
+      var duration = 1800;
+      var start = null;
+
+      function step(ts) {
+        if (!start) start = ts;
+        var prog = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - prog, 3);
+        el.textContent = (eased * target).toFixed(decimals) + suffix;
+        if (prog < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+      counterObs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.stat-num').forEach(function (el) { counterObs.observe(el); });
+
+  /* ---------- Testimonials ---------- */
+  var track = document.getElementById('testimonialTrack');
+  var prevBtn = document.getElementById('testiPrev');
+  var nextBtn = document.getElementById('testiNext');
+  var dotsWrap = document.getElementById('testiDots');
+
+  if (track && prevBtn && nextBtn && dotsWrap) {
+    var slides = Array.prototype.slice.call(track.children);
+    var index = 0;
+    var autoTimer = null;
+
+    slides.forEach(function (_, i) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'testi-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Go to testimonial ' + (i + 1));
+      dot.addEventListener('click', function () { goTo(i); restart(); });
+      dotsWrap.appendChild(dot);
+    });
+
+    function updateDots() {
+      Array.prototype.forEach.call(dotsWrap.children, function (dot, i) {
+        dot.classList.toggle('active', i === index);
+      });
+    }
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      track.style.transform = 'translateX(-' + (index * 100) + '%)';
+      updateDots();
+    }
+
+    function next() { goTo(index + 1); }
+    function prev() { goTo(index - 1); }
+
+    nextBtn.addEventListener('click', function () { next(); restart(); });
+    prevBtn.addEventListener('click', function () { prev(); restart(); });
+
+    function start() { autoTimer = setInterval(next, 5000); }
+    function stop() { if (autoTimer) clearInterval(autoTimer); }
+    function restart() { stop(); start(); }
+
+    track.addEventListener('mouseenter', stop);
+    track.addEventListener('mouseleave', start);
+
+    if (!reduceMotion) start();
+  }
+
+  /* ---------- FAQ ---------- */
+  var faqs = [
+    {
+      q: 'How much does engagement photography in Bangalore cost?',
+      a: 'Our engagement packages start at Rs 18,000 for three hours of coverage at a home or small venue with 80 or more edited photographs. The Signature package is Rs 32,000 for five hours with two photographers, and the Engagement + Reception package is Rs 55,000 for eight hours of coverage. GST is charged separately. Custom quotes are available for destination engagements and multi-day celebrations.'
+    },
+    {
+      q: 'What is the difference between engagement photography and pre-wedding photography?',
+      a: 'Engagement photography covers the actual ceremony — the ring exchange, roka, nischayathartham, and the family gathering around it. Pre-wedding photography is a separate couple shoot, usually done a few months before the wedding, focused on portraits and storytelling. We offer both, and many couples book them together.'
+    },
+    {
+      q: 'Do you cover roka and nischayathartham ceremonies?',
+      a: 'Yes. We cover roka, nischayathartham, and all regional engagement variations. We photograph the rituals, the family interactions, the ring exchange, and the candid moments around the ceremony. If there are specific rituals you want covered, share the sequence with us beforehand.'
+    },
+    {
+      q: 'How far in advance should we book an engagement photographer?',
+      a: 'One to two months is comfortable. Auspicious dates cluster during certain months, so if you have a specific muhurtham, tell us early. If your date is close, still message us. We sometimes have last-minute openings on weekday evenings.'
+    },
+    {
+      q: 'How many photographers will be at our engagement?',
+      a: 'For small ring ceremonies at home, one photographer is usually enough. The Signature package includes two photographers who can split between the ceremony and the family moments. Larger engagements with multiple rituals and over 100 guests usually need two or three photographers.'
+    },
+    {
+      q: 'Can you cover the engagement at our home?',
+      a: 'Yes. Home engagements are common in Bangalore and we shoot them often. We work around the space, use window light where possible, and keep a small setup so the room does not feel crowded.'
+    },
+    {
+      q: 'Do you photograph family groups at engagements?',
+      a: 'Yes. Family group photos are a big part of engagement coverage. We work from a list you share beforehand so the groups move quickly and no one is waiting around. Most family photo sessions finish in 20 to 30 minutes.'
+    },
+    {
+      q: 'Do you shoot video along with photos?',
+      a: 'Yes. We have a separate video team for engagement highlight films, ring exchange close-ups, and family messages. You can book photo-only, video-only, or a combined package. Combined bookings usually get a better rate.'
+    },
+    {
+      q: 'How soon do we receive the engagement photos?',
+      a: 'You get a set of preview images within 48 hours. The full edited gallery is delivered in seven to ten working days. If you need images for a save-the-date announcement or social media, tell us in advance and we will plan for it.'
+    },
+    {
+      q: 'Can we do a couple portrait session along with the engagement ceremony?',
+      a: 'Yes. Many couples want a short portrait session on the same day or the day after, while the outfits and styling are fresh. We can add a one-hour portrait session to any engagement package, either at the venue or at a nearby location.'
+    },
+    {
+      q: 'What should we wear for the engagement?',
+      a: 'Traditional wear photographs beautifully, especially at ceremony settings. For the couple portrait session, many couples choose one traditional outfit and one contemporary outfit. We send a short style guide with reference images once you book.'
+    },
+    {
+      q: 'Do you offer combined engagement and wedding packages?',
+      a: 'Yes. Booking engagement and wedding coverage together gets you a better rate and the same photographer across both events. Many couples also add a pre-wedding shoot to the package.'
+    },
+    {
+      q: 'Do you charge extra for travel within Bangalore?',
+      a: 'No. Travel within city limits is included in all packages. For engagements outside Bangalore, we charge actual travel and stay costs, which we will quote upfront.'
+    },
+    {
+      q: 'What should we prepare before the photographer arrives?',
+      a: 'Have the ring exchange timing confirmed, let us know when the decor is fully set, and share the list of family groups you want photographed. If there are specific rituals or moments you want covered, tell us two days ahead. We will work around your schedule.'
+    },
+    {
+      q: 'Do you photograph interfaith and same-sex engagements?',
+      a: 'Yes. We photograph all couples with the same care and the same approach. Tell us about your ceremony and we will plan the coverage around it.'
+    }
+  ];
+
+  var faqList = document.getElementById('faqList');
+  if (faqList) {
+    faqs.forEach(function (f) {
+      var item = document.createElement('div');
+      item.className = 'faq-item';
+
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'faq-q';
+      btn.setAttribute('aria-expanded', 'false');
+      btn.innerHTML = '<span>' + f.q + '</span><span class="faq-icon" aria-hidden="true"><i class="fas fa-plus"></i></span>';
+
+      var answer = document.createElement('div');
+      answer.className = 'faq-a';
+      answer.innerHTML = '<p>' + f.a + '</p>';
+
+      item.appendChild(btn);
+      item.appendChild(answer);
+      faqList.appendChild(item);
+
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        faqList.querySelectorAll('.faq-item.open').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  }
+
+  /* ---------- Hamburger ---------- */
+  var ham = document.getElementById('ham');
+  var navList = document.getElementById('navList');
+  if (ham && navList) {
+    ham.addEventListener('click', function () {
+      var open = navList.classList.toggle('open');
+      ham.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    navList.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        navList.classList.remove('open');
+        ham.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  /* ---------- WhatsApp ---------- */
+  var waBtn = document.getElementById('waBtn');
+  var waPopup = document.getElementById('waPopup');
+  var waClose = document.getElementById('waClose');
+  var waSend = document.getElementById('waSend');
+
+  if (waBtn && waPopup) {
+    waBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      waPopup.classList.toggle('active');
+    });
+    waClose.addEventListener('click', function () { waPopup.classList.remove('active'); });
+    document.addEventListener('click', function (e) {
+      if (!waPopup.contains(e.target) && e.target !== waBtn && !waBtn.contains(e.target)) {
+        waPopup.classList.remove('active');
+      }
+    });
+    waSend.addEventListener('click', function () {
+      var sel = document.querySelector('input[name="waSvc"]:checked');
+      var service = sel ? sel.value : 'an engagement';
+      var msg = encodeURIComponent('Hi Magic Today Photography, I am interested in ' + service + '. Could you share the details?');
+      window.open('https://wa.me/918095767131?text=' + msg, '_blank', 'noopener');
+      waPopup.classList.remove('active');
+    });
+  }
+
+  /* ---------- Smooth scroll for in-page links ---------- */
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var href = a.getAttribute('href');
+      if (href === '#') return;
+      var target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+      }
+    });
+  });
+
+  /* ---------- GSAP scroll animations ---------- */
+  if (hasGsap && !reduceMotion) {
+    gsap.utils.toArray('.svc-card').forEach(function (card, i) {
+      gsap.from(card, {
+        opacity: 0, y: 45, duration: 0.75, delay: i * 0.06, ease: 'power2.out',
+        scrollTrigger: { trigger: card, start: 'top 90%' }
+      });
+    });
+
+    gsap.utils.toArray('.gal-item').forEach(function (item, i) {
+      gsap.from(item, {
+        opacity: 0, scale: 0.95, duration: 0.7, delay: i * 0.05, ease: 'power2.out',
+        scrollTrigger: { trigger: item, start: 'top 92%' }
+      });
+    });
+  }
+
+  /* ---------- Footer year ---------- */
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+})();
+</script>
+</body>
+</html>
