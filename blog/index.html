@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Photography Blog Bangalore | Tips, Locations & Stories – Magic Today</title>
 <meta name="description" content="Bangalore photography blog from Magic Today Photography. Pre-wedding locations, portrait and event tips, wedding timelines, and honest pricing guides.">
-<meta name="keywords" content="pre wedding shoot bangalore, cubbon park photography, lalbagh photoshoot, bangalore wedding photographer blog, wedding tips bangalore, magic today photography blog">
+<meta name="keywords" content="pre wedding shoot bangalore, cubbon park photography, lalbagh photoshoot, bangalore wedding photographer blog, wedding timeline, wedding photography planning, magic today photography blog">
 <meta name="author" content="Magic Today Photography">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#0c0a09">
@@ -130,6 +130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         "Candid wedding photography",
         "Pre-wedding location scouting in Bangalore",
         "South Indian wedding rituals and timelines",
+        "Wedding photography timeline planning",
         "Corporate event photography",
         "Maternity and newborn photography"
       ],
@@ -225,23 +226,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "publisher": { "@id": "https://magictodayphotography.netlify.app/#organization" },
       "inLanguage": "en-IN",
       "datePublished": "2026-05-26",
-      "dateModified": "2026-08-25"
+      "dateModified": "2026-10-15"
     },
     {
       "@type": "ItemList",
       "@id": "https://magictodayphotography.netlify.app/blog/#posts",
       "name": "Latest Posts",
       "itemListOrder": "https://schema.org/ItemListOrderDescending",
-      "numberOfItems": 8,
+      "numberOfItems": 9,
       "itemListElement": [
-        {"@type":"ListItem","position":1,"name":"Traditional vs Candid vs Cinematic Wedding Photography","url":"https://magictodayphotography.netlify.app/blog/traditional-vs-candid-vs-cinematic-wedding-photography"},
-        {"@type":"ListItem","position":2,"name":"Wedding Photography FAQ - 30 Questions","url":"https://magictodayphotography.netlify.app/blog/wedding-photography-faq-30-questions"},
-        {"@type":"ListItem","position":3,"name":"Wedding Photography Budget Guide","url":"https://magictodayphotography.netlify.app/blog/wedding-photography-budget-guide"},
-        {"@type":"ListItem","position":4,"name":"Creative Pre-Wedding Photoshoot Ideas","url":"https://magictodayphotography.netlify.app/blog/creative-pre-wedding-photoshoot-ideas-beach-rooftop-studio"},
-        {"@type":"ListItem","position":5,"name":"Wedding Photography Pricing Breakdown","url":"https://magictodayphotography.netlify.app/blog/wedding-photography-pricing-breakdown-guide"},
-        {"@type":"ListItem","position":6,"name":"What Is Candid Wedding Photography","url":"https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography"},
-        {"@type":"ListItem","position":7,"name":"Wedding Day Photography Timeline","url":"https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline"},
-        {"@type":"ListItem","position":8,"name":"Pre-Wedding Locations in Bangalore","url":"https://magictodayphotography.netlify.app/blog/pre-wedding-photoshoot-locations-bangalore-guide"}
+        {"@type":"ListItem","position":1,"name":"Complete Wedding Photography Timeline: From Engagement to Album Delivery","url":"https://magictodayphotography.netlify.app/blog/complete-wedding-photography-timeline-engagement-to-album-delivery"},
+        {"@type":"ListItem","position":2,"name":"Traditional vs Candid vs Cinematic Wedding Photography","url":"https://magictodayphotography.netlify.app/blog/traditional-vs-candid-vs-cinematic-wedding-photography"},
+        {"@type":"ListItem","position":3,"name":"Wedding Photography FAQ - 30 Questions","url":"https://magictodayphotography.netlify.app/blog/wedding-photography-faq-30-questions"},
+        {"@type":"ListItem","position":4,"name":"Wedding Photography Budget Guide","url":"https://magictodayphotography.netlify.app/blog/wedding-photography-budget-guide"},
+        {"@type":"ListItem","position":5,"name":"Creative Pre-Wedding Photoshoot Ideas","url":"https://magictodayphotography.netlify.app/blog/creative-pre-wedding-photoshoot-ideas-beach-rooftop-studio"},
+        {"@type":"ListItem","position":6,"name":"Wedding Photography Pricing Breakdown","url":"https://magictodayphotography.netlify.app/blog/wedding-photography-pricing-breakdown-guide"},
+        {"@type":"ListItem","position":7,"name":"What Is Candid Wedding Photography","url":"https://magictodayphotography.netlify.app/blog/what-is-candid-wedding-photography"},
+        {"@type":"ListItem","position":8,"name":"Wedding Day Photography Timeline","url":"https://magictodayphotography.netlify.app/blog/wedding-day-photography-timeline"},
+        {"@type":"ListItem","position":9,"name":"Pre-Wedding Locations in Bangalore","url":"https://magictodayphotography.netlify.app/blog/pre-wedding-photoshoot-locations-bangalore-guide"}
       ]
     },
     {
@@ -279,9 +281,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "primaryImageOfPage": "https://magictodayphotography.netlify.app/images/heroimage.jpg",
       "inLanguage": "en-IN",
       "datePublished": "2026-05-26",
-      "dateModified": "2026-08-25",
+      "dateModified": "2026-10-15",
       "about": [
         {"@type":"Thing","name":"Wedding photography in Bangalore"},
+        {"@type":"Thing","name":"Wedding photography timeline"},
         {"@type":"Thing","name":"Pre-wedding photoshoot locations"}
       ],
       "speakable": {
@@ -858,6 +861,27 @@ footer { background:var(--ink-soft); border-top:1px solid var(--border); padding
 
 .type-cursor { color:var(--gold); animation:blink 1s step-end infinite; }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* Featured post highlight */
+.blog-card.featured {
+  border-color: rgba(201,169,110,0.45);
+  background: linear-gradient(160deg, rgba(201,169,110,0.08), var(--ink-soft) 60%);
+}
+.blog-card.featured::before {
+  content: 'New';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 3;
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+}
 </style>
 </head>
 <body>
@@ -932,6 +956,7 @@ footer { background:var(--ink-soft); border-top:1px solid var(--border); padding
 
     <h3 id="key-takeaways-heading" class="section-title reveal" style="font-size:1.5rem;margin-top:1.8rem;">What you will find here</h3>
     <ul class="key-takeaways reveal" aria-labelledby="key-takeaways-heading">
+      <li>A complete wedding photography timeline, from engagement to album delivery</li>
       <li>Pre-wedding locations in Bangalore, with timings and lighting notes</li>
       <li>Hour-by-hour wedding day timelines for 6, 8, 10 and 12 hour coverage</li>
       <li>A plain-English explanation of candid versus traditional versus cinematic styles</li>
@@ -941,6 +966,29 @@ footer { background:var(--ink-soft); border-top:1px solid var(--border); padding
     </ul>
 
     <div class="blog-grid" id="blogGrid">
+
+      <!-- NEW FEATURED POST -->
+      <article class="blog-card featured reveal" itemscope itemtype="https://schema.org/BlogPosting">
+        <figure>
+          <img itemprop="image" src="/images/complete-wedding-photography-timeline-engagement-to-album-delivery.webp"
+               alt="Complete wedding photography timeline from engagement to album delivery"
+               title="Complete Wedding Photography Timeline"
+               loading="lazy" width="800" height="535">
+          <figcaption>Every step from booking to album delivery, month by month.</figcaption>
+        </figure>
+        <div class="blog-content">
+          <span class="blog-category">Planning &amp; Timeline</span>
+          <h3 class="blog-title" itemprop="headline">Complete wedding photography timeline. From engagement to album delivery</h3>
+          <div class="blog-meta">
+            <span>10 September 2026</span><span>18 min read</span>
+          </div>
+          <p class="blog-excerpt" itemprop="description">A month-by-month roadmap for organised couples. When to book, when to do the pre-wedding shoot, what happens on the wedding day, and exactly how long editing and album delivery take.</p>
+          <a href="/blog/complete-wedding-photography-timeline-engagement-to-album-delivery" class="read-more" itemprop="url">Read the timeline <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          <meta itemprop="datePublished" content="2026-09-10">
+          <meta itemprop="dateModified" content="2026-10-15">
+          <meta itemprop="author" content="Sathya">
+        </div>
+      </article>
 
       <article class="blog-card reveal" itemscope itemtype="https://schema.org/BlogPosting">
         <figure>
@@ -1111,14 +1159,15 @@ footer { background:var(--ink-soft); border-top:1px solid var(--border); padding
       <div class="bio-text">
         <h4>About the author, Sathya</h4>
         <p>Founder and lead photographer at Magic Today Photography. Has shot more than 80 weddings and 150 corporate events across Bangalore since 2019. Writes these guides between shoots.</p>
-        <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.4rem;">Published 26 May 2026. Last updated 25 August 2026.</p>
+        <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);margin-top:0.4rem;">Published 26 May 2026. Last updated 15 October 2026.</p>
       </div>
     </div>
 
     <div class="blog-summary reveal">
       <h3>In short</h3>
-      <p>Whether you are choosing a photographer, planning a timeline, or just figuring out where to shoot in Bangalore, the answers are somewhere on this page. Start with the location guide if you are early in planning. Start with the pricing breakdown if you are comparing quotes.</p>
+      <p>Whether you are choosing a photographer, planning a timeline, or just figuring out where to shoot in Bangalore, the answers are somewhere on this page. Start with the complete timeline guide if you are early in planning. Start with the pricing breakdown if you are comparing quotes.</p>
       <ul>
+        <li>Complete wedding photography timeline from engagement to album delivery</li>
         <li>Location guides for Cubbon Park, Lalbagh, Hesaraghatta and Church Street</li>
         <li>Timeline templates for any length of coverage</li>
         <li>Clear pricing notes without the sales pitch</li>
@@ -1378,7 +1427,7 @@ footer { background:var(--ink-soft); border-top:1px solid var(--border); padding
         <li><a href="tel:+918095767131">+91 80957 67131</a></li>
         <li>Banashankari, Bengaluru</li>
       </ul>
-      <p style="font-size:0.72rem;color:rgba(255,255,255,0.35);margin-top:1rem;">Last updated 25 August 2026</p>
+      <p style="font-size:0.72rem;color:rgba(255,255,255,0.35);margin-top:1rem;">Last updated 15 October 2026</p>
     </div>
   </div>
   <div class="footer-bottom">
@@ -1513,6 +1562,7 @@ footer { background:var(--ink-soft); border-top:1px solid var(--border); padding
   if(typeEl && !reduced){
     const phrases = [
       'Pre-wedding location guides for Bangalore',
+      'Complete wedding photography timeline, engagement to album',
       'Candid wedding stories, honestly told',
       'Photography tips you can use this weekend',
       'Real couple diaries from real shoots',
@@ -1595,7 +1645,7 @@ footer { background:var(--ink-soft); border-top:1px solid var(--border); padding
     {q:"Are all blog posts free?", a:"Yes. Every article is free to read directly on this page. New posts go live once or twice a month."},
     {q:"Can I suggest a topic or location for a future post?", a:"Absolutely. Message us on WhatsApp or use the contact form. Suggestions from readers often become the next article."},
     {q:"Do I need to book a shoot to read the blog?", a:"No. The blog is open to everyone, whether you are a client, a hobby photographer or just browsing for ideas."},
-    {q:"How do I book a photoshoot after reading a post?", a:"Tap the Book Your Shoot section or the WhatsApp button. We will help you pick a package and location."},
+    {q:"How do I book a photoshoot after reading a post?", a:"Tap the Book Your Magical Moment section or the WhatsApp button. We will help you pick a package and location."},
     {q:"Does Magic Today only serve Bangalore?", a:"We are based in Banashankari, Bangalore and shoot regularly at local spots. We also travel for destination weddings, pre-wedding shoots and events across India."},
     {q:"Can I share your blog posts on social media?", a:"Yes, please share with credit. It helps more couples and photographers find these guides."},
     {q:"How often are new posts published?", a:"One to two new articles per month. Follow us on Instagram or check this page for the latest."}
