@@ -2,83 +2,290 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    <url>
-        <loc>https://magictodayphotography.netlify.app/</loc>
-        <lastmod>2026-05-29</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+  <!-- HOME / GLOBAL / ICONS -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/heroimage.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/heroimage.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/logo.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/logo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-bg.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-landingpage.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/image.png</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/image.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/photo-1554080353-a576cf803bda.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/android-chrome-192x192.png</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/android-chrome-512x512.png</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/apple-touch-icon.png</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/favicon-16x16.png</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/favicon-32x32.png</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/favicon.ico</image:loc></image:image>
+  </url>
 
-        <!-- Logo -->
-        <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/images/logo.jpg</image:loc>
-            <image:title>Magic Today Photography Logo – Best Wedding Photographer in Bangalore</image:title>
-            <image:caption>Official logo of Magic Today Photography, premier wedding and event photography studio in Banashankari, Bangalore.</image:caption>
-            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
-            <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
-        </image:image>
+  <!-- WEDDING PHOTOGRAPHY -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-photography/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Candid-Wedding.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Candid-Wedding.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-wedding-hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-wedding-photography-indian-wedding-couple.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-wedding-couple-hero-background-bangalore.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/mangalya-dharanam-moment.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/karnataka-style-wedding-stage-couple.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/ring-ceremony-intimate-wedding-photo.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/first-look-couple.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/golden-hour-silhouette.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-couple-sunset.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/traditional-style-visual.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-style-visual.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/cinematic-style-visual.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-styles-comparison.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-wedding-styles.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/traditional-candid-cinematic-wedding-photography-comparison-guide.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-wedding-faq.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-faq-stats-infographic.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/south-indian-wedding-photography-faq-30-questions-guide.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/sacred-pinky-finger-wedding-couple-ceremony.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/temple-pillars-sunrise-wedding-couple.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/traditional-saree-wedding-portrait.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-forehead-kiss-boy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-reception-parents.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-photograpy-intro.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-photograpy.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-photograpy.webp</image:loc></image:image>
+  </url>
 
-        <!-- Founder -->
-        <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/images/Founder-satya.jpg</image:loc>
-            <image:title>Sathya – Founder & Lead Wedding Photographer at Magic Today Photography</image:title>
-            <image:caption>Sathya, founder of Magic Today Photography, with over 80 weddings and 150 corporate events captured across India.</image:caption>
-            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
-            <image:geo_location>Bangalore, India</image:geo_location>
-        </image:image>
+  <!-- WEDDING TIMELINE -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-timeline/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-wedding-timeline.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-wedding-timeline-og.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/complete-wedding-photography-timeline-engagement-to-album-delivery.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/timeline-phase-1-booking.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/timeline-phase-2-planning.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/timeline-phase-3-prewedding.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/timeline-phase-4-finalcountdown.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/timeline-phase-5-weddingday.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/timeline-phase-6-editing.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/timeline-real-stories.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-timeline-feature.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-timeline-hours.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-timeline-infographic.webp</image:loc></image:image>
+  </url>
 
-        <!-- Pre-Wedding Cubbon Park -->
-        <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/images/pre-wedding-cubbon-park.jpg</image:loc>
-            <image:title>Pre-Wedding Photoshoot at Cubbon Park, Bangalore</image:title>
-            <image:caption>Couple walking hand-in-hand under ancient rain trees in Cubbon Park during golden hour – ideal for pre-wedding shoots.</image:caption>
-            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
-            <image:geo_location>Cubbon Park, Bangalore, Karnataka, India</image:geo_location>
-        </image:image>
+  <!-- PRE-WEDDING PHOTOGRAPHY -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/pre-wedding-photography/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Pre%E2%80%91Wedding-Cubbon%20Park.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Pre%E2%80%91Wedding-Cubbon-Park.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/bannerghatta-hill-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/church-street-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hesaraghatta-lake-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/home-terrace-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/jayanagar-park-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/madiwala-lake-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/mg-road-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/quarry-sunset-point-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/vidhana-soudha-night-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/zen-park-nagarbhavi-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/prewedding-hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/prewedding-feature.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/prewedding-importance.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/prewedding-tips.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/prewedding-story.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/prewedding-locations-feature.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/prewedding-stats.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-pre-wedding-couple.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/about-pre-wedding-story.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-prewedding-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-prewedding-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-prewedding-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-prewedding-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-prewedding-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-prewedding-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/umbrella-pre-wedding-photography-waterfall.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/white-attire-waterfall-pre-wedding-couple.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/blazer-gown-lake-pre-wedding-photoshoot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/romantic-lift-pre-wedding-photography.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/happy-lift-peace-symbol-pre-wedding.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/empty-road-pre-wedding-couple-pose.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/elegant-back-hug-pre-wedding-pose.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/romantic-embrace-pre-wedding-couple.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/church-street-blazer-portrait-girl.jpg</image:loc></image:image>
+  </url>
 
-        <!-- Candid Wedding -->
-        <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/images/candid-wedding.jpg</image:loc>
-            <image:title>Candid Wedding Photography in Bangalore – Real Emotions</image:title>
-            <image:caption>Natural, candid shot of a bride and groom laughing during their wedding ceremony, captured by Magic Today Photography.</image:caption>
-            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
-            <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
-        </image:image>
+  <!-- COUPLE PHOTOGRAPHY -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/couple-photography/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/CoupleSession.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/CoupleSession.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/couple-poses-comparison.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/couple-poses-playful.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/couple-poses-romantic.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-couple-poses.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/romantic-couple-photoshoot-poses-thumbnail.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/beach-backhug.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/beach-silhouette.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/beach-sitting.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/beach-splash.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/beach-walk.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/rooftop-balcony.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/rooftop-bluehour.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/rooftop-dance.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/rooftop-golden.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/rooftop-monochrome.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/blue-sky-yellow-grass-nature-portrait.jpg</image:loc></image:image>
+  </url>
 
-        <!-- Hero Image -->
-        <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/images/heroimage.jpg</image:loc>
-            <image:title>Hero Image – Wedding Photography Portfolio Magic Today Photography</image:title>
-            <image:caption>Cinematic wedding moment showcasing the studio's signature candid and storytelling style.</image:caption>
-            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
-            <image:geo_location>Bangalore, India</image:geo_location>
-        </image:image>
+  <!-- MATERNITY PHOTOGRAPHY -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/maternity-photography/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Maternity-Portraits.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Maternity-Portraits.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/back-hug-maternity-photography-baby-bump.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/traditional-saree-back-pose-maternity.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/baby-shower-saree-maternity-photography.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/proud-father-happy-mother-maternity-pose.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/white-attire-maternity-photoshoot-couple.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/mother-and-baby-smiling-happy-portrait.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-maternity-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-maternity-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-maternity-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-maternity-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-maternity-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-maternity-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/about-maternity-photography.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-maternity-baby-shower.webp</image:loc></image:image>
+  </url>
 
-        <!-- Couple Session -->
-        <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/images/couple-session.jpg</image:loc>
-            <image:title>Outdoor Couple Pre-Wedding Session – Romantic Sunset Shoot</image:title>
-            <image:caption>Couple embracing during golden hour – perfect for pre-wedding and anniversary photography.</image:caption>
-            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
-            <image:geo_location>Bangalore outskirts, Karnataka</image:geo_location>
-        </image:image>
+  <!-- NEWBORN PHOTOGRAPHY -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/newborn-photography/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Newborn-Session.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Newborn-Session.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/baby-krishna-avatar-traditional-costume-photography.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/baby-krishna-with-mom-loving-moment.jpg</image:loc></image:image>
+  </url>
 
-        <!-- Newborn Session -->
-        <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/images/newborn-session.jpg</image:loc>
-            <image:title>Newborn Photography – Safe, Gentle Home Session in Bangalore</image:title>
-            <image:caption>Parents holding their newborn baby in a natural light setup – soft, warm, and intimate.</image:caption>
-            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
-            <image:geo_location>Bangalore, India</image:geo_location>
-        </image:image>
+  <!-- BIRTHDAY PARTIES -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/birthday-parties/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-birthday-parties.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/about-birthday-parties.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-birthday-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-birthday-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-birthday-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-birthday-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-birthday-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-birthday-06.webp</image:loc></image:image>
+  </url>
 
-        <!-- Maternity Portraits -->
-        <image:image>
-            <image:loc>https://magictodayphotography.netlify.app/images/maternity-portraits.jpg</image:loc>
-            <image:title>Maternity Photoshoot Bangalore – Glowing Mother in Floral Crown</image:title>
-            <image:caption>Artistic maternity portrait celebrating motherhood, shot during golden hour at a scenic Bangalore location.</image:caption>
-            <image:license>https://magictodayphotography.netlify.app/copyright</image:license>
-            <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
-        </image:image>
-    </url>
+  <!-- FIRST BIRTHDAYS -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/first-birthdays/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-first-birthdays.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/about-first-birthdays.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-first-birthday-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-first-birthday-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-first-birthday-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-first-birthday-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-first-birthday-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-first-birthday-06.webp</image:loc></image:image>
+  </url>
+
+  <!-- CORPORATE EVENTS -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/corporate-events/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-corporate-events.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/about-corporate-events.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/corporate-headshot.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-corporate-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-corporate-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-corporate-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-corporate-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-corporate-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-corporate-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/chenda-melam-ensemble-event-photography.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/chenda-melam-stage-performance-event.jpg</image:loc></image:image>
+  </url>
+
+  <!-- ENGAGEMENTS -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/engagements/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-engagements.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/about-engagements.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-engagement-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-engagement-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-engagement-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-engagement-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-engagement-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-engagement-06.webp</image:loc></image:image>
+  </url>
+
+  <!-- EVENT PHOTOGRAPHY -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/event-photography/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-event-photography.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/hero-event-celebrations-photography.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/about-event-photography.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-event-01.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-event-02.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-event-03.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-event-04.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-event-05.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/gallery-event-06.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/karaga-dance-mouth-holding-event.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/karaga-dance-performance-hands.jpg</image:loc></image:image>
+  </url>
+
+  <!-- ABOUT / FOUNDER / STUDIO / CANDID EXAMPLES -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/about/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Founder-satya.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/Founder-satya.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/sathya-avatar.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/luxury-wedding-photography-team.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/studio-cultural.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/studio-datenight.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/studio-hobby.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/studio-home.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/studio-monochrome.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-definition.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-example-farewell.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-example-getting-ready.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-example-laugh.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-example-mother-tear.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/candid-example-stolen-glance.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/real-stories-dual.webp</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/kerala-onam-saree-portrait-angle1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/kerala-onam-saree-portrait-angle2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/kerala-onam-saree-portrait-angle3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/kerala-onam-saree-portrait-angle4.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/kerala-onam-saree-portrait-angle5.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/street-pole-sitting-stylish-portrait.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/street-pole-standing-support-portrait.jpg</image:loc></image:image>
+  </url>
+
+  <!-- PRICING -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/pricing/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/pricing-hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/pricing-feature.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/pricing-chart.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/equipment-cost.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/time-breakdown.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/stats-infographic.jpg</image:loc></image:image>
+  </url>
+
+  <!-- WEDDING BUDGET -->
+  <url>
+    <loc>https://magictodayphotography.netlify.app/wedding-budget/</loc>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-budget-hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-budget-feature.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-budget%20-feature.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-budget-guide-feature.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-budget-tiers.jpg</image:loc></image:image>
+    <image:image><image:loc>https://magictodayphotography.netlify.app/wedding-planning-calendar.jpg</image:loc></image:image>
+  </url>
 
 </urlset>
